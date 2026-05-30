@@ -1,0 +1,71 @@
+name: alpha
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  α ALPHA — docker-compose.yml
+#
+#  Usage:
+#    docker compose up dashboard          # start knowledge graph dashboard
+#    docker compose run --rm -i graphify  # MCP stdio (called by .mcp.json)
+#    docker compose run --rm -i understand # MCP stdio (called by .mcp.json)
+#
+#  Env:
+#    PROJECT_ROOT  — path to your project (default: current directory)
+#    DASHBOARD_PORT — dashboard port (default: 3000)
+# ─────────────────────────────────────────────────────────────────────────────
+
+x-project-mount: &project-mount
+  - type: bind
+    source: ${PROJECT_ROOT:-.}
+    target: /project
+
+x-understand-src-mount: &understand-src-mount
+  - type: bind
+    source: ${HOME}/.understand-anything/repo/understand-anything-plugin
+    target: /app
+
+services:
+
+  # ── Graphify MCP (stdio) ─────────────────────────────────────────────────
+  # Started on-demand by .mcp.json via: docker compose run --rm -i graphify
+  graphify:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.graphify
+    volumes: *project-mount
+    working_dir: /project
+    stdin_open: true
+    tty: false
+    profiles: [mcp]   # not started by default — called per-request
+
+  # ── Understand MCP (stdio) ───────────────────────────────────────────────
+  # Started on-demand by .mcp.json via: docker compose run --rm -i understand
+  understand:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.understand
+    volumes:
+      - *project-mount
+      - *understand-src-mount
+    working_dir: /project
+    stdin_open: true
+    tty: false
+    profiles: [mcp]   # not started by default — called per-request
+
+  # ── Knowledge Graph Dashboard (web UI) ───────────────────────────────────
+  # docker compose up dashboard
+  # Opens http://localhost:3000 — works with ANY AI tool (Gemini, Antigravity, etc.)
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.understand
+    command: >
+      sh -c "cd /app && pnpm install --frozen-lockfile --silent && pnpm dev"
+    volumes:
+      - *project-mount
+      - *understand-src-mount
+    working_dir: /app
+    ports:
+      - "${DASHBOARD_PORT:-3000}:3000"
+    environment:
+      - PROJECT_ROOT=/project
+    profiles: [dashboard]

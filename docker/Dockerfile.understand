@@ -1,0 +1,18 @@
+FROM node:20-slim
+
+# Install pnpm
+RUN npm install -g pnpm
+
+# understand-anything source is mounted at runtime from host
+# (~/.understand-anything/repo/understand-anything-plugin)
+# We only pre-install deps here if source is baked in — otherwise done at runtime
+WORKDIR /app
+
+# Our Go understand MCP binary (built for linux/amd64)
+COPY bin/linux/understand /usr/local/bin/understand
+RUN chmod +x /usr/local/bin/understand
+
+WORKDIR /project
+
+# Default: MCP server (stdio) — dashboard uses 'pnpm dev' override
+ENTRYPOINT ["understand"]

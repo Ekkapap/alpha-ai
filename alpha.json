@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "name": "Alpha Ai System",
+  "description": "AI-Native Intelligence Toolchain",
+  "tools": {
+    "my-graphify": {
+      "source": "α/tools/my-graphify",
+      "bin": "α/tools/bin/{platform}/my-graphify"
+    },
+    "my-understand": {
+      "source": "α/tools/my-understand",
+      "bin": "α/tools/bin/{platform}/my-understand"
+    }
+  },
+  "mcp": ["MY_GRAPHIFY", "MY_UNDERSTAND"],
+  "memories": "α/memories",
+  "hooks": "α/hooks/bin"
+}

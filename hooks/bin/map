@@ -1,0 +1,10 @@
+#!/bin/bash
+if [[ -z "$PROJECT_ROOT" ]]; then
+  _d="$(pwd)"
+  while [ "$_d" != "/" ]; do
+    [ -d "$_d/α" ] && { PROJECT_ROOT="$_d"; break; }
+    _d="$(dirname "$_d")"
+  done
+  [ -z "$PROJECT_ROOT" ] && { echo "❌ No α/ project found." >&2; exit 1; }
+fi
+open "$PROJECT_ROOT/graphify-out/graph.html" 2>/dev/null || xdg-open "$PROJECT_ROOT/graphify-out/graph.html" 2>/dev/null

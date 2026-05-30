@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "GRAPHIFY": {
+      "command": "docker",
+      "args": ["compose", "-f", "/Users/neo/Programming/MyGit/alpha-ai/docker-compose.yml",
+               "run", "--rm", "-i", "--no-deps", "graphify"],
+      "env": { "PROJECT_ROOT": "${env:PWD}" }
+    },
+    "UNDERSTAND": {
+      "command": "docker",
+      "args": ["compose", "-f", "/Users/neo/Programming/MyGit/alpha-ai/docker-compose.yml",
+               "run", "--rm", "-i", "--no-deps", "understand"],
+      "env": { "PROJECT_ROOT": "${env:PWD}" }
+    },
+    "ALPHA": {
+      "command": "[fullpath]/α/tools/bin/[darwin|windows]/alpha"
+    },
+    "MYSQL": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@benborla29/mcp-server-mysql"
+      ],
+      "env": {
+        "MYSQL_HOST": "",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "",
+        "MYSQL_PASS": "",
+        "MYSQL_DB": "dbname",
+        "ALLOW_INSERT_OPERATION": "true",
+        "ALLOW_UPDATE_OPERATION": "true",
+        "ALLOW_DELETE_OPERATION": "true",
+        "ALLOW_DDL_OPERATIONS": "true",
+        "SCHEMA_DDL_PERMISSIONS": "dbname:true"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+if [[ -z "$PROJECT_ROOT" ]]; then
+  echo "ไม่รู้ตำแหน่ง PROJECT_ROOT"
+  exit 1
+fi
+if [ -f "$PROJECT_ROOT/α/tools/bin/windows/my-understand.exe" ] && [[ "$(uname -s)" == *"NT"* || "$(uname -s)" == *"MIN"* || "$(uname -s)" == *"MSYS"* ]]; then
+  BINARY_PATH="$PROJECT_ROOT/α/tools/bin/windows/my-understand.exe"
+elif [ -f "$PROJECT_ROOT/α/tools/bin/darwin/my-understand" ] && [ "$(uname -s)" = "Darwin" ]; then
+  BINARY_PATH="$PROJECT_ROOT/α/tools/bin/darwin/my-understand"
+else
+  BINARY_PATH="$PROJECT_ROOT/α/tools/bin/linux/my-understand"
+fi
+"$BINARY_PATH" "$@"

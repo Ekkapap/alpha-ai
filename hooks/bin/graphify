@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ -z "$PROJECT_ROOT" ]]; then
+  echo "ไม่รู้ตำแหน่ง PROJECT_ROOT"
+  exit 1
+fi
+rtk run bash "$PROJECT_ROOT/α/scripts/graphify.sh" . "$@"

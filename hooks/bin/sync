@@ -1,0 +1,18 @@
+#!/bin/bash
+# Self-contained — walks up to find α/, no project-hook or PROJECT_ROOT needed
+if [[ -z "$PROJECT_ROOT" ]]; then
+  _d="$(pwd)"
+  while [ "$_d" != "/" ]; do
+    [ -d "$_d/α" ] && { PROJECT_ROOT="$_d"; break; }
+    _d="$(dirname "$_d")"
+  done
+  [ -z "$PROJECT_ROOT" ] && { echo "❌ No α/ project found in directory tree." >&2; exit 1; }
+fi
+if [ -f "$PROJECT_ROOT/α/tools/bin/darwin/my-graphify" ] && [ "$(uname -s)" = "Darwin" ]; then
+  BIN="$PROJECT_ROOT/α/tools/bin/darwin/my-graphify"
+elif [ -f "$PROJECT_ROOT/α/tools/bin/linux/my-graphify" ]; then
+  BIN="$PROJECT_ROOT/α/tools/bin/linux/my-graphify"
+else
+  echo "❌ my-graphify binary not found" >&2; exit 1
+fi
+"$BIN" sync "$@"

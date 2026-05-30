@@ -1,0 +1,51 @@
+node_modules
+.next
+out
+build
+dist
+.git
+graphify-out
+*.log
+.DS_Store
+postcss.config.mjs
+next-env.d.ts
+eslint.config.mjs
+next.config.ts
+
+# Git
+.git/
+
+# Binaries & build artifacts
+*.exe
+*_linux_amd64
+*_darwin_amd64
+agent_test
+agent_linux_amd64
+
+# Raw dumps
+raw/
+
+# Go dependencies
+go.sum
+vendor/
+
+# Allow agent knowledge and memories
+!.agents/knowledge/
+!.agents/memories/
+
+# Ignore internal agent tools
+.agents/hooks
+.agents/rules
+.agents/scripts
+.agents/skills
+.agents/tools
+.agents/workflows
+.agents/SKILL.md
+
+**/AGENTS.md
+**/GEMINI.md
+**/CLAUDE.md
+**/README.md
+
+# Ignore alpha-ai
+α/
