@@ -1,0 +1,1378 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 267,
+      "nonEmptyLines": 202,
+      "sections": [
+        {
+          "heading": "Go Safety: Correctness & Defensive Coding",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Best Practices Summary",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Nil Safety",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "The nil interface trap",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Nil map, slice, and channel behavior",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Slice & Map Safety",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Slice aliasing — the append trap",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Map concurrent access",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Numeric Safety",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Implicit type conversions truncate silently",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "Float comparison",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "Division by zero",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "Resource Safety",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "defer in loops — resource accumulation",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Goroutine leaks",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Immutability & Defensive Copying",
+          "level": 2,
+          "line": 185
+        },
+        {
+          "heading": "Protecting struct internals",
+          "level": 3,
+          "line": 189
+        },
+        {
+          "heading": "Initialization Safety",
+          "level": 2,
+          "line": 207
+        },
+        {
+          "heading": "Zero-value design",
+          "level": 3,
+          "line": 209
+        },
+        {
+          "heading": "sync.Once for lazy initialization",
+          "level": 3,
+          "line": 221
+        },
+        {
+          "heading": "init() function pitfalls",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "Enforce with Linters",
+          "level": 2,
+          "line": 241
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 245
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 253
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 154,
+      "nonEmptyLines": 154,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/references/advanced.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 206,
+      "nonEmptyLines": 151,
+      "sections": [
+        {
+          "heading": "Advanced Usage",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Scopes (Module Tree)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explicit Service Aliasing",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Struct Injection",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Lifecycle Management",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Health Checks",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Graceful Shutdown",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Debugging",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "List Services",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "Explain Injector",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Migration from Manual DI",
+          "level": 2,
+          "line": 141
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "Aliasing",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "Lifecycle & Health",
+          "level": 3,
+          "line": 178
+        },
+        {
+          "heading": "Container Management",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "Debugging",
+          "level": 3,
+          "line": 198
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/references/testing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "Testing with samber/do",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Container Cloning",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Reusable Test Helpers",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Testing & Overrides",
+          "level": 3,
+          "line": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 221,
+      "nonEmptyLines": 163,
+      "sections": [
+        {
+          "heading": "Using samber/do for Dependency Injection in Go",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Core Concepts",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "The Injector (Container)",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Service Types",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Provider Functions",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "1. Define and Register Services",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "2. Invoke Services",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "3. Service Dependencies",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "4. Implicit Aliasing (Preferred)",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "5. Named Services",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Package Organization",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "Full Application Setup",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 190
+        },
+        {
+          "heading": "Registration",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Invocation",
+          "level": 3,
+          "line": 204
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 217
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 202,
+      "nonEmptyLines": 202,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 134,
+      "nonEmptyLines": 98,
+      "sections": [
+        {
+          "heading": "Using samber/hot for In-Memory Caching in Go",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Algorithm Selection",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Core Usage",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Basic Cache with TTL",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Loader Pattern (Read-Through)",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Capacity Sizing",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 226,
+      "nonEmptyLines": 226,
+      "sections": [
+        {
+          "heading": "skill_name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "evals",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 182,
+      "nonEmptyLines": 143,
+      "sections": [
+        {
+          "heading": "samber/lo — Functional Utilities for Go",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Why samber/lo",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Choose the Right Package",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Core Patterns",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Transform a slice",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Filter + Reduce",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "GroupBy",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Error variant — stop on first error",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 177
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 311,
+      "nonEmptyLines": 311,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 273,
+      "nonEmptyLines": 202,
+      "sections": [
+        {
+          "heading": "samber/mo — Monads and Functional Abstractions for Go",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "Core Types at a Glance",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Option[T] — Nullable Values Without nil",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Result[T] — Error Handling as Values",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "Either[L, R] — Discriminated Union of Two Types",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "Do Notation — Imperative Style with Monadic Safety",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "Pipeline Sub-Packages vs Direct Chaining",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "Common Patterns",
+          "level": 2,
+          "line": 208
+        },
+        {
+          "heading": "JSON API responses with Option",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "Database nullable columns",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Wrapping existing Go APIs",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "Uniform extraction with Fold",
+          "level": 3,
+          "line": 241
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 254
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 267
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-oops/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 153,
+      "nonEmptyLines": 153,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-oops/references/advanced.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 51,
+      "nonEmptyLines": 39,
+      "sections": [
+        {
+          "heading": "samber/oops — Advanced Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Assertions",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Logger integration",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-oops/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 273,
+      "nonEmptyLines": 215,
+      "sections": [
+        {
+          "heading": "samber/oops Structured Error Handling",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Why use samber/oops",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Core pattern: Error builder chain",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Error builder methods",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Common scenarios",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Database/repository layer",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "HTTP handler layer",
+          "level": 3,
+          "line": 103
+        },
+        {
+          "heading": "Service layer with reusable builder",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "Error wrapping best practices",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "DO: Wrap directly, no nil check needed",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "DO: Add context at each layer",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "DO: Keep error messages low-cardinality",
+          "level": 3,
+          "line": 187
+        },
+        {
+          "heading": "Panic recovery",
+          "level": 2,
+          "line": 199
+        },
+        {
+          "heading": "Accessing error information",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "Output formats",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "Context propagation",
+          "level": 2,
+          "line": 241
+        },
+        {
+          "heading": "References",
+          "level": 2,
+          "line": 265
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 270
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 295,
+      "nonEmptyLines": 295,
+      "sections": [
+        {
+          "heading": "skill_name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "evals",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 180,
+      "nonEmptyLines": 137,
+      "sections": [
+        {
+          "heading": "samber/ro — Reactive Streams for Go",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "Why samber/ro (Streams vs Slices)",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Core Concepts",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Cold vs Hot Observables",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Operator Quick Reference",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "Plugin Ecosystem",
+          "level": 2,
+          "line": 154
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 172,
+      "nonEmptyLines": 172,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 195,
+      "nonEmptyLines": 146,
+      "sections": [
+        {
+          "heading": "samber/slog-\\*\\*\\*\\* — Structured Logging Pipeline for Go",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "The Pipeline Model",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Core Libraries",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "slog-multi — Handler Composition",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "slog-sampling — Throughput Control",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "slog-formatter — Attribute Transformation",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "HTTP Middlewares",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Backend Sinks",
+          "level": 2,
+          "line": 144
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "Performance Warnings",
+          "level": 2,
+          "line": 171
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 188
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 586,
+      "nonEmptyLines": 586,
+      "sections": [
+        {
+          "heading": "skill_name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "evals",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 179,
+      "nonEmptyLines": 133,
+      "sections": [
+        {
+          "heading": "Go Security",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Security Thinking Model",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Severity Levels",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Research Before Reporting",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Threat Modeling (STRIDE)",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "Detailed Categories",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Code Review Checklist",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "Tooling & Verification",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Static Analysis & Linting",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "Security Testing",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 141
+        },
+        {
+          "heading": "Security Anti-Patterns",
+          "level": 2,
+          "line": 157
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 170
+        },
+        {
+          "heading": "Additional Resources",
+          "level": 2,
+          "line": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stay-updated/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 142,
+      "nonEmptyLines": 142,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stay-updated/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 140,
+      "nonEmptyLines": 111,
+      "sections": [
+        {
+          "heading": "Stay Updated with Go",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Official Go Resources",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Newsletters",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Reddit & Communities",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Famous Go Developers",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Core Go Team",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Go Tooling & Infrastructure",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Popular Go Authors & Educators",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Library & Framework Authors",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Conference Speakers & Community Leaders",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Must-Follow Blogs",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "YouTube Channels",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "Quick Tips for Staying Updated",
+          "level": 2,
+          "line": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stretchr-testify/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 148,
+      "nonEmptyLines": 148,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stretchr-testify/references/mock.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 99,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "testify/mock — Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick example",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Defining a mock",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Argument matchers",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Call modifiers",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Different returns per call",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Removing expectations",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Verification",
+          "level": 2,
+          "line": 92
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stretchr-testify/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 194,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "stretchr/testify",
+          "level": 1,
+          "line": 31
+        },
+        {
+          "heading": "assert vs require",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Core Assertions",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Advanced Assertions",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "testify/mock",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "testify/suite",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Lifecycle",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Example",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "Linters",
+          "level": 2,
+          "line": 187
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 191
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

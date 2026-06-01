@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-structs-interfaces/evals/evals.json",
+      "language": "json",
+      "sizeLines": 153,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-structs-interfaces/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 383,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/evals/evals.json",
+      "language": "json",
+      "sizeLines": 388,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 399,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/evals/evals.json",
+      "language": "json",
+      "sizeLines": 521,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 188,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 153,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-debugging/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-exploring/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-guide/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-impact-analysis/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-refactoring/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 121,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/.graphify_version",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/graphify/get_community/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/get_neighbors/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/get_node/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/god_nodes/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/graph_stats/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/graphify_build/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/query_graph/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/shortest_path/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/graphify/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-structs-interfaces/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-structs-interfaces/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-testing/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-testing/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/SKILL.md": [],
+    ".agents/skills/framework/golang/SKILL.md": [],
+    ".agents/skills/framework/next/SKILL.md": [],
+    ".agents/skills/framework/SKILL.md": [],
+    ".agents/skills/gitnexus/gitnexus-cli/SKILL.md": [],
+    ".agents/skills/gitnexus/gitnexus-debugging/SKILL.md": [],
+    ".agents/skills/gitnexus/gitnexus-exploring/SKILL.md": [],
+    ".agents/skills/gitnexus/gitnexus-guide/SKILL.md": [],
+    ".agents/skills/gitnexus/gitnexus-impact-analysis/SKILL.md": [],
+    ".agents/skills/gitnexus/gitnexus-refactoring/SKILL.md": [],
+    ".agents/skills/graphify/.graphify_version": [],
+    ".agents/skills/graphify/get_community/SKILL.md": [],
+    ".agents/skills/graphify/get_neighbors/SKILL.md": [],
+    ".agents/skills/graphify/get_node/SKILL.md": [],
+    ".agents/skills/graphify/god_nodes/SKILL.md": [],
+    ".agents/skills/graphify/graph_stats/SKILL.md": [],
+    ".agents/skills/graphify/graphify_build/SKILL.md": [],
+    ".agents/skills/graphify/query_graph/SKILL.md": [],
+    ".agents/skills/graphify/shortest_path/SKILL.md": [],
+    ".agents/skills/graphify/SKILL.md": []
+  }
+}

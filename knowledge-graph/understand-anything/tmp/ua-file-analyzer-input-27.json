@@ -1,0 +1,28 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/references/error-creation.md",
+      "language": "markdown",
+      "sizeLines": 145,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/references/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/references/error-wrapping.md",
+      "language": "markdown",
+      "sizeLines": 107,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-error-handling/references/error-creation.md": [],
+    ".agents/skills/framework/golang/golang-error-handling/references/error-handling.md": [],
+    ".agents/skills/framework/golang/golang-error-handling/references/error-wrapping.md": []
+  }
+}

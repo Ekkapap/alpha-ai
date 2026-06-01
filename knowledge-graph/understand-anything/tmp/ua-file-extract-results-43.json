@@ -1,0 +1,1177 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-gc-time.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 93,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "cache-gc-time: Configure gcTime for Inactive Query Retention",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Understanding gcTime vs staleTime",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Recommended gcTime Values",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-invalidation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 116,
+      "nonEmptyLines": 97,
+      "sections": [
+        {
+          "heading": "cache-invalidation: Use Targeted Invalidation Over Broad Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Invalidation Patterns",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-placeholder-vs-initial.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 156,
+      "nonEmptyLines": 129,
+      "sections": [
+        {
+          "heading": "cache-placeholder-vs-initial: Understand Placeholder vs Initial Data",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: placeholderData for Temporary Display",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Good Example: initialData for Known Good Data",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Good Example: keepPreviousData Pattern",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "Comparison Table",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Good Example: Combining Both",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 149
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-stale-time.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 80,
+      "nonEmptyLines": 64,
+      "sections": [
+        {
+          "heading": "cache-stale-time: Set Appropriate staleTime Based on Data Volatility",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Recommended staleTime Values",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/err-error-boundaries.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 150,
+      "nonEmptyLines": 125,
+      "sections": [
+        {
+          "heading": "err-error-boundaries: Use Error Boundaries with useQueryErrorResetBoundary",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: HIGH",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Good Example: With TanStack Router",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "Error Boundary Placement Strategy",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/inf-page-params.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 132,
+      "nonEmptyLines": 112,
+      "sections": [
+        {
+          "heading": "inf-page-params: Always Provide getNextPageParam for Infinite Queries",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Offset-Based Pagination",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Good Example: Cursor-Based Pagination",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Good Example: Bi-directional Pagination",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Good Example: With Total Count",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Accessing Flattened Data",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 126
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/mut-invalidate-queries.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 118,
+      "nonEmptyLines": 100,
+      "sections": [
+        {
+          "heading": "mut-invalidate-queries: Always Invalidate Related Queries After Mutations",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: HIGH",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Pattern: Mutation with Variables Access",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Pattern: Invalidate or Update Directly",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/mut-mutation-state.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 169,
+      "nonEmptyLines": 140,
+      "sections": [
+        {
+          "heading": "mut-mutation-state: Use useMutationState for Cross-Component Mutation Tracking",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Good Example: Optimistic UI in Separate Component",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Good Example: Track Specific Mutations",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Filters Reference",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 162
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/mut-optimistic-updates.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 137,
+      "nonEmptyLines": 113,
+      "sections": [
+        {
+          "heading": "mut-optimistic-updates: Implement Optimistic Updates for Responsive UI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: HIGH",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Via Cache Manipulation",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Good Example: Via UI Variables (Simpler)",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Good Example: Optimistic Create with Temporary ID",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "When to Use Each Approach",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/network-mode.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 179,
+      "nonEmptyLines": 149,
+      "sections": [
+        {
+          "heading": "network-mode: Configure Network Mode for Offline Support",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: LOW",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Default Online Mode with Offline UI",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Good Example: Always Mode for Offline-First",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Good Example: Offline-First Mode",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Good Example: Mutation Offline Queue",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Network Mode Comparison",
+          "level": 2,
+          "line": 141
+        },
+        {
+          "heading": "Good Example: Online Status Detection",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 172
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/parallel-use-queries.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 152,
+      "nonEmptyLines": 122,
+      "sections": [
+        {
+          "heading": "parallel-use-queries: Use useQueries for Dynamic Parallel Queries",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Good Example: With Combine Option",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Good Example: Dependent Parallel Queries",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Good Example: With Suspense",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/perf-select-transform.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 144,
+      "nonEmptyLines": 119,
+      "sections": [
+        {
+          "heading": "perf-select-transform: Use Select to Transform and Filter Data",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: LOW",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Good Example: Selecting Specific Fields",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Good Example: Stable Select with useCallback",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Good Example: Picking Single Item from List",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "When to Use Select",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/persist-queries.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 194,
+      "nonEmptyLines": 161,
+      "sections": [
+        {
+          "heading": "persist-queries: Configure Query Persistence for Offline Support",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: LOW",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Basic Persistence with localStorage",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Good Example: Async Persistence with IndexedDB",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Good Example: Selective Persistence",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Good Example: React Native with AsyncStorage",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "Good Example: Handling Restoration Loading",
+          "level": 2,
+          "line": 143
+        },
+        {
+          "heading": "Persistence Configuration",
+          "level": 2,
+          "line": 177
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 186
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/pf-intent-prefetch.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 143,
+      "nonEmptyLines": 120,
+      "sections": [
+        {
+          "heading": "pf-intent-prefetch: Prefetch on User Intent (Hover, Focus)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Good Example: With TanStack Router",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Good Example: Prefetch with Delay",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Prefetch Triggers",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 137
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-array-structure.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 50,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "qk-array-structure: Always Use Arrays for Query Keys",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-factory-pattern.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 102,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "qk-factory-pattern: Use Query Key Factories for Complex Applications",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Query Options Factory Pattern",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-hierarchical-organization.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 76,
+      "nonEmptyLines": 58,
+      "sections": [
+        {
+          "heading": "qk-hierarchical-organization: Organize Keys Hierarchically",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Recommended Hierarchy Pattern",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-include-dependencies.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 62,
+      "nonEmptyLines": 47,
+      "sections": [
+        {
+          "heading": "qk-include-dependencies: Include All Variables the Query Depends On",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-serializable.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 93,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "qk-serializable: Ensure All Key Parts Are JSON-Serializable",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Serializable Types",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/query-cancellation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 171,
+      "nonEmptyLines": 141,
+      "sections": [
+        {
+          "heading": "query-cancellation: Implement Query Cancellation Properly",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Using AbortSignal with Fetch",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Good Example: With Axios",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Good Example: Manual Cancellation",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Good Example: In Mutations (Before Optimistic Update)",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "Good Example: Custom Cancellable Promise",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "When Queries Are Cancelled",
+          "level": 2,
+          "line": 154
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 164
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

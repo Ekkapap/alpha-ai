@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/backend-handlers.md",
+      "language": "markdown",
+      "sizeLines": 269,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/http-middlewares.md",
+      "language": "markdown",
+      "sizeLines": 179,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/pipeline-patterns.md",
+      "language": "markdown",
+      "sizeLines": 240,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/sampling-strategies.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-samber-slog/references/backend-handlers.md": [],
+    ".agents/skills/framework/golang/golang-samber-slog/references/http-middlewares.md": [],
+    ".agents/skills/framework/golang/golang-samber-slog/references/pipeline-patterns.md": [],
+    ".agents/skills/framework/golang/golang-samber-slog/references/sampling-strategies.md": []
+  }
+}

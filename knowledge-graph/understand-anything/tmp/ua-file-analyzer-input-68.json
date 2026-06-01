@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-code-style/references/details.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-code-style/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 235,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-concurrency/evals/evals.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-concurrency/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 133,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-context/evals/evals.json",
+      "language": "json",
+      "sizeLines": 142,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-context/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-continuous-integration/evals/evals.json",
+      "language": "json",
+      "sizeLines": 185,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-continuous-integration/references/repo-security.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-continuous-integration/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 228,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-data-structures/evals/evals.json",
+      "language": "json",
+      "sizeLines": 199,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-data-structures/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 184,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-database/evals/evals.json",
+      "language": "json",
+      "sizeLines": 211,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-database/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-dependency-injection/evals/evals.json",
+      "language": "json",
+      "sizeLines": 156,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-dependency-injection/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 283,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-dependency-management/evals/evals.json",
+      "language": "json",
+      "sizeLines": 153,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-dependency-management/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-design-patterns/evals/evals.json",
+      "language": "json",
+      "sizeLines": 251,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-design-patterns/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 276,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/evals/evals.json",
+      "language": "json",
+      "sizeLines": 276,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 222,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/evals/evals.json",
+      "language": "json",
+      "sizeLines": 161,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-grpc/evals/evals.json",
+      "language": "json",
+      "sizeLines": 156,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-grpc/references/protoc-reference.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-code-style/references/details.md": [],
+    ".agents/skills/framework/golang/golang-code-style/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-concurrency/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-concurrency/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-context/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-context/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-continuous-integration/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-continuous-integration/references/repo-security.md": [],
+    ".agents/skills/framework/golang/golang-continuous-integration/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-data-structures/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-data-structures/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-database/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-database/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-dependency-injection/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-dependency-injection/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-dependency-management/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-dependency-management/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-design-patterns/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-design-patterns/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-documentation/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-documentation/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-error-handling/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-error-handling/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-grpc/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-grpc/references/protoc-reference.md": []
+  }
+}

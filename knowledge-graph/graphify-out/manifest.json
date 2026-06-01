@@ -1,0 +1,162 @@
+{
+  "/workspace/\u03b1/agents-resource/hooks/awake": {
+    "mtime": 1780326508.4928207,
+    "ast_hash": "680009ad420efd4c5be92c0b2c9bd3f8",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/detail": {
+    "mtime": 1780326508.504164,
+    "ast_hash": "df09564091e566bcba93d2669df2e341",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/focus": {
+    "mtime": 1780326508.4968085,
+    "ast_hash": "f28d869f67cc17ffe01bd97da05bdd9f",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/forget": {
+    "mtime": 1780326508.4988055,
+    "ast_hash": "bdd17613cf8eaa05ae2b0a525521397f",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/graphify": {
+    "mtime": 1780326508.5058854,
+    "ast_hash": "16edfdccddcacd8d7b1b6015ff657090",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/graphify-cluster-only": {
+    "mtime": 1780326508.5097373,
+    "ast_hash": "4a91004761167cc5790e42b0a7dad462",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/graphify-update": {
+    "mtime": 1780326508.5076106,
+    "ast_hash": "4230dcaa1e958f33ab200f553d02549b",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/map": {
+    "mtime": 1780326508.5116389,
+    "ast_hash": "1b0999b86130af214d3d8d787ac7e1e2",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/omega": {
+    "mtime": 1780117153.273603,
+    "ast_hash": "77dcebc3d8223835ad28ad65549ced67",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/overview": {
+    "mtime": 1780326508.500656,
+    "ast_hash": "8d27c1e9a4c8af88f8877e7c4ac6ba15",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/sketch": {
+    "mtime": 1780326508.5024996,
+    "ast_hash": "13b8350ba6ffcb77800e39285d534772",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/sync": {
+    "mtime": 1780326508.494885,
+    "ast_hash": "39935bee5984e8d6322bcf70bcae79e8",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/hooks/understand": {
+    "mtime": 1780326561.3789368,
+    "ast_hash": "f66481de010ce234a5f046193aa5b280",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/alpha/cmd_knowledge_graph.go": {
+    "mtime": 1780346289.42977,
+    "ast_hash": "520f645c44720483496325f588cb6126",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/alpha/main.go": {
+    "mtime": 1780339628.9466047,
+    "ast_hash": "449ad16893635d56658d1c7176ca1158",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_alpha.go": {
+    "mtime": 1780338329.1931112,
+    "ast_hash": "87025de0d60105423328733bc75ff7ac",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_awake.go": {
+    "mtime": 1780341287.662449,
+    "ast_hash": "80f6ee771332bdb394c6b0118be732ac",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_build.go": {
+    "mtime": 1780338339.72199,
+    "ast_hash": "fb8d2bd7bdea481fb73986ca10ffc190",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_focus.go": {
+    "mtime": 1780338321.7056394,
+    "ast_hash": "da9b1a0f757a3b44a9d077bf47c53c8f",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_forget.go": {
+    "mtime": 1780338304.4979825,
+    "ast_hash": "7186af868010c79b457c5b8b26739aff",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_query.go": {
+    "mtime": 1780347290.9360914,
+    "ast_hash": "76e0333dd313e00cb6db34a44cf9d8cc",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_sync.go": {
+    "mtime": 1780341280.45009,
+    "ast_hash": "a5c47c262bf9833040a6da0e48d0b23d",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/display.go": {
+    "mtime": 1780341288.7007499,
+    "ast_hash": "dff8d739ecf8c17f08cf7e6d8d7791c1",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/graph.go": {
+    "mtime": 1780338172.906534,
+    "ast_hash": "acee6f7b4d9f55f083c17bc2cfbcd29b",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/main.go": {
+    "mtime": 1780347277.7776515,
+    "ast_hash": "7cd80d19784426ac8bf49d97057b4e5a",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/understand/main.go": {
+    "mtime": 1780328412.9693775,
+    "ast_hash": "db239c5335330b897261c32b78038931",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/cmd_scan.go": {
+    "mtime": 1780347449.79008,
+    "ast_hash": "a4f9e873beb8080186c7ff84514bb41d",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/community.go": {
+    "mtime": 1780347156.4224653,
+    "ast_hash": "26c2fbac738926d5317e5bd2daa90340",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/extract_generic.go": {
+    "mtime": 1780347492.690448,
+    "ast_hash": "358b7dc9a57a2df00cc1662c588a4ab6",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/extract_go.go": {
+    "mtime": 1780347299.632742,
+    "ast_hash": "4c72938654ffc84a5e9aa160c6b382d7",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/scan.go": {
+    "mtime": 1780347412.0943573,
+    "ast_hash": "7e4fb2f859f67bfadaa9ba1a9e6f04e8",
+    "semantic_hash": ""
+  },
+  "/workspace/\u03b1/agents-resource/tools/graphify/semantic.go": {
+    "mtime": 1780347187.4904864,
+    "ast_hash": "2697b0d86b2cb6f78f8cce9f6fcbffba",
+    "semantic_hash": ""
+  }
+}

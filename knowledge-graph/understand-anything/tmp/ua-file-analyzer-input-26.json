@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/application.md",
+      "language": "markdown",
+      "sizeLines": 210,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/code-comments.md",
+      "language": "markdown",
+      "sizeLines": 318,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/library.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/project-docs.md",
+      "language": "markdown",
+      "sizeLines": 115,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-documentation/references/application.md": [],
+    ".agents/skills/framework/golang/golang-documentation/references/code-comments.md": [],
+    ".agents/skills/framework/golang/golang-documentation/references/library.md": [],
+    ".agents/skills/framework/golang/golang-documentation/references/project-docs.md": []
+  }
+}

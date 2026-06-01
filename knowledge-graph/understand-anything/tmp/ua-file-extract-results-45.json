@@ -1,0 +1,944 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/components.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 258,
+      "nonEmptyLines": 189,
+      "sections": [
+        {
+          "heading": "Components Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Layout Components",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Container, Stack, Group, Flex",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Grid & SimpleGrid",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Button Variants",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Inputs Pattern",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Overlays Pattern",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Feedback Components",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "Data Display",
+          "level": 2,
+          "line": 157
+        },
+        {
+          "heading": "Navigation",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "Common Style Props",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "Polymorphic Components",
+          "level": 2,
+          "line": 239
+        },
+        {
+          "heading": "Visibility Props",
+          "level": 2,
+          "line": 251
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/eslint.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 269,
+      "nonEmptyLines": 211,
+      "sections": [
+        {
+          "heading": "ESLint Configuration Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "What's Included",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "TypeScript Rules",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "React Rules",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Accessibility (a11y)",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Import/Export",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "General",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Script Setup",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Common Configuration Adjustments",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Allow console in specific files",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Disable specific rules",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Add custom rules",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Configure for monorepo",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Integration with Prettier",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "VS Code Integration",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Stylelint (Optional)",
+          "level": 2,
+          "line": 186
+        },
+        {
+          "heading": "Common ESLint Errors & Fixes",
+          "level": 2,
+          "line": 215
+        },
+        {
+          "heading": "React Hook Dependency Warning",
+          "level": 3,
+          "line": 217
+        },
+        {
+          "heading": "Unused Variable",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Missing Key Prop",
+          "level": 3,
+          "line": 244
+        },
+        {
+          "heading": "Accessibility Issues",
+          "level": 3,
+          "line": 254
+        },
+        {
+          "heading": "Template Configuration",
+          "level": 2,
+          "line": 267
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/forms.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 496,
+      "nonEmptyLines": 403,
+      "sections": [
+        {
+          "heading": "Forms Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "useForm Options",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Controlled vs Uncontrolled Mode",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Uncontrolled (Recommended)",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Controlled",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Form Values",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "Validation",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "Inline Rules",
+          "level": 3,
+          "line": 133
+        },
+        {
+          "heading": "Function-based Validation",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Schema Validation (Zod, Yup, Joi)",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "Validation Timing",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "Manual Validation",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Errors",
+          "level": 2,
+          "line": 229
+        },
+        {
+          "heading": "Form Submission",
+          "level": 2,
+          "line": 248
+        },
+        {
+          "heading": "Nested Objects",
+          "level": 2,
+          "line": 269
+        },
+        {
+          "heading": "List Fields",
+          "level": 2,
+          "line": 304
+        },
+        {
+          "heading": "Rendering List",
+          "level": 3,
+          "line": 332
+        },
+        {
+          "heading": "Touched & Dirty State",
+          "level": 2,
+          "line": 371
+        },
+        {
+          "heading": "Form Context",
+          "level": 2,
+          "line": 391
+        },
+        {
+          "heading": "UseFormReturnType",
+          "level": 2,
+          "line": 439
+        },
+        {
+          "heading": "Built-in Validators",
+          "level": 2,
+          "line": 460
+        },
+        {
+          "heading": "Focus First Error",
+          "level": 2,
+          "line": 484
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/getting-started.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 215,
+      "nonEmptyLines": 170,
+      "sections": [
+        {
+          "heading": "Getting Started Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Vite Template (Recommended)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Template Features",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Manual Setup",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "1. Create Vite Project",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "2. Install Packages",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "3. Configure PostCSS",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "4. Import Styles",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "5. Setup MantineProvider",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "Project Structure",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "VS Code Setup",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "TypeScript Configuration",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "Common Issues",
+          "level": 2,
+          "line": 192
+        },
+        {
+          "heading": "Styles Not Loading",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "PostCSS Mixins Not Working",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Dark Mode Flash",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "Hydration Warning",
+          "level": 3,
+          "line": 209
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/hooks.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 344,
+      "nonEmptyLines": 229,
+      "sections": [
+        {
+          "heading": "Hooks Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "State Management",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "useDisclosure",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "useToggle",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "useCounter",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "useListState",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "useSetState",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Storage",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "useLocalStorage / useSessionStorage",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Input/Debounce",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "useDebouncedValue",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "useDebouncedCallback",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "useInputState",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "UI Interactions",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "useClickOutside",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "useHover",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "useFocusWithin",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "useMediaQuery",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "useViewportSize",
+          "level": 3,
+          "line": 182
+        },
+        {
+          "heading": "useElementSize",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "useScrollIntoView",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "useIntersection / useInViewport",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Utilities",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "useClipboard",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "useHotkeys",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "useFullscreen",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "useIdle",
+          "level": 3,
+          "line": 265
+        },
+        {
+          "heading": "useInterval / useTimeout",
+          "level": 3,
+          "line": 274
+        },
+        {
+          "heading": "useDocumentTitle",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "useOs",
+          "level": 3,
+          "line": 293
+        },
+        {
+          "heading": "useNetwork",
+          "level": 3,
+          "line": 302
+        },
+        {
+          "heading": "usePrevious",
+          "level": 3,
+          "line": 311
+        },
+        {
+          "heading": "useMergedRef",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Complete Hook List",
+          "level": 2,
+          "line": 334
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/styling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 472,
+      "nonEmptyLines": 370,
+      "sections": [
+        {
+          "heading": "Styling & Theming Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "MantineProvider",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Key Props",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Theme Object",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Custom Colors",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Color Scheme (Dark Mode)",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Style Props",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Common Style Props",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Responsive Props",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "CSS Modules",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "PostCSS Preset",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "Mixins",
+          "level": 3,
+          "line": 228
+        },
+        {
+          "heading": "Functions",
+          "level": 3,
+          "line": 249
+        },
+        {
+          "heading": "Styles API",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "classNames Prop",
+          "level": 3,
+          "line": 271
+        },
+        {
+          "heading": "styles Prop (CSS-in-JS)",
+          "level": 3,
+          "line": 289
+        },
+        {
+          "heading": "styles Function",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "Finding Selectors",
+          "level": 3,
+          "line": 315
+        },
+        {
+          "heading": "hiddenFrom / visibleFrom",
+          "level": 2,
+          "line": 328
+        },
+        {
+          "heading": "lightHidden / darkHidden",
+          "level": 2,
+          "line": 339
+        },
+        {
+          "heading": "Box Component",
+          "level": 2,
+          "line": 348
+        },
+        {
+          "heading": "Polymorphic Components",
+          "level": 2,
+          "line": 366
+        },
+        {
+          "heading": "CSS Variables in Styles",
+          "level": 2,
+          "line": 385
+        },
+        {
+          "heading": "Global Styles",
+          "level": 2,
+          "line": 402
+        },
+        {
+          "heading": "rem() and em() Utilities",
+          "level": 2,
+          "line": 421
+        },
+        {
+          "heading": "Style Props vs CSS Modules",
+          "level": 2,
+          "line": 433
+        },
+        {
+          "heading": "Component Default Props (Theme)",
+          "level": 2,
+          "line": 444
+        },
+        {
+          "heading": "CSS Variables Reference",
+          "level": 2,
+          "line": 462
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 28
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/testing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 395,
+      "nonEmptyLines": 304,
+      "sections": [
+        {
+          "heading": "Testing Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Vitest Configuration",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Setup File",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Custom Render Function",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Important: env=\"test\"",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "Export Test Utilities",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Writing Tests",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "Basic Component Test",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "Testing Form Inputs",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Testing useForm",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Testing Modals",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "Testing Select/Dropdown",
+          "level": 3,
+          "line": 241
+        },
+        {
+          "heading": "Testing Color Scheme",
+          "level": 3,
+          "line": 270
+        },
+        {
+          "heading": "Testing Notifications",
+          "level": 3,
+          "line": 298
+        },
+        {
+          "heading": "Testing Hooks",
+          "level": 2,
+          "line": 330
+        },
+        {
+          "heading": "Scripts",
+          "level": 2,
+          "line": 357
+        },
+        {
+          "heading": "Common Issues",
+          "level": 2,
+          "line": 371
+        },
+        {
+          "heading": "matchMedia Error",
+          "level": 3,
+          "line": 373
+        },
+        {
+          "heading": "ResizeObserver Error",
+          "level": 3,
+          "line": 376
+        },
+        {
+          "heading": "Portal Elements Not Found",
+          "level": 3,
+          "line": 379
+        },
+        {
+          "heading": "Transitions Cause Timing Issues",
+          "level": 3,
+          "line": 382
+        },
+        {
+          "heading": "Elements Not in Document",
+          "level": 3,
+          "line": 385
+        },
+        {
+          "heading": "Testing Checklist",
+          "level": 2,
+          "line": 388
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    }
+  ]
+}

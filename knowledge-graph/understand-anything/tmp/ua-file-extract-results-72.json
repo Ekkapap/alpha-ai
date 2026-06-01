@@ -1,0 +1,1744 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/graphify/SKILL.md.bak",
+      "language": "bak",
+      "fileCategory": "code",
+      "totalLines": 1426,
+      "nonEmptyLines": 1124,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/runtime/bun/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 696,
+      "nonEmptyLines": 526,
+      "sections": [
+        {
+          "heading": "⚡ Bun Development",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "When to Use This Skill",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "1. Getting Started",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "1.1 Installation",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "1.2 Why Bun?",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "2. Project Setup",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "2.1 Create New Project",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "2.2 package.json",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "2.3 tsconfig.json (Bun-optimized)",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "3. Package Management",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "3.1 Installing Packages",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "3.2 Removing & Updating",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "3.3 bunx (npx equivalent)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "3.4 Lockfile",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "4. Running Code",
+          "level": 2,
+          "line": 207
+        },
+        {
+          "heading": "4.1 Basic Execution",
+          "level": 3,
+          "line": 209
+        },
+        {
+          "heading": "4.2 Watch Mode",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "4.3 Environment Variables",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "5. Built-in APIs",
+          "level": 2,
+          "line": 260
+        },
+        {
+          "heading": "5.1 File System (Bun.file)",
+          "level": 3,
+          "line": 262
+        },
+        {
+          "heading": "5.2 HTTP Server (Bun.serve)",
+          "level": 3,
+          "line": 286
+        },
+        {
+          "heading": "5.3 WebSocket Server",
+          "level": 3,
+          "line": 317
+        },
+        {
+          "heading": "5.4 SQLite (Bun.sql)",
+          "level": 3,
+          "line": 349
+        },
+        {
+          "heading": "5.5 Password Hashing",
+          "level": 3,
+          "line": 378
+        },
+        {
+          "heading": "6. Testing",
+          "level": 2,
+          "line": 398
+        },
+        {
+          "heading": "6.1 Basic Tests",
+          "level": 3,
+          "line": 400
+        },
+        {
+          "heading": "6.2 Running Tests",
+          "level": 3,
+          "line": 417
+        },
+        {
+          "heading": "6.3 Matchers",
+          "level": 3,
+          "line": 439
+        },
+        {
+          "heading": "6.4 Mocking",
+          "level": 3,
+          "line": 477
+        },
+        {
+          "heading": "7. Bundling",
+          "level": 2,
+          "line": 500
+        },
+        {
+          "heading": "7.1 Basic Build",
+          "level": 3,
+          "line": 502
+        },
+        {
+          "heading": "7.2 Build API",
+          "level": 3,
+          "line": 516
+        },
+        {
+          "heading": "7.3 Compile to Executable",
+          "level": 3,
+          "line": 549
+        },
+        {
+          "heading": "8. Migration from Node.js",
+          "level": 2,
+          "line": 565
+        },
+        {
+          "heading": "8.1 Compatibility",
+          "level": 3,
+          "line": 567
+        },
+        {
+          "heading": "8.2 Common Migration Steps",
+          "level": 3,
+          "line": 587
+        },
+        {
+          "heading": "8.3 Differences from Node.js",
+          "level": 3,
+          "line": 605
+        },
+        {
+          "heading": "9. Performance Tips",
+          "level": 2,
+          "line": 630
+        },
+        {
+          "heading": "9.1 Use Bun-native APIs",
+          "level": 3,
+          "line": 632
+        },
+        {
+          "heading": "9.2 Use Bun.serve for HTTP",
+          "level": 3,
+          "line": 644
+        },
+        {
+          "heading": "9.3 Bundle for Production",
+          "level": 3,
+          "line": 663
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 675
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 691
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 43
+      }
+    },
+    {
+      "path": ".agents/skills/runtime/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 30,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "🗺️ SKILLS_MANIFEST (v3.4.11)",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "🚨 CRITICAL & MANDATORY RULE",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "🗂️ SKILL INDEX MAP",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "🎯 EXECUTION_LOGIC",
+          "level": 2,
+          "line": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/state/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 68,
+      "nonEmptyLines": 47,
+      "sections": [
+        {
+          "heading": "TanStack Integration Best Practices",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Setup (Prefix: `setup-`)",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Data Flow (Prefix: `flow-`)",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Caching (Prefix: `cache-`)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "SSR Integration (Prefix: `ssr-`)",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Additional SSR (Prefix: `ssr-`)",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Full Reference",
+          "level": 2,
+          "line": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/ssr-dehydration.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 158,
+      "nonEmptyLines": 125,
+      "sections": [
+        {
+          "heading": "ssr-dehydration: Use Dehydrate/Hydrate Pattern for SSR",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Next.js App Router",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Good Example: TanStack Start/Router",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Good Example: Manual SSR Setup",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 152
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 114,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "TanStack Query Best Practices",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Query Keys (Prefix: `qk-`)",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Caching (Prefix: `cache-`)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Mutations (Prefix: `mut-`)",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Error Handling (Prefix: `err-`)",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "Prefetching (Prefix: `pf-`)",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Infinite Queries (Prefix: `inf-`)",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "SSR Integration (Prefix: `ssr-`)",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "Parallel Queries (Prefix: `parallel-`)",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Performance (Prefix: `perf-`)",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Offline Support (Prefix: `offline-`)",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Full Reference",
+          "level": 2,
+          "line": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/store/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 305,
+      "nonEmptyLines": 232,
+      "sections": [
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Store",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Creating a Store",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Updating State",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Subscribing to Changes",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Store Options",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Store Properties",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Derived (Computed Values)",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Derived with Previous Value",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "Chaining Derived",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Effect (Side Effects)",
+          "level": 2,
+          "line": 141
+        },
+        {
+          "heading": "Effect with Cleanup",
+          "level": 3,
+          "line": 165
+        },
+        {
+          "heading": "Batch",
+          "level": 2,
+          "line": 177
+        },
+        {
+          "heading": "React Integration",
+          "level": 2,
+          "line": 192
+        },
+        {
+          "heading": "useStore Hook",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "shallow Equality Function",
+          "level": 3,
+          "line": 218
+        },
+        {
+          "heading": "Mounting Derived/Effect in React",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Module-Level Store Pattern",
+          "level": 2,
+          "line": 252
+        },
+        {
+          "heading": "Framework Adapters",
+          "level": 2,
+          "line": 275
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 285
+        },
+        {
+          "heading": "Common Pitfalls",
+          "level": 2,
+          "line": 298
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": ".agents/skills/ui/designer/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 191,
+      "nonEmptyLines": 135,
+      "sections": [
+        {
+          "heading": "UI Designer",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Step 1: Gather Inputs",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Step 2: Extract Design System from Images",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Step 3: Generate MVP PRD (if not provided)",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "Step 4: Compose Final UI Implementation Prompt",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "Step 5: Verify React Environment",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Step 6: Implement UI",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Template Assets",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "assets/design-system.md",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "assets/app-overview-generator.md",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "assets/vibe-design-template.md",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "Image Analysis",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Design System Extraction",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "PRD Generation",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Output Organization",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "Example Usage",
+          "level": 2,
+          "line": 167
+        },
+        {
+          "heading": "Notes",
+          "level": 2,
+          "line": 185
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": ".agents/skills/ui/guidelines/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 39,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "Web Interface Guidelines",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "How It Works",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Guidelines Source",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Usage",
+          "level": 2,
+          "line": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 133,
+      "nonEmptyLines": 94,
+      "sections": [
+        {
+          "heading": "Mantine UI Library",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "Focus",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "PostCSS Configuration",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "App Setup",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Critical Prohibitions",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Core Concepts",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "1. MantineProvider",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "2. Theme Object",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "3. Style Props",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "4. CSS Variables",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "5. Polymorphic Components",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Definition of Done",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "References (Detailed Guides)",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "Setup & Configuration",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "Core Features",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "Development",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "Links",
+          "level": 2,
+          "line": 126
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/combobox/references/api.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 199,
+      "nonEmptyLines": 166,
+      "sections": [
+        {
+          "heading": "Combobox API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "useCombobox hook",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Combobox (root)",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Sub-components",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Combobox.Target",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Combobox.DropdownTarget",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Combobox.EventsTarget",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Combobox.Dropdown",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "Combobox.Options",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Combobox.Option",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "Combobox.Search",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "Combobox.Empty",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Combobox.Group",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "Combobox.Header / Combobox.Footer",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "Combobox.Chevron",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Combobox.ClearButton",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "Combobox.HiddenInput",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "CSS variables & Styles API",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "CSS variables (set on root element)",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Styles API selectors",
+          "level": 3,
+          "line": 188
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/combobox/references/patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 279,
+      "nonEmptyLines": 233,
+      "sections": [
+        {
+          "heading": "Combobox Implementation Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Basic select (button trigger)",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Searchable select (input trigger)",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Multi-select with pills",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Options with groups",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "Custom option rendering",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "Clear button",
+          "level": 2,
+          "line": 240
+        },
+        {
+          "heading": "Form integration (hidden input)",
+          "level": 2,
+          "line": 257
+        },
+        {
+          "heading": "Nothing found message",
+          "level": 2,
+          "line": 269
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/combobox/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 73,
+      "nonEmptyLines": 59,
+      "sections": [
+        {
+          "heading": "Mantine Combobox Skill",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Core Workflow",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "1. Create the store",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "2. Render structure",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "3. Handle submit",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Target Types",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "References",
+          "level": 2,
+          "line": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/custom-components/references/api.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 407,
+      "nonEmptyLines": 317,
+      "sections": [
+        {
+          "heading": "Custom Components API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Imports cheatsheet",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "factory / polymorphicFactory / genericFactory",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "factory()",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "polymorphicFactory()",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "genericFactory()",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Factory type fields",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "useProps",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "useStyles",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "createVarsResolver",
+          "level": 2,
+          "line": 223
+        },
+        {
+          "heading": "StylesApiProps and CompoundStylesApiProps",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "BoxProps and ElementProps",
+          "level": 2,
+          "line": 281
+        },
+        {
+          "heading": "createSafeContext",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "Theme helper functions",
+          "level": 2,
+          "line": 374
+        },
+        {
+          "heading": "Static properties",
+          "level": 2,
+          "line": 393
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/custom-components/references/patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 431,
+      "nonEmptyLines": 345,
+      "sections": [
+        {
+          "heading": "Custom Component Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Minimal component (no styles API)",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Component with CSS variables",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Compound component with context",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "Polymorphic component",
+          "level": 2,
+          "line": 253
+        },
+        {
+          "heading": "Generic component",
+          "level": 2,
+          "line": 313
+        },
+        {
+          "heading": "Theme integration",
+          "level": 2,
+          "line": 359
+        },
+        {
+          "heading": "Namespace exports",
+          "level": 2,
+          "line": 405
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/custom-components/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 112,
+      "nonEmptyLines": 90,
+      "sections": [
+        {
+          "heading": "Mantine Custom Components Skill",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "Component template",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Factory variant — which to use",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Factory type fields",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Theme integration",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "References",
+          "level": 2,
+          "line": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/use-form/references/api.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 313,
+      "nonEmptyLines": 253,
+      "sections": [
+        {
+          "heading": "@mantine/form API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "useForm options",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "useForm return value",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Values",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "Getting & setting values",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Errors",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Dirty & touched",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Array fields",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Validation",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "Submission",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "Input binding",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Watch",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "useField hook",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "createFormContext",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "createFormActions",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "Built-in validators",
+          "level": 2,
+          "line": 237
+        },
+        {
+          "heading": "Validation rule format",
+          "level": 2,
+          "line": 258
+        },
+        {
+          "heading": "Key types",
+          "level": 2,
+          "line": 294
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/use-form/references/patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 310,
+      "nonEmptyLines": 252,
+      "sections": [
+        {
+          "heading": "@mantine/form Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Table of Contents",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Basic form with validation",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Nested object fields",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "Array / list fields",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "Async validation",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "Form context across components",
+          "level": 2,
+          "line": 162
+        },
+        {
+          "heading": "transformValues",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "Uncontrolled mode",
+          "level": 2,
+          "line": 233
+        },
+        {
+          "heading": "Standalone useField",
+          "level": 2,
+          "line": 259
+        },
+        {
+          "heading": "Server errors after submission",
+          "level": 2,
+          "line": 285
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/ui/mantine/use-form/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 98,
+      "nonEmptyLines": 79,
+      "sections": [
+        {
+          "heading": "Mantine Form Skill",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "Core Workflow",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "1. Set up the form",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "2. Wire inputs with getInputProps",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "3. Handle submission",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "Validation",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Rules object (most common)",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Function (for cross-field logic)",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "When to validate",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "Modes",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "References",
+          "level": 2,
+          "line": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/ui/screenshot-to-code/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 130,
+      "nonEmptyLines": 96,
+      "sections": [
+        {
+          "heading": "Screenshot to Code",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "How This Works",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Instructions",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "1. Analyze the Screenshot",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2. Determine the Framework",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "3. Generate Complete Code",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "4. Make It Responsive",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "5. Deliver Complete Implementation",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Output Format",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Common Patterns",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "When You Can't Match Exactly",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "Example Workflow",
+          "level": 2,
+          "line": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/functions-methods.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 116,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "Functions, Methods & Options",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Functions and Methods",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Getters and Setters",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Constructors",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Named Return Values",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Functional Options Pattern",
+          "level": 2,
+          "line": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/identifiers.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 165,
+      "nonEmptyLines": 123,
+      "sections": [
+        {
+          "heading": "Variables, Booleans, Receivers & Acronyms",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Variables",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Avoid Type in the Name",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Avoid Repetition with Context",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Use Predictable Names",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Parameters",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Booleans",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "Receivers",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Acronyms and Initialisms",
+          "level": 2,
+          "line": 146
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/packages-files.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 96,
+      "nonEmptyLines": 70,
+      "sections": [
+        {
+          "heading": "Packages, Files & Import Aliasing",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Packages",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Directory vs Package Name",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Files",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Import Aliasing",
+          "level": 2,
+          "line": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/testing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 37,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "Test Naming",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Test Functions",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Table-Driven Tests",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Test Helpers",
+          "level": 2,
+          "line": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/types-errors.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 159,
+      "nonEmptyLines": 117,
+      "sections": [
+        {
+          "heading": "Types, Constants & Errors",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Interfaces",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Single-Method Interfaces",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Multi-Method Interfaces",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Canonical Method Names",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Structs",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Constants",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Enums (iota)",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "Errors",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "Sentinel Errors",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Error Types",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Error Strings",
+          "level": 3,
+          "line": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    }
+  ]
+}

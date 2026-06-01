@@ -1,0 +1,56 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/components.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/eslint.md",
+      "language": "markdown",
+      "sizeLines": 269,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/forms.md",
+      "language": "markdown",
+      "sizeLines": 496,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/getting-started.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/hooks.md",
+      "language": "markdown",
+      "sizeLines": 344,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/styling.md",
+      "language": "markdown",
+      "sizeLines": 472,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 395,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/ui/mantine/best-practices/references/components.md": [],
+    ".agents/skills/ui/mantine/best-practices/references/eslint.md": [],
+    ".agents/skills/ui/mantine/best-practices/references/forms.md": [],
+    ".agents/skills/ui/mantine/best-practices/references/getting-started.md": [],
+    ".agents/skills/ui/mantine/best-practices/references/hooks.md": [],
+    ".agents/skills/ui/mantine/best-practices/references/styling.md": [],
+    ".agents/skills/ui/mantine/best-practices/references/testing.md": []
+  }
+}

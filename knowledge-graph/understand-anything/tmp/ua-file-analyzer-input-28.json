@@ -1,0 +1,42 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/functions-methods.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/identifiers.md",
+      "language": "markdown",
+      "sizeLines": 165,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/packages-files.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/references/types-errors.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-naming/references/functions-methods.md": [],
+    ".agents/skills/framework/golang/golang-naming/references/identifiers.md": [],
+    ".agents/skills/framework/golang/golang-naming/references/packages-files.md": [],
+    ".agents/skills/framework/golang/golang-naming/references/testing.md": [],
+    ".agents/skills/framework/golang/golang-naming/references/types-errors.md": []
+  }
+}

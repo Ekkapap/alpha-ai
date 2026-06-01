@@ -1,0 +1,316 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/application.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 210,
+      "nonEmptyLines": 158,
+      "sections": [
+        {
+          "heading": "Application Documentation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "CLI Help Text",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Configuration Documentation",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "~/.config/mytool/config.yaml",
+          "level": 1,
+          "line": 63
+        },
+        {
+          "heading": "Architecture & design decisions",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "API Documentation",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "REST APIs — OpenAPI / Swagger",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "Event-Driven — AsyncAPI",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "gRPC — Protobuf",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "When to Use Each Format",
+          "level": 3,
+          "line": 201
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/code-comments.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 318,
+      "nonEmptyLines": 262,
+      "sections": [
+        {
+          "heading": "Code Comments",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Function & Method Doc Comments",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Why, Not What",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Format",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Full Comment Template",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "What to Document",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Error Cases and Limitations",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Deprecated Functions",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "Interface Documentation",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "Method Comments on Structs",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Inline Code Examples in Comments",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "Playground Links",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "File & Package Comments",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "Package Comment",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "File-Level Description",
+          "level": 3,
+          "line": 238
+        },
+        {
+          "heading": "When to Add File Descriptions",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "Godoc Headings in Comments",
+          "level": 3,
+          "line": 300
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/library.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 197,
+      "nonEmptyLines": 145,
+      "sections": [
+        {
+          "heading": "Library Documentation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Public vs Private Libraries",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Go Playground Demos",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Example Test Functions",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Code Examples in Doc Comments",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "godoc and pkg.go.dev",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "Documentation Website",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "Recommended Frameworks",
+          "level": 3,
+          "line": 165
+        },
+        {
+          "heading": "Recommended Sections",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "llms.txt",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Register for Discoverability",
+          "level": 3,
+          "line": 190
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/references/project-docs.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 115,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "Project Documentation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "README.md",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Section Order",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "CONTRIBUTING.md",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "The 10-Minute Rule",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "Changelog",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Format",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Change Categories",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "GitHub Releases as Alternative",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Distribution",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Dockerfile Best Practices",
+          "level": 3,
+          "line": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

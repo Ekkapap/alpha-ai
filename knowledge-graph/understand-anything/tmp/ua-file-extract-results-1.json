@@ -1,0 +1,173 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [
+    "ARCHITECTURE.md",
+    "install.sh",
+    "setup.sh"
+  ],
+  "results": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 32,
+      "sections": [
+        {
+          "heading": "GitNexus — Code Intelligence",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "Always Do",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Never Do",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "CLI",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 32,
+      "sections": [
+        {
+          "heading": "GitNexus — Code Intelligence",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "Always Do",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Never Do",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "CLI",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "GEMINI.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 51,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "GLOBAL RULES",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "graphify",
+          "level": 2,
+          "line": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "require",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "autoload",
+          "level": 1,
+          "line": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "docker-entrypoint.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

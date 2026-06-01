@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/references/helpers.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/references/http-testing.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/references/integration-testing.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/references/mocking.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-testing/references/helpers.md": [],
+    ".agents/skills/framework/golang/golang-testing/references/http-testing.md": [],
+    ".agents/skills/framework/golang/golang-testing/references/integration-testing.md": [],
+    ".agents/skills/framework/golang/golang-testing/references/mocking.md": []
+  }
+}

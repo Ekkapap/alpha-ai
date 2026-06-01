@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/config.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/directory-layouts.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/testing-layout.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/workspaces.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-project-layout/references/config.md": [],
+    ".agents/skills/framework/golang/golang-project-layout/references/directory-layouts.md": [],
+    ".agents/skills/framework/golang/golang-project-layout/references/testing-layout.md": [],
+    ".agents/skills/framework/golang/golang-project-layout/references/workspaces.md": []
+  }
+}

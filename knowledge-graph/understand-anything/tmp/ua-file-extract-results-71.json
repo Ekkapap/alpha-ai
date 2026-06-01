@@ -1,0 +1,1149 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-structs-interfaces/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 153,
+      "nonEmptyLines": 153,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-structs-interfaces/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 383,
+      "nonEmptyLines": 288,
+      "sections": [
+        {
+          "heading": "Go Structs & Interfaces",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "Interface Design Principles",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Keep Interfaces Small",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Define Interfaces Where They're Consumed",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Accept Interfaces, Return Structs",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "Don't Create Interfaces Prematurely",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Make the Zero Value Useful",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "Avoid `any` / `interface{}` When a Specific Type Will Do",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "Key Standard Library Interfaces",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "Compile-Time Interface Check",
+          "level": 2,
+          "line": 163
+        },
+        {
+          "heading": "Type Assertions & Type Switches",
+          "level": 2,
+          "line": 173
+        },
+        {
+          "heading": "Safe Type Assertion",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "Type Switch",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "Optional Behavior with Type Assertions",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "Struct & Interface Embedding",
+          "level": 2,
+          "line": 230
+        },
+        {
+          "heading": "Struct Embedding",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "When to Embed vs Named Field",
+          "level": 3,
+          "line": 253
+        },
+        {
+          "heading": "Dependency Injection via Interfaces",
+          "level": 2,
+          "line": 272
+        },
+        {
+          "heading": "Struct Field Tags",
+          "level": 2,
+          "line": 292
+        },
+        {
+          "heading": "Pointer vs Value Receivers",
+          "level": 2,
+          "line": 319
+        },
+        {
+          "heading": "Preventing Struct Copies with `noCopy`",
+          "level": 2,
+          "line": 330
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 361
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 368
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 388,
+      "nonEmptyLines": 388,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-testing/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 399,
+      "nonEmptyLines": 312,
+      "sections": [
+        {
+          "heading": "Go Testing Best Practices",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "Best Practices Summary",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Test Structure and Organization",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "File Conventions",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Naming Conventions",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Table-Driven Tests",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Unit Tests",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "Testing HTTP Handlers",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Goroutine Leak Detection with goleak",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "testing/synctest for Deterministic Goroutine Testing",
+          "level": 2,
+          "line": 162
+        },
+        {
+          "heading": "Test Timeouts",
+          "level": 2,
+          "line": 209
+        },
+        {
+          "heading": "Benchmarks",
+          "level": 2,
+          "line": 213
+        },
+        {
+          "heading": "Parallel Tests",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "Fuzzing",
+          "level": 2,
+          "line": 282
+        },
+        {
+          "heading": "Examples as Documentation",
+          "level": 2,
+          "line": 302
+        },
+        {
+          "heading": "Code Coverage",
+          "level": 2,
+          "line": 320
+        },
+        {
+          "heading": "Integration Tests",
+          "level": 2,
+          "line": 336
+        },
+        {
+          "heading": "Mocking",
+          "level": 2,
+          "line": 364
+        },
+        {
+          "heading": "Enforce with Linters",
+          "level": 2,
+          "line": 370
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 374
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 382
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 521,
+      "nonEmptyLines": 521,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 188,
+      "nonEmptyLines": 129,
+      "sections": [
+        {
+          "heading": "Go Troubleshooting Guide",
+          "level": 1,
+          "line": 33
+        },
+        {
+          "heading": "Quick Decision Tree",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "The Golden Rules",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "1. Read the Error Message First",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "2. Reproduce Before You Fix",
+          "level": 3,
+          "line": 103
+        },
+        {
+          "heading": "3. If You Don't Measure It, You're Guessing",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "4. One Hypothesis at a Time",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "5. Find the Root Cause — No Workarounds",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "6. Research the Codebase, Not Just the Diff",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "7. Start Simple",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "Red Flags: You're Debugging Wrong",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "Reference Files",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 183
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "📚 Golang Skill Index Map",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 153,
+      "nonEmptyLines": 110,
+      "sections": [
+        {
+          "heading": "Next.js Best Practices",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "File Conventions",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "RSC Boundaries",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Async Patterns",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Runtime Selection",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Directives",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Functions",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Data Patterns",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Route Handlers",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Metadata & OG Images",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Image Optimization",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Font Optimization",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Bundling",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Scripts",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Hydration Errors",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Suspense Boundaries",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Parallel & Intercepting Routes",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Self-Hosting",
+          "level": 2,
+          "line": 141
+        },
+        {
+          "heading": "Debug Tricks",
+          "level": 2,
+          "line": 148
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": ".agents/skills/framework/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-cli/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 83,
+      "nonEmptyLines": 57,
+      "sections": [
+        {
+          "heading": "GitNexus CLI Commands",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Commands",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "analyze — Build or refresh the index",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "status — Check index freshness",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "clean — Delete the index",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "wiki — Generate documentation from the graph",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "list — Show all indexed repos",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "After Indexing",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-debugging/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 89,
+      "nonEmptyLines": 67,
+      "sections": [
+        {
+          "heading": "Debugging with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Debugging Patterns",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Example: \"Payment endpoint returns 500 intermittently\"",
+          "level": 2,
+          "line": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-exploring/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 78,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "Exploring Codebases with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Example: \"How does payment processing work?\"",
+          "level": 2,
+          "line": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-guide/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 64,
+      "nonEmptyLines": 48,
+      "sections": [
+        {
+          "heading": "GitNexus Guide",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Always Start Here",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Skills",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Tools Reference",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Resources Reference",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Graph Schema",
+          "level": 2,
+          "line": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-impact-analysis/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 97,
+      "nonEmptyLines": 73,
+      "sections": [
+        {
+          "heading": "Impact Analysis with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Understanding Output",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Risk Assessment",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Example: \"What breaks if I change validateUser?\"",
+          "level": 2,
+          "line": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/gitnexus/gitnexus-refactoring/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 121,
+      "nonEmptyLines": 92,
+      "sections": [
+        {
+          "heading": "Refactoring with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checklists",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Rename Symbol",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Extract Module",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Split Function/Service",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Risk Rules",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Example: Rename `validateUser` to `authenticateUser`",
+          "level": 2,
+          "line": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/.graphify_version",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/graphify/get_community/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 105,
+      "nonEmptyLines": 87,
+      "sections": [
+        {
+          "heading": "get_community",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "List all communities",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Get members of a community",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Step 5 - Label communities",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "Step 6b - Wiki",
+          "level": 2,
+          "line": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/get_neighbors/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 42,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "get_neighbors",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/get_node/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 68,
+      "nonEmptyLines": 57,
+      "sections": [
+        {
+          "heading": "get_node",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/god_nodes/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 20,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "god_nodes",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/graph_stats/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 55,
+      "nonEmptyLines": 46,
+      "sections": [
+        {
+          "heading": "graph_stats",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "General Stats",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Step 8 - Token reduction benchmark",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Cost Tracking (Step 9)",
+          "level": 2,
+          "line": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/graphify_build/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 73,
+      "nonEmptyLines": 59,
+      "sections": [
+        {
+          "heading": "graphify_build",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "Usage",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Step 0 - Clone (if GitHub URL)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Step 1 - Ensure Installation",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Step 2 - Detect",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Step 3 - Extract (AST & Semantic)",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Step 4 - Build & Cluster",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Step 6 - Exports",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Incremental Update (--update)",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Background Watcher (--watch)",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Git Hook",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Claude.md Integration",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Honesty Rules",
+          "level": 2,
+          "line": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/query_graph/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 127,
+      "nonEmptyLines": 106,
+      "sections": [
+        {
+          "heading": "query_graph",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/shortest_path/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 75,
+      "nonEmptyLines": 62,
+      "sections": [
+        {
+          "heading": "shortest_path",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/graphify/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

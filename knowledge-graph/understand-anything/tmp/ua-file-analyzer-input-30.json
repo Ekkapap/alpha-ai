@@ -1,0 +1,49 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/caching.md",
+      "language": "markdown",
+      "sizeLines": 183,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/cpu.md",
+      "language": "markdown",
+      "sizeLines": 375,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/io-networking.md",
+      "language": "markdown",
+      "sizeLines": 299,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/memory.md",
+      "language": "markdown",
+      "sizeLines": 233,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/observability.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/runtime.md",
+      "language": "markdown",
+      "sizeLines": 222,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-performance/references/caching.md": [],
+    ".agents/skills/framework/golang/golang-performance/references/cpu.md": [],
+    ".agents/skills/framework/golang/golang-performance/references/io-networking.md": [],
+    ".agents/skills/framework/golang/golang-performance/references/memory.md": [],
+    ".agents/skills/framework/golang/golang-performance/references/observability.md": [],
+    ".agents/skills/framework/golang/golang-performance/references/runtime.md": []
+  }
+}

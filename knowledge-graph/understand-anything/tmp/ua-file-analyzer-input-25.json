@@ -1,0 +1,10 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {"path": ".agents/skills/framework/golang/golang-documentation/assets/templates/CHANGELOG.md", "language": "markdown", "sizeLines": 36, "fileCategory": "docs"},
+    {"path": ".agents/skills/framework/golang/golang-documentation/assets/templates/CONTRIBUTING.md", "language": "markdown", "sizeLines": 55, "fileCategory": "docs"},
+    {"path": ".agents/skills/framework/golang/golang-documentation/assets/templates/README.md", "language": "markdown", "sizeLines": 118, "fileCategory": "docs"},
+    {"path": ".agents/skills/framework/golang/golang-documentation/assets/templates/llms.txt", "language": "plaintext", "sizeLines": 67, "fileCategory": "docs"}
+  ],
+  "batchImportData": {}
+}

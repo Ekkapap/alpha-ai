@@ -1,0 +1,1350 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "planning/archived/CODEBASE_ARCHITECTURE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 181,
+      "nonEmptyLines": 168,
+      "sections": [
+        {
+          "heading": "Key File Paths for Reference",
+          "level": 1,
+          "line": 161
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "planning/archived/DASHBOARD_BUILDER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 669,
+      "nonEmptyLines": 544,
+      "sections": [
+        {
+          "heading": "Feature: Dashboard Builder — Full Planning Document",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Part 1 — หน้าจัดการ Dashboard (Dashboard Manager)",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "1.1 หน้า List Dashboard",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "UI Layout",
+          "level": 4,
+          "line": 23
+        },
+        {
+          "heading": "Columns ในตาราง",
+          "level": 4,
+          "line": 28
+        },
+        {
+          "heading": "Action ต่อ row",
+          "level": 4,
+          "line": 34
+        },
+        {
+          "heading": "1.2 Modal: New / Edit Dashboard",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "Schema: `dashboards`",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Part 2 — Widget Builder (หน้า Edit Dashboard)",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "2.1 Layout หน้า Builder",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "2.2 Widget Types (9 ประเภท)",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Part 3 — Widget Configuration",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "3.1 Schema: `dashboard_widgets`",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "3.2 Data Source Types",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Open API Config (รายละเอียด)",
+          "level": 4,
+          "line": 176
+        },
+        {
+          "heading": "3.3 Widget-specific config_json (per type)",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "TABLE widget",
+          "level": 4,
+          "line": 196
+        },
+        {
+          "heading": "STATS widget",
+          "level": 4,
+          "line": 214
+        },
+        {
+          "heading": "BAR_CHART widget",
+          "level": 4,
+          "line": 229
+        },
+        {
+          "heading": "DONUT_CHART widget",
+          "level": 4,
+          "line": 245
+        },
+        {
+          "heading": "GAUGE_CHART widget",
+          "level": 4,
+          "line": 257
+        },
+        {
+          "heading": "LINE_CHART widget",
+          "level": 4,
+          "line": 273
+        },
+        {
+          "heading": "HEATMAP widget",
+          "level": 4,
+          "line": 289
+        },
+        {
+          "heading": "CARD_ACTION widget",
+          "level": 4,
+          "line": 301
+        },
+        {
+          "heading": "GRID_SPACE widget",
+          "level": 4,
+          "line": 318
+        },
+        {
+          "heading": "Part 4 — Widget Configuration UI (Modal, 4 Steps)",
+          "level": 2,
+          "line": 335
+        },
+        {
+          "heading": "Step 1: ตั้งค่าทั่วไป (General)",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Step 2: แหล่งข้อมูล (Data Source)",
+          "level": 3,
+          "line": 352
+        },
+        {
+          "heading": "Step 3: ตั้งค่าละเอียด (Widget Config)",
+          "level": 3,
+          "line": 362
+        },
+        {
+          "heading": "Step 4: Preview",
+          "level": 3,
+          "line": 374
+        },
+        {
+          "heading": "Part 5 — Widget Ordering",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "Part 6 — Preview Mode",
+          "level": 2,
+          "line": 391
+        },
+        {
+          "heading": "Part 7 — Dashboard Viewer (หน้าแสดงผลจริง)",
+          "level": 2,
+          "line": 405
+        },
+        {
+          "heading": "Part 8 — Existing Widget Config (migrate เข้า system ใหม่)",
+          "level": 2,
+          "line": 420
+        },
+        {
+          "heading": "8.1 Stats Widget (เดิม: `dashboard_stats_config`)",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "8.2 Data Table Widget (เดิม: `dashboard_table_config`)",
+          "level": 3,
+          "line": 429
+        },
+        {
+          "heading": "8.3 Logs Widget (เดิม: `dashboard_logs_config`)",
+          "level": 3,
+          "line": 435
+        },
+        {
+          "heading": "Part 9 — Full Schema Summary",
+          "level": 2,
+          "line": 443
+        },
+        {
+          "heading": "ตารางใหม่ที่ต้องสร้าง",
+          "level": 3,
+          "line": 445
+        },
+        {
+          "heading": "ตารางเดิมที่ยังใช้อยู่ (ไม่ลบ ระหว่าง migrate)",
+          "level": 3,
+          "line": 452
+        },
+        {
+          "heading": "Part 10 — Files ที่ต้องสร้าง",
+          "level": 2,
+          "line": 464
+        },
+        {
+          "heading": "Controllers",
+          "level": 3,
+          "line": 466
+        },
+        {
+          "heading": "Services",
+          "level": 3,
+          "line": 476
+        },
+        {
+          "heading": "Repositories",
+          "level": 3,
+          "line": 486
+        },
+        {
+          "heading": "Views",
+          "level": 3,
+          "line": 495
+        },
+        {
+          "heading": "JavaScript",
+          "level": 3,
+          "line": 514
+        },
+        {
+          "heading": "Migrations (SQL)",
+          "level": 3,
+          "line": 523
+        },
+        {
+          "heading": "Part 11 — Routing Plan",
+          "level": 2,
+          "line": 536
+        },
+        {
+          "heading": "Part 12 — Permission Matrix",
+          "level": 2,
+          "line": 580
+        },
+        {
+          "heading": "Part 13 — Open Questions (ต้องตอบก่อน implement)",
+          "level": 2,
+          "line": 596
+        },
+        {
+          "heading": "Part 14 — Implementation Order (แนะนำ)",
+          "level": 2,
+          "line": 630
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 52
+      }
+    },
+    {
+      "path": "planning/archived/DASHBOARD_BUILDER_PLAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 660,
+      "nonEmptyLines": 533,
+      "sections": [
+        {
+          "heading": "Feature: Dashboard Builder — Full Planning Document",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Part 1 — หน้าจัดการ Dashboard (Dashboard Manager)",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "1.1 หน้า List Dashboard",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "UI Layout",
+          "level": 4,
+          "line": 23
+        },
+        {
+          "heading": "Columns ในตาราง",
+          "level": 4,
+          "line": 28
+        },
+        {
+          "heading": "Action ต่อ row",
+          "level": 4,
+          "line": 34
+        },
+        {
+          "heading": "1.2 Modal: New / Edit Dashboard",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "Schema: `dashboards`",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Part 2 — Widget Builder (หน้า Edit Dashboard)",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "2.1 Layout หน้า Builder",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "2.2 Widget Types (9 ประเภท)",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Part 3 — Widget Configuration",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "3.1 Schema: `dashboard_widgets`",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "3.2 Data Source Types",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Open API Config (รายละเอียด)",
+          "level": 4,
+          "line": 176
+        },
+        {
+          "heading": "3.3 Widget-specific config_json (per type)",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "TABLE widget",
+          "level": 4,
+          "line": 196
+        },
+        {
+          "heading": "STATS widget",
+          "level": 4,
+          "line": 214
+        },
+        {
+          "heading": "BAR_CHART widget",
+          "level": 4,
+          "line": 229
+        },
+        {
+          "heading": "DONUT_CHART widget",
+          "level": 4,
+          "line": 245
+        },
+        {
+          "heading": "GAUGE_CHART widget",
+          "level": 4,
+          "line": 257
+        },
+        {
+          "heading": "LINE_CHART widget",
+          "level": 4,
+          "line": 273
+        },
+        {
+          "heading": "HEATMAP widget",
+          "level": 4,
+          "line": 289
+        },
+        {
+          "heading": "CARD_ACTION widget",
+          "level": 4,
+          "line": 301
+        },
+        {
+          "heading": "GRID_SPACE widget",
+          "level": 4,
+          "line": 318
+        },
+        {
+          "heading": "Part 4 — Widget Configuration UI (Modal)",
+          "level": 2,
+          "line": 335
+        },
+        {
+          "heading": "Step 1: ตั้งค่าทั่วไป (General)",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Step 2: แหล่งข้อมูล (Data Source)",
+          "level": 3,
+          "line": 352
+        },
+        {
+          "heading": "Step 3: ตั้งค่าละเอียด (Widget Config)",
+          "level": 3,
+          "line": 362
+        },
+        {
+          "heading": "Step 4: Preview",
+          "level": 3,
+          "line": 374
+        },
+        {
+          "heading": "Part 5 — Widget Ordering",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "Part 6 — Preview Mode",
+          "level": 2,
+          "line": 391
+        },
+        {
+          "heading": "Part 7 — Dashboard Viewer (หน้าแสดงผลจริง)",
+          "level": 2,
+          "line": 405
+        },
+        {
+          "heading": "Part 8 — Existing Widget Config (migrate เข้า system ใหม่)",
+          "level": 2,
+          "line": 420
+        },
+        {
+          "heading": "8.1 Stats Widget (เดิม: `dashboard_stats_config`)",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "8.2 Data Table Widget (เดิม: `dashboard_table_config`)",
+          "level": 3,
+          "line": 426
+        },
+        {
+          "heading": "8.3 Logs Widget (เดิม: `dashboard_logs_config`)",
+          "level": 3,
+          "line": 430
+        },
+        {
+          "heading": "Part 9 — Full Schema Summary",
+          "level": 2,
+          "line": 438
+        },
+        {
+          "heading": "ตารางใหม่ที่ต้องสร้าง",
+          "level": 3,
+          "line": 440
+        },
+        {
+          "heading": "ตารางเดิมที่ยังใช้อยู่ (ไม่ลบ ระหว่าง migrate)",
+          "level": 3,
+          "line": 447
+        },
+        {
+          "heading": "Part 10 — Files ที่ต้องสร้าง",
+          "level": 2,
+          "line": 459
+        },
+        {
+          "heading": "Controllers",
+          "level": 3,
+          "line": 461
+        },
+        {
+          "heading": "Services",
+          "level": 3,
+          "line": 471
+        },
+        {
+          "heading": "Repositories",
+          "level": 3,
+          "line": 481
+        },
+        {
+          "heading": "Views",
+          "level": 3,
+          "line": 490
+        },
+        {
+          "heading": "JavaScript",
+          "level": 3,
+          "line": 509
+        },
+        {
+          "heading": "Migrations (SQL)",
+          "level": 3,
+          "line": 518
+        },
+        {
+          "heading": "Part 11 — Routing Plan",
+          "level": 2,
+          "line": 526
+        },
+        {
+          "heading": "Part 12 — Permission Matrix",
+          "level": 2,
+          "line": 570
+        },
+        {
+          "heading": "Part 13 — Open Questions (ต้องตอบก่อน implement)",
+          "level": 2,
+          "line": 586
+        },
+        {
+          "heading": "Part 14 — Implementation Order (แนะนำ)",
+          "level": 2,
+          "line": 621
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 52
+      }
+    },
+    {
+      "path": "planning/archived/KPI_OWNER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 548,
+      "nonEmptyLines": 433,
+      "sections": [
+        {
+          "heading": "Feature: KPI Responsible Person Management (รอ Quota Refresh)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Schema ที่เกี่ยวข้อง (อ้างอิงจาก schema/mysql/)",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "ตาราง `user`",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "ตาราง `office`",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "ตาราง `kpi`",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "ตาราง `stg`",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "ตาราง `stg_group`",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "1. New Table: `kpi_responsible`",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "2. หน้าแสดงตาราง KPI",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Route",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Query หลัก",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Filters (ด้านบนตาราง)",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Columns ที่แสดงใน AwesomeTable",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "3. Assign Button & Modal",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Assign Button (ต่อ row)",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Modal: เลือกผู้รับผิดชอบ",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "4. User Scope สำหรับ Combobox",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "User Session Data (หลัง Login)",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "Level → Role Mapping",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Query Users สำหรับ Combobox (scope-aware)",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "5. Auth Flow ใหม่ (Login)",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "Logic การตรวจ Password",
+          "level": 3,
+          "line": 198
+        },
+        {
+          "heading": "AuthService ที่ต้องแก้",
+          "level": 3,
+          "line": 218
+        },
+        {
+          "heading": "6. API Endpoints",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "POST /api/kpi/{id}/assign — Request Body",
+          "level": 3,
+          "line": 276
+        },
+        {
+          "heading": "Logic: upsert assign",
+          "level": 3,
+          "line": 284
+        },
+        {
+          "heading": "7. Files ที่ต้องสร้างใหม่ (เมื่อดำเนินการ)",
+          "level": 2,
+          "line": 294
+        },
+        {
+          "heading": "Controllers",
+          "level": 3,
+          "line": 296
+        },
+        {
+          "heading": "Services",
+          "level": 3,
+          "line": 300
+        },
+        {
+          "heading": "Repositories",
+          "level": 3,
+          "line": 304
+        },
+        {
+          "heading": "Views",
+          "level": 3,
+          "line": 309
+        },
+        {
+          "heading": "Migrations (SQL)",
+          "level": 3,
+          "line": 313
+        },
+        {
+          "heading": "8. Routing Plan",
+          "level": 2,
+          "line": 318
+        },
+        {
+          "heading": "9. Permission Matrix",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "10. Open Questions",
+          "level": 2,
+          "line": 339
+        },
+        {
+          "heading": "#####################################################################################################",
+          "level": 1,
+          "line": 348
+        },
+        {
+          "heading": "Implementation Plan - KPI Responsible Person Management",
+          "level": 1,
+          "line": 350
+        },
+        {
+          "heading": "User Review Required",
+          "level": 2,
+          "line": 354
+        },
+        {
+          "heading": "Open Questions",
+          "level": 2,
+          "line": 361
+        },
+        {
+          "heading": "Proposed Changes",
+          "level": 2,
+          "line": 373
+        },
+        {
+          "heading": "Database & Migrations",
+          "level": 3,
+          "line": 375
+        },
+        {
+          "heading": "[NEW] [kpi_responsible.sql](file:///Users/neo/Programming/SSJ/cockpit-new/schema/mysql/kpi_responsible.sql)",
+          "level": 4,
+          "line": 377
+        },
+        {
+          "heading": "Core & Security Modifications",
+          "level": 3,
+          "line": 402
+        },
+        {
+          "heading": "[MODIFY] [permissions.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/config/permissions.php)",
+          "level": 4,
+          "line": 404
+        },
+        {
+          "heading": "[MODIFY] [AuthService.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/services/AuthService.php)",
+          "level": 4,
+          "line": 430
+        },
+        {
+          "heading": "Routing",
+          "level": 3,
+          "line": 438
+        },
+        {
+          "heading": "[MODIFY] [web.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/routes/web.php)",
+          "level": 4,
+          "line": 440
+        },
+        {
+          "heading": "[MODIFY] [api.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/routes/api.php)",
+          "level": 4,
+          "line": 446
+        },
+        {
+          "heading": "Repositories",
+          "level": 3,
+          "line": 457
+        },
+        {
+          "heading": "[MODIFY] [UserRepository.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/repositories/UserRepository.php)",
+          "level": 4,
+          "line": 459
+        },
+        {
+          "heading": "[NEW] [OfficeRepository.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/repositories/OfficeRepository.php)",
+          "level": 4,
+          "line": 466
+        },
+        {
+          "heading": "[NEW] [KpiResponsibleRepository.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/repositories/KpiResponsibleRepository.php)",
+          "level": 4,
+          "line": 469
+        },
+        {
+          "heading": "Services",
+          "level": 3,
+          "line": 474
+        },
+        {
+          "heading": "[NEW] [KpiResponsibleService.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/services/KpiResponsibleService.php)",
+          "level": 4,
+          "line": 476
+        },
+        {
+          "heading": "Controllers",
+          "level": 3,
+          "line": 484
+        },
+        {
+          "heading": "[NEW] [KpiResponsibleController.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/controllers/KpiResponsibleController.php)",
+          "level": 4,
+          "line": 486
+        },
+        {
+          "heading": "Views & Layout",
+          "level": 3,
+          "line": 496
+        },
+        {
+          "heading": "[NEW] [index.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/views/kpi/responsible/index.php)",
+          "level": 4,
+          "line": 498
+        },
+        {
+          "heading": "[NEW] [_assign_modal.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/views/kpi/responsible/_assign_modal.php)",
+          "level": 4,
+          "line": 503
+        },
+        {
+          "heading": "[MODIFY] [app.php](file:///Users/neo/Programming/SSJ/cockpit-new/app/views/layouts/app.php)",
+          "level": 4,
+          "line": 509
+        },
+        {
+          "heading": "Verification Plan",
+          "level": 2,
+          "line": 514
+        },
+        {
+          "heading": "Automated Tests",
+          "level": 3,
+          "line": 516
+        },
+        {
+          "heading": "Manual Verification",
+          "level": 3,
+          "line": 521
+        },
+        {
+          "heading": "Tasks: KPI Responsible Person Management",
+          "level": 1,
+          "line": 527
+        },
+        {
+          "heading": "New Requirement : KPI Responsible Person Management",
+          "level": 1,
+          "line": 545
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 66
+      }
+    },
+    {
+      "path": "planning/archived/MAIN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 480,
+      "nonEmptyLines": 416,
+      "sections": [
+        {
+          "heading": "PHP Dashboard Platform Architecture Plan",
+          "level": 2,
+          "line": 1
+        },
+        {
+          "heading": "Objective",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Technology Stack",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "Core Architecture",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "Project Structure",
+          "level": 1,
+          "line": 50
+        },
+        {
+          "heading": "Front Controller Pattern",
+          "level": 1,
+          "line": 146
+        },
+        {
+          "heading": "Request Flow",
+          "level": 1,
+          "line": 151
+        },
+        {
+          "heading": "Route System",
+          "level": 1,
+          "line": 169
+        },
+        {
+          "heading": "Route Group",
+          "level": 1,
+          "line": 179
+        },
+        {
+          "heading": "Centralized Permission System",
+          "level": 1,
+          "line": 191
+        },
+        {
+          "heading": "Middleware Responsibility",
+          "level": 1,
+          "line": 215
+        },
+        {
+          "heading": "Layer Responsibility",
+          "level": 1,
+          "line": 225
+        },
+        {
+          "heading": "Controller Rules",
+          "level": 1,
+          "line": 236
+        },
+        {
+          "heading": "Allowed",
+          "level": 1,
+          "line": 240
+        },
+        {
+          "heading": "Not Allowed",
+          "level": 1,
+          "line": 246
+        },
+        {
+          "heading": "Service Rules",
+          "level": 1,
+          "line": 252
+        },
+        {
+          "heading": "Allowed",
+          "level": 1,
+          "line": 255
+        },
+        {
+          "heading": "Not Allowed",
+          "level": 1,
+          "line": 262
+        },
+        {
+          "heading": "Repository Rules",
+          "level": 1,
+          "line": 267
+        },
+        {
+          "heading": "Allowed",
+          "level": 1,
+          "line": 270
+        },
+        {
+          "heading": "Not Allowed",
+          "level": 1,
+          "line": 276
+        },
+        {
+          "heading": "BaseRepository Design",
+          "level": 1,
+          "line": 281
+        },
+        {
+          "heading": "Specific Repository",
+          "level": 1,
+          "line": 291
+        },
+        {
+          "heading": "Database Architecture",
+          "level": 1,
+          "line": 296
+        },
+        {
+          "heading": "Database Structure",
+          "level": 1,
+          "line": 306
+        },
+        {
+          "heading": "PostgreSQL",
+          "level": 1,
+          "line": 313
+        },
+        {
+          "heading": "MySQL Legacy",
+          "level": 1,
+          "line": 318
+        },
+        {
+          "heading": "Database Usage",
+          "level": 1,
+          "line": 323
+        },
+        {
+          "heading": "Query Interface",
+          "level": 1,
+          "line": 327
+        },
+        {
+          "heading": "Binding Strategy",
+          "level": 1,
+          "line": 332
+        },
+        {
+          "heading": "Dashboard Architecture",
+          "level": 1,
+          "line": 339
+        },
+        {
+          "heading": "Recommended Flow",
+          "level": 1,
+          "line": 343
+        },
+        {
+          "heading": "Summary Tables",
+          "level": 1,
+          "line": 354
+        },
+        {
+          "heading": "Worker Responsibility",
+          "level": 1,
+          "line": 360
+        },
+        {
+          "heading": "Worker Runtime",
+          "level": 1,
+          "line": 365
+        },
+        {
+          "heading": "Realtime Architecture",
+          "level": 1,
+          "line": 370
+        },
+        {
+          "heading": "WebSocket Responsibility",
+          "level": 1,
+          "line": 380
+        },
+        {
+          "heading": "Frontend Flow",
+          "level": 1,
+          "line": 388
+        },
+        {
+          "heading": "Frontend Structure",
+          "level": 1,
+          "line": 395
+        },
+        {
+          "heading": "Frontend Rules",
+          "level": 1,
+          "line": 411
+        },
+        {
+          "heading": "Tailwind CSS Strategy",
+          "level": 1,
+          "line": 424
+        },
+        {
+          "heading": "Development",
+          "level": 1,
+          "line": 425
+        },
+        {
+          "heading": "Production",
+          "level": 1,
+          "line": 431
+        },
+        {
+          "heading": "Cache Strategy",
+          "level": 1,
+          "line": 437
+        },
+        {
+          "heading": "Scaling Strategy",
+          "level": 1,
+          "line": 444
+        },
+        {
+          "heading": "Important Principles",
+          "level": 1,
+          "line": 453
+        },
+        {
+          "heading": "Recommended Future Improvements",
+          "level": 1,
+          "line": 467
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 47
+      }
+    },
+    {
+      "path": "planning/archived/WIDGET_MODAL_PLAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 21,
+      "sections": [
+        {
+          "heading": "แผนการพัฒนา: Global Modal & Map Widgets",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Global Alert/Confirm Modal",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "2. Map Widget (2D & 3D Globe)",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "planning/archived/new_implement_plan.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 63,
+      "nonEmptyLines": 51,
+      "sections": [
+        {
+          "heading": "Implementation Plan: User Management, Profile, and Side Menu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "User Review Required",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Proposed Changes",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Database Schema Changes",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "[NEW] `schema/mysql/menus.sql`",
+          "level": 4,
+          "line": 14
+        },
+        {
+          "heading": "[MODIFY] `schema/mysql/user.sql`",
+          "level": 4,
+          "line": 16
+        },
+        {
+          "heading": "[NEW] `schema/mysql/user_invitations.sql`",
+          "level": 4,
+          "line": 20
+        },
+        {
+          "heading": "1. Side Menu Management",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "[NEW] `app/controllers/MenuController.php`",
+          "level": 4,
+          "line": 26
+        },
+        {
+          "heading": "[MODIFY] `app/views/layouts/app.php` (or Sidebar partial)",
+          "level": 4,
+          "line": 29
+        },
+        {
+          "heading": "2. User & Permission Management",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "[NEW] `app/controllers/UserManagementController.php`",
+          "level": 4,
+          "line": 38
+        },
+        {
+          "heading": "[NEW] `app/views/user/manage.php`",
+          "level": 4,
+          "line": 42
+        },
+        {
+          "heading": "3. My Profile",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "[NEW] `app/controllers/ProfileController.php`",
+          "level": 4,
+          "line": 48
+        },
+        {
+          "heading": "[NEW] `app/views/profile/index.php`",
+          "level": 4,
+          "line": 53
+        },
+        {
+          "heading": "Verification Plan",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Manual Verification",
+          "level": 3,
+          "line": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "planning/archived/new_requirements_plan.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 44,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "New Requirements Planning",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Side Menu Management (หน้าจัดการ Side Menu)",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2. User & Permission Management (หน้าจัดการ User และ Permission)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "3. My Profile (หน้า My Profile)",
+          "level": 2,
+          "line": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

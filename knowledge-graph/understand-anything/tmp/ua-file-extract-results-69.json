@@ -1,0 +1,1503 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-grpc/references/testing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 270,
+      "nonEmptyLines": 224,
+      "sections": [
+        {
+          "heading": "gRPC Testing Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Testing with `bufconn`",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Basic Setup",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Setup with Interceptors",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Testing Error Codes",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Table-Driven Error Code Tests",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Testing Streaming RPCs",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Server Streaming",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "Client Streaming",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Testing Metadata",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "Testing Deadlines",
+          "level": 2,
+          "line": 209
+        },
+        {
+          "heading": "Integration Test Patterns",
+          "level": 2,
+          "line": 226
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-grpc/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 215,
+      "nonEmptyLines": 172,
+      "sections": [
+        {
+          "heading": "Go gRPC Best Practices",
+          "level": 1,
+          "line": 31
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Proto File Organization",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Server Implementation",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Interceptor Pattern",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Client Implementation",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Streaming",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 173
+        },
+        {
+          "heading": "Security",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Performance",
+          "level": 2,
+          "line": 186
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 210
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 305,
+      "nonEmptyLines": 305,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/references/linter-reference.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 94,
+      "nonEmptyLines": 68,
+      "sections": [
+        {
+          "heading": "Linter Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Linter Categories",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Correctness & Safety",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Style & Readability",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Complexity",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Performance",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Security & Resources",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Testing",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Modernization & Meta",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "Formatting",
+          "level": 3,
+          "line": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/references/nolint-directives.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 68,
+      "nonEmptyLines": 47,
+      "sections": [
+        {
+          "heading": "Nolint Directives",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Syntax",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Rules",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Examples",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Multiple Linters",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "When to Suppress vs. When to Fix",
+          "level": 2,
+          "line": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 150,
+      "nonEmptyLines": 108,
+      "sections": [
+        {
+          "heading": "Go Linting",
+          "level": 1,
+          "line": 32
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Suppressing Lint Warnings",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Development Workflow",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Interpreting Output",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "Common Issues",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Parallelizing Legacy Codebase Cleanup",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 146
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 185,
+      "nonEmptyLines": 185,
+      "sections": [
+        {
+          "heading": "skill_name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "evals",
+          "level": 1,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/references/tooling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 54,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "Tooling Modernization",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Update to the latest Go version",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "golangci-lint v2 _(golangci-lint v2.0.0+, March 2025)_",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "govulncheck _(works best with Go 1.22+)_",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Profile-Guided Optimization (PGO) _(Go 1.21+)_",
+          "level": 2,
+          "line": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/references/versions.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 659,
+      "nonEmptyLines": 487,
+      "sections": [
+        {
+          "heading": "Go Version Modernizations",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Go 1.21 Modernizations (August 2023)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Use built-in `min`, `max`, `clear` _(Go 1.21+)_",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Use `log/slog` instead of third-party loggers _(Go 1.21+)_",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Use `slices` package instead of `sort` and manual loops _(Go 1.21+)_",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Use `maps` package _(Go 1.21+)_",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Use `cmp.Or` for default values _(Go 1.22+)_",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Use `sync.OnceFunc`, `sync.OnceValue`, `sync.OnceValues` _(Go 1.21+)_",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Use enhanced `context` functions _(Go 1.21+)_",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "Go 1.22 Modernizations (February 2024)",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "SHOULD use `range` over integers _(Go 1.22+)_",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Remove loop variable shadow copies _(Go 1.22+)_",
+          "level": 3,
+          "line": 152
+        },
+        {
+          "heading": "`math/rand` MUST be replaced with `math/rand/v2` _(Go 1.22+)_",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "Use enhanced `net/http` routing _(Go 1.22+)_",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Use `strings.CutPrefix` and `strings.CutSuffix` _(Go 1.20+)_",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "Use `reflect.TypeFor[T]()` _(Go 1.22+)_",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Use `database/sql.Null[T]` _(Go 1.22+)_",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "Go 1.23 Modernizations (August 2024)",
+          "level": 2,
+          "line": 246
+        },
+        {
+          "heading": "Use iterators (`range` over functions) _(Go 1.23+)_",
+          "level": 3,
+          "line": 250
+        },
+        {
+          "heading": "Use iterator-based `slices` and `maps` functions _(Go 1.23+)_",
+          "level": 3,
+          "line": 287
+        },
+        {
+          "heading": "Use `unique` package for value interning _(Go 1.23+)_",
+          "level": 3,
+          "line": 304
+        },
+        {
+          "heading": "Timer/Ticker behavior change _(Go 1.23+)_",
+          "level": 3,
+          "line": 316
+        },
+        {
+          "heading": "Go 1.24 Modernizations (February 2025)",
+          "level": 2,
+          "line": 327
+        },
+        {
+          "heading": "Use generic type aliases _(Go 1.24+)_",
+          "level": 3,
+          "line": 331
+        },
+        {
+          "heading": "Use `os.Root` for directory-scoped file access _(Go 1.24+)_",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Use `omitzero` JSON tag _(Go 1.24+)_",
+          "level": 3,
+          "line": 355
+        },
+        {
+          "heading": "Use `strings.SplitSeq`, `strings.FieldsSeq`, `strings.Lines` _(Go 1.24+)_",
+          "level": 3,
+          "line": 371
+        },
+        {
+          "heading": "`t.Context()` SHOULD replace manual `context.Background()` in tests _(Go 1.24+)_",
+          "level": 3,
+          "line": 384
+        },
+        {
+          "heading": "`b.Loop()` MUST be used in benchmarks _(Go 1.24+)_",
+          "level": 3,
+          "line": 398
+        },
+        {
+          "heading": "Use `runtime.AddCleanup` instead of `runtime.SetFinalizer` _(Go 1.24+)_",
+          "level": 3,
+          "line": 412
+        },
+        {
+          "heading": "Use `weak` package for weak references _(Go 1.24+)_",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "Use `crypto/sha3`, `crypto/hkdf`, `crypto/pbkdf2` _(Go 1.24+)_",
+          "level": 3,
+          "line": 433
+        },
+        {
+          "heading": "Use tool directives in `go.mod` _(Go 1.24+)_",
+          "level": 3,
+          "line": 449
+        },
+        {
+          "heading": "Use `fmt.Appendf`, `fmt.Appendln` _(Go 1.19+, often overlooked)_",
+          "level": 3,
+          "line": 468
+        },
+        {
+          "heading": "Go 1.25 Modernizations (August 2025)",
+          "level": 2,
+          "line": 480
+        },
+        {
+          "heading": "Use `sync.WaitGroup.Go` _(Go 1.25+)_",
+          "level": 3,
+          "line": 484
+        },
+        {
+          "heading": "Use `testing/synctest` for concurrent code testing _(Go 1.25+, experimental in 1.24)_",
+          "level": 3,
+          "line": 504
+        },
+        {
+          "heading": "Use `runtime/trace.FlightRecorder` _(Go 1.25+)_",
+          "level": 3,
+          "line": 540
+        },
+        {
+          "heading": "Container-aware `GOMAXPROCS` _(Go 1.25+)_",
+          "level": 3,
+          "line": 551
+        },
+        {
+          "heading": "`encoding/json/v2` (experimental) _(Go 1.25+, GOEXPERIMENT=jsonv2)_",
+          "level": 3,
+          "line": 563
+        },
+        {
+          "heading": "Go 1.26 Modernizations (February 2026)",
+          "level": 2,
+          "line": 569
+        },
+        {
+          "heading": "Use `errors.AsType[T]()` _(Go 1.26+)_",
+          "level": 3,
+          "line": 573
+        },
+        {
+          "heading": "Use enhanced `new()` _(Go 1.26+)_",
+          "level": 3,
+          "line": 588
+        },
+        {
+          "heading": "Use `crypto/hpke` _(Go 1.26+)_",
+          "level": 3,
+          "line": 599
+        },
+        {
+          "heading": "Green Tea GC enabled by default _(Go 1.26+)_",
+          "level": 3,
+          "line": 603
+        },
+        {
+          "heading": "Modernized `go fix` _(Go 1.26+)_",
+          "level": 3,
+          "line": 607
+        },
+        {
+          "heading": "General Modernization (Any Version)",
+          "level": 2,
+          "line": 617
+        },
+        {
+          "heading": "Code MUST use `any` instead of `interface{}` _(Go 1.18+)_",
+          "level": 3,
+          "line": 619
+        },
+        {
+          "heading": "Use generics instead of `interface{}` + type assertions _(Go 1.18+)_",
+          "level": 3,
+          "line": 629
+        },
+        {
+          "heading": "Use `errors.Join` instead of multi-error libraries _(Go 1.20+)_",
+          "level": 3,
+          "line": 640
+        },
+        {
+          "heading": "Use `net.JoinHostPort` instead of `fmt.Sprintf` _(any version)_",
+          "level": 3,
+          "line": 651
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 51
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 149,
+      "nonEmptyLines": 113,
+      "sections": [
+        {
+          "heading": "Go Code Modernization Guide",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "`.modernize` file format",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Go Version Changelogs",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Using the modernize linter",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Version-specific modernizations",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Tooling modernization",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Deprecated Packages Migration",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Migration Priority Guide",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "High priority (safety and correctness)",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Medium priority (readability and maintainability)",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Lower priority (gradual improvement)",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Related Skills",
+          "level": 2,
+          "line": 147
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 404,
+      "nonEmptyLines": 404,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 163,
+      "nonEmptyLines": 127,
+      "sections": [
+        {
+          "heading": "Go Naming Conventions",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "MixedCaps",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Avoid Stuttering",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Frequently Missed Conventions",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Detailed Categories",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Enforce with Linters",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 159
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 547,
+      "nonEmptyLines": 547,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 175,
+      "nonEmptyLines": 129,
+      "sections": [
+        {
+          "heading": "Go Observability Best Practices",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "Best Practices Summary",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "The Five Signals",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Detailed Guides",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Correlating Signals",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Logs + Traces: `otelslog` bridge",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Metrics + Traces: Exemplars",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "Migrating Legacy Loggers",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "Definition of Done for Observability",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 132
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/assets/prometheus-alerts.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 20,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "[0]",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "[1]",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "[2]",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 886,
+      "nonEmptyLines": 886,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 110,
+      "nonEmptyLines": 85,
+      "sections": [
+        {
+          "heading": "Go Performance Optimization",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "Core Philosophy",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Rule Out External Bottlenecks First",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Iterative Optimization Methodology",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "The cycle: Define Goals → Benchmark → Diagnose → Improve → Benchmark",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Decision Tree: Where Is Time Spent?",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Deep Dives",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "CI Regression Detection",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 155,
+      "nonEmptyLines": 155,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 69,
+      "nonEmptyLines": 52,
+      "sections": [
+        {
+          "heading": "Go Libraries and Frameworks Recommendations",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Core Philosophy",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Reference Catalogs",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "General Guidelines",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Anti-Patterns to Avoid",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 63
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/assets/Makefile",
+      "language": "makefile",
+      "fileCategory": "infra",
+      "totalLines": 110,
+      "nonEmptyLines": 88,
+      "steps": [
+        {
+          "name": "all",
+          "startLine": 14,
+          "endLine": 15
+        },
+        {
+          "name": "build",
+          "startLine": 17,
+          "endLine": 20
+        },
+        {
+          "name": "build-all",
+          "startLine": 22,
+          "endLine": 25
+        },
+        {
+          "name": "clean",
+          "startLine": 27,
+          "endLine": 31
+        },
+        {
+          "name": "test",
+          "startLine": 33,
+          "endLine": 37
+        },
+        {
+          "name": "test-short",
+          "startLine": 39,
+          "endLine": 41
+        },
+        {
+          "name": "benchmark",
+          "startLine": 43,
+          "endLine": 46
+        },
+        {
+          "name": "lint",
+          "startLine": 48,
+          "endLine": 51
+        },
+        {
+          "name": "lint-fix",
+          "startLine": 53,
+          "endLine": 56
+        },
+        {
+          "name": "fmt",
+          "startLine": 58,
+          "endLine": 61
+        },
+        {
+          "name": "outdated",
+          "startLine": 63,
+          "endLine": 66
+        },
+        {
+          "name": "weight",
+          "startLine": 68,
+          "endLine": 71
+        },
+        {
+          "name": "audit",
+          "startLine": 73,
+          "endLine": 76
+        },
+        {
+          "name": "run",
+          "startLine": 78,
+          "endLine": 81
+        },
+        {
+          "name": "install",
+          "startLine": 83,
+          "endLine": 86
+        },
+        {
+          "name": "deps-update",
+          "startLine": 88,
+          "endLine": 91
+        },
+        {
+          "name": "watch-test",
+          "startLine": 93,
+          "endLine": 96
+        },
+        {
+          "name": "watch-build",
+          "startLine": 98,
+          "endLine": 101
+        },
+        {
+          "name": "watch-run",
+          "startLine": 103,
+          "endLine": 106
+        },
+        {
+          "name": "help",
+          "startLine": 108,
+          "endLine": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "stepCount": 20
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 156,
+      "nonEmptyLines": 156,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 120,
+      "nonEmptyLines": 84,
+      "sections": [
+        {
+          "heading": "Go Project Layout",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "Architecture Decision: Ask First",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Dependency Injection: Ask Next",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "12-Factor App",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Quick Start: Choose Your Project Type",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Module Naming Conventions",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Module Name (go.mod)",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Package Naming",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Directory Layout",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Essential Configuration Files",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Tests, Benchmarks, and Examples",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "Go Workspaces",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Initialization Checklist",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Related Skills",
+          "level": 2,
+          "line": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 930,
+      "nonEmptyLines": 930,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/references/nil-safety.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 197,
+      "nonEmptyLines": 151,
+      "sections": [
+        {
+          "heading": "Nil Safety Deep Dive",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Nil Pointer Receivers",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Designing nil-safe receivers",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Nil Function Values",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "Default function pattern",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Nil and Error Comparisons",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Returning nil error correctly",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Checking error chains with nil",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Nil in Generic Code",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "The `comparable` constraint and nil",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "Nil checks with unconstrained type parameters",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Patterns for Nil-Safe APIs",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "Constructor with defaults",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Lazy initialization for zero-value usability",
+          "level": 3,
+          "line": 167
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/references/slice-map-safety.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 194,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "Slice and Map Safety Deep Dive",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Range Loop Variable Capture",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Pre-Go 1.22: shared loop variable",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Go 1.22+: per-iteration scoping",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Storing Pointer to Loop Variable",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Slice Header vs Backing Array",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Subslice Retains Full Backing Array",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Standard Library Clone Helpers (Go 1.21+)",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "Map Iteration Order",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Deleting During Iteration",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "Maps — safe",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Slices — needs care",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "Comparing Slices and Maps",
+          "level": 2,
+          "line": 174
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    }
+  ]
+}

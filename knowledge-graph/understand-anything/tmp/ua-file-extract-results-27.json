@@ -1,0 +1,190 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/references/error-creation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 145,
+      "nonEmptyLines": 104,
+      "sections": [
+        {
+          "heading": "Error Creation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Errors as Values",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Error String Conventions",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Creating Errors",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "`errors.New` — static error messages",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "`fmt.Errorf` — dynamic error messages",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Decision table: which error strategy to use",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Low-Cardinality Error Messages",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Custom Error Types",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "Custom types that wrap other errors",
+          "level": 3,
+          "line": 128
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/references/error-handling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 129,
+      "nonEmptyLines": 107,
+      "sections": [
+        {
+          "heading": "Error Handling Patterns and Logging",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Single Handling Rule",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Panic and Recover",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "When to panic",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "Recovering from panics",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Why Use `samber/oops`",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "Logging Errors with `slog`",
+          "level": 2,
+          "line": 127
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-error-handling/references/error-wrapping.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 107,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "Error Wrapping and Inspection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Error Wrapping with `%w`",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "`%w` vs `%v`: controlling exposure",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Inspecting Errors: `errors.Is` and `errors.As`",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "`errors.Is` — match against a sentinel value",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "`errors.As` — extract a typed error from the chain",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Combining Errors with `errors.Join`",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Use case: validating multiple fields",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Use case: parallel operations with independent failures",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "`errors.Is` works through joined errors",
+          "level": 3,
+          "line": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    }
+  ]
+}

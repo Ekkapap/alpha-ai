@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "app/views/kpi/index.php",
+      "language": "php",
+      "sizeLines": 570,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/kpi/input_modal.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/kpi/responsible/_assign_modal.php",
+      "language": "php",
+      "sizeLines": 339,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/kpi/responsible/index.php",
+      "language": "php",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/layouts/app.php",
+      "language": "php",
+      "sizeLines": 862,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/logs/index.php",
+      "language": "php",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/menu/manage.php",
+      "language": "php",
+      "sizeLines": 391,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/mockup/summary_table.php",
+      "language": "php",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/profile/index.php",
+      "language": "php",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/stg_group/index.php",
+      "language": "php",
+      "sizeLines": 427,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/stg/index.php",
+      "language": "php",
+      "sizeLines": 482,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/user/manage.php",
+      "language": "php",
+      "sizeLines": 416,
+      "fileCategory": "code"
+    },
+    {
+      "path": "composer.phar",
+      "language": "phar",
+      "sizeLines": 150949,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fix_controllers.php",
+      "language": "php",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fix_office_column.php",
+      "language": "php",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "graphify-out/.graphify_python",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "graphify-out/.graphify_root",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_app_menu.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_pagination_menu.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_pagination_profile.php",
+      "language": "php",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_pagination_user.php",
+      "language": "php",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_profile.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_sidebar.php",
+      "language": "php",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_user_manage.php",
+      "language": "php",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "planning/result.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "app/views/kpi/index.php": [],
+    "app/views/kpi/input_modal.php": [],
+    "app/views/kpi/responsible/_assign_modal.php": [],
+    "app/views/kpi/responsible/index.php": [],
+    "app/views/layouts/app.php": [],
+    "app/views/logs/index.php": [],
+    "app/views/menu/manage.php": [],
+    "app/views/mockup/summary_table.php": [],
+    "app/views/profile/index.php": [],
+    "app/views/stg_group/index.php": [],
+    "app/views/stg/index.php": [],
+    "app/views/user/manage.php": [],
+    "composer.phar": [],
+    "fix_controllers.php": [],
+    "fix_office_column.php": [],
+    "graphify-out/.graphify_python": [],
+    "graphify-out/.graphify_root": [],
+    "patch_app_menu.php": [],
+    "patch_pagination_menu.php": [],
+    "patch_pagination_profile.php": [],
+    "patch_pagination_user.php": [],
+    "patch_profile.php": [],
+    "patch_sidebar.php": [],
+    "patch_user_manage.php": [],
+    "planning/result.md": []
+  }
+}

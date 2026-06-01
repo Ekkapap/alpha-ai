@@ -1,0 +1,454 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/alerting.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 185,
+      "nonEmptyLines": 148,
+      "sections": [
+        {
+          "heading": "Alerting",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Four Golden Signals",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Awesome Prometheus Alerts",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Categories",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "How to Use It",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Integration Example",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Workflow for New Dependencies",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Go Runtime Alerts",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Alert Severity Levels",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 151
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/dashboards.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 25,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "Grafana Dashboards for Go Services",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Recommended Dashboards",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "How to Install",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "When to Use Each",
+          "level": 2,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/logging.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 189,
+      "nonEmptyLines": 140,
+      "sections": [
+        {
+          "heading": "Structured Logging with `slog`",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Structured Logging",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Handler Setup",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Log Levels",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Cost of Logging",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Logging with Context",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Adding Request-Scoped Attributes",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Log Sinks and the `slog` Ecosystem",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "Migrating from zap / logrus / zerolog",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Common Logging Mistakes",
+          "level": 2,
+          "line": 170
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/metrics.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 536,
+      "nonEmptyLines": 428,
+      "sections": [
+        {
+          "heading": "Metrics with Prometheus",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Metric Types",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Histogram vs Summary",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Tracking Percentiles (P50, P90, P99, P99.9)",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Naming Conventions",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Exposing Metrics",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "Document Metrics with PromQL Comments",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "Metric Examples and PromQL Queries",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "Counters — tracking events",
+          "level": 3,
+          "line": 174
+        },
+        {
+          "heading": "Gauges — tracking current state",
+          "level": 3,
+          "line": 262
+        },
+        {
+          "heading": "Histograms — tracking distributions (recommended for latency)",
+          "level": 3,
+          "line": 364
+        },
+        {
+          "heading": "Summary — client-side quantiles (use sparingly)",
+          "level": 3,
+          "line": 456
+        },
+        {
+          "heading": "Multi-Window Burn-Rate SLO Alerting",
+          "level": 2,
+          "line": 476
+        },
+        {
+          "heading": "High-Cardinality Labels",
+          "level": 2,
+          "line": 514
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/profiling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 72,
+      "nonEmptyLines": 53,
+      "sections": [
+        {
+          "heading": "Profiling and Continuous Profiling",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What Profiling Is",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "On-Demand Profiling with `pprof`",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Continuous Profiling with Pyroscope",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Cost of Continuous Profiling",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "When to Profile",
+          "level": 2,
+          "line": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/rum.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 258,
+      "nonEmptyLines": 195,
+      "sections": [
+        {
+          "heading": "Real User Monitoring (RUM) and Product Observability",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What RUM Is",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "RUM Capabilities",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Identity Key: Use `user_id`, Never Email",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Backend Role in RUM",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "1. Server-Side Event Tracking",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "2. Connecting Frontend Sessions to Backend Traces",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "3. CDP Event Ingestion",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "GDPR and CCPA Compliance",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "Consent Management",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "Data Subject Rights Endpoints",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "Privacy Checklist",
+          "level": 3,
+          "line": 223
+        },
+        {
+          "heading": "Self-Hosted vs SaaS",
+          "level": 2,
+          "line": 235
+        },
+        {
+          "heading": "Cost of RUM",
+          "level": 2,
+          "line": 247
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/tracing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 198,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "Distributed Tracing with OpenTelemetry",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Tracing",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "OTel SDK Setup",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Creating Spans",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "HTTP Middleware with `otelhttp`",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Span Status and Recording Errors",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "Structured Errors with `samber/oops`",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "Trace Sampling",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "Cost of Tracing",
+          "level": 2,
+          "line": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    }
+  ]
+}

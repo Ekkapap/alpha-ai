@@ -1,0 +1,28 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/references/advanced-patterns.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/references/api-reference.md",
+      "language": "markdown",
+      "sizeLines": 326,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/references/package-guide.md",
+      "language": "markdown",
+      "sizeLines": 175,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-samber-lo/references/advanced-patterns.md": [],
+    ".agents/skills/framework/golang/golang-samber-lo/references/api-reference.md": [],
+    ".agents/skills/framework/golang/golang-samber-lo/references/package-guide.md": []
+  }
+}

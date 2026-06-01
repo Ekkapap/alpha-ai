@@ -1,0 +1,6669 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "alter_user_requested_office.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "alter.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 25,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/config/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/config/database.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 32,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/config/menu.back.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 117,
+      "nonEmptyLines": 117,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "app/config/permissions.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 169,
+      "nonEmptyLines": 135,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/Controllers/AuthController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 142,
+      "nonEmptyLines": 121,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 23,
+          "endLine": 26,
+          "params": [
+            "$authService"
+          ]
+        },
+        {
+          "name": "showLoginForm",
+          "startLine": 35,
+          "endLine": 52,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "login",
+          "startLine": 60,
+          "endLine": 93,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 101,
+          "endLine": 121,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "handleFailedLogin",
+          "startLine": 130,
+          "endLine": 141,
+          "params": [
+            "$request",
+            "$message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthController",
+          "startLine": 11,
+          "endLine": 142,
+          "methods": [
+            "__construct",
+            "showLoginForm",
+            "login",
+            "logout",
+            "handleFailedLogin"
+          ],
+          "properties": [
+            "authService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AuthController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "showLoginForm",
+          "callee": "isset",
+          "lineNumber": 38
+        },
+        {
+          "caller": "showLoginForm",
+          "callee": "View::render",
+          "lineNumber": 41
+        },
+        {
+          "caller": "showLoginForm",
+          "callee": "View::render",
+          "lineNumber": 45
+        },
+        {
+          "caller": "showLoginForm",
+          "callee": "Response::html",
+          "lineNumber": 51
+        },
+        {
+          "caller": "login",
+          "callee": "$request->input",
+          "lineNumber": 62
+        },
+        {
+          "caller": "login",
+          "callee": "$request->input",
+          "lineNumber": 63
+        },
+        {
+          "caller": "login",
+          "callee": "empty",
+          "lineNumber": 66
+        },
+        {
+          "caller": "login",
+          "callee": "empty",
+          "lineNumber": 66
+        },
+        {
+          "caller": "login",
+          "callee": "$this->handleFailedLogin",
+          "lineNumber": 68
+        },
+        {
+          "caller": "login",
+          "callee": "$this->authService->attempt",
+          "lineNumber": 72
+        },
+        {
+          "caller": "login",
+          "callee": "session_regenerate_id",
+          "lineNumber": 76
+        },
+        {
+          "caller": "login",
+          "callee": "$request->isJson",
+          "lineNumber": 79
+        },
+        {
+          "caller": "login",
+          "callee": "Response::json",
+          "lineNumber": 80
+        },
+        {
+          "caller": "login",
+          "callee": "url",
+          "lineNumber": 83
+        },
+        {
+          "caller": "login",
+          "callee": "Response::redirect",
+          "lineNumber": 87
+        },
+        {
+          "caller": "login",
+          "callee": "$this->handleFailedLogin",
+          "lineNumber": 92
+        },
+        {
+          "caller": "logout",
+          "callee": "ini_get",
+          "lineNumber": 105
+        },
+        {
+          "caller": "logout",
+          "callee": "session_get_cookie_params",
+          "lineNumber": 106
+        },
+        {
+          "caller": "logout",
+          "callee": "setcookie",
+          "lineNumber": 107
+        },
+        {
+          "caller": "logout",
+          "callee": "session_name",
+          "lineNumber": 108
+        },
+        {
+          "caller": "logout",
+          "callee": "time",
+          "lineNumber": 110
+        },
+        {
+          "caller": "logout",
+          "callee": "session_destroy",
+          "lineNumber": 118
+        },
+        {
+          "caller": "logout",
+          "callee": "Response::redirect",
+          "lineNumber": 120
+        },
+        {
+          "caller": "handleFailedLogin",
+          "callee": "$request->isJson",
+          "lineNumber": 132
+        },
+        {
+          "caller": "handleFailedLogin",
+          "callee": "Response::json",
+          "lineNumber": 133
+        },
+        {
+          "caller": "handleFailedLogin",
+          "callee": "Response::redirect",
+          "lineNumber": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/DashboardApiController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 89,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 16,
+          "endLine": 22,
+          "params": [
+            "$widgetRepo",
+            "$dataService"
+          ]
+        },
+        {
+          "name": "widgetData",
+          "startLine": 27,
+          "endLine": 64,
+          "params": [
+            "$request",
+            "$wid"
+          ]
+        },
+        {
+          "name": "exportWidgetData",
+          "startLine": 69,
+          "endLine": 109,
+          "params": [
+            "$request",
+            "$wid"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardApiController",
+          "startLine": 11,
+          "endLine": 110,
+          "methods": [
+            "__construct",
+            "widgetData",
+            "exportWidgetData"
+          ],
+          "properties": [
+            "widgetRepo",
+            "dataService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardApiController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "widgetData",
+          "callee": "$this->widgetRepo->find",
+          "lineNumber": 29
+        },
+        {
+          "caller": "widgetData",
+          "callee": "Response::json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "widgetData",
+          "callee": "Response::json",
+          "lineNumber": 36
+        },
+        {
+          "caller": "widgetData",
+          "callee": "$request->input",
+          "lineNumber": 40
+        },
+        {
+          "caller": "widgetData",
+          "callee": "$request->input",
+          "lineNumber": 41
+        },
+        {
+          "caller": "widgetData",
+          "callee": "$this->dataService->getPaginatedWidgetData",
+          "lineNumber": 45
+        },
+        {
+          "caller": "widgetData",
+          "callee": "Response::json",
+          "lineNumber": 46
+        },
+        {
+          "caller": "widgetData",
+          "callee": "$this->dataService->getWidgetData",
+          "lineNumber": 52
+        },
+        {
+          "caller": "widgetData",
+          "callee": "Response::json",
+          "lineNumber": 53
+        },
+        {
+          "caller": "widgetData",
+          "callee": "Response::json",
+          "lineNumber": 59
+        },
+        {
+          "caller": "widgetData",
+          "callee": "$e->getMessage",
+          "lineNumber": 61
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "$this->widgetRepo->find",
+          "lineNumber": 71
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "die",
+          "lineNumber": 74
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "$this->dataService->getWidgetData",
+          "lineNumber": 78
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "empty",
+          "lineNumber": 80
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "die",
+          "lineNumber": 81
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "date",
+          "lineNumber": 84
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "header",
+          "lineNumber": 86
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "header",
+          "lineNumber": 87
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "fopen",
+          "lineNumber": 92
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "array_keys",
+          "lineNumber": 95
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "fputcsv",
+          "lineNumber": 96
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "fputcsv",
+          "lineNumber": 100
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "array_values",
+          "lineNumber": 100
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "fclose",
+          "lineNumber": 103
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "die",
+          "lineNumber": 107
+        },
+        {
+          "caller": "exportWidgetData",
+          "callee": "$e->getMessage",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/DashboardBuilderController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 484,
+      "nonEmptyLines": 422,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 23,
+          "endLine": 35,
+          "params": [
+            "$dashboardRepo",
+            "$widgetRepo",
+            "$db",
+            "$renderService",
+            "$widgetDataService"
+          ]
+        },
+        {
+          "name": "index",
+          "startLine": 37,
+          "endLine": 59,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "addWidget",
+          "startLine": 61,
+          "endLine": 122,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "previewWidgetHtml",
+          "startLine": 124,
+          "endLine": 157,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "testSource",
+          "startLine": 159,
+          "endLine": 225,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "getWidget",
+          "startLine": 227,
+          "endLine": 234,
+          "params": [
+            "$request",
+            "$id",
+            "$wid"
+          ]
+        },
+        {
+          "name": "updateWidget",
+          "startLine": 236,
+          "endLine": 286,
+          "params": [
+            "$request",
+            "$id",
+            "$wid"
+          ]
+        },
+        {
+          "name": "deleteWidget",
+          "startLine": 288,
+          "endLine": 301,
+          "params": [
+            "$request",
+            "$id",
+            "$wid"
+          ]
+        },
+        {
+          "name": "reorder",
+          "startLine": 303,
+          "endLine": 316,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "apiGetSharedSources",
+          "startLine": 318,
+          "endLine": 386,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "listTables",
+          "startLine": 388,
+          "endLine": 400,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "listColumns",
+          "startLine": 402,
+          "endLine": 425,
+          "params": [
+            "$request",
+            "$table"
+          ]
+        },
+        {
+          "name": "toggleWidget",
+          "startLine": 427,
+          "endLine": 442,
+          "params": [
+            "$request",
+            "$id",
+            "$wid"
+          ]
+        },
+        {
+          "name": "preview",
+          "startLine": 444,
+          "endLine": 468,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "htmlspecialcharsDecodeRecursive",
+          "startLine": 470,
+          "endLine": 482,
+          "params": [
+            "$data"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardBuilderController",
+          "startLine": 15,
+          "endLine": 483,
+          "methods": [
+            "__construct",
+            "index",
+            "addWidget",
+            "previewWidgetHtml",
+            "testSource",
+            "getWidget",
+            "updateWidget",
+            "deleteWidget",
+            "reorder",
+            "apiGetSharedSources",
+            "listTables",
+            "listColumns",
+            "toggleWidget",
+            "preview",
+            "htmlspecialcharsDecodeRecursive"
+          ],
+          "properties": [
+            "dashboardRepo",
+            "widgetRepo",
+            "db",
+            "renderService",
+            "widgetDataService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardBuilderController",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "$this->dashboardRepo->find",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "Response::redirect",
+          "lineNumber": 41
+        },
+        {
+          "caller": "index",
+          "callee": "$this->widgetRepo->getByDashboard",
+          "lineNumber": 44
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 46
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 52
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 58
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$this->dashboardRepo->find",
+          "lineNumber": 63
+        },
+        {
+          "caller": "addWidget",
+          "callee": "Response::json",
+          "lineNumber": 65
+        },
+        {
+          "caller": "addWidget",
+          "callee": "trim",
+          "lineNumber": 68
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 68
+        },
+        {
+          "caller": "addWidget",
+          "callee": "trim",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 69
+        },
+        {
+          "caller": "addWidget",
+          "callee": "trim",
+          "lineNumber": 70
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 70
+        },
+        {
+          "caller": "addWidget",
+          "callee": "trim",
+          "lineNumber": 71
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 71
+        },
+        {
+          "caller": "addWidget",
+          "callee": "trim",
+          "lineNumber": 72
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 72
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 73
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 74
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 75
+        },
+        {
+          "caller": "addWidget",
+          "callee": "trim",
+          "lineNumber": 76
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 76
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 77
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$this->htmlspecialcharsDecodeRecursive",
+          "lineNumber": 79
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$request->input",
+          "lineNumber": 81
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$this->htmlspecialcharsDecodeRecursive",
+          "lineNumber": 83
+        },
+        {
+          "caller": "addWidget",
+          "callee": "in_array",
+          "lineNumber": 87
+        },
+        {
+          "caller": "addWidget",
+          "callee": "Response::json",
+          "lineNumber": 88
+        },
+        {
+          "caller": "addWidget",
+          "callee": "empty",
+          "lineNumber": 90
+        },
+        {
+          "caller": "addWidget",
+          "callee": "Response::json",
+          "lineNumber": 91
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$this->widgetRepo->getMaxSortOrder",
+          "lineNumber": 94
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$this->widgetRepo->create",
+          "lineNumber": 97
+        },
+        {
+          "caller": "addWidget",
+          "callee": "max",
+          "lineNumber": 104
+        },
+        {
+          "caller": "addWidget",
+          "callee": "min",
+          "lineNumber": 104
+        },
+        {
+          "caller": "addWidget",
+          "callee": "max",
+          "lineNumber": 105
+        },
+        {
+          "caller": "addWidget",
+          "callee": "min",
+          "lineNumber": 105
+        },
+        {
+          "caller": "addWidget",
+          "callee": "is_string",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addWidget",
+          "callee": "json_encode",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addWidget",
+          "callee": "is_string",
+          "lineNumber": 110
+        },
+        {
+          "caller": "addWidget",
+          "callee": "json_encode",
+          "lineNumber": 110
+        },
+        {
+          "caller": "addWidget",
+          "callee": "Response::json",
+          "lineNumber": 114
+        },
+        {
+          "caller": "addWidget",
+          "callee": "Response::json",
+          "lineNumber": 120
+        },
+        {
+          "caller": "addWidget",
+          "callee": "$e->getMessage",
+          "lineNumber": 120
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "trim",
+          "lineNumber": 126
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$request->input",
+          "lineNumber": 126
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "trim",
+          "lineNumber": 127
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$request->input",
+          "lineNumber": 127
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "trim",
+          "lineNumber": 128
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$request->input",
+          "lineNumber": 128
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "trim",
+          "lineNumber": 129
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$request->input",
+          "lineNumber": 129
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "trim",
+          "lineNumber": 130
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$request->input",
+          "lineNumber": 130
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$request->input",
+          "lineNumber": 131
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "time",
+          "lineNumber": 134
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "is_string",
+          "lineNumber": 144
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "json_encode",
+          "lineNumber": 144
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$this->renderService->renderWidgets",
+          "lineNumber": 152
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "Response::json",
+          "lineNumber": 153
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "Response::json",
+          "lineNumber": 155
+        },
+        {
+          "caller": "previewWidgetHtml",
+          "callee": "$e->getMessage",
+          "lineNumber": 155
+        },
+        {
+          "caller": "testSource",
+          "callee": "trim",
+          "lineNumber": 161
+        },
+        {
+          "caller": "testSource",
+          "callee": "$request->input",
+          "lineNumber": 161
+        },
+        {
+          "caller": "testSource",
+          "callee": "$request->input",
+          "lineNumber": 162
+        },
+        {
+          "caller": "testSource",
+          "callee": "is_string",
+          "lineNumber": 164
+        },
+        {
+          "caller": "testSource",
+          "callee": "htmlspecialchars_decode",
+          "lineNumber": 165
+        },
+        {
+          "caller": "testSource",
+          "callee": "json_decode",
+          "lineNumber": 166
+        },
+        {
+          "caller": "testSource",
+          "callee": "is_array",
+          "lineNumber": 167
+        },
+        {
+          "caller": "testSource",
+          "callee": "$this->htmlspecialcharsDecodeRecursive",
+          "lineNumber": 168
+        },
+        {
+          "caller": "testSource",
+          "callee": "\\App\\Core\\Container::getInstance()->get",
+          "lineNumber": 172
+        },
+        {
+          "caller": "testSource",
+          "callee": "\\App\\Core\\Container::getInstance",
+          "lineNumber": 172
+        },
+        {
+          "caller": "testSource",
+          "callee": "md5",
+          "lineNumber": 173
+        },
+        {
+          "caller": "testSource",
+          "callee": "json_encode",
+          "lineNumber": 173
+        },
+        {
+          "caller": "testSource",
+          "callee": "$cache->remember",
+          "lineNumber": 176
+        },
+        {
+          "caller": "testSource",
+          "callee": "$this->widgetDataService->getWidgetData",
+          "lineNumber": 184
+        },
+        {
+          "caller": "testSource",
+          "callee": "is_array",
+          "lineNumber": 186
+        },
+        {
+          "caller": "testSource",
+          "callee": "count",
+          "lineNumber": 186
+        },
+        {
+          "caller": "testSource",
+          "callee": "empty",
+          "lineNumber": 188
+        },
+        {
+          "caller": "testSource",
+          "callee": "preg_match",
+          "lineNumber": 188
+        },
+        {
+          "caller": "testSource",
+          "callee": "$this->db->query",
+          "lineNumber": 189
+        },
+        {
+          "caller": "testSource",
+          "callee": "array_map",
+          "lineNumber": 190
+        },
+        {
+          "caller": "testSource",
+          "callee": "is_array",
+          "lineNumber": 198
+        },
+        {
+          "caller": "testSource",
+          "callee": "count",
+          "lineNumber": 202
+        },
+        {
+          "caller": "testSource",
+          "callee": "isset",
+          "lineNumber": 202
+        },
+        {
+          "caller": "testSource",
+          "callee": "count",
+          "lineNumber": 207
+        },
+        {
+          "caller": "testSource",
+          "callee": "is_array",
+          "lineNumber": 207
+        },
+        {
+          "caller": "testSource",
+          "callee": "array_keys",
+          "lineNumber": 208
+        },
+        {
+          "caller": "testSource",
+          "callee": "array_slice",
+          "lineNumber": 212
+        },
+        {
+          "caller": "testSource",
+          "callee": "Response::json",
+          "lineNumber": 217
+        },
+        {
+          "caller": "testSource",
+          "callee": "Response::json",
+          "lineNumber": 223
+        },
+        {
+          "caller": "testSource",
+          "callee": "$e->getMessage",
+          "lineNumber": 223
+        },
+        {
+          "caller": "getWidget",
+          "callee": "$this->widgetRepo->find",
+          "lineNumber": 229
+        },
+        {
+          "caller": "getWidget",
+          "callee": "Response::json",
+          "lineNumber": 231
+        },
+        {
+          "caller": "getWidget",
+          "callee": "Response::json",
+          "lineNumber": 233
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "$this->widgetRepo->find",
+          "lineNumber": 238
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "Response::json",
+          "lineNumber": 240
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "$request->input",
+          "lineNumber": 249
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "in_array",
+          "lineNumber": 251
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "$this->htmlspecialcharsDecodeRecursive",
+          "lineNumber": 252
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "in_array",
+          "lineNumber": 254
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "Response::json",
+          "lineNumber": 255
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "empty",
+          "lineNumber": 257
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "trim",
+          "lineNumber": 257
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "Response::json",
+          "lineNumber": 258
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "in_array",
+          "lineNumber": 260
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "is_string",
+          "lineNumber": 260
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "json_encode",
+          "lineNumber": 261
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "in_array",
+          "lineNumber": 263
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "max",
+          "lineNumber": 264
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "min",
+          "lineNumber": 264
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "empty",
+          "lineNumber": 276
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "Response::json",
+          "lineNumber": 277
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "$this->widgetRepo->update",
+          "lineNumber": 281
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "Response::json",
+          "lineNumber": 282
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "Response::json",
+          "lineNumber": 284
+        },
+        {
+          "caller": "updateWidget",
+          "callee": "$e->getMessage",
+          "lineNumber": 284
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "$this->widgetRepo->find",
+          "lineNumber": 290
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "Response::json",
+          "lineNumber": 292
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "$this->widgetRepo->delete",
+          "lineNumber": 296
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "Response::json",
+          "lineNumber": 297
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "Response::json",
+          "lineNumber": 299
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "$e->getMessage",
+          "lineNumber": 299
+        },
+        {
+          "caller": "reorder",
+          "callee": "$request->input",
+          "lineNumber": 305
+        },
+        {
+          "caller": "reorder",
+          "callee": "is_array",
+          "lineNumber": 306
+        },
+        {
+          "caller": "reorder",
+          "callee": "empty",
+          "lineNumber": 306
+        },
+        {
+          "caller": "reorder",
+          "callee": "Response::json",
+          "lineNumber": 307
+        },
+        {
+          "caller": "reorder",
+          "callee": "$this->widgetRepo->reorder",
+          "lineNumber": 311
+        },
+        {
+          "caller": "reorder",
+          "callee": "Response::json",
+          "lineNumber": 312
+        },
+        {
+          "caller": "reorder",
+          "callee": "Response::json",
+          "lineNumber": 314
+        },
+        {
+          "caller": "reorder",
+          "callee": "$e->getMessage",
+          "lineNumber": 314
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "$this->db->query",
+          "lineNumber": 334
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "is_string",
+          "lineNumber": 339
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "htmlspecialchars_decode",
+          "lineNumber": 340
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "json_decode",
+          "lineNumber": 341
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "strtoupper",
+          "lineNumber": 346
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "empty",
+          "lineNumber": 351
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "empty",
+          "lineNumber": 359
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "empty",
+          "lineNumber": 364
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "empty",
+          "lineNumber": 365
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "Response::json",
+          "lineNumber": 382
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "Response::json",
+          "lineNumber": 384
+        },
+        {
+          "caller": "apiGetSharedSources",
+          "callee": "$e->getMessage",
+          "lineNumber": 384
+        },
+        {
+          "caller": "listTables",
+          "callee": "$this->db->query",
+          "lineNumber": 391
+        },
+        {
+          "caller": "listTables",
+          "callee": "array_values",
+          "lineNumber": 394
+        },
+        {
+          "caller": "listTables",
+          "callee": "Response::json",
+          "lineNumber": 396
+        },
+        {
+          "caller": "listTables",
+          "callee": "Response::json",
+          "lineNumber": 398
+        },
+        {
+          "caller": "listTables",
+          "callee": "$e->getMessage",
+          "lineNumber": 398
+        },
+        {
+          "caller": "listColumns",
+          "callee": "preg_match",
+          "lineNumber": 404
+        },
+        {
+          "caller": "listColumns",
+          "callee": "Response::json",
+          "lineNumber": 406
+        },
+        {
+          "caller": "listColumns",
+          "callee": "$this->db->query",
+          "lineNumber": 410
+        },
+        {
+          "caller": "listColumns",
+          "callee": "Response::json",
+          "lineNumber": 421
+        },
+        {
+          "caller": "listColumns",
+          "callee": "Response::json",
+          "lineNumber": 423
+        },
+        {
+          "caller": "listColumns",
+          "callee": "$e->getMessage",
+          "lineNumber": 423
+        },
+        {
+          "caller": "toggleWidget",
+          "callee": "$this->widgetRepo->find",
+          "lineNumber": 429
+        },
+        {
+          "caller": "toggleWidget",
+          "callee": "Response::json",
+          "lineNumber": 431
+        },
+        {
+          "caller": "toggleWidget",
+          "callee": "$this->widgetRepo->update",
+          "lineNumber": 435
+        },
+        {
+          "caller": "toggleWidget",
+          "callee": "Response::json",
+          "lineNumber": 437
+        },
+        {
+          "caller": "preview",
+          "callee": "$this->dashboardRepo->find",
+          "lineNumber": 446
+        },
+        {
+          "caller": "preview",
+          "callee": "Response::redirect",
+          "lineNumber": 448
+        },
+        {
+          "caller": "preview",
+          "callee": "$this->widgetRepo->getByDashboard",
+          "lineNumber": 451
+        },
+        {
+          "caller": "preview",
+          "callee": "$this->renderService->renderWidgets",
+          "lineNumber": 453
+        },
+        {
+          "caller": "preview",
+          "callee": "View::render",
+          "lineNumber": 455
+        },
+        {
+          "caller": "preview",
+          "callee": "View::render",
+          "lineNumber": 461
+        },
+        {
+          "caller": "preview",
+          "callee": "Response::html",
+          "lineNumber": 467
+        },
+        {
+          "caller": "htmlspecialcharsDecodeRecursive",
+          "callee": "is_array",
+          "lineNumber": 472
+        },
+        {
+          "caller": "htmlspecialcharsDecodeRecursive",
+          "callee": "$this->htmlspecialcharsDecodeRecursive",
+          "lineNumber": 474
+        },
+        {
+          "caller": "htmlspecialcharsDecodeRecursive",
+          "callee": "is_string",
+          "lineNumber": 478
+        },
+        {
+          "caller": "htmlspecialcharsDecodeRecursive",
+          "callee": "htmlspecialchars_decode",
+          "lineNumber": 479
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/DashboardController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 224,
+      "nonEmptyLines": 206,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 23,
+          "endLine": 26,
+          "params": [
+            "$userRepository"
+          ]
+        },
+        {
+          "name": "index",
+          "startLine": 35,
+          "endLine": 48,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "summaryApi",
+          "startLine": 56,
+          "endLine": 121,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "provincesApi",
+          "startLine": 129,
+          "endLine": 163,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "provinceDetailsApi",
+          "startLine": 171,
+          "endLine": 223,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 11,
+          "endLine": 224,
+          "methods": [
+            "__construct",
+            "index",
+            "summaryApi",
+            "provincesApi",
+            "provinceDetailsApi"
+          ],
+          "properties": [
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 37
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 41
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 47
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "$this->userRepository->all",
+          "lineNumber": 61
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "is_array",
+          "lineNumber": 62
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "count",
+          "lineNumber": 62
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "count",
+          "lineNumber": 63
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "time",
+          "lineNumber": 72
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "number_format",
+          "lineNumber": 80
+        },
+        {
+          "caller": "summaryApi",
+          "callee": "Response::json",
+          "lineNumber": 120
+        },
+        {
+          "caller": "provincesApi",
+          "callee": "$request->input",
+          "lineNumber": 149
+        },
+        {
+          "caller": "provincesApi",
+          "callee": "$request->input",
+          "lineNumber": 150
+        },
+        {
+          "caller": "provincesApi",
+          "callee": "count",
+          "lineNumber": 155
+        },
+        {
+          "caller": "provincesApi",
+          "callee": "array_slice",
+          "lineNumber": 156
+        },
+        {
+          "caller": "provincesApi",
+          "callee": "Response::json",
+          "lineNumber": 158
+        },
+        {
+          "caller": "provinceDetailsApi",
+          "callee": "$request->input",
+          "lineNumber": 173
+        },
+        {
+          "caller": "provinceDetailsApi",
+          "callee": "isset",
+          "lineNumber": 208
+        },
+        {
+          "caller": "provinceDetailsApi",
+          "callee": "Response::json",
+          "lineNumber": 218
+        },
+        {
+          "caller": "provinceDetailsApi",
+          "callee": "count",
+          "lineNumber": 221
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/DashboardManagerController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 281,
+      "nonEmptyLines": 230,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 19,
+          "endLine": 27,
+          "params": [
+            "$dashboardRepo",
+            "$widgetRepo",
+            "$logService"
+          ]
+        },
+        {
+          "name": "index",
+          "startLine": 33,
+          "endLine": 46,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "list",
+          "startLine": 52,
+          "endLine": 88,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "store",
+          "startLine": 94,
+          "endLine": 151,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 157,
+          "endLine": 208,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "destroy",
+          "startLine": 214,
+          "endLine": 232,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "duplicate",
+          "startLine": 238,
+          "endLine": 262,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "generateSlug",
+          "startLine": 268,
+          "endLine": 280,
+          "params": [
+            "$name"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardManagerController",
+          "startLine": 13,
+          "endLine": 281,
+          "methods": [
+            "__construct",
+            "index",
+            "list",
+            "store",
+            "update",
+            "destroy",
+            "duplicate",
+            "generateSlug"
+          ],
+          "properties": [
+            "dashboardRepo",
+            "widgetRepo",
+            "logService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardManagerController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 35
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 45
+        },
+        {
+          "caller": "list",
+          "callee": "$request->input",
+          "lineNumber": 54
+        },
+        {
+          "caller": "list",
+          "callee": "$request->input",
+          "lineNumber": 55
+        },
+        {
+          "caller": "list",
+          "callee": "$request->input",
+          "lineNumber": 56
+        },
+        {
+          "caller": "list",
+          "callee": "$request->input",
+          "lineNumber": 57
+        },
+        {
+          "caller": "list",
+          "callee": "empty",
+          "lineNumber": 67
+        },
+        {
+          "caller": "list",
+          "callee": "$this->dashboardRepo->paginate",
+          "lineNumber": 76
+        },
+        {
+          "caller": "list",
+          "callee": "$this->dashboardRepo->countWidgets",
+          "lineNumber": 80
+        },
+        {
+          "caller": "list",
+          "callee": "Response::json",
+          "lineNumber": 83
+        },
+        {
+          "caller": "store",
+          "callee": "trim",
+          "lineNumber": 96
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 96
+        },
+        {
+          "caller": "store",
+          "callee": "trim",
+          "lineNumber": 97
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 97
+        },
+        {
+          "caller": "store",
+          "callee": "trim",
+          "lineNumber": 98
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 98
+        },
+        {
+          "caller": "store",
+          "callee": "trim",
+          "lineNumber": 99
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 99
+        },
+        {
+          "caller": "store",
+          "callee": "trim",
+          "lineNumber": 100
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 100
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 101
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 102
+        },
+        {
+          "caller": "store",
+          "callee": "$request->input",
+          "lineNumber": 103
+        },
+        {
+          "caller": "store",
+          "callee": "empty",
+          "lineNumber": 105
+        },
+        {
+          "caller": "store",
+          "callee": "Response::json",
+          "lineNumber": 106
+        },
+        {
+          "caller": "store",
+          "callee": "empty",
+          "lineNumber": 109
+        },
+        {
+          "caller": "store",
+          "callee": "$this->generateSlug",
+          "lineNumber": 110
+        },
+        {
+          "caller": "store",
+          "callee": "$this->dashboardRepo->findBySlug",
+          "lineNumber": 113
+        },
+        {
+          "caller": "store",
+          "callee": "Response::json",
+          "lineNumber": 115
+        },
+        {
+          "caller": "store",
+          "callee": "is_array",
+          "lineNumber": 118
+        },
+        {
+          "caller": "store",
+          "callee": "implode",
+          "lineNumber": 119
+        },
+        {
+          "caller": "store",
+          "callee": "$this->dashboardRepo->clearDefault",
+          "lineNumber": 124
+        },
+        {
+          "caller": "store",
+          "callee": "$this->dashboardRepo->create",
+          "lineNumber": 129
+        },
+        {
+          "caller": "store",
+          "callee": "$this->logService->write",
+          "lineNumber": 141
+        },
+        {
+          "caller": "store",
+          "callee": "Response::json",
+          "lineNumber": 143
+        },
+        {
+          "caller": "store",
+          "callee": "Response::json",
+          "lineNumber": 149
+        },
+        {
+          "caller": "store",
+          "callee": "$e->getMessage",
+          "lineNumber": 149
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 159
+        },
+        {
+          "caller": "update",
+          "callee": "trim",
+          "lineNumber": 160
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 160
+        },
+        {
+          "caller": "update",
+          "callee": "trim",
+          "lineNumber": 161
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 161
+        },
+        {
+          "caller": "update",
+          "callee": "trim",
+          "lineNumber": 162
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 162
+        },
+        {
+          "caller": "update",
+          "callee": "trim",
+          "lineNumber": 163
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 163
+        },
+        {
+          "caller": "update",
+          "callee": "trim",
+          "lineNumber": 164
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 164
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 165
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 166
+        },
+        {
+          "caller": "update",
+          "callee": "$request->input",
+          "lineNumber": 167
+        },
+        {
+          "caller": "update",
+          "callee": "empty",
+          "lineNumber": 169
+        },
+        {
+          "caller": "update",
+          "callee": "Response::json",
+          "lineNumber": 170
+        },
+        {
+          "caller": "update",
+          "callee": "empty",
+          "lineNumber": 173
+        },
+        {
+          "caller": "update",
+          "callee": "$this->generateSlug",
+          "lineNumber": 174
+        },
+        {
+          "caller": "update",
+          "callee": "$this->dashboardRepo->findBySlug",
+          "lineNumber": 177
+        },
+        {
+          "caller": "update",
+          "callee": "Response::json",
+          "lineNumber": 179
+        },
+        {
+          "caller": "update",
+          "callee": "is_array",
+          "lineNumber": 182
+        },
+        {
+          "caller": "update",
+          "callee": "implode",
+          "lineNumber": 183
+        },
+        {
+          "caller": "update",
+          "callee": "$this->dashboardRepo->clearDefault",
+          "lineNumber": 188
+        },
+        {
+          "caller": "update",
+          "callee": "$this->dashboardRepo->update",
+          "lineNumber": 191
+        },
+        {
+          "caller": "update",
+          "callee": "$this->logService->write",
+          "lineNumber": 202
+        },
+        {
+          "caller": "update",
+          "callee": "Response::json",
+          "lineNumber": 204
+        },
+        {
+          "caller": "update",
+          "callee": "Response::json",
+          "lineNumber": 206
+        },
+        {
+          "caller": "update",
+          "callee": "$e->getMessage",
+          "lineNumber": 206
+        },
+        {
+          "caller": "destroy",
+          "callee": "isset",
+          "lineNumber": 216
+        },
+        {
+          "caller": "destroy",
+          "callee": "Response::json",
+          "lineNumber": 217
+        },
+        {
+          "caller": "destroy",
+          "callee": "$request->input",
+          "lineNumber": 220
+        },
+        {
+          "caller": "destroy",
+          "callee": "Response::json",
+          "lineNumber": 222
+        },
+        {
+          "caller": "destroy",
+          "callee": "$this->dashboardRepo->softDelete",
+          "lineNumber": 226
+        },
+        {
+          "caller": "destroy",
+          "callee": "$this->logService->write",
+          "lineNumber": 227
+        },
+        {
+          "caller": "destroy",
+          "callee": "Response::json",
+          "lineNumber": 228
+        },
+        {
+          "caller": "destroy",
+          "callee": "Response::json",
+          "lineNumber": 230
+        },
+        {
+          "caller": "destroy",
+          "callee": "$e->getMessage",
+          "lineNumber": 230
+        },
+        {
+          "caller": "duplicate",
+          "callee": "$request->input",
+          "lineNumber": 240
+        },
+        {
+          "caller": "duplicate",
+          "callee": "Response::json",
+          "lineNumber": 242
+        },
+        {
+          "caller": "duplicate",
+          "callee": "$this->dashboardRepo->duplicate",
+          "lineNumber": 246
+        },
+        {
+          "caller": "duplicate",
+          "callee": "Response::json",
+          "lineNumber": 248
+        },
+        {
+          "caller": "duplicate",
+          "callee": "$this->widgetRepo->duplicateForDashboard",
+          "lineNumber": 251
+        },
+        {
+          "caller": "duplicate",
+          "callee": "$this->logService->write",
+          "lineNumber": 252
+        },
+        {
+          "caller": "duplicate",
+          "callee": "Response::json",
+          "lineNumber": 254
+        },
+        {
+          "caller": "duplicate",
+          "callee": "Response::json",
+          "lineNumber": 260
+        },
+        {
+          "caller": "duplicate",
+          "callee": "$e->getMessage",
+          "lineNumber": 260
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "strtolower",
+          "lineNumber": 270
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "trim",
+          "lineNumber": 270
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "preg_replace",
+          "lineNumber": 271
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "preg_replace",
+          "lineNumber": 272
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "trim",
+          "lineNumber": 273
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "empty",
+          "lineNumber": 275
+        },
+        {
+          "caller": "generateSlug",
+          "callee": "time",
+          "lineNumber": 276
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/DashboardViewerController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 134,
+      "nonEmptyLines": 110,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 19,
+          "endLine": 27,
+          "params": [
+            "$dashboardRepo",
+            "$widgetRepo",
+            "$renderService"
+          ]
+        },
+        {
+          "name": "default",
+          "startLine": 29,
+          "endLine": 62,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "show",
+          "startLine": 64,
+          "endLine": 85,
+          "params": [
+            "$request",
+            "$slug"
+          ]
+        },
+        {
+          "name": "renderDashboard",
+          "startLine": 87,
+          "endLine": 115,
+          "params": [
+            "$request",
+            "$dashboard"
+          ]
+        },
+        {
+          "name": "showErrorPage",
+          "startLine": 117,
+          "endLine": 133,
+          "params": [
+            "$request",
+            "$message"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardViewerController",
+          "startLine": 13,
+          "endLine": 134,
+          "methods": [
+            "__construct",
+            "default",
+            "show",
+            "renderDashboard",
+            "showErrorPage"
+          ],
+          "properties": [
+            "dashboardRepo",
+            "widgetRepo",
+            "renderService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardViewerController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "default",
+          "callee": "$this->dashboardRepo->all",
+          "lineNumber": 31
+        },
+        {
+          "caller": "default",
+          "callee": "empty",
+          "lineNumber": 35
+        },
+        {
+          "caller": "default",
+          "callee": "empty",
+          "lineNumber": 35
+        },
+        {
+          "caller": "default",
+          "callee": "empty",
+          "lineNumber": 35
+        },
+        {
+          "caller": "default",
+          "callee": "empty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "default",
+          "callee": "empty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "default",
+          "callee": "View::render",
+          "lineNumber": 52
+        },
+        {
+          "caller": "default",
+          "callee": "View::render",
+          "lineNumber": 53
+        },
+        {
+          "caller": "default",
+          "callee": "Response::html",
+          "lineNumber": 58
+        },
+        {
+          "caller": "default",
+          "callee": "$this->renderDashboard",
+          "lineNumber": 61
+        },
+        {
+          "caller": "show",
+          "callee": "$this->dashboardRepo->all",
+          "lineNumber": 66
+        },
+        {
+          "caller": "show",
+          "callee": "empty",
+          "lineNumber": 70
+        },
+        {
+          "caller": "show",
+          "callee": "$this->showErrorPage",
+          "lineNumber": 77
+        },
+        {
+          "caller": "show",
+          "callee": "empty",
+          "lineNumber": 80
+        },
+        {
+          "caller": "show",
+          "callee": "$this->showErrorPage",
+          "lineNumber": 81
+        },
+        {
+          "caller": "show",
+          "callee": "$this->renderDashboard",
+          "lineNumber": 84
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "explode",
+          "lineNumber": 91
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "array_map",
+          "lineNumber": 92
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "in_array",
+          "lineNumber": 94
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "$this->showErrorPage",
+          "lineNumber": 95
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "$this->widgetRepo->getByDashboard",
+          "lineNumber": 98
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "$this->renderService->renderWidgets",
+          "lineNumber": 100
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "View::render",
+          "lineNumber": 102
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "View::render",
+          "lineNumber": 108
+        },
+        {
+          "caller": "renderDashboard",
+          "callee": "Response::html",
+          "lineNumber": 114
+        },
+        {
+          "caller": "showErrorPage",
+          "callee": "View::render",
+          "lineNumber": 126
+        },
+        {
+          "caller": "showErrorPage",
+          "callee": "Response::html",
+          "lineNumber": 132
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/KpiInputController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 61,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 17,
+          "endLine": 21,
+          "params": [
+            "$kpiRepo",
+            "$kpiTableService"
+          ]
+        },
+        {
+          "name": "modal",
+          "startLine": 23,
+          "endLine": 46,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "save",
+          "startLine": 48,
+          "endLine": 57,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "createTable",
+          "startLine": 59,
+          "endLine": 71,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KpiInputController",
+          "startLine": 12,
+          "endLine": 72,
+          "methods": [
+            "__construct",
+            "modal",
+            "save",
+            "createTable"
+          ],
+          "properties": [
+            "kpiRepo",
+            "kpiTableService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KpiInputController",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "modal",
+          "callee": "$this->kpiRepo->find",
+          "lineNumber": 25
+        },
+        {
+          "caller": "modal",
+          "callee": "Response::json",
+          "lineNumber": 27
+        },
+        {
+          "caller": "modal",
+          "callee": "$this->kpiTableService->checkTableExists",
+          "lineNumber": 32
+        },
+        {
+          "caller": "modal",
+          "callee": "$this->kpiTableService->getTableFields",
+          "lineNumber": 36
+        },
+        {
+          "caller": "modal",
+          "callee": "View::render",
+          "lineNumber": 39
+        },
+        {
+          "caller": "modal",
+          "callee": "Response::html",
+          "lineNumber": 45
+        },
+        {
+          "caller": "save",
+          "callee": "$request->input",
+          "lineNumber": 51
+        },
+        {
+          "caller": "save",
+          "callee": "$this->kpiTableService->saveData",
+          "lineNumber": 52
+        },
+        {
+          "caller": "save",
+          "callee": "Response::json",
+          "lineNumber": 53
+        },
+        {
+          "caller": "save",
+          "callee": "Response::json",
+          "lineNumber": 55
+        },
+        {
+          "caller": "save",
+          "callee": "$e->getMessage",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createTable",
+          "callee": "$this->kpiRepo->find",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createTable",
+          "callee": "$this->kpiTableService->createTable",
+          "lineNumber": 66
+        },
+        {
+          "caller": "createTable",
+          "callee": "Response::json",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createTable",
+          "callee": "Response::json",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createTable",
+          "callee": "$e->getMessage",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/KpiResponsibleController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 183,
+      "nonEmptyLines": 157,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 23,
+          "endLine": 26,
+          "params": [
+            "$service"
+          ]
+        },
+        {
+          "name": "index",
+          "startLine": 34,
+          "endLine": 47,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "data",
+          "startLine": 55,
+          "endLine": 87,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "getAssigned",
+          "startLine": 96,
+          "endLine": 116,
+          "params": [
+            "$request",
+            "$id"
+          ]
+        },
+        {
+          "name": "assignBulk",
+          "startLine": 124,
+          "endLine": 151,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "searchUsers",
+          "startLine": 159,
+          "endLine": 182,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "KpiResponsibleController",
+          "startLine": 11,
+          "endLine": 183,
+          "methods": [
+            "__construct",
+            "index",
+            "data",
+            "getAssigned",
+            "assignBulk",
+            "searchUsers"
+          ],
+          "properties": [
+            "service"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "KpiResponsibleController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 36
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 40
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 46
+        },
+        {
+          "caller": "data",
+          "callee": "date",
+          "lineNumber": 59
+        },
+        {
+          "caller": "data",
+          "callee": "date",
+          "lineNumber": 60
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 63
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 64
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 65
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 68
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 69
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 70
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 71
+        },
+        {
+          "caller": "data",
+          "callee": "$this->service->getKpiList",
+          "lineNumber": 74
+        },
+        {
+          "caller": "data",
+          "callee": "Response::json",
+          "lineNumber": 76
+        },
+        {
+          "caller": "data",
+          "callee": "Response::json",
+          "lineNumber": 82
+        },
+        {
+          "caller": "data",
+          "callee": "$e->getMessage",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "$request->input",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "$request->input",
+          "lineNumber": 101
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "Response::json",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "$this->service->getAssignedUsers",
+          "lineNumber": 107
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "Response::json",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "Response::json",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getAssigned",
+          "callee": "$e->getMessage",
+          "lineNumber": 114
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "$request->input",
+          "lineNumber": 127
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "$request->input",
+          "lineNumber": 128
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "$request->input",
+          "lineNumber": 129
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "$request->input",
+          "lineNumber": 130
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "Response::json",
+          "lineNumber": 133
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "empty",
+          "lineNumber": 136
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "Response::json",
+          "lineNumber": 137
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "$this->service->assignUsers",
+          "lineNumber": 142
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "Response::json",
+          "lineNumber": 144
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "Response::json",
+          "lineNumber": 149
+        },
+        {
+          "caller": "assignBulk",
+          "callee": "$e->getMessage",
+          "lineNumber": 149
+        },
+        {
+          "caller": "searchUsers",
+          "callee": "$request->input",
+          "lineNumber": 162
+        },
+        {
+          "caller": "searchUsers",
+          "callee": "$this->service->searchUsers",
+          "lineNumber": 173
+        },
+        {
+          "caller": "searchUsers",
+          "callee": "Response::json",
+          "lineNumber": 175
+        },
+        {
+          "caller": "searchUsers",
+          "callee": "Response::json",
+          "lineNumber": 180
+        },
+        {
+          "caller": "searchUsers",
+          "callee": "$e->getMessage",
+          "lineNumber": 180
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/LogsController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "$logRepo"
+          ]
+        },
+        {
+          "name": "index",
+          "startLine": 19,
+          "endLine": 32,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "data",
+          "startLine": 34,
+          "endLine": 58,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LogsController",
+          "startLine": 10,
+          "endLine": 59,
+          "methods": [
+            "__construct",
+            "index",
+            "data"
+          ],
+          "properties": [
+            "logRepo"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LogsController",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 31
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 36
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 37
+        },
+        {
+          "caller": "data",
+          "callee": "$request->input",
+          "lineNumber": 42
+        },
+        {
+          "caller": "data",
+          "callee": "empty",
+          "lineNumber": 43
+        },
+        {
+          "caller": "data",
+          "callee": "$this->logRepo->paginate",
+          "lineNumber": 51
+        },
+        {
+          "caller": "data",
+          "callee": "Response::json",
+          "lineNumber": 53
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/MenuController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 76,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 13,
+          "endLine": 17,
+          "params": []
+        },
+        {
+          "name": "manage",
+          "startLine": 19,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "apiGetMenus",
+          "startLine": 29,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "apiSaveMenu",
+          "startLine": 35,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "apiToggleStatus",
+          "startLine": 66,
+          "endLine": 86,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "apiDeleteMenu",
+          "startLine": 88,
+          "endLine": 92,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "MenuController",
+          "startLine": 9,
+          "endLine": 93,
+          "methods": [
+            "__construct",
+            "manage",
+            "apiGetMenus",
+            "apiSaveMenu",
+            "apiToggleStatus",
+            "apiDeleteMenu"
+          ],
+          "properties": [
+            "db"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MenuController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "manage",
+          "callee": "$this->db->query",
+          "lineNumber": 21
+        },
+        {
+          "caller": "manage",
+          "callee": "View::render",
+          "lineNumber": 23
+        },
+        {
+          "caller": "manage",
+          "callee": "Response::html",
+          "lineNumber": 26
+        },
+        {
+          "caller": "manage",
+          "callee": "View::render",
+          "lineNumber": 26
+        },
+        {
+          "caller": "apiGetMenus",
+          "callee": "$this->db->query",
+          "lineNumber": 31
+        },
+        {
+          "caller": "apiGetMenus",
+          "callee": "Response::json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "apiSaveMenu",
+          "callee": "json_decode",
+          "lineNumber": 37
+        },
+        {
+          "caller": "apiSaveMenu",
+          "callee": "file_get_contents",
+          "lineNumber": 37
+        },
+        {
+          "caller": "apiSaveMenu",
+          "callee": "empty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "apiSaveMenu",
+          "callee": "$this->db->execute",
+          "lineNumber": 53
+        },
+        {
+          "caller": "apiSaveMenu",
+          "callee": "$this->db->execute",
+          "lineNumber": 58
+        },
+        {
+          "caller": "apiSaveMenu",
+          "callee": "Response::json",
+          "lineNumber": 63
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 69
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "json_decode",
+          "lineNumber": 72
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "file_get_contents",
+          "lineNumber": 72
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 77
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "$this->db->execute",
+          "lineNumber": 80
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 85
+        },
+        {
+          "caller": "apiDeleteMenu",
+          "callee": "$this->db->execute",
+          "lineNumber": 90
+        },
+        {
+          "caller": "apiDeleteMenu",
+          "callee": "Response::json",
+          "lineNumber": 91
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/ProfileController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 13,
+          "endLine": 16,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 18,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "apiUpdateProfile",
+          "startLine": 50,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "apiChangePassword",
+          "startLine": 88,
+          "endLine": 99,
+          "params": []
+        },
+        {
+          "name": "apiAcceptInvitation",
+          "startLine": 101,
+          "endLine": 115,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "apiRejectInvitation",
+          "startLine": 117,
+          "endLine": 122,
+          "params": [
+            "$id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProfileController",
+          "startLine": 9,
+          "endLine": 123,
+          "methods": [
+            "__construct",
+            "index",
+            "apiUpdateProfile",
+            "apiChangePassword",
+            "apiAcceptInvitation",
+            "apiRejectInvitation"
+          ],
+          "properties": [
+            "db"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProfileController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "index",
+          "callee": "$this->db->first",
+          "lineNumber": 21
+        },
+        {
+          "caller": "index",
+          "callee": "$this->db->query",
+          "lineNumber": 23
+        },
+        {
+          "caller": "index",
+          "callee": "$this->db->query",
+          "lineNumber": 31
+        },
+        {
+          "caller": "index",
+          "callee": "$this->db->query",
+          "lineNumber": 39
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 41
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 47
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 47
+        },
+        {
+          "caller": "apiUpdateProfile",
+          "callee": "json_decode",
+          "lineNumber": 52
+        },
+        {
+          "caller": "apiUpdateProfile",
+          "callee": "file_get_contents",
+          "lineNumber": 52
+        },
+        {
+          "caller": "apiUpdateProfile",
+          "callee": "$this->db->first",
+          "lineNumber": 64
+        },
+        {
+          "caller": "apiUpdateProfile",
+          "callee": "$this->db->execute",
+          "lineNumber": 77
+        },
+        {
+          "caller": "apiUpdateProfile",
+          "callee": "Response::json",
+          "lineNumber": 85
+        },
+        {
+          "caller": "apiChangePassword",
+          "callee": "json_decode",
+          "lineNumber": 90
+        },
+        {
+          "caller": "apiChangePassword",
+          "callee": "file_get_contents",
+          "lineNumber": 90
+        },
+        {
+          "caller": "apiChangePassword",
+          "callee": "md5",
+          "lineNumber": 94
+        },
+        {
+          "caller": "apiChangePassword",
+          "callee": "$this->db->execute",
+          "lineNumber": 96
+        },
+        {
+          "caller": "apiChangePassword",
+          "callee": "Response::json",
+          "lineNumber": 98
+        },
+        {
+          "caller": "apiAcceptInvitation",
+          "callee": "$this->db->first",
+          "lineNumber": 104
+        },
+        {
+          "caller": "apiAcceptInvitation",
+          "callee": "$this->db->execute",
+          "lineNumber": 106
+        },
+        {
+          "caller": "apiAcceptInvitation",
+          "callee": "$this->db->execute",
+          "lineNumber": 108
+        },
+        {
+          "caller": "apiAcceptInvitation",
+          "callee": "Response::json",
+          "lineNumber": 114
+        },
+        {
+          "caller": "apiRejectInvitation",
+          "callee": "$this->db->execute",
+          "lineNumber": 120
+        },
+        {
+          "caller": "apiRejectInvitation",
+          "callee": "Response::json",
+          "lineNumber": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/StrategyManagementController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 682,
+      "nonEmptyLines": 591,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 37,
+          "endLine": 45,
+          "params": [
+            "$stgGroupRepo",
+            "$stgRepo",
+            "$kpiRepo"
+          ]
+        },
+        {
+          "name": "stgGroupIndex",
+          "startLine": 54,
+          "endLine": 67,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgGroupList",
+          "startLine": 72,
+          "endLine": 103,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgGroupAll",
+          "startLine": 108,
+          "endLine": 122,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgGroupStore",
+          "startLine": 127,
+          "endLine": 154,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgGroupUpdate",
+          "startLine": 159,
+          "endLine": 187,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgIndex",
+          "startLine": 196,
+          "endLine": 209,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgList",
+          "startLine": 214,
+          "endLine": 264,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgAll",
+          "startLine": 269,
+          "endLine": 280,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgStore",
+          "startLine": 285,
+          "endLine": 314,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgUpdate",
+          "startLine": 319,
+          "endLine": 349,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "kpiIndex",
+          "startLine": 358,
+          "endLine": 371,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "kpiList",
+          "startLine": 376,
+          "endLine": 427,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "kpiStore",
+          "startLine": 432,
+          "endLine": 496,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "kpiUpdate",
+          "startLine": 501,
+          "endLine": 558,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgGroupDelete",
+          "startLine": 560,
+          "endLine": 577,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgDelete",
+          "startLine": 579,
+          "endLine": 596,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "kpiDelete",
+          "startLine": 598,
+          "endLine": 615,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgGroupToggleStatus",
+          "startLine": 617,
+          "endLine": 637,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "stgToggleStatus",
+          "startLine": 639,
+          "endLine": 659,
+          "params": [
+            "$request"
+          ]
+        },
+        {
+          "name": "kpiToggleStatus",
+          "startLine": 661,
+          "endLine": 681,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "StrategyManagementController",
+          "startLine": 13,
+          "endLine": 682,
+          "methods": [
+            "__construct",
+            "stgGroupIndex",
+            "stgGroupList",
+            "stgGroupAll",
+            "stgGroupStore",
+            "stgGroupUpdate",
+            "stgIndex",
+            "stgList",
+            "stgAll",
+            "stgStore",
+            "stgUpdate",
+            "kpiIndex",
+            "kpiList",
+            "kpiStore",
+            "kpiUpdate",
+            "stgGroupDelete",
+            "stgDelete",
+            "kpiDelete",
+            "stgGroupToggleStatus",
+            "stgToggleStatus",
+            "kpiToggleStatus"
+          ],
+          "properties": [
+            "stgGroupRepo",
+            "stgRepo",
+            "kpiRepo"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StrategyManagementController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "stgGroupIndex",
+          "callee": "View::render",
+          "lineNumber": 56
+        },
+        {
+          "caller": "stgGroupIndex",
+          "callee": "View::render",
+          "lineNumber": 60
+        },
+        {
+          "caller": "stgGroupIndex",
+          "callee": "Response::html",
+          "lineNumber": 66
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "$request->input",
+          "lineNumber": 74
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "$request->input",
+          "lineNumber": 75
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "$request->input",
+          "lineNumber": 76
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "$request->input",
+          "lineNumber": 77
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "empty",
+          "lineNumber": 87
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "$this->stgGroupRepo->paginate",
+          "lineNumber": 96
+        },
+        {
+          "caller": "stgGroupList",
+          "callee": "Response::json",
+          "lineNumber": 98
+        },
+        {
+          "caller": "stgGroupAll",
+          "callee": "$this->stgGroupRepo->all",
+          "lineNumber": 112
+        },
+        {
+          "caller": "stgGroupAll",
+          "callee": "$this->stgGroupRepo->all",
+          "lineNumber": 114
+        },
+        {
+          "caller": "stgGroupAll",
+          "callee": "Response::json",
+          "lineNumber": 115
+        },
+        {
+          "caller": "stgGroupAll",
+          "callee": "Response::json",
+          "lineNumber": 120
+        },
+        {
+          "caller": "stgGroupAll",
+          "callee": "$e->getMessage",
+          "lineNumber": 120
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "trim",
+          "lineNumber": 129
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$request->input",
+          "lineNumber": 129
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "trim",
+          "lineNumber": 130
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$request->input",
+          "lineNumber": 130
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "trim",
+          "lineNumber": 131
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$request->input",
+          "lineNumber": 131
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "trim",
+          "lineNumber": 132
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$request->input",
+          "lineNumber": 132
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$request->input",
+          "lineNumber": 133
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$request->input",
+          "lineNumber": 134
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "empty",
+          "lineNumber": 136
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "Response::json",
+          "lineNumber": 137
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$this->stgGroupRepo->create",
+          "lineNumber": 141
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "Response::json",
+          "lineNumber": 150
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "Response::json",
+          "lineNumber": 152
+        },
+        {
+          "caller": "stgGroupStore",
+          "callee": "$e->getMessage",
+          "lineNumber": 152
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 161
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "trim",
+          "lineNumber": 162
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 162
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "trim",
+          "lineNumber": 163
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 163
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "trim",
+          "lineNumber": 164
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 164
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "trim",
+          "lineNumber": 165
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 165
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 166
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$request->input",
+          "lineNumber": 167
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "empty",
+          "lineNumber": 169
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "Response::json",
+          "lineNumber": 170
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$this->stgGroupRepo->update",
+          "lineNumber": 174
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "Response::json",
+          "lineNumber": 183
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "Response::json",
+          "lineNumber": 185
+        },
+        {
+          "caller": "stgGroupUpdate",
+          "callee": "$e->getMessage",
+          "lineNumber": 185
+        },
+        {
+          "caller": "stgIndex",
+          "callee": "View::render",
+          "lineNumber": 198
+        },
+        {
+          "caller": "stgIndex",
+          "callee": "View::render",
+          "lineNumber": 202
+        },
+        {
+          "caller": "stgIndex",
+          "callee": "Response::html",
+          "lineNumber": 208
+        },
+        {
+          "caller": "stgList",
+          "callee": "$request->input",
+          "lineNumber": 216
+        },
+        {
+          "caller": "stgList",
+          "callee": "$request->input",
+          "lineNumber": 217
+        },
+        {
+          "caller": "stgList",
+          "callee": "$request->input",
+          "lineNumber": 218
+        },
+        {
+          "caller": "stgList",
+          "callee": "$request->input",
+          "lineNumber": 219
+        },
+        {
+          "caller": "stgList",
+          "callee": "$request->input",
+          "lineNumber": 220
+        },
+        {
+          "caller": "stgList",
+          "callee": "empty",
+          "lineNumber": 230
+        },
+        {
+          "caller": "stgList",
+          "callee": "empty",
+          "lineNumber": 235
+        },
+        {
+          "caller": "stgList",
+          "callee": "$this->stgRepo->paginate",
+          "lineNumber": 244
+        },
+        {
+          "caller": "stgList",
+          "callee": "count",
+          "lineNumber": 248
+        },
+        {
+          "caller": "stgList",
+          "callee": "$this->stgGroupRepo->all",
+          "lineNumber": 249
+        },
+        {
+          "caller": "stgList",
+          "callee": "isset",
+          "lineNumber": 255
+        },
+        {
+          "caller": "stgList",
+          "callee": "Response::json",
+          "lineNumber": 259
+        },
+        {
+          "caller": "stgAll",
+          "callee": "$this->stgRepo->all",
+          "lineNumber": 272
+        },
+        {
+          "caller": "stgAll",
+          "callee": "Response::json",
+          "lineNumber": 273
+        },
+        {
+          "caller": "stgAll",
+          "callee": "Response::json",
+          "lineNumber": 278
+        },
+        {
+          "caller": "stgAll",
+          "callee": "$e->getMessage",
+          "lineNumber": 278
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 287
+        },
+        {
+          "caller": "stgStore",
+          "callee": "trim",
+          "lineNumber": 288
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 288
+        },
+        {
+          "caller": "stgStore",
+          "callee": "trim",
+          "lineNumber": 289
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 289
+        },
+        {
+          "caller": "stgStore",
+          "callee": "trim",
+          "lineNumber": 290
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 290
+        },
+        {
+          "caller": "stgStore",
+          "callee": "trim",
+          "lineNumber": 291
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 291
+        },
+        {
+          "caller": "stgStore",
+          "callee": "trim",
+          "lineNumber": 292
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 292
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$request->input",
+          "lineNumber": 293
+        },
+        {
+          "caller": "stgStore",
+          "callee": "empty",
+          "lineNumber": 295
+        },
+        {
+          "caller": "stgStore",
+          "callee": "Response::json",
+          "lineNumber": 296
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$this->stgRepo->create",
+          "lineNumber": 300
+        },
+        {
+          "caller": "stgStore",
+          "callee": "Response::json",
+          "lineNumber": 310
+        },
+        {
+          "caller": "stgStore",
+          "callee": "Response::json",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stgStore",
+          "callee": "$e->getMessage",
+          "lineNumber": 312
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 321
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 322
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "trim",
+          "lineNumber": 323
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 323
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "trim",
+          "lineNumber": 324
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 324
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "trim",
+          "lineNumber": 325
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 325
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "trim",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 326
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "trim",
+          "lineNumber": 327
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 327
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$request->input",
+          "lineNumber": 328
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "empty",
+          "lineNumber": 330
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "Response::json",
+          "lineNumber": 331
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$this->stgRepo->update",
+          "lineNumber": 335
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "Response::json",
+          "lineNumber": 345
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "Response::json",
+          "lineNumber": 347
+        },
+        {
+          "caller": "stgUpdate",
+          "callee": "$e->getMessage",
+          "lineNumber": 347
+        },
+        {
+          "caller": "kpiIndex",
+          "callee": "View::render",
+          "lineNumber": 360
+        },
+        {
+          "caller": "kpiIndex",
+          "callee": "View::render",
+          "lineNumber": 364
+        },
+        {
+          "caller": "kpiIndex",
+          "callee": "Response::html",
+          "lineNumber": 370
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$request->input",
+          "lineNumber": 378
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$request->input",
+          "lineNumber": 379
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$request->input",
+          "lineNumber": 380
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$request->input",
+          "lineNumber": 381
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$request->input",
+          "lineNumber": 382
+        },
+        {
+          "caller": "kpiList",
+          "callee": "empty",
+          "lineNumber": 392
+        },
+        {
+          "caller": "kpiList",
+          "callee": "empty",
+          "lineNumber": 397
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$this->kpiRepo->paginate",
+          "lineNumber": 407
+        },
+        {
+          "caller": "kpiList",
+          "callee": "count",
+          "lineNumber": 411
+        },
+        {
+          "caller": "kpiList",
+          "callee": "$this->stgRepo->all",
+          "lineNumber": 412
+        },
+        {
+          "caller": "kpiList",
+          "callee": "isset",
+          "lineNumber": 418
+        },
+        {
+          "caller": "kpiList",
+          "callee": "Response::json",
+          "lineNumber": 422
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 434
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 435
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 436
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 436
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 437
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 437
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 438
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 438
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 439
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 439
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 440
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 441
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 442
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 442
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 443
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 443
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 444
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 444
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 445
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 446
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 446
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 447
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 447
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 448
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 449
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "trim",
+          "lineNumber": 450
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 450
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 451
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 452
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 453
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$request->input",
+          "lineNumber": 454
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "empty",
+          "lineNumber": 456
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "Response::json",
+          "lineNumber": 457
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$this->kpiRepo->find",
+          "lineNumber": 461
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "Response::json",
+          "lineNumber": 463
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$this->kpiRepo->create",
+          "lineNumber": 467
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "date",
+          "lineNumber": 489
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "Response::json",
+          "lineNumber": 492
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "Response::json",
+          "lineNumber": 494
+        },
+        {
+          "caller": "kpiStore",
+          "callee": "$e->getMessage",
+          "lineNumber": 494
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 503
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 504
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 505
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 505
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 506
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 506
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 507
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 507
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 508
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 508
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 509
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 510
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 511
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 511
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 512
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 512
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 513
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 513
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 514
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 515
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 515
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 516
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 516
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 517
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 518
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "trim",
+          "lineNumber": 519
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 519
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 520
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 521
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 522
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$request->input",
+          "lineNumber": 523
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "empty",
+          "lineNumber": 525
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "Response::json",
+          "lineNumber": 526
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$this->kpiRepo->update",
+          "lineNumber": 530
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "date",
+          "lineNumber": 551
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "Response::json",
+          "lineNumber": 554
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "Response::json",
+          "lineNumber": 556
+        },
+        {
+          "caller": "kpiUpdate",
+          "callee": "$e->getMessage",
+          "lineNumber": 556
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "isset",
+          "lineNumber": 562
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "Response::json",
+          "lineNumber": 563
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "$request->input",
+          "lineNumber": 566
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "Response::json",
+          "lineNumber": 568
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "$this->stgGroupRepo->delete",
+          "lineNumber": 572
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "Response::json",
+          "lineNumber": 573
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "Response::json",
+          "lineNumber": 575
+        },
+        {
+          "caller": "stgGroupDelete",
+          "callee": "$e->getMessage",
+          "lineNumber": 575
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "isset",
+          "lineNumber": 581
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "Response::json",
+          "lineNumber": 582
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "$request->input",
+          "lineNumber": 585
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "Response::json",
+          "lineNumber": 587
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "$this->stgRepo->delete",
+          "lineNumber": 591
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "Response::json",
+          "lineNumber": 592
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "Response::json",
+          "lineNumber": 594
+        },
+        {
+          "caller": "stgDelete",
+          "callee": "$e->getMessage",
+          "lineNumber": 594
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "isset",
+          "lineNumber": 600
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "Response::json",
+          "lineNumber": 601
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "$request->input",
+          "lineNumber": 604
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "Response::json",
+          "lineNumber": 606
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "$this->kpiRepo->delete",
+          "lineNumber": 610
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "Response::json",
+          "lineNumber": 611
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "Response::json",
+          "lineNumber": 613
+        },
+        {
+          "caller": "kpiDelete",
+          "callee": "$e->getMessage",
+          "lineNumber": 613
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "isset",
+          "lineNumber": 619
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 620
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "json_decode",
+          "lineNumber": 623
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "file_get_contents",
+          "lineNumber": 623
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 628
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "$this->stgGroupRepo->update",
+          "lineNumber": 632
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 633
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 635
+        },
+        {
+          "caller": "stgGroupToggleStatus",
+          "callee": "$e->getMessage",
+          "lineNumber": 635
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "isset",
+          "lineNumber": 641
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 642
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "json_decode",
+          "lineNumber": 645
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "file_get_contents",
+          "lineNumber": 645
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 650
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "$this->stgRepo->update",
+          "lineNumber": 654
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 655
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 657
+        },
+        {
+          "caller": "stgToggleStatus",
+          "callee": "$e->getMessage",
+          "lineNumber": 657
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "isset",
+          "lineNumber": 663
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 664
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "json_decode",
+          "lineNumber": 667
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "file_get_contents",
+          "lineNumber": 667
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 672
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "$this->kpiRepo->update",
+          "lineNumber": 676
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 677
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 679
+        },
+        {
+          "caller": "kpiToggleStatus",
+          "callee": "$e->getMessage",
+          "lineNumber": 679
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 21,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Controllers/UserManagementController.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 140,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 13,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "index",
+          "startLine": 22,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "apiGetUsers",
+          "startLine": 29,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "apiApproveUser",
+          "startLine": 41,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "apiRejectUser",
+          "startLine": 54,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "apiUpdatePermission",
+          "startLine": 76,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "apiInviteUser",
+          "startLine": 92,
+          "endLine": 117,
+          "params": []
+        },
+        {
+          "name": "apiToggleStatus",
+          "startLine": 119,
+          "endLine": 139,
+          "params": [
+            "$request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserManagementController",
+          "startLine": 9,
+          "endLine": 140,
+          "methods": [
+            "__construct",
+            "index",
+            "apiGetUsers",
+            "apiApproveUser",
+            "apiRejectUser",
+            "apiUpdatePermission",
+            "apiInviteUser",
+            "apiToggleStatus"
+          ],
+          "properties": [
+            "db"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserManagementController",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "Response::redirect",
+          "lineNumber": 18
+        },
+        {
+          "caller": "index",
+          "callee": "$this->db->query",
+          "lineNumber": 24
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 25
+        },
+        {
+          "caller": "index",
+          "callee": "Response::html",
+          "lineNumber": 26
+        },
+        {
+          "caller": "index",
+          "callee": "View::render",
+          "lineNumber": 26
+        },
+        {
+          "caller": "apiGetUsers",
+          "callee": "$this->db->query",
+          "lineNumber": 37
+        },
+        {
+          "caller": "apiGetUsers",
+          "callee": "Response::json",
+          "lineNumber": 38
+        },
+        {
+          "caller": "apiApproveUser",
+          "callee": "json_decode",
+          "lineNumber": 43
+        },
+        {
+          "caller": "apiApproveUser",
+          "callee": "file_get_contents",
+          "lineNumber": 43
+        },
+        {
+          "caller": "apiApproveUser",
+          "callee": "empty",
+          "lineNumber": 44
+        },
+        {
+          "caller": "apiApproveUser",
+          "callee": "$this->db->execute",
+          "lineNumber": 47
+        },
+        {
+          "caller": "apiApproveUser",
+          "callee": "Response::json",
+          "lineNumber": 51
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "json_decode",
+          "lineNumber": 56
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "file_get_contents",
+          "lineNumber": 56
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "empty",
+          "lineNumber": 57
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "$this->db->first",
+          "lineNumber": 60
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "$this->db->execute",
+          "lineNumber": 63
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "$this->db->execute",
+          "lineNumber": 68
+        },
+        {
+          "caller": "apiRejectUser",
+          "callee": "Response::json",
+          "lineNumber": 73
+        },
+        {
+          "caller": "apiUpdatePermission",
+          "callee": "json_decode",
+          "lineNumber": 78
+        },
+        {
+          "caller": "apiUpdatePermission",
+          "callee": "file_get_contents",
+          "lineNumber": 78
+        },
+        {
+          "caller": "apiUpdatePermission",
+          "callee": "empty",
+          "lineNumber": 79
+        },
+        {
+          "caller": "apiUpdatePermission",
+          "callee": "$this->db->execute",
+          "lineNumber": 85
+        },
+        {
+          "caller": "apiUpdatePermission",
+          "callee": "Response::json",
+          "lineNumber": 89
+        },
+        {
+          "caller": "apiInviteUser",
+          "callee": "json_decode",
+          "lineNumber": 94
+        },
+        {
+          "caller": "apiInviteUser",
+          "callee": "file_get_contents",
+          "lineNumber": 94
+        },
+        {
+          "caller": "apiInviteUser",
+          "callee": "empty",
+          "lineNumber": 95
+        },
+        {
+          "caller": "apiInviteUser",
+          "callee": "$this->db->first",
+          "lineNumber": 104
+        },
+        {
+          "caller": "apiInviteUser",
+          "callee": "$this->db->execute",
+          "lineNumber": 106
+        },
+        {
+          "caller": "apiInviteUser",
+          "callee": "Response::json",
+          "lineNumber": 116
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 122
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "json_decode",
+          "lineNumber": 125
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "file_get_contents",
+          "lineNumber": 125
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 130
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "$this->db->execute",
+          "lineNumber": 133
+        },
+        {
+          "caller": "apiToggleStatus",
+          "callee": "Response::json",
+          "lineNumber": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Core/Cache/CacheManager.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 256,
+      "nonEmptyLines": 224,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 30,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "connect",
+          "startLine": 41,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "isConnected",
+          "startLine": 64,
+          "endLine": 67,
+          "params": []
+        },
+        {
+          "name": "makeKey",
+          "startLine": 77,
+          "endLine": 92,
+          "params": [
+            "$table",
+            "$operation",
+            "$params"
+          ]
+        },
+        {
+          "name": "makePattern",
+          "startLine": 100,
+          "endLine": 103,
+          "params": [
+            "$table"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 111,
+          "endLine": 126,
+          "params": [
+            "$key"
+          ]
+        },
+        {
+          "name": "set",
+          "startLine": 136,
+          "endLine": 149,
+          "params": [
+            "$key",
+            "$value",
+            "$ttl"
+          ]
+        },
+        {
+          "name": "forget",
+          "startLine": 157,
+          "endLine": 169,
+          "params": [
+            "$key"
+          ]
+        },
+        {
+          "name": "invalidateTable",
+          "startLine": 177,
+          "endLine": 203,
+          "params": [
+            "$table"
+          ]
+        },
+        {
+          "name": "invalidateTables",
+          "startLine": 211,
+          "endLine": 216,
+          "params": [
+            "$tables"
+          ]
+        },
+        {
+          "name": "remember",
+          "startLine": 226,
+          "endLine": 236,
+          "params": [
+            "$key",
+            "$ttl",
+            "$callback"
+          ]
+        },
+        {
+          "name": "flush",
+          "startLine": 243,
+          "endLine": 255,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CacheManager",
+          "startLine": 8,
+          "endLine": 256,
+          "methods": [
+            "__construct",
+            "connect",
+            "isConnected",
+            "makeKey",
+            "makePattern",
+            "get",
+            "set",
+            "forget",
+            "invalidateTable",
+            "invalidateTables",
+            "remember",
+            "flush"
+          ],
+          "properties": [
+            "client",
+            "connected",
+            "config",
+            "defaultTtl"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CacheManager",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "file_exists",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__construct",
+          "callee": "isset",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__construct",
+          "callee": "$this->connect",
+          "lineNumber": 38
+        },
+        {
+          "caller": "connect",
+          "callee": "isset",
+          "lineNumber": 44
+        },
+        {
+          "caller": "connect",
+          "callee": "isset",
+          "lineNumber": 45
+        },
+        {
+          "caller": "connect",
+          "callee": "isset",
+          "lineNumber": 46
+        },
+        {
+          "caller": "connect",
+          "callee": "empty",
+          "lineNumber": 49
+        },
+        {
+          "caller": "connect",
+          "callee": "$this->client->ping",
+          "lineNumber": 54
+        },
+        {
+          "caller": "makeKey",
+          "callee": "ksort",
+          "lineNumber": 80
+        },
+        {
+          "caller": "makeKey",
+          "callee": "is_array",
+          "lineNumber": 84
+        },
+        {
+          "caller": "makeKey",
+          "callee": "ksort",
+          "lineNumber": 85
+        },
+        {
+          "caller": "makeKey",
+          "callee": "json_encode",
+          "lineNumber": 86
+        },
+        {
+          "caller": "get",
+          "callee": "$this->client->get",
+          "lineNumber": 118
+        },
+        {
+          "caller": "get",
+          "callee": "unserialize",
+          "lineNumber": 122
+        },
+        {
+          "caller": "set",
+          "callee": "$this->client->setex",
+          "lineNumber": 144
+        },
+        {
+          "caller": "set",
+          "callee": "serialize",
+          "lineNumber": 144
+        },
+        {
+          "caller": "forget",
+          "callee": "$this->client->del",
+          "lineNumber": 164
+        },
+        {
+          "caller": "invalidateTable",
+          "callee": "$this->makePattern",
+          "lineNumber": 184
+        },
+        {
+          "caller": "invalidateTable",
+          "callee": "$this->client->scan",
+          "lineNumber": 189
+        },
+        {
+          "caller": "invalidateTable",
+          "callee": "empty",
+          "lineNumber": 193
+        },
+        {
+          "caller": "invalidateTable",
+          "callee": "$this->client->del",
+          "lineNumber": 194
+        },
+        {
+          "caller": "invalidateTable",
+          "callee": "count",
+          "lineNumber": 195
+        },
+        {
+          "caller": "invalidateTables",
+          "callee": "$this->invalidateTable",
+          "lineNumber": 214
+        },
+        {
+          "caller": "remember",
+          "callee": "$this->get",
+          "lineNumber": 228
+        },
+        {
+          "caller": "remember",
+          "callee": "call_user_func",
+          "lineNumber": 233
+        },
+        {
+          "caller": "remember",
+          "callee": "$this->set",
+          "lineNumber": 234
+        },
+        {
+          "caller": "flush",
+          "callee": "$this->client->flushdb",
+          "lineNumber": 250
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Core/Container.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 164,
+      "nonEmptyLines": 138,
+      "functions": [
+        {
+          "name": "getInstance",
+          "startLine": 30,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "__construct",
+          "startLine": 41,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "set",
+          "startLine": 52,
+          "endLine": 55,
+          "params": [
+            "$id",
+            "$concrete"
+          ]
+        },
+        {
+          "name": "get",
+          "startLine": 64,
+          "endLine": 93,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "resolve",
+          "startLine": 102,
+          "endLine": 163,
+          "params": [
+            "$concrete"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Container",
+          "startLine": 8,
+          "endLine": 164,
+          "methods": [
+            "getInstance",
+            "__construct",
+            "set",
+            "get",
+            "resolve"
+          ],
+          "properties": [
+            "instance",
+            "bindings",
+            "instances"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Container",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get",
+          "callee": "isset",
+          "lineNumber": 67
+        },
+        {
+          "caller": "get",
+          "callee": "isset",
+          "lineNumber": 72
+        },
+        {
+          "caller": "get",
+          "callee": "is_callable",
+          "lineNumber": 75
+        },
+        {
+          "caller": "get",
+          "callee": "call_user_func",
+          "lineNumber": 76
+        },
+        {
+          "caller": "get",
+          "callee": "is_object",
+          "lineNumber": 81
+        },
+        {
+          "caller": "get",
+          "callee": "$this->resolve",
+          "lineNumber": 87
+        },
+        {
+          "caller": "resolve",
+          "callee": "class_exists",
+          "lineNumber": 104
+        },
+        {
+          "caller": "resolve",
+          "callee": "$reflector->isInstantiable",
+          "lineNumber": 111
+        },
+        {
+          "caller": "resolve",
+          "callee": "$reflector->getConstructor",
+          "lineNumber": 115
+        },
+        {
+          "caller": "resolve",
+          "callee": "$constructor->getParameters",
+          "lineNumber": 122
+        },
+        {
+          "caller": "resolve",
+          "callee": "method_exists",
+          "lineNumber": 130
+        },
+        {
+          "caller": "resolve",
+          "callee": "$parameter->getType",
+          "lineNumber": 131
+        },
+        {
+          "caller": "resolve",
+          "callee": "$type->isBuiltin",
+          "lineNumber": 132
+        },
+        {
+          "caller": "resolve",
+          "callee": "$type->getName",
+          "lineNumber": 133
+        },
+        {
+          "caller": "resolve",
+          "callee": "class_exists",
+          "lineNumber": 134
+        },
+        {
+          "caller": "resolve",
+          "callee": "$parameter->getClass",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resolve",
+          "callee": "$parameter->isDefaultValueAvailable",
+          "lineNumber": 151
+        },
+        {
+          "caller": "resolve",
+          "callee": "$parameter->getDefaultValue",
+          "lineNumber": 152
+        },
+        {
+          "caller": "resolve",
+          "callee": "$parameter->getName",
+          "lineNumber": 154
+        },
+        {
+          "caller": "resolve",
+          "callee": "$this->get",
+          "lineNumber": 158
+        },
+        {
+          "caller": "resolve",
+          "callee": "$dependencyClass->getName",
+          "lineNumber": 158
+        },
+        {
+          "caller": "resolve",
+          "callee": "$reflector->newInstanceArgs",
+          "lineNumber": 162
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Core/Database/BaseRepository.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 334,
+      "nonEmptyLines": 287,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 52,
+          "endLine": 60,
+          "params": [
+            "$db",
+            "$cache"
+          ]
+        },
+        {
+          "name": "cacheKeyAll",
+          "startLine": 69,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "cacheKeyFind",
+          "startLine": 79,
+          "endLine": 82,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "cacheKeyPaginate",
+          "startLine": 92,
+          "endLine": 100,
+          "params": [
+            "$limit",
+            "$page",
+            "$additionalSql",
+            "$bindings"
+          ]
+        },
+        {
+          "name": "cacheKeyQuery",
+          "startLine": 108,
+          "endLine": 114,
+          "params": [
+            "$sql",
+            "$bindings"
+          ]
+        },
+        {
+          "name": "invalidateCache",
+          "startLine": 119,
+          "endLine": 124,
+          "params": []
+        },
+        {
+          "name": "all",
+          "startLine": 135,
+          "endLine": 145,
+          "params": []
+        },
+        {
+          "name": "find",
+          "startLine": 153,
+          "endLine": 165,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "paginate",
+          "startLine": 178,
+          "endLine": 188,
+          "params": [
+            "$limit",
+            "$page",
+            "$additionalSql",
+            "$bindings"
+          ]
+        },
+        {
+          "name": "cachedQuery",
+          "startLine": 199,
+          "endLine": 209,
+          "params": [
+            "$sql",
+            "$bindings"
+          ]
+        },
+        {
+          "name": "cachedFirst",
+          "startLine": 218,
+          "endLine": 228,
+          "params": [
+            "$sql",
+            "$bindings"
+          ]
+        },
+        {
+          "name": "create",
+          "startLine": 240,
+          "endLine": 255,
+          "params": [
+            "$data"
+          ]
+        },
+        {
+          "name": "update",
+          "startLine": 264,
+          "endLine": 284,
+          "params": [
+            "$id",
+            "$data"
+          ]
+        },
+        {
+          "name": "delete",
+          "startLine": 292,
+          "endLine": 299,
+          "params": [
+            "$id"
+          ]
+        },
+        {
+          "name": "_paginateQuery",
+          "startLine": 308,
+          "endLine": 333,
+          "params": [
+            "$limit",
+            "$page",
+            "$additionalSql",
+            "$bindings"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BaseRepository",
+          "startLine": 8,
+          "endLine": 334,
+          "methods": [
+            "__construct",
+            "cacheKeyAll",
+            "cacheKeyFind",
+            "cacheKeyPaginate",
+            "cacheKeyQuery",
+            "invalidateCache",
+            "all",
+            "find",
+            "paginate",
+            "cachedQuery",
+            "cachedFirst",
+            "create",
+            "update",
+            "delete",
+            "_paginateQuery"
+          ],
+          "properties": [
+            "db",
+            "cache",
+            "table",
+            "primaryKey",
+            "connection",
+            "cacheTtl",
+            "cacheEnabled"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaseRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "empty",
+          "lineNumber": 57
+        },
+        {
+          "caller": "__construct",
+          "callee": "get_class",
+          "lineNumber": 58
+        },
+        {
+          "caller": "cacheKeyAll",
+          "callee": "$this->cache->makeKey",
+          "lineNumber": 71
+        },
+        {
+          "caller": "cacheKeyFind",
+          "callee": "$this->cache->makeKey",
+          "lineNumber": 81
+        },
+        {
+          "caller": "cacheKeyPaginate",
+          "callee": "$this->cache->makeKey",
+          "lineNumber": 94
+        },
+        {
+          "caller": "cacheKeyPaginate",
+          "callee": "md5",
+          "lineNumber": 97
+        },
+        {
+          "caller": "cacheKeyPaginate",
+          "callee": "md5",
+          "lineNumber": 98
+        },
+        {
+          "caller": "cacheKeyPaginate",
+          "callee": "serialize",
+          "lineNumber": 98
+        },
+        {
+          "caller": "cacheKeyQuery",
+          "callee": "$this->cache->makeKey",
+          "lineNumber": 110
+        },
+        {
+          "caller": "cacheKeyQuery",
+          "callee": "md5",
+          "lineNumber": 111
+        },
+        {
+          "caller": "cacheKeyQuery",
+          "callee": "md5",
+          "lineNumber": 112
+        },
+        {
+          "caller": "cacheKeyQuery",
+          "callee": "serialize",
+          "lineNumber": 112
+        },
+        {
+          "caller": "invalidateCache",
+          "callee": "$this->cache->invalidateTable",
+          "lineNumber": 122
+        },
+        {
+          "caller": "all",
+          "callee": "$this->db->query",
+          "lineNumber": 138
+        },
+        {
+          "caller": "all",
+          "callee": "$this->cacheKeyAll",
+          "lineNumber": 141
+        },
+        {
+          "caller": "all",
+          "callee": "$this->cache->remember",
+          "lineNumber": 142
+        },
+        {
+          "caller": "all",
+          "callee": "$this->db->query",
+          "lineNumber": 143
+        },
+        {
+          "caller": "find",
+          "callee": "$this->db->first",
+          "lineNumber": 157
+        },
+        {
+          "caller": "find",
+          "callee": "$this->cacheKeyFind",
+          "lineNumber": 160
+        },
+        {
+          "caller": "find",
+          "callee": "$this->cache->remember",
+          "lineNumber": 161
+        },
+        {
+          "caller": "find",
+          "callee": "$this->db->first",
+          "lineNumber": 163
+        },
+        {
+          "caller": "paginate",
+          "callee": "$this->_paginateQuery",
+          "lineNumber": 181
+        },
+        {
+          "caller": "paginate",
+          "callee": "$this->cacheKeyPaginate",
+          "lineNumber": 184
+        },
+        {
+          "caller": "paginate",
+          "callee": "$this->cache->remember",
+          "lineNumber": 185
+        },
+        {
+          "caller": "paginate",
+          "callee": "$this->_paginateQuery",
+          "lineNumber": 186
+        },
+        {
+          "caller": "cachedQuery",
+          "callee": "$this->db->query",
+          "lineNumber": 202
+        },
+        {
+          "caller": "cachedQuery",
+          "callee": "$this->cacheKeyQuery",
+          "lineNumber": 205
+        },
+        {
+          "caller": "cachedQuery",
+          "callee": "$this->cache->remember",
+          "lineNumber": 206
+        },
+        {
+          "caller": "cachedQuery",
+          "callee": "$this->db->query",
+          "lineNumber": 207
+        },
+        {
+          "caller": "cachedFirst",
+          "callee": "$this->db->first",
+          "lineNumber": 221
+        },
+        {
+          "caller": "cachedFirst",
+          "callee": "$this->cacheKeyQuery",
+          "lineNumber": 224
+        },
+        {
+          "caller": "cachedFirst",
+          "callee": "$this->cache->remember",
+          "lineNumber": 225
+        },
+        {
+          "caller": "cachedFirst",
+          "callee": "$this->db->first",
+          "lineNumber": 226
+        },
+        {
+          "caller": "create",
+          "callee": "array_keys",
+          "lineNumber": 242
+        },
+        {
+          "caller": "create",
+          "callee": "array_fill",
+          "lineNumber": 243
+        },
+        {
+          "caller": "create",
+          "callee": "count",
+          "lineNumber": 243
+        },
+        {
+          "caller": "create",
+          "callee": "implode",
+          "lineNumber": 245
+        },
+        {
+          "caller": "create",
+          "callee": "implode",
+          "lineNumber": 246
+        },
+        {
+          "caller": "create",
+          "callee": "$this->db->execute",
+          "lineNumber": 249
+        },
+        {
+          "caller": "create",
+          "callee": "array_values",
+          "lineNumber": 249
+        },
+        {
+          "caller": "create",
+          "callee": "$this->db->lastInsertId",
+          "lineNumber": 251
+        },
+        {
+          "caller": "create",
+          "callee": "$this->invalidateCache",
+          "lineNumber": 252
+        },
+        {
+          "caller": "update",
+          "callee": "implode",
+          "lineNumber": 277
+        },
+        {
+          "caller": "update",
+          "callee": "$this->db->execute",
+          "lineNumber": 280
+        },
+        {
+          "caller": "update",
+          "callee": "$this->invalidateCache",
+          "lineNumber": 281
+        },
+        {
+          "caller": "delete",
+          "callee": "$this->db->execute",
+          "lineNumber": 295
+        },
+        {
+          "caller": "delete",
+          "callee": "$this->invalidateCache",
+          "lineNumber": 296
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "$this->db->first",
+          "lineNumber": 311
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "isset",
+          "lineNumber": 312
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "max",
+          "lineNumber": 314
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "max",
+          "lineNumber": 315
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "ceil",
+          "lineNumber": 317
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "$this->db->query",
+          "lineNumber": 320
+        },
+        {
+          "caller": "_paginateQuery",
+          "callee": "min",
+          "lineNumber": 330
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Core/Database/DatabaseManager.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 236,
+      "nonEmptyLines": 207,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 26,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "connection",
+          "startLine": 43,
+          "endLine": 62,
+          "params": [
+            "$name"
+          ]
+        },
+        {
+          "name": "connect",
+          "startLine": 71,
+          "endLine": 107,
+          "params": [
+            "$config"
+          ]
+        },
+        {
+          "name": "query",
+          "startLine": 118,
+          "endLine": 127,
+          "params": [
+            "$sql",
+            "$bindings",
+            "$connection"
+          ]
+        },
+        {
+          "name": "first",
+          "startLine": 138,
+          "endLine": 142,
+          "params": [
+            "$sql",
+            "$bindings",
+            "$connection"
+          ]
+        },
+        {
+          "name": "execute",
+          "startLine": 153,
+          "endLine": 160,
+          "params": [
+            "$sql",
+            "$bindings",
+            "$connection"
+          ]
+        },
+        {
+          "name": "lastInsertId",
+          "startLine": 169,
+          "endLine": 172,
+          "params": [
+            "$connection"
+          ]
+        },
+        {
+          "name": "bindValues",
+          "startLine": 181,
+          "endLine": 199,
+          "params": [
+            "$stmt",
+            "$bindings"
+          ]
+        },
+        {
+          "name": "beginTransaction",
+          "startLine": 208,
+          "endLine": 211,
+          "params": [
+            "$connection"
+          ]
+        },
+        {
+          "name": "commit",
+          "startLine": 220,
+          "endLine": 223,
+          "params": [
+            "$connection"
+          ]
+        },
+        {
+          "name": "rollBack",
+          "startLine": 232,
+          "endLine": 235,
+          "params": [
+            "$connection"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DatabaseManager",
+          "startLine": 9,
+          "endLine": 236,
+          "methods": [
+            "__construct",
+            "connection",
+            "connect",
+            "query",
+            "first",
+            "execute",
+            "lastInsertId",
+            "bindValues",
+            "beginTransaction",
+            "commit",
+            "rollBack"
+          ],
+          "properties": [
+            "config",
+            "connections"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DatabaseManager",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "file_exists",
+          "lineNumber": 29
+        },
+        {
+          "caller": "connection",
+          "callee": "isset",
+          "lineNumber": 46
+        },
+        {
+          "caller": "connection",
+          "callee": "isset",
+          "lineNumber": 50
+        },
+        {
+          "caller": "connection",
+          "callee": "isset",
+          "lineNumber": 54
+        },
+        {
+          "caller": "connection",
+          "callee": "$this->connect",
+          "lineNumber": 59
+        },
+        {
+          "caller": "connect",
+          "callee": "isset",
+          "lineNumber": 82
+        },
+        {
+          "caller": "connect",
+          "callee": "$e->getMessage",
+          "lineNumber": 105
+        },
+        {
+          "caller": "query",
+          "callee": "$this->connection",
+          "lineNumber": 120
+        },
+        {
+          "caller": "query",
+          "callee": "$pdo->prepare",
+          "lineNumber": 121
+        },
+        {
+          "caller": "query",
+          "callee": "$this->bindValues",
+          "lineNumber": 123
+        },
+        {
+          "caller": "query",
+          "callee": "$stmt->execute",
+          "lineNumber": 124
+        },
+        {
+          "caller": "query",
+          "callee": "$stmt->fetchAll",
+          "lineNumber": 126
+        },
+        {
+          "caller": "first",
+          "callee": "$this->query",
+          "lineNumber": 140
+        },
+        {
+          "caller": "first",
+          "callee": "count",
+          "lineNumber": 141
+        },
+        {
+          "caller": "execute",
+          "callee": "$this->connection",
+          "lineNumber": 155
+        },
+        {
+          "caller": "execute",
+          "callee": "$pdo->prepare",
+          "lineNumber": 156
+        },
+        {
+          "caller": "execute",
+          "callee": "$this->bindValues",
+          "lineNumber": 158
+        },
+        {
+          "caller": "execute",
+          "callee": "$stmt->execute",
+          "lineNumber": 159
+        },
+        {
+          "caller": "lastInsertId",
+          "callee": "$this->connection($connection)->lastInsertId",
+          "lineNumber": 171
+        },
+        {
+          "caller": "lastInsertId",
+          "callee": "$this->connection",
+          "lineNumber": 171
+        },
+        {
+          "caller": "bindValues",
+          "callee": "is_int",
+          "lineNumber": 185
+        },
+        {
+          "caller": "bindValues",
+          "callee": "is_int",
+          "lineNumber": 187
+        },
+        {
+          "caller": "bindValues",
+          "callee": "is_bool",
+          "lineNumber": 189
+        },
+        {
+          "caller": "bindValues",
+          "callee": "is_null",
+          "lineNumber": 191
+        },
+        {
+          "caller": "bindValues",
+          "callee": "$stmt->bindValue",
+          "lineNumber": 197
+        },
+        {
+          "caller": "beginTransaction",
+          "callee": "$this->connection($connection)->beginTransaction",
+          "lineNumber": 210
+        },
+        {
+          "caller": "beginTransaction",
+          "callee": "$this->connection",
+          "lineNumber": 210
+        },
+        {
+          "caller": "commit",
+          "callee": "$this->connection($connection)->commit",
+          "lineNumber": 222
+        },
+        {
+          "caller": "commit",
+          "callee": "$this->connection",
+          "lineNumber": 222
+        },
+        {
+          "caller": "rollBack",
+          "callee": "$this->connection($connection)->rollBack",
+          "lineNumber": 234
+        },
+        {
+          "caller": "rollBack",
+          "callee": "$this->connection",
+          "lineNumber": 234
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/Core/helpers.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 22,
+      "callGraph": [
+        {
+          "caller": "url",
+          "callee": "trim",
+          "lineNumber": 13
+        },
+        {
+          "caller": "url",
+          "callee": "ltrim",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/Core/Request.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 128,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 25,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "server",
+          "startLine": 48,
+          "endLine": 52,
+          "params": [
+            "$key",
+            "$default"
+          ]
+        },
+        {
+          "name": "getPath",
+          "startLine": 59,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "getMethod",
+          "startLine": 97,
+          "endLine": 100,
+          "params": []
+        },
+        {
+          "name": "isJson",
+          "startLine": 107,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "input",
+          "startLine": 120,
+          "endLine": 129,
+          "params": [
+            "$key",
+            "$default"
+          ]
+        },
+        {
+          "name": "sanitize",
+          "startLine": 137,
+          "endLine": 151,
+          "params": [
+            "$data"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Request",
+          "startLine": 5,
+          "endLine": 152,
+          "methods": [
+            "__construct",
+            "server",
+            "getPath",
+            "getMethod",
+            "isJson",
+            "input",
+            "sanitize"
+          ],
+          "properties": [
+            "query",
+            "body",
+            "server"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Request",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__construct",
+          "callee": "$this->isJson",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__construct",
+          "callee": "file_get_contents",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__construct",
+          "callee": "json_decode",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__construct",
+          "callee": "is_array",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__construct",
+          "callee": "array_merge",
+          "lineNumber": 36
+        },
+        {
+          "caller": "server",
+          "callee": "strtoupper",
+          "lineNumber": 50
+        },
+        {
+          "caller": "server",
+          "callee": "isset",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getPath",
+          "callee": "file_exists",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getPath",
+          "callee": "$this->server",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getPath",
+          "callee": "strpos",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getPath",
+          "callee": "substr",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getPath",
+          "callee": "isset",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getPath",
+          "callee": "trim",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getPath",
+          "callee": "strpos",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getPath",
+          "callee": "substr",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getPath",
+          "callee": "strlen",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getPath",
+          "callee": "trim",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getMethod",
+          "callee": "strtoupper",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getMethod",
+          "callee": "$this->server",
+          "lineNumber": 99
+        },
+        {
+          "caller": "isJson",
+          "callee": "$this->server",
+          "lineNumber": 109
+        },
+        {
+          "caller": "isJson",
+          "callee": "strpos",
+          "lineNumber": 110
+        },
+        {
+          "caller": "input",
+          "callee": "array_merge",
+          "lineNumber": 122
+        },
+        {
+          "caller": "input",
+          "callee": "$this->sanitize",
+          "lineNumber": 125
+        },
+        {
+          "caller": "input",
+          "callee": "isset",
+          "lineNumber": 128
+        },
+        {
+          "caller": "input",
+          "callee": "$this->sanitize",
+          "lineNumber": 128
+        },
+        {
+          "caller": "sanitize",
+          "callee": "is_array",
+          "lineNumber": 139
+        },
+        {
+          "caller": "sanitize",
+          "callee": "$this->sanitize",
+          "lineNumber": 141
+        },
+        {
+          "caller": "sanitize",
+          "callee": "is_string",
+          "lineNumber": 146
+        },
+        {
+          "caller": "sanitize",
+          "callee": "htmlspecialchars",
+          "lineNumber": 147
+        },
+        {
+          "caller": "sanitize",
+          "callee": "trim",
+          "lineNumber": 147
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    }
+  ]
+}

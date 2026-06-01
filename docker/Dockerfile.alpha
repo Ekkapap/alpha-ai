@@ -1,0 +1,43 @@
+FROM python:3.12-slim
+
+# ── system deps ──────────────────────────────────────────────────────────────
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl git ca-certificates gnupg \
+    gcc python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# ── Node.js 20 ────────────────────────────────────────────────────────────────
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get install -y nodejs \
+    && npm install -g pnpm \
+    && rm -rf /var/lib/apt/lists/*
+
+# ── Python graphify CLI ───────────────────────────────────────────────────────
+RUN pip install --no-cache-dir graphifyy
+
+# ── Understand-Anything (official: https://github.com/Lum1104/Understand-Anything)
+RUN git clone --depth 1 https://github.com/Lum1104/Understand-Anything \
+    /root/.understand-anything/repo/understand-anything-plugin \
+    && cd /root/.understand-anything/repo/understand-anything-plugin \
+    && pnpm install --ignore-scripts 2>&1
+
+# ── Go binaries (pre-built linux/arm64) ──────────────────────────────────────
+# alpha   → /usr/local/bin/alpha          (MCP server ENTRYPOINT)
+# graphify → /usr/local/bin/graphify-core (renamed to avoid conflict with Python graphify CLI)
+# understand → /usr/local/bin/understand
+COPY agents-resource/tools/bin/linux/alpha      /usr/local/bin/alpha
+COPY agents-resource/tools/bin/linux/graphify   /usr/local/bin/graphify-core
+COPY agents-resource/tools/bin/linux/understand /usr/local/bin/understand
+RUN chmod +x /usr/local/bin/alpha /usr/local/bin/graphify-core /usr/local/bin/understand
+
+# ── Understand startup wrapper ────────────────────────────────────────────────
+COPY docker/understand-start.sh /understand-start.sh
+RUN chmod +x /understand-start.sh
+
+# ── Alpha env ─────────────────────────────────────────────────────────────────
+ENV ALPHA_IN_DOCKER=1
+# PROJECT_ROOT and ALPHA_ROOT are set at runtime via docker-compose.yml env section
+
+WORKDIR /workspace/α
+
+ENTRYPOINT ["alpha"]

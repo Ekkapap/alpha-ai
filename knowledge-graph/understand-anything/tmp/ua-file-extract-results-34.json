@@ -1,0 +1,250 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/references/advanced-patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 173,
+      "nonEmptyLines": 133,
+      "sections": [
+        {
+          "heading": "Advanced Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Composing Transformations",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "lo + stdlib Interop",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "lo + samber/mo Integration",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Iterator Patterns (loi)",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Eager vs lazy comparison",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Building lazy pipelines",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Performance-Sensitive Patterns",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "When to switch from lo to lom",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Parallel transforms",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Testing with lo",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "Slice-to-Map Conversion",
+          "level": 2,
+          "line": 154
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/references/api-reference.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 326,
+      "nonEmptyLines": 290,
+      "sections": [
+        {
+          "heading": "API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Slice Transformations",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Slice-to-map conversions",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Error variants",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Slice Queries",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Slice Set Operations",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "Slice trimming",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "Map Operations",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "String Operations",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "Math & Comparison",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "Conditionals",
+          "level": 3,
+          "line": 212
+        },
+        {
+          "heading": "Tuples",
+          "level": 2,
+          "line": 222
+        },
+        {
+          "heading": "Channel Operations",
+          "level": 2,
+          "line": 235
+        },
+        {
+          "heading": "Concurrency Helpers",
+          "level": 2,
+          "line": 249
+        },
+        {
+          "heading": "Type Manipulation",
+          "level": 2,
+          "line": 270
+        },
+        {
+          "heading": "Function Helpers",
+          "level": 2,
+          "line": 296
+        },
+        {
+          "heading": "Duration Helpers",
+          "level": 2,
+          "line": 303
+        },
+        {
+          "heading": "Error Helpers",
+          "level": 2,
+          "line": 310
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/references/package-guide.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 175,
+      "nonEmptyLines": 126,
+      "sections": [
+        {
+          "heading": "Package Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Import Paths and Aliases",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "`lo` — Core (Immutable)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "`lo/parallel` (lop) — Concurrent Transforms",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "`lo/mutable` (lom) — In-Place Mutations",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "`lo/it` (loi) — Lazy Iterators",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "`lo/exp/simd` — Experimental SIMD",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "Decision Flowchart",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Comparison Table",
+          "level": 2,
+          "line": 165
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    }
+  ]
+}

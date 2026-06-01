@@ -1,0 +1,119 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/app-interface.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 31,
+      "nonEmptyLines": 31,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/charts.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 26,
+      "nonEmptyLines": 26,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/colors.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 162,
+      "nonEmptyLines": 162,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/design.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 1776,
+      "nonEmptyLines": 1619,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/draft.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 1779,
+      "nonEmptyLines": 1620,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/google-fonts.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 1924,
+      "nonEmptyLines": 1924,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/icons.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 106,
+      "nonEmptyLines": 106,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/landing.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 35,
+      "nonEmptyLines": 35,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/products.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 162,
+      "nonEmptyLines": 162,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/react-performance.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 45,
+      "nonEmptyLines": 45,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/styles.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 85,
+      "nonEmptyLines": 85,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/typography.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 74,
+      "nonEmptyLines": 74,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/ui-reasoning.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 162,
+      "nonEmptyLines": 162,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/ux-guidelines.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 100,
+      "nonEmptyLines": 100,
+      "metrics": {}
+    }
+  ]
+}

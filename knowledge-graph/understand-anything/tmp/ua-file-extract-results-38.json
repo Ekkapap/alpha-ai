@@ -1,0 +1,829 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 12,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/architecture.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 268,
+      "nonEmptyLines": 222,
+      "sections": [
+        {
+          "heading": "Security Architecture Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Defense-in-Depth Layers",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Go Implementation by Layer",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Zero Trust Principles",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Authentication Pattern Selection",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "JWT Validation — Complete Example",
+          "level": 3,
+          "line": 147
+        },
+        {
+          "heading": "Password Hashing — Argon2id",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "HTTP Security Headers",
+          "level": 2,
+          "line": 210
+        },
+        {
+          "heading": "Security Anti-Patterns",
+          "level": 2,
+          "line": 239
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/checklist.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 80,
+      "nonEmptyLines": 57,
+      "sections": [
+        {
+          "heading": "Security Review Checklist",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Input Handling",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Database",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Code Execution",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Cryptography",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Web Security",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Authentication/Authorization",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Dependency Security",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "HTTP Security Headers",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Rate Limiting & DoS Prevention",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Concurrency",
+          "level": 2,
+          "line": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/cookies.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 200,
+      "nonEmptyLines": 155,
+      "sections": [
+        {
+          "heading": "Cookie Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "HTTP-Only Flag Missing — Medium",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Insecure Cookie Configuration (Missing Secure Flag) — Medium",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "SameSite Cookie Protection — Medium",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Cookie Prefix Examples — Low",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "Gorilla Sessions Cookie Security — High",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "Cookie Best Practices Checklist",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 194
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/cryptography.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 403,
+      "nonEmptyLines": 286,
+      "sections": [
+        {
+          "heading": "Cryptography Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Algorithm Selection Guide",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Key Size Requirements",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Key Rotation Pattern",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Common Cryptographic Mistakes",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Mistake 1: AES-ECB reveals patterns — High",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Mistake 2: Reusing nonces — Critical",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Mistake 3: Non-constant-time comparison for secrets — Medium",
+          "level": 3,
+          "line": 133
+        },
+        {
+          "heading": "Insecure TLS Configuration — High",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "DES Encryption — High",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Insecure SSH Host Key Verification — High",
+          "level": 2,
+          "line": 189
+        },
+        {
+          "heading": "MD5 Hash — High",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "RC4 Cipher — High",
+          "level": 2,
+          "line": 240
+        },
+        {
+          "heading": "SHA1 Hash — Medium",
+          "level": 2,
+          "line": 265
+        },
+        {
+          "heading": "Weak Cryptographic Algorithms — Medium",
+          "level": 2,
+          "line": 285
+        },
+        {
+          "heading": "Insufficient Key Strength — Medium",
+          "level": 2,
+          "line": 304
+        },
+        {
+          "heading": "Weak Random Number Generators — High",
+          "level": 2,
+          "line": 323
+        },
+        {
+          "heading": "Weak TLS Versions — High",
+          "level": 2,
+          "line": 344
+        },
+        {
+          "heading": "Password Hashing — High",
+          "level": 2,
+          "line": 363
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 396
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/filesystem.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 255,
+      "nonEmptyLines": 181,
+      "sections": [
+        {
+          "heading": "Filesystem Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Directory Traversal — High",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Zip Archive Path Traversal — High",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Decompression Bomb — Medium",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Insecure Temporary File Creation — Medium",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Insecure File Permissions — Medium",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "Insecure mkdir — Low",
+          "level": 2,
+          "line": 167
+        },
+        {
+          "heading": "Insecure File Write Permissions — Medium",
+          "level": 2,
+          "line": 185
+        },
+        {
+          "heading": "Tainted File Read — High",
+          "level": 2,
+          "line": 203
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 250
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/injection.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 315,
+      "nonEmptyLines": 223,
+      "sections": [
+        {
+          "heading": "Injection Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "SQL Injection — Critical",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Dynamic IN clauses",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Dynamic column names and ORDER BY",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Dynamic WHERE filters",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "Prefer `sqlx` or `pgx` over raw `database/sql`",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "XPath Injection — High",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Code Injection — Critical",
+          "level": 2,
+          "line": 143
+        },
+        {
+          "heading": "Command Injection — Critical",
+          "level": 2,
+          "line": 165
+        },
+        {
+          "heading": "Template Injection — High",
+          "level": 2,
+          "line": 188
+        },
+        {
+          "heading": "Cross-Site Scripting (XSS) — High",
+          "level": 2,
+          "line": 212
+        },
+        {
+          "heading": "HTML Tag Injection — High",
+          "level": 2,
+          "line": 232
+        },
+        {
+          "heading": "Server-Side Request Forgery (SSRF) — High",
+          "level": 2,
+          "line": 252
+        },
+        {
+          "heading": "Unsafe Deserialization — Critical",
+          "level": 2,
+          "line": 283
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 307
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/logging.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 163,
+      "nonEmptyLines": 121,
+      "sections": [
+        {
+          "heading": "Logging Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Sensitive Data in Logs — Medium",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Log Injection — Low",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Information Leakage in Error Messages — Medium",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "General Logger Security — Low",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Log Security Checklist",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/memory-safety.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 241,
+      "nonEmptyLines": 185,
+      "sections": [
+        {
+          "heading": "Memory Safety Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Integer Overflow — High",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "math/big.Rat Issues — Low",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Memory Aliasing Vulnerability — Medium",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Use of unsafe Package — High",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "Data Races — High",
+          "level": 2,
+          "line": 183
+        },
+        {
+          "heading": "Always Run Race Detector",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 234
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/network.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 252,
+      "nonEmptyLines": 182,
+      "sections": [
+        {
+          "heading": "Network/Web Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Open Redirect Vulnerability — Medium",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Bind to All Interfaces — Medium",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Slowloris Attack Vulnerability — Medium",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Insecure HTTP Server Configuration — Medium",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Observable Timing (Timing Attacks) — Medium",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Exposed pprof Profiling Endpoints — High",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "XXE Vulnerability — High",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "Permissive Regex Validation — Low",
+          "level": 2,
+          "line": 223
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 245
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/secrets.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 189,
+      "nonEmptyLines": 151,
+      "sections": [
+        {
+          "heading": "Secrets Management Security Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Hardcoded Secrets and Credentials — Critical",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Hardcoded Database Passwords — Critical",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Secrets Storage Best Practices",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Secret Managers",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": ".gitignore Patterns",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Secret Detection Patterns",
+          "level": 2,
+          "line": 171
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/third-party.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 159,
+      "nonEmptyLines": 124,
+      "sections": [
+        {
+          "heading": "Third-Party Data Leak Rules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Common Vulnerable Services",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Error Tracking Services — Medium",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Analytics/Monitoring Services — Medium",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Data Filtering Layer",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Review Checklist",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "CWE References",
+          "level": 2,
+          "line": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/threat-modeling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 189,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "Threat Modeling Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "STRIDE Methodology",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "STRIDE per Element Matrix",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Go-Specific STRIDE Analysis",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "DREAD Risk Scoring",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "Example: SQL Injection in Login Handler",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Trust Boundary Analysis",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "OWASP Top 10 Mapping for Go",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Conducting a Threat Model",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Vulnerability Severity Matrix",
+          "level": 2,
+          "line": 180
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    }
+  ]
+}

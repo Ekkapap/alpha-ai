@@ -1,0 +1,147 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-gc-time.md",
+      "language": "markdown",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-invalidation.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-placeholder-vs-initial.md",
+      "language": "markdown",
+      "sizeLines": 156,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/cache-stale-time.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/err-error-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/inf-page-params.md",
+      "language": "markdown",
+      "sizeLines": 132,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/mut-invalidate-queries.md",
+      "language": "markdown",
+      "sizeLines": 118,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/mut-mutation-state.md",
+      "language": "markdown",
+      "sizeLines": 169,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/mut-optimistic-updates.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/network-mode.md",
+      "language": "markdown",
+      "sizeLines": 179,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/parallel-use-queries.md",
+      "language": "markdown",
+      "sizeLines": 152,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/perf-select-transform.md",
+      "language": "markdown",
+      "sizeLines": 144,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/persist-queries.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/pf-intent-prefetch.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-array-structure.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-factory-pattern.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-hierarchical-organization.md",
+      "language": "markdown",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-include-dependencies.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/qk-serializable.md",
+      "language": "markdown",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/query-cancellation.md",
+      "language": "markdown",
+      "sizeLines": 171,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/state/tanstack/query/rules/cache-gc-time.md": [],
+    ".agents/skills/state/tanstack/query/rules/cache-invalidation.md": [],
+    ".agents/skills/state/tanstack/query/rules/cache-placeholder-vs-initial.md": [],
+    ".agents/skills/state/tanstack/query/rules/cache-stale-time.md": [],
+    ".agents/skills/state/tanstack/query/rules/err-error-boundaries.md": [],
+    ".agents/skills/state/tanstack/query/rules/inf-page-params.md": [],
+    ".agents/skills/state/tanstack/query/rules/mut-invalidate-queries.md": [],
+    ".agents/skills/state/tanstack/query/rules/mut-mutation-state.md": [],
+    ".agents/skills/state/tanstack/query/rules/mut-optimistic-updates.md": [],
+    ".agents/skills/state/tanstack/query/rules/network-mode.md": [],
+    ".agents/skills/state/tanstack/query/rules/parallel-use-queries.md": [],
+    ".agents/skills/state/tanstack/query/rules/perf-select-transform.md": [],
+    ".agents/skills/state/tanstack/query/rules/persist-queries.md": [],
+    ".agents/skills/state/tanstack/query/rules/pf-intent-prefetch.md": [],
+    ".agents/skills/state/tanstack/query/rules/qk-array-structure.md": [],
+    ".agents/skills/state/tanstack/query/rules/qk-factory-pattern.md": [],
+    ".agents/skills/state/tanstack/query/rules/qk-hierarchical-organization.md": [],
+    ".agents/skills/state/tanstack/query/rules/qk-include-dependencies.md": [],
+    ".agents/skills/state/tanstack/query/rules/qk-serializable.md": [],
+    ".agents/skills/state/tanstack/query/rules/query-cancellation.md": []
+  }
+}

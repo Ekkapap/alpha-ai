@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>α ALPHA</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:#0d0d0d;color:#e0e0e0;
+  display:flex;flex-direction:column;
+}
+
+/* ── Top nav ────────────────────────────────────────────── */
+header{
+  display:flex;align-items:center;gap:1.5rem;
+  padding:0 1.25rem;height:46px;flex-shrink:0;
+  background:#111;border-bottom:1px solid #1e1e1e;
+}
+.brand{
+  font-size:1rem;font-weight:600;color:#7c6cfc;
+  letter-spacing:.05em;white-space:nowrap;
+}
+.brand em{font-style:normal;font-size:1.15em}
+nav{display:flex;gap:.25rem}
+nav button{
+  padding:.35rem .9rem;border:none;border-radius:6px;
+  background:transparent;color:#666;
+  cursor:pointer;font-size:.82rem;letter-spacing:.02em;
+  transition:background .12s,color .12s;
+}
+nav button:hover{background:#1a1a1a;color:#bbb}
+nav button.active{background:#1c1630;color:#7c6cfc}
+.spacer{flex:1}
+.status{font-size:.72rem;color:#333;font-family:"SF Mono",Menlo,monospace}
+
+/* ── Main area ──────────────────────────────────────────── */
+main{flex:1;display:flex;overflow:hidden;position:relative}
+
+/* ── Landing ────────────────────────────────────────────── */
+#landing{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2.25rem;
+}
+#landing header-sub{display:none}
+.subtitle{font-size:.8rem;color:#444;letter-spacing:.06em}
+.cards{display:flex;gap:1.1rem;flex-wrap:wrap;justify-content:center}
+.card{
+  display:flex;flex-direction:column;gap:.65rem;
+  padding:1.6rem 1.6rem 1.4rem;width:210px;
+  background:#131313;border:1px solid #1e1e1e;border-radius:12px;
+  cursor:pointer;transition:border-color .13s,background .13s,transform .13s;
+  text-align:left;
+}
+.card:hover{border-color:#333;background:#191919;transform:translateY(-2px)}
+.card:active{transform:none}
+.card .icon{font-size:1.6rem;line-height:1}
+.card .name{font-size:.95rem;font-weight:600;color:#fff}
+.card .desc{font-size:.75rem;color:#555;line-height:1.55}
+.card .tag{
+  margin-top:.2rem;font-size:.65rem;font-family:"SF Mono",Menlo,monospace;
+  padding:.18em .5em;border-radius:4px;
+  background:#1a1a1a;border:1px solid #252525;
+  width:fit-content;
+}
+.card .tag.ready{color:#7c6cfc;border-color:#2a2060}
+
+/* ── iframes ────────────────────────────────────────────── */
+iframe{
+  flex:1;border:none;width:100%;height:100%;
+  display:none;background:#0d0d0d;
+}
+iframe.active{display:block}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brand" onclick="home()" style="cursor:pointer"><em>α</em> ALPHA</span>
+  <nav>
+    <button id="btn-graphify"    onclick="show('graphify')">Graphify</button>
+    <button id="btn-graphify-tree"    onclick="show('graphify-tree')">Graphify Tree</button>
+    <button id="btn-understand"  onclick="show('understand')">Understand-Anything</button>
+  </nav>
+  <span class="spacer"></span>
+  <span class="status" id="status"></span>
+</header>
+
+<main>
+  <!-- Landing -->
+  <div id="landing">
+    <span class="subtitle">knowledge graph · code understanding</span>
+    <div class="cards">
+      <div class="card" onclick="show('graphify')">
+        <div class="icon">🕸️</div>
+        <div class="name">Graphify</div>
+        <div class="desc">Interactive codebase knowledge graph</div>
+        <div class="tag">graph.html</div>
+      </div>
+      <div class="card" onclick="show('graphify-tree')">
+        <div class="icon">
+          <!-- list stack icon  -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="6" x2="19" y2="6"></line>
+            <line x1="6" y1="12" x2="19" y2="12"></line>
+            <line x1="6" y1="18" x2="19" y2="18"></line>
+          </svg>
+        </div>
+        <div class="name">Graphify Tree</div>
+        <div class="desc">Codebase knowledge graph (Tree View)</div>
+        <div class="tag">GRAPH_TREE.html</div>
+      </div>
+      <div class="card" onclick="show('understand')">
+        <div class="icon">🔍</div>
+        <div class="name">Understand-Anything</div>
+        <div class="desc">AST analysis &amp; code understanding</div>
+        <div class="tag" id="understand-tag">⏳ loading…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content frames (lazy-loaded on first click) -->
+  <iframe id="frame-graphify"   title="Graphify"></iframe>
+  <iframe id="frame-graphify-tree"   title="Graphify Tree"></iframe>
+  <iframe id="frame-understand" title="Understand-Anything"></iframe>
+</main>
+
+<script>
+var understandUrl = 'http://localhost:5173';
+var understandReady = false;
+
+function setStatus(msg){ document.getElementById('status').textContent = msg; }
+
+// Fetch token URL written by understand-start.sh; retry until available
+function fetchToken(){
+  fetch('/alpha-dashboard/understand-url?t=' + Date.now())
+    .then(function(r){ return r.ok ? r.text() : Promise.reject(r.status); })
+    .then(function(url){
+      url = url.trim();
+      if(!url) throw new Error('empty');
+      understandUrl = url;
+      understandReady = true;
+      var tag = document.getElementById('understand-tag');
+      var token = new URL(url).searchParams.get('token');
+      tag.textContent = token ? 'token ready' : ':5173';
+      tag.classList.add('ready');
+    })
+    .catch(function(){ setTimeout(fetchToken, 3000); });
+}
+fetchToken();
+
+// Active view tracking
+var current = null;
+
+function show(view){
+  // Hide landing
+  document.getElementById('landing').style.display = 'none';
+
+  // Deactivate all
+  document.querySelectorAll('nav button').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('iframe').forEach(function(f){ f.classList.remove('active'); });
+
+  if(view === 'graphify'){
+    var f = document.getElementById('frame-graphify');
+    if(!f.src || f.src === 'about:blank') f.src = '/alpha-dashboard/graphify/graph.html';
+    f.classList.add('active');
+    document.getElementById('btn-graphify').classList.add('active');
+    setStatus('graphify');
+
+  } else if(view === 'graphify-tree'){
+    var f = document.getElementById('frame-graphify-tree');
+    if(!f.src || f.src === 'about:blank') f.src = '/alpha-dashboard/graphify/GRAPH_TREE.html';
+    f.classList.add('active');
+    document.getElementById('btn-graphify-tree').classList.add('active');
+    setStatus('graphify-tree');
+  } else if(view === 'understand'){
+    var f = document.getElementById('frame-understand');
+    // Load (or reload with fresh token if not yet loaded)
+    if(!f.src || f.src === 'about:blank'){
+      f.src = understandUrl;
+    }
+    f.classList.add('active');
+    document.getElementById('btn-understand').classList.add('active');
+    setStatus(understandReady ? 'understand-anything' : 'connecting…');
+  }
+
+  current = view;
+}
+
+function home(){
+  document.querySelectorAll('nav button').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('iframe').forEach(function(f){ f.classList.remove('active'); });
+  document.getElementById('landing').style.display = '';
+  setStatus('');
+  current = null;
+}
+</script>
+</body>
+</html>

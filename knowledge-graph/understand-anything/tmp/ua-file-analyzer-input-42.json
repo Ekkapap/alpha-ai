@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/cache-single-source.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/flow-loader-query-pattern.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/setup-query-client-context.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/ssr-dehydrate-hydrate.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/state/tanstack/integration/rules/cache-single-source.md": [],
+    ".agents/skills/state/tanstack/integration/rules/flow-loader-query-pattern.md": [],
+    ".agents/skills/state/tanstack/integration/rules/setup-query-client-context.md": [],
+    ".agents/skills/state/tanstack/integration/rules/ssr-dehydrate-hydrate.md": []
+  }
+}

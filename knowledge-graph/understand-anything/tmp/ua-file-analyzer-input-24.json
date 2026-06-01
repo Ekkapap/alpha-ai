@@ -1,0 +1,175 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "public/router.php",
+      "language": "php",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "run_migration.php",
+      "language": "php",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/generate-batches.mjs",
+      "language": "javascript",
+      "sizeLines": 215,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/understand.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "storage/redis-data/appendonlydir/appendonly.aof.1.base.rdb",
+      "language": "rdb",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/redis-data/appendonlydir/appendonly.aof.1.incr.aof",
+      "language": "aof",
+      "sizeLines": 3927,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/redis-data/appendonlydir/appendonly.aof.manifest",
+      "language": "manifest",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/redis-data/dump.rdb",
+      "language": "rdb",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_2c34dee4e0f3e8ebd73e9fb3b25437ac",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_332700b6965dd6515e8aa602ae3f7be7",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_3b2d005da6fe6c24084700234e5407b1",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_3e78d0db598fb4270036a2b6bf5a53a4",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_47bf870919b07420486a27729af9d0a0",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_5f5988bede62856f2f3fb67634f07ffd",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_6978b8b1b84994cb37cc8d25036960a3",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_771ef5c10eea7d3c763b345630b81089",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_797f1aa210dd906eaaca486221343118",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_80044aa477d7039abd29fcf314910fc2",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_823c06e6764a42e82e2b2d6828e1cd8e",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_a28d20b32f4dcdc074a12c2d737d1948",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_a96182d75511fdfe32ae9f127af97ef7",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_c0d6baaab759b6ea62ee5c683f3c74c3",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_e5c661d92cafae39d3bc17d8df9c5461",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_f49bcbb6b9dc10952a90dba1f39d1213",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "public/router.php": [],
+    "run_migration.php": [],
+    "scripts/generate-batches.mjs": [],
+    "scripts/understand.md": [],
+    "storage/redis-data/appendonlydir/appendonly.aof.1.base.rdb": [],
+    "storage/redis-data/appendonlydir/appendonly.aof.1.incr.aof": [],
+    "storage/redis-data/appendonlydir/appendonly.aof.manifest": [],
+    "storage/redis-data/dump.rdb": [],
+    "storage/sessions/sess_2c34dee4e0f3e8ebd73e9fb3b25437ac": [],
+    "storage/sessions/sess_332700b6965dd6515e8aa602ae3f7be7": [],
+    "storage/sessions/sess_3b2d005da6fe6c24084700234e5407b1": [],
+    "storage/sessions/sess_3e78d0db598fb4270036a2b6bf5a53a4": [],
+    "storage/sessions/sess_47bf870919b07420486a27729af9d0a0": [],
+    "storage/sessions/sess_5f5988bede62856f2f3fb67634f07ffd": [],
+    "storage/sessions/sess_6978b8b1b84994cb37cc8d25036960a3": [],
+    "storage/sessions/sess_771ef5c10eea7d3c763b345630b81089": [],
+    "storage/sessions/sess_797f1aa210dd906eaaca486221343118": [],
+    "storage/sessions/sess_80044aa477d7039abd29fcf314910fc2": [],
+    "storage/sessions/sess_823c06e6764a42e82e2b2d6828e1cd8e": [],
+    "storage/sessions/sess_a28d20b32f4dcdc074a12c2d737d1948": [],
+    "storage/sessions/sess_a96182d75511fdfe32ae9f127af97ef7": [],
+    "storage/sessions/sess_c0d6baaab759b6ea62ee5c683f3c74c3": [],
+    "storage/sessions/sess_e5c661d92cafae39d3bc17d8df9c5461": [],
+    "storage/sessions/sess_f49bcbb6b9dc10952a90dba1f39d1213": []
+  }
+}

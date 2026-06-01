@@ -1,0 +1,140 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/next/references/async-patterns.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/bundling.md",
+      "language": "markdown",
+      "sizeLines": 180,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/data-patterns.md",
+      "language": "markdown",
+      "sizeLines": 297,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/debug-tricks.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/directives.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 227,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/file-conventions.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/font.md",
+      "language": "markdown",
+      "sizeLines": 245,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/functions.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/hydration-error.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/image.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/metadata.md",
+      "language": "markdown",
+      "sizeLines": 301,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/parallel-routes.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/route-handlers.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/rsc-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/runtime-selection.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/scripts.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/self-hosting.md",
+      "language": "markdown",
+      "sizeLines": 371,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/next/references/suspense-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/next/references/async-patterns.md": [],
+    ".agents/skills/framework/next/references/bundling.md": [],
+    ".agents/skills/framework/next/references/data-patterns.md": [],
+    ".agents/skills/framework/next/references/debug-tricks.md": [],
+    ".agents/skills/framework/next/references/directives.md": [],
+    ".agents/skills/framework/next/references/error-handling.md": [],
+    ".agents/skills/framework/next/references/file-conventions.md": [],
+    ".agents/skills/framework/next/references/font.md": [],
+    ".agents/skills/framework/next/references/functions.md": [],
+    ".agents/skills/framework/next/references/hydration-error.md": [],
+    ".agents/skills/framework/next/references/image.md": [],
+    ".agents/skills/framework/next/references/metadata.md": [],
+    ".agents/skills/framework/next/references/parallel-routes.md": [],
+    ".agents/skills/framework/next/references/route-handlers.md": [],
+    ".agents/skills/framework/next/references/rsc-boundaries.md": [],
+    ".agents/skills/framework/next/references/runtime-selection.md": [],
+    ".agents/skills/framework/next/references/scripts.md": [],
+    ".agents/skills/framework/next/references/self-hosting.md": [],
+    ".agents/skills/framework/next/references/suspense-boundaries.md": []
+  }
+}

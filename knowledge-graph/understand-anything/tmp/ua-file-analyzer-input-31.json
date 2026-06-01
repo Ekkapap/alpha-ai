@@ -1,0 +1,28 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/references/libraries.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/references/stdlib.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/references/tools.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-popular-libraries/references/libraries.md": [],
+    ".agents/skills/framework/golang/golang-popular-libraries/references/stdlib.md": [],
+    ".agents/skills/framework/golang/golang-popular-libraries/references/tools.md": []
+  }
+}

@@ -3,69 +3,103 @@ name: alpha
 # ─────────────────────────────────────────────────────────────────────────────
 #  α ALPHA — docker-compose.yml
 #
-#  Usage:
-#    docker compose up dashboard          # start knowledge graph dashboard
-#    docker compose run --rm -i graphify  # MCP stdio (called by .mcp.json)
-#    docker compose run --rm -i understand # MCP stdio (called by .mcp.json)
+#  MCP (on-demand, called by .mcp.json):
+#    docker compose run --rm -i --no-deps alpha
+#
+#  Dashboard (persistent, started by install.sh):
+#    docker compose --profile dashboard up -d
+#    → http://localhost:8080/alpha-dashboard/      (landing + graphify)
+#    → http://localhost:5173                       (understand-anything)
 #
 #  Env:
-#    PROJECT_ROOT  — path to your project (default: current directory)
-#    DASHBOARD_PORT — dashboard port (default: 3000)
+#    HOST_PROJECT_ROOT — absolute path to your project root (parent of α/)
+#    DASHBOARD_PORT    — nginx port (default: 8080)
+#    UNDERSTAND_PORT   — understand dashboard port (default: 5173)
 # ─────────────────────────────────────────────────────────────────────────────
-
-x-project-mount: &project-mount
-  - type: bind
-    source: ${PROJECT_ROOT:-.}
-    target: /project
-
-x-understand-src-mount: &understand-src-mount
-  - type: bind
-    source: ${HOME}/.understand-anything/repo/understand-anything-plugin
-    target: /app
 
 services:
 
-  # ── Graphify MCP (stdio) ─────────────────────────────────────────────────
-  # Started on-demand by .mcp.json via: docker compose run --rm -i graphify
-  graphify:
+  # ── Alpha MCP (stdio, on-demand) ──────────────────────────────────────────
+  alpha:
+    container_name: alpha
     build:
       context: .
-      dockerfile: docker/Dockerfile.graphify
-    volumes: *project-mount
-    working_dir: /project
-    stdin_open: true
-    tty: false
-    profiles: [mcp]   # not started by default — called per-request
-
-  # ── Understand MCP (stdio) ───────────────────────────────────────────────
-  # Started on-demand by .mcp.json via: docker compose run --rm -i understand
-  understand:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.understand
+      dockerfile: docker/Dockerfile.alpha
     volumes:
-      - *project-mount
-      - *understand-src-mount
-    working_dir: /project
-    stdin_open: true
-    tty: false
-    profiles: [mcp]   # not started by default — called per-request
-
-  # ── Knowledge Graph Dashboard (web UI) ───────────────────────────────────
-  # docker compose up dashboard
-  # Opens http://localhost:3000 — works with ANY AI tool (Gemini, Antigravity, etc.)
-  dashboard:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.understand
-    command: >
-      sh -c "cd /app && pnpm install --frozen-lockfile --silent && pnpm dev"
-    volumes:
-      - *project-mount
-      - *understand-src-mount
-    working_dir: /app
-    ports:
-      - "${DASHBOARD_PORT:-3000}:3000"
+      - type: bind
+        source: ${HOST_PROJECT_ROOT:-.}
+        target: /workspace
+      - type: bind
+        source: ./knowledge-graph/graphify-out
+        target: /workspace/α/knowledge-graph/graphify-out
+      - type: bind
+        source: ./knowledge-graph/understand-anything
+        target: /workspace/α/knowledge-graph/understand-anything
     environment:
-      - PROJECT_ROOT=/project
+      - PROJECT_ROOT=/workspace/α
+      - ALPHA_ROOT=/workspace
+      - ALPHA_IN_DOCKER=1
+    working_dir: /workspace/α
+    stdin_open: true
+    tty: false
+    profiles: [mcp]
+
+  # ── Dashboard landing + Graphify static (nginx) ───────────────────────────
+  # http://localhost:8080/alpha-dashboard/          → landing page (2 cards)
+  # http://localhost:8080/alpha-dashboard/graphify/ → graphify-out/ static files
+  dashboard:
+    container_name: alpha-dashboard
+    image: nginx:alpine
+    volumes:
+      - type: bind
+        source: ${HOST_PROJECT_ROOT:-.}
+        target: /workspace
+        read_only: true
+      - type: bind
+        source: ./docker
+        target: /usr/share/nginx/html
+        read_only: true
+      - type: bind
+        source: ./logs/nginx
+        target: /var/log/nginx
+    command: ["/bin/sh", "-c", "cp /usr/share/nginx/html/dashboard.nginx.conf /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
+    ports:
+      - "${DASHBOARD_PORT:-8080}:80"
     profiles: [dashboard]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ── Understand-Anything Dashboard (Vite dev server) ───────────────────────
+  # http://localhost:5173
+  # Runs: pnpm run dev:dashboard (= pnpm --filter @understand-anything/dashboard dev)
+  # from the outer repo root: /root/.understand-anything/repo/understand-anything-plugin/
+  understand-server:
+    container_name: alpha-understand
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.alpha
+    entrypoint: ["/understand-start.sh"]
+    volumes:
+      - type: bind
+        source: ${HOST_PROJECT_ROOT:-.}
+        target: /workspace
+      - type: bind
+        source: ./knowledge-graph/graphify-out
+        target: /workspace/α/knowledge-graph/graphify-out
+      - type: bind
+        source: ./knowledge-graph/understand-anything
+        target: /workspace/α/knowledge-graph/understand-anything
+    working_dir: /root/.understand-anything/repo/understand-anything-plugin
+    ports:
+      - "${UNDERSTAND_PORT:-5173}:5173"
+    environment:
+      - PROJECT_ROOT=/workspace/α
+      - ALPHA_ROOT=/workspace
+      - GRAPH_DIR=/workspace
+      - BROWSER=none
+    profiles: [dashboard]
+    restart: unless-stopped

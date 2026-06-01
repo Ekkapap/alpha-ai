@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "alter_user_requested_office.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/config/app.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/config/database.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/config/menu.back.json",
+      "language": "json",
+      "sizeLines": 116,
+      "fileCategory": "config"
+    },
+    {
+      "path": "app/config/permissions.php",
+      "language": "php",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/helpers.php",
+      "language": "php",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/auth/login.php",
+      "language": "php",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/index.php",
+      "language": "php",
+      "sizeLines": 433,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/manage/builder.php",
+      "language": "php",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/manage/index.php",
+      "language": "php",
+      "sizeLines": 466,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/manage/widget_modal.php",
+      "language": "php",
+      "sizeLines": 527,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/preview.php",
+      "language": "php",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/viewer.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/bar_chart.php",
+      "language": "php",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/card_action.php",
+      "language": "php",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/donut_chart.php",
+      "language": "php",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/gauge_chart.php",
+      "language": "php",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/grid_space.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/heatmap.php",
+      "language": "php",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/line_chart.php",
+      "language": "php",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/map_2d.php",
+      "language": "php",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/map_3d.php",
+      "language": "php",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/stats.php",
+      "language": "php",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/dashboard/widgets/table.php",
+      "language": "php",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".understand-anything/.understandignore": [],
+    "alter_user_requested_office.php": [],
+    "app/config/app.php": [],
+    "app/config/database.php": [],
+    "app/config/menu.back.json": [],
+    "app/config/permissions.php": [],
+    "app/Core/helpers.php": [],
+    "app/views/auth/login.php": [],
+    "app/views/dashboard/index.php": [],
+    "app/views/dashboard/manage/builder.php": [],
+    "app/views/dashboard/manage/index.php": [],
+    "app/views/dashboard/manage/widget_modal.php": [],
+    "app/views/dashboard/preview.php": [],
+    "app/views/dashboard/viewer.php": [],
+    "app/views/dashboard/widgets/bar_chart.php": [],
+    "app/views/dashboard/widgets/card_action.php": [],
+    "app/views/dashboard/widgets/donut_chart.php": [],
+    "app/views/dashboard/widgets/gauge_chart.php": [],
+    "app/views/dashboard/widgets/grid_space.php": [],
+    "app/views/dashboard/widgets/heatmap.php": [],
+    "app/views/dashboard/widgets/line_chart.php": [],
+    "app/views/dashboard/widgets/map_2d.php": [],
+    "app/views/dashboard/widgets/map_3d.php": [],
+    "app/views/dashboard/widgets/stats.php": [],
+    "app/views/dashboard/widgets/table.php": []
+  }
+}

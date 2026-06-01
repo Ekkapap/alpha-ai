@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/data/prisma/database-setup/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 186,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/driver-adapter/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 638,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/expert/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 361,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/orm-v7/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 121,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/postgres/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/upgrade-to-v7/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 228,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-benchmark/evals/evals.json",
+      "language": "json",
+      "sizeLines": 1078,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-benchmark/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/args.go",
+      "language": "go",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/cli_test.go",
+      "language": "go",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/completion.go",
+      "language": "go",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/config.go",
+      "language": "go",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/exit_codes.go",
+      "language": "go",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/flags.go",
+      "language": "go",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/main.go",
+      "language": "go",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/output.go",
+      "language": "go",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/root.go",
+      "language": "go",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/serve.go",
+      "language": "go",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/signal.go",
+      "language": "go",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/version.go",
+      "language": "go",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/evals/evals.json",
+      "language": "json",
+      "sizeLines": 342,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 205,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-code-style/evals/evals.json",
+      "language": "json",
+      "sizeLines": 550,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/data/prisma/database-setup/SKILL.md": [],
+    ".agents/skills/data/prisma/driver-adapter/SKILL.md": [],
+    ".agents/skills/data/prisma/expert/SKILL.md": [],
+    ".agents/skills/data/prisma/orm-v7/SKILL.md": [],
+    ".agents/skills/data/prisma/postgres/SKILL.md": [],
+    ".agents/skills/data/prisma/SKILL.md": [],
+    ".agents/skills/data/prisma/upgrade-to-v7/SKILL.md": [],
+    ".agents/skills/data/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-benchmark/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-benchmark/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/args.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/cli_test.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/completion.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/config.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/exit_codes.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/flags.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/main.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/output.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/root.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/serve.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/signal.go": [],
+    ".agents/skills/framework/golang/golang-cli/assets/examples/version.go": [],
+    ".agents/skills/framework/golang/golang-cli/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-cli/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-code-style/evals/evals.json": []
+  }
+}

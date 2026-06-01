@@ -1,0 +1,364 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/views/kpi/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 570,
+      "nonEmptyLines": 508,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/input_modal.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/responsible/_assign_modal.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 339,
+      "nonEmptyLines": 304,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/responsible/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 294,
+      "nonEmptyLines": 267,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/layouts/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 862,
+      "nonEmptyLines": 787,
+      "functions": [
+        {
+          "name": "navActive",
+          "startLine": 497,
+          "endLine": 502,
+          "params": [
+            "$path",
+            "$currentPath",
+            "$exact"
+          ]
+        },
+        {
+          "name": "navClass",
+          "startLine": 503,
+          "endLine": 505,
+          "params": [
+            "$path",
+            "$currentPath",
+            "$exact"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "navActive",
+          "line": 497,
+          "isDefault": false
+        },
+        {
+          "name": "navClass",
+          "line": 503,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "navActive",
+          "callee": "strpos",
+          "lineNumber": 501
+        },
+        {
+          "caller": "navClass",
+          "callee": "navActive",
+          "lineNumber": 504
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/logs/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 144,
+      "nonEmptyLines": 125,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/menu/manage.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 391,
+      "nonEmptyLines": 338,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/mockup/summary_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 121,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/profile/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 257,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/stg_group/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 427,
+      "nonEmptyLines": 388,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/stg/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 482,
+      "nonEmptyLines": 437,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/user/manage.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 416,
+      "nonEmptyLines": 369,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "composer.phar",
+      "language": "phar",
+      "fileCategory": "code",
+      "totalLines": 150950,
+      "nonEmptyLines": 101243,
+      "metrics": {}
+    },
+    {
+      "path": "fix_controllers.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 29,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fix_office_column.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "graphify-out/.graphify_python",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "graphify-out/.graphify_root",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "patch_app_menu.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 41,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_pagination_menu.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 59,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_pagination_profile.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 66,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_pagination_user.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 65,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_profile.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_sidebar.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 111,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_user_manage.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 102,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "planning/result.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

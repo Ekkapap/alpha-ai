@@ -1,0 +1,228 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/ui/designer/assets/app-overview-generator.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 73,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "电梯演讲（Elevator Pitch）",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "问题陈述（Problem Statement）",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "目标受众（Target Audience）",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "独特卖点（USP - Unique Selling Proposition）",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "目标平台（Target Platforms）",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "功能列表（Features List）",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "功能类别 1",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "功能类别 2",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "UX/UI 考虑因素",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "[屏幕名称或交互场景]",
+          "level": 4,
+          "line": 44
+        },
+        {
+          "heading": "[屏幕名称或交互场景]",
+          "level": 4,
+          "line": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/ui/designer/assets/design-system.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 155,
+      "nonEmptyLines": 103,
+      "sections": [
+        {
+          "heading": "色彩调色板",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "主要颜色",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "次要颜色",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "强调色",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "功能性颜色",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "背景颜色",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "排版",
+          "level": 1,
+          "line": 40
+        },
+        {
+          "heading": "字体系列",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "字重",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "文本样式",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "标题",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "正文文本",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "特殊文本",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "组件样式",
+          "level": 1,
+          "line": 80
+        },
+        {
+          "heading": "按钮",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "主要按钮",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "次要按钮",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "文本按钮",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "卡片",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "输入框",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "图标",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "间距系统",
+          "level": 1,
+          "line": 131
+        },
+        {
+          "heading": "动效与动画",
+          "level": 1,
+          "line": 140
+        },
+        {
+          "heading": "深色模式变体",
+          "level": 1,
+          "line": 147
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": ".agents/skills/ui/designer/assets/vibe-design-template.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 57,
+      "nonEmptyLines": 44,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

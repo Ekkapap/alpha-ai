@@ -26,8 +26,8 @@ if [[ -n "$MODE" && "$MODE" != "--update" && "$MODE" != "--cluster-only" ]]; the
 fi
 
 # 1. Resolve Python Interpreter
-if [ -f "$PROJECT_ROOT/graphify-out/.graphify_python" ]; then
-    PY_PATH=$(cat "$PROJECT_ROOT/graphify-out/.graphify_python")
+if [ -f "$PROJECT_ROOT/α/knowledge-graph/graphify-out/.graphify_python" ]; then
+    PY_PATH=$(cat "$PROJECT_ROOT/α/knowledge-graph/graphify-out/.graphify_python")
 else
     PY_PATH=$(which python3)
 fi
@@ -55,7 +55,7 @@ from networkx.readwrite import json_graph
 from graphify.cluster import cluster
 from graphify.export import to_json
 
-graph_path = Path(os.environ['PROJECT_ROOT']) / 'graphify-out/graph.json'
+graph_path = Path(os.environ['PROJECT_ROOT']) / 'α/knowledge-graph/graphify-out/graph.json'
 if not graph_path.exists():
     exit(0)
 
@@ -63,7 +63,7 @@ data = json.loads(graph_path.read_text())
 G = json_graph.node_link_graph(data, edges='links')
 
 # A. Force Ingest Knowledge
-knowledge_path = Path(os.environ['PROJECT_ROOT']) / '.agents/knowledge'
+knowledge_path = Path(os.environ['PROJECT_ROOT']) / 'α/knowledge-graph/raw-knowledge'
 if knowledge_path.exists():
     if not any(n == 'wisdom_central_kb' for n in G.nodes()):
         G.add_node('wisdom_central_kb', label='Project Wisdom Base', file_type='concept')
@@ -84,7 +84,7 @@ G.remove_nodes_from(nodes_to_remove)
 
 # C. Save & Export
 communities = cluster(G)
-to_json(G, communities, str(Path(os.environ['PROJECT_ROOT']) / 'graphify-out/graph.json'), force=True)
+to_json(G, communities, str(Path(os.environ['PROJECT_ROOT']) / 'α/knowledge-graph/graphify-out/graph.json'), force=True)
 "
 
 # 4. Final Export

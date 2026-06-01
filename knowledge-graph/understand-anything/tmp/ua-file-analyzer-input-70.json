@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 267,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/evals/evals.json",
+      "language": "json",
+      "sizeLines": 154,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/references/advanced.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-do/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 221,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/evals/evals.json",
+      "language": "json",
+      "sizeLines": 202,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/evals/evals.json",
+      "language": "json",
+      "sizeLines": 226,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-lo/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 182,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/evals/evals.json",
+      "language": "json",
+      "sizeLines": 311,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 273,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-oops/evals/evals.json",
+      "language": "json",
+      "sizeLines": 153,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-oops/references/advanced.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-oops/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 273,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/evals/evals.json",
+      "language": "json",
+      "sizeLines": 294,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 180,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/evals/evals.json",
+      "language": "json",
+      "sizeLines": 172,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/evals/evals.json",
+      "language": "json",
+      "sizeLines": 586,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 179,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stay-updated/evals/evals.json",
+      "language": "json",
+      "sizeLines": 142,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stay-updated/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stretchr-testify/evals/evals.json",
+      "language": "json",
+      "sizeLines": 148,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stretchr-testify/references/mock.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-stretchr-testify/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-safety/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-do/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-do/references/advanced.md": [],
+    ".agents/skills/framework/golang/golang-samber-do/references/testing.md": [],
+    ".agents/skills/framework/golang/golang-samber-do/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-hot/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-hot/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-lo/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-lo/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-mo/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-mo/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-oops/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-oops/references/advanced.md": [],
+    ".agents/skills/framework/golang/golang-samber-oops/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-ro/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-ro/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-samber-slog/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-samber-slog/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-security/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-security/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-stay-updated/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-stay-updated/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-stretchr-testify/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-stretchr-testify/references/mock.md": [],
+    ".agents/skills/framework/golang/golang-stretchr-testify/SKILL.md": []
+  }
+}

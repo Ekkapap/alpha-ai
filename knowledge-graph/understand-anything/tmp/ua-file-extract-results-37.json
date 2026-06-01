@@ -1,0 +1,336 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/backend-handlers.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 269,
+      "nonEmptyLines": 198,
+      "sections": [
+        {
+          "heading": "Backend Handlers",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Common Option Fields",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Cloud Backends",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Datadog — `slog-datadog`",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Sentry — `slog-sentry`",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Loki — `slog-loki`",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Graylog — `slog-graylog`",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "Messaging Backends",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Kafka — `slog-kafka`",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Fluentd — `slog-fluentd`",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "Logstash — `slog-logstash`",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Notification Backends",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Slack — `slog-slack`",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Telegram — `slog-telegram`",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "Webhook — `slog-webhook`",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "Storage Backends",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Parquet — `slog-parquet`",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Logging Bridges",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "slog-zap",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "slog-zerolog",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "slog-logrus",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "Graceful Shutdown Checklist",
+          "level": 2,
+          "line": 238
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/http-middlewares.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 179,
+      "nonEmptyLines": 140,
+      "sections": [
+        {
+          "heading": "HTTP Middlewares",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Shared Config Fields",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Default Log Fields",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Gin — `slog-gin`",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Echo — `slog-echo`",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Fiber — `slog-fiber`",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Chi — `slog-chi`",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "net/http — `slog-http`",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Filters",
+          "level": 2,
+          "line": 157
+        },
+        {
+          "heading": "Logger Grouping",
+          "level": 2,
+          "line": 172
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/pipeline-patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 240,
+      "nonEmptyLines": 194,
+      "sections": [
+        {
+          "heading": "Pipeline Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Fanout — Broadcast to All",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Router — Predicate-Based Routing",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "FirstMatch — Short-Circuit Routing",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "Failover — Sequential Fallback",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Pool — Load-Balanced Dispatch",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "Pipe — Middleware Chain",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "Inline Handlers and Middleware",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "AttrFromContext — Request-Scoped Attributes",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Full Production Pipeline",
+          "level": 2,
+          "line": 189
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-slog/references/sampling-strategies.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 176,
+      "nonEmptyLines": 134,
+      "sections": [
+        {
+          "heading": "Sampling Strategies",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Sample",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Strategy Comparison",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Uniform Sampling",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Threshold Sampling",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Absolute Sampling",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Custom Sampling",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Matchers — Record Grouping",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Chaining Multiple Strategies",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Pipeline Ordering",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Hook Functions — Observability on Sampling",
+          "level": 2,
+          "line": 155
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

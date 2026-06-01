@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "graphify_version": "1.0.0",
+
+  "universal": {
+    "dir_symlinks": [
+      {
+        "src": "α/knowledge-graph/graphify-out",
+        "dst": "graphify-out",
+        "create_src": true
+      },
+      {
+        "src": "α/knowledge-graph/understand-anything",
+        "dst": ".understand-anything",
+        "create_src": true
+      },
+      {
+        "src": "α/knowledge-graph/memories",
+        "dst": "memories",
+        "create_src": true
+      }
+    ],
+    "file_symlinks": [
+      { "src": "α/agents-resource/PRODUCTION_CLAUDE.md", "dst": "CLAUDE.md", "merge": true },
+      { "src": "α/agents-resource/PRODUCTION_GEMINI.md", "dst": "GEMINI.md", "merge": true }
+    ],
+    "copy_files": [
+      {
+        "src": "α/knowledge-graph/graphify-out/.graphifyignore",
+        "dst": ".graphifyignore"
+      },
+      {
+        "src": "α/knowledge-graph/understand-anything/.understandignore",
+        "dst": ".understandignore"
+      }
+    ]
+  },
+
+  "agents": {
+    "claude": {
+      "label": "Claude / Copilot",
+      "rtk_cmd": "rtk init -g",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": true, "understand": true },
+      "home_dir": ".claude",
+      "project_dir_symlinks": [
+        { "src": "α/.claude", "dst": ".claude" }
+      ],
+      "internal_symlinks": [
+        { "rel": "../agents-resource/commands", "link": "α/.claude/commands" },
+        { "rel": "../agents-resource/rules",    "link": "α/.claude/rules"    },
+        { "rel": "../agents-resource/skills",   "link": "α/.claude/skills"   }
+      ],
+      "mcp_config": {
+        "src": "α/agents-resource/.mcp.json",
+        "dst": ".mcp.json",
+        "action": "copy_template"
+      },
+      "rtk_hook": {
+        "settings_file": "~/.claude/settings.json",
+        "hook_command": "rtk hook claude",
+        "inject_path": ["hooks", "PreToolUse"],
+        "matcher": "Bash"
+      }
+    },
+
+    "gemini": {
+      "label": "Gemini CLI",
+      "rtk_cmd": "rtk init -g --gemini",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": true, "understand": true },
+      "home_dir": ".agents",
+      "project_dir_symlinks": [
+        { "src": "α/.agents", "dst": ".agents" }
+      ],
+      "internal_symlinks": [
+        { "rel": "../agents-resource/rules",  "link": "α/.agents/rules"  },
+        { "rel": "../agents-resource/skills", "link": "α/.agents/skills" }
+      ]
+    },
+
+    "antigravity": {
+      "label": "Antigravity (Google)",
+      "rtk_cmd": "rtk init --agent antigravity",
+      "mode": "inject",
+      "features": { "rtk": true, "graph": false, "understand": true },
+      "home_dir": ".agents",
+      "project_dir_symlinks": [
+        { "src": "α/.agents", "dst": ".agents" }
+      ],
+      "internal_symlinks": [
+        { "rel": "../agents-resource/workflows", "link": "α/.agents/workflows" },
+        { "rel": "../agents-resource/rules",     "link": "α/.agents/rules"     },
+        { "rel": "../agents-resource/skills",    "link": "α/.agents/skills"    }
+      ]
+    },
+
+    "cursor": {
+      "label": "Cursor",
+      "rtk_cmd": "rtk init -g --agent cursor",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": true, "understand": true },
+      "home_dir": ".cursor",
+      "internal_symlinks": [
+        { "rel": "../agents-resource/rules", "link": "α/.cursor/rules" }
+      ]
+    },
+
+    "codex": {
+      "label": "Codex (OpenAI)",
+      "rtk_cmd": "rtk init -g --codex",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": true, "understand": true },
+      "home_dir": ".codex",
+      "internal_symlinks": [
+        { "rel": "../agents-resource/rules", "link": "α/.codex/rules" }
+      ]
+    },
+
+    "windsurf": {
+      "label": "Windsurf",
+      "rtk_cmd": "rtk init --agent windsurf",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": false, "understand": false },
+      "home_dir": ".windsurf"
+    },
+
+    "cline": {
+      "label": "Cline / Roo Code",
+      "rtk_cmd": "rtk init --agent cline",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": false, "understand": true },
+      "home_dir": ".cline",
+      "internal_symlinks": [
+        { "rel": "../agents-resource/rules",  "link": "α/.cline/rules"  },
+        { "rel": "../agents-resource/skills", "link": "α/.cline/skills" }
+      ]
+    },
+
+    "kilocode": {
+      "label": "Kilocode",
+      "rtk_cmd": "rtk init --agent kilocode",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": false, "understand": false },
+      "home_dir": ".kilocode"
+    },
+
+    "hermes": {
+      "label": "Hermes",
+      "rtk_cmd": "rtk init --agent hermes",
+      "mode": "hook",
+      "features": { "rtk": true, "graph": false, "understand": true },
+      "home_dir": ".hermes",
+      "internal_symlinks": [
+        { "rel": "../agents-resource/rules",  "link": "α/.hermes/rules"  },
+        { "rel": "../agents-resource/skills", "link": "α/.hermes/skills" }
+      ]
+    }
+  }
+}

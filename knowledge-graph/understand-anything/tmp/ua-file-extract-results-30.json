@@ -1,0 +1,578 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/caching.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 183,
+      "nonEmptyLines": 128,
+      "sections": [
+        {
+          "heading": "Caching Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Compiled Pattern Caching",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Regexp at package level",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Template caching",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Precomputed lookup tables",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Request-Level Caching",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "singleflight for cache stampede prevention",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "LRU caches",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Algorithmic Complexity",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "Work Avoidance",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "Map lookups over slice scanning",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "Early returns and short-circuit loops",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Avoid iterator chains",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Replace indirect function calls with direct loops",
+          "level": 3,
+          "line": 167
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/cpu.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 375,
+      "nonEmptyLines": 266,
+      "sections": [
+        {
+          "heading": "CPU Optimization",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Function Inlining",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Value receivers enable inlining",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Cache Locality",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Row-major traversal",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Contiguous 2D allocation",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Struct of Arrays (SoA) vs Array of Structs (AoS)",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Pointer-heavy vs value-heavy data",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "False Sharing",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Instruction-Level Parallelism",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "SIMD (Single Instruction, Multiple Data)",
+          "level": 2,
+          "line": 165
+        },
+        {
+          "heading": "Handling CPU-specific instruction sets",
+          "level": 3,
+          "line": 188
+        },
+        {
+          "heading": "Tight Loops and the Scheduler",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "Reflection and Type Assertions",
+          "level": 2,
+          "line": 341
+        },
+        {
+          "heading": "Monotonic Time",
+          "level": 2,
+          "line": 361
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/io-networking.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 299,
+      "nonEmptyLines": 220,
+      "sections": [
+        {
+          "heading": "I/O & Networking Optimization",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "HTTP Transport Configuration",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Connection pooling",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Timeouts",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Drain response body for connection reuse",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Streaming vs Buffering",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Avoid io.ReadAll for large payloads",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Streaming JSON",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "JSON Performance",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Cgo Overhead",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "Buffered I/O",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "Concurrent Multi-Stage Pipelines",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "The unusual scenario",
+          "level": 3,
+          "line": 158
+        },
+        {
+          "heading": "When to use this (and when NOT to)",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Batch Operations",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "Database: batch inserts over row-by-row",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "HTTP: batch API calls",
+          "level": 3,
+          "line": 263
+        },
+        {
+          "heading": "Channel: batch processing from a stream",
+          "level": 3,
+          "line": 279
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/memory.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 233,
+      "nonEmptyLines": 158,
+      "sections": [
+        {
+          "heading": "Memory Optimization",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Allocation Patterns",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Reuse slices via append(s[:0], ...)",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Direct indexing vs append",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Eliminate redundant map lookups",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Map size hints",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Sentinel errors vs fmt.Errorf",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Interface boxing",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Backing Array Leaks",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Slice reslicing retains the entire backing array",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Substring memory leaks",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Map never shrinks",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "String and Byte Optimization",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "sync.Pool Hot-Path Patterns",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "Memory Layout",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Struct field alignment",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Zero-size field at end of struct",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "Pointer receivers for large structs",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Map of pointers for large, frequently updated structs",
+          "level": 3,
+          "line": 224
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/observability.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 101,
+      "nonEmptyLines": 70,
+      "sections": [
+        {
+          "heading": "Production Observability for Performance",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prometheus Metrics for Go",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "PromQL Queries for Performance Diagnosis",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "GC pressure",
+          "level": 4,
+          "line": 13
+        },
+        {
+          "heading": "Memory leaks",
+          "level": 4,
+          "line": 21
+        },
+        {
+          "heading": "Goroutine leaks",
+          "level": 4,
+          "line": 29
+        },
+        {
+          "heading": "CPU saturation",
+          "level": 4,
+          "line": 36
+        },
+        {
+          "heading": "Regression detection (after deploy)",
+          "level": 4,
+          "line": 43
+        },
+        {
+          "heading": "Alerting rules (examples)",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Grafana Dashboards",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "Continuous Profiling",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Pyroscope push mode",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Pyroscope pull mode (via Grafana Alloy)",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Real-Time Visualization (Development)",
+          "level": 2,
+          "line": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/references/runtime.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 222,
+      "nonEmptyLines": 144,
+      "sections": [
+        {
+          "heading": "Runtime Tuning",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Garbage Collector Tuning",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "GOGC (default: 100)",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "GOMEMLIMIT (Go 1.19+)",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Programmatic control",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Ballast pattern (pre-Go 1.19)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "GC Profiling and Diagnostics",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "GODEBUG=gctrace=1",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "runtime.ReadMemStats",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "GC pacing",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Allocation Rate Reduction",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "GOMAXPROCS in Containers",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Profile-Guided Optimization (PGO)",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Logging Overhead in Hot Paths",
+          "level": 2,
+          "line": 186
+        },
+        {
+          "heading": "Panic/Recover Cost",
+          "level": 2,
+          "line": 206
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    }
+  ]
+}

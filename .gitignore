@@ -19,3 +19,7 @@ bin/windows/
 .env*
 *.pem
 *.key
+
+.claude/
+.agents/
+logs/

@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "alter_user_requested_office.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "alter.php",
+      "language": "php",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/config/app.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/config/database.php",
+      "language": "php",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/config/menu.back.json",
+      "language": "json",
+      "sizeLines": 116,
+      "fileCategory": "config"
+    },
+    {
+      "path": "app/config/permissions.php",
+      "language": "php",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/AuthController.php",
+      "language": "php",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/DashboardApiController.php",
+      "language": "php",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/DashboardBuilderController.php",
+      "language": "php",
+      "sizeLines": 484,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/DashboardController.php",
+      "language": "php",
+      "sizeLines": 224,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/DashboardManagerController.php",
+      "language": "php",
+      "sizeLines": 281,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/DashboardViewerController.php",
+      "language": "php",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/KpiInputController.php",
+      "language": "php",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/KpiResponsibleController.php",
+      "language": "php",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/LogsController.php",
+      "language": "php",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/MenuController.php",
+      "language": "php",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/ProfileController.php",
+      "language": "php",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/StrategyManagementController.php",
+      "language": "php",
+      "sizeLines": 682,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Controllers/UserManagementController.php",
+      "language": "php",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/Cache/CacheManager.php",
+      "language": "php",
+      "sizeLines": 256,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/Container.php",
+      "language": "php",
+      "sizeLines": 164,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/Database/BaseRepository.php",
+      "language": "php",
+      "sizeLines": 334,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/Database/DatabaseManager.php",
+      "language": "php",
+      "sizeLines": 236,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/helpers.php",
+      "language": "php",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/Request.php",
+      "language": "php",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "alter_user_requested_office.php": [],
+    "alter.php": [],
+    "app/config/app.php": [],
+    "app/config/database.php": [],
+    "app/config/menu.back.json": [],
+    "app/config/permissions.php": [],
+    "app/Controllers/AuthController.php": [],
+    "app/Controllers/DashboardApiController.php": [],
+    "app/Controllers/DashboardBuilderController.php": [],
+    "app/Controllers/DashboardController.php": [],
+    "app/Controllers/DashboardManagerController.php": [],
+    "app/Controllers/DashboardViewerController.php": [],
+    "app/Controllers/KpiInputController.php": [],
+    "app/Controllers/KpiResponsibleController.php": [],
+    "app/Controllers/LogsController.php": [],
+    "app/Controllers/MenuController.php": [],
+    "app/Controllers/ProfileController.php": [],
+    "app/Controllers/StrategyManagementController.php": [],
+    "app/Controllers/UserManagementController.php": [],
+    "app/Core/Cache/CacheManager.php": [],
+    "app/Core/Container.php": [],
+    "app/Core/Database/BaseRepository.php": [],
+    "app/Core/Database/DatabaseManager.php": [],
+    "app/Core/helpers.php": [],
+    "app/Core/Request.php": []
+  }
+}

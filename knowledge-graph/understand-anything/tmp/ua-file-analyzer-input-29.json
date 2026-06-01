@@ -1,0 +1,56 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/alerting.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/dashboards.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/logging.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/metrics.md",
+      "language": "markdown",
+      "sizeLines": 536,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/profiling.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/rum.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/references/tracing.md",
+      "language": "markdown",
+      "sizeLines": 198,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-observability/references/alerting.md": [],
+    ".agents/skills/framework/golang/golang-observability/references/dashboards.md": [],
+    ".agents/skills/framework/golang/golang-observability/references/logging.md": [],
+    ".agents/skills/framework/golang/golang-observability/references/metrics.md": [],
+    ".agents/skills/framework/golang/golang-observability/references/profiling.md": [],
+    ".agents/skills/framework/golang/golang-observability/references/rum.md": [],
+    ".agents/skills/framework/golang/golang-observability/references/tracing.md": []
+  }
+}

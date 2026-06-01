@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "app/Core/Response.php",
+      "language": "php",
+      "sizeLines": 165,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/Router.php",
+      "language": "php",
+      "sizeLines": 312,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Core/View.php",
+      "language": "php",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Middleware/AuthMiddleware.php",
+      "language": "php",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Middleware/GuestMiddleware.php",
+      "language": "php",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Middleware/MiddlewareInterface.php",
+      "language": "php",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Middleware/PermissionMiddleware.php",
+      "language": "php",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Middleware/RoleMiddleware.php",
+      "language": "php",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/DashboardRepository.php",
+      "language": "php",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/DashboardWidgetRepository.php",
+      "language": "php",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/KpiRepository.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/KpiResponsibleRepository.php",
+      "language": "php",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/LogRepository.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/OfficeRepository.php",
+      "language": "php",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/StgGroupRepository.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/StgRepository.php",
+      "language": "php",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Repositories/UserRepository.php",
+      "language": "php",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/routes/api.php",
+      "language": "php",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/routes/web.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/AuthService.php",
+      "language": "php",
+      "sizeLines": 132,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/DashboardRenderService.php",
+      "language": "php",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/KpiResponsibleService.php",
+      "language": "php",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/KpiTableService.php",
+      "language": "php",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/LogService.php",
+      "language": "php",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/Services/OpenApiService.php",
+      "language": "php",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/Core/Response.php": [],
+    "app/Core/Router.php": [],
+    "app/Core/View.php": [],
+    "app/Middleware/AuthMiddleware.php": [],
+    "app/Middleware/GuestMiddleware.php": [],
+    "app/Middleware/MiddlewareInterface.php": [],
+    "app/Middleware/PermissionMiddleware.php": [],
+    "app/Middleware/RoleMiddleware.php": [],
+    "app/Repositories/DashboardRepository.php": [],
+    "app/Repositories/DashboardWidgetRepository.php": [],
+    "app/Repositories/KpiRepository.php": [],
+    "app/Repositories/KpiResponsibleRepository.php": [],
+    "app/Repositories/LogRepository.php": [],
+    "app/Repositories/OfficeRepository.php": [],
+    "app/Repositories/StgGroupRepository.php": [],
+    "app/Repositories/StgRepository.php": [],
+    "app/Repositories/UserRepository.php": [],
+    "app/routes/api.php": [],
+    "app/routes/web.php": [],
+    "app/Services/AuthService.php": [],
+    "app/Services/DashboardRenderService.php": [],
+    "app/Services/KpiResponsibleService.php": [],
+    "app/Services/KpiTableService.php": [],
+    "app/Services/LogService.php": [],
+    "app/Services/OpenApiService.php": []
+  }
+}

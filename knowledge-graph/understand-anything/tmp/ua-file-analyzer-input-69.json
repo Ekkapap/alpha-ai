@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-grpc/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 270,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-grpc/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/evals/evals.json",
+      "language": "json",
+      "sizeLines": 305,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/references/linter-reference.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/references/nolint-directives.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-lint/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/evals/evals.json",
+      "language": "json",
+      "sizeLines": 185,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/references/tooling.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/references/versions.md",
+      "language": "markdown",
+      "sizeLines": 659,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-modernize/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 149,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/evals/evals.json",
+      "language": "json",
+      "sizeLines": 404,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-naming/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 163,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/evals/evals.json",
+      "language": "json",
+      "sizeLines": 547,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-observability/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 175,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/assets/prometheus-alerts.yml",
+      "language": "yaml",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/evals/evals.json",
+      "language": "json",
+      "sizeLines": 886,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-performance/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/evals/evals.json",
+      "language": "json",
+      "sizeLines": 155,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-popular-libraries/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/assets/Makefile",
+      "language": "makefile",
+      "sizeLines": 110,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/evals/evals.json",
+      "language": "json",
+      "sizeLines": 156,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 120,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/evals/evals.json",
+      "language": "json",
+      "sizeLines": 930,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/references/nil-safety.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-safety/references/slice-map-safety.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-grpc/references/testing.md": [],
+    ".agents/skills/framework/golang/golang-grpc/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-lint/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-lint/references/linter-reference.md": [],
+    ".agents/skills/framework/golang/golang-lint/references/nolint-directives.md": [],
+    ".agents/skills/framework/golang/golang-lint/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-modernize/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-modernize/references/tooling.md": [],
+    ".agents/skills/framework/golang/golang-modernize/references/versions.md": [],
+    ".agents/skills/framework/golang/golang-modernize/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-naming/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-naming/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-observability/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-observability/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-performance/assets/prometheus-alerts.yml": [],
+    ".agents/skills/framework/golang/golang-performance/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-performance/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-popular-libraries/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-popular-libraries/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-project-layout/assets/Makefile": [],
+    ".agents/skills/framework/golang/golang-project-layout/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-project-layout/SKILL.md": [],
+    ".agents/skills/framework/golang/golang-safety/evals/evals.json": [],
+    ".agents/skills/framework/golang/golang-safety/references/nil-safety.md": [],
+    ".agents/skills/framework/golang/golang-safety/references/slice-map-safety.md": []
+  }
+}

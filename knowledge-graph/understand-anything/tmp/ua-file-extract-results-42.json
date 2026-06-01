@@ -1,0 +1,261 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/cache-single-source.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 187,
+      "nonEmptyLines": 152,
+      "sections": [
+        {
+          "heading": "cache-single-source: Let TanStack Query Manage Caching",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: MEDIUM",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Cache Comparison",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Good Example: Coordinated Caching Config",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Good Example: Preload Still Works",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "Mutation Invalidation",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 180
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/flow-loader-query-pattern.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 178,
+      "nonEmptyLines": 146,
+      "sections": [
+        {
+          "heading": "flow-loader-query-pattern: Use Loaders with ensureQueryData",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: HIGH",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Good Example: Parallel Data Loading",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Good Example: Optional Prefetch with Non-Critical Data",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Data Flow Summary",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 171
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/setup-query-client-context.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 173,
+      "nonEmptyLines": 139,
+      "sections": [
+        {
+          "heading": "setup-query-client-context: Pass QueryClient Through Router Context",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Modern Router Setup",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Good Example: Root Route with Context",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "Good Example: Testing with Mock QueryClient",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 166
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/rules/ssr-dehydrate-hydrate.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 206,
+      "nonEmptyLines": 167,
+      "sections": [
+        {
+          "heading": "ssr-dehydrate-hydrate: Configure SSR Query Integration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Priority: CRITICAL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Explanation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Good Example: Modern SSR Integration",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Good Example: With Error and NotFound Components",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Good Example: Custom QueryClientProvider",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Good Example: Vite Configuration",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "setupRouterSsrQueryIntegration Options",
+          "level": 2,
+          "line": 170
+        },
+        {
+          "heading": "SSR Data Flow",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Context",
+          "level": 2,
+          "line": 199
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

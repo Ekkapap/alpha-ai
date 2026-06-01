@@ -1,0 +1,4186 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/ui/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/design-system/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 866,
+      "nonEmptyLines": 732,
+      "sections": [
+        {
+          "heading": "Tailwind Design System (v4)",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use This Skill",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Key v4 Changes",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Quick Start",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Core Concepts",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "1. Design Token Hierarchy",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "2. Component Architecture",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "Patterns",
+          "level": 2,
+          "line": 183
+        },
+        {
+          "heading": "Pattern 1: CVA (Class Variance Authority) Components",
+          "level": 3,
+          "line": 185
+        },
+        {
+          "heading": "Pattern 2: Compound Components (React 19)",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Pattern 3: Form Components",
+          "level": 3,
+          "line": 356
+        },
+        {
+          "heading": "Pattern 4: Responsive Grid System",
+          "level": 3,
+          "line": 453
+        },
+        {
+          "heading": "Pattern 5: Native CSS Animations (v4)",
+          "level": 3,
+          "line": 531
+        },
+        {
+          "heading": "Pattern 6: Dark Mode with CSS (v4)",
+          "level": 3,
+          "line": 639
+        },
+        {
+          "heading": "Utility Functions",
+          "level": 2,
+          "line": 733
+        },
+        {
+          "heading": "Advanced v4 Patterns",
+          "level": 2,
+          "line": 754
+        },
+        {
+          "heading": "Custom Utilities with `@utility`",
+          "level": 3,
+          "line": 756
+        },
+        {
+          "heading": "Theme Modifiers",
+          "level": 3,
+          "line": 772
+        },
+        {
+          "heading": "Namespace Overrides",
+          "level": 3,
+          "line": 789
+        },
+        {
+          "heading": "Semi-transparent Color Variants",
+          "level": 3,
+          "line": 805
+        },
+        {
+          "heading": "Container Queries",
+          "level": 3,
+          "line": 824
+        },
+        {
+          "heading": "v3 to v4 Migration Checklist",
+          "level": 2,
+          "line": 835
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 848
+        },
+        {
+          "heading": "Do's",
+          "level": 3,
+          "line": 850
+        },
+        {
+          "heading": "Don'ts",
+          "level": 3,
+          "line": 859
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/layout/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 594,
+      "nonEmptyLines": 478,
+      "sections": [
+        {
+          "heading": "Tailwind CSS Advanced Layout Techniques",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "CSS Grid Mastery",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Complex Grid Layouts",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "Grid Template Areas",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Auto-Fill and Auto-Fit Grids",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "Subgrid",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Advanced Flexbox Patterns",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Space Distribution",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Flexible Item Sizing",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Masonry-Like with Flexbox",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "Container Queries",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Basic Container Queries",
+          "level": 3,
+          "line": 178
+        },
+        {
+          "heading": "Named Containers",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "Container Query Units",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Position and Layering",
+          "level": 2,
+          "line": 223
+        },
+        {
+          "heading": "Sticky Positioning",
+          "level": 3,
+          "line": 225
+        },
+        {
+          "heading": "Fixed Elements",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "Z-Index Management",
+          "level": 3,
+          "line": 270
+        },
+        {
+          "heading": "Overflow and Scrolling",
+          "level": 2,
+          "line": 294
+        },
+        {
+          "heading": "Custom Scrollbars",
+          "level": 3,
+          "line": 296
+        },
+        {
+          "heading": "Scroll Snap",
+          "level": 3,
+          "line": 337
+        },
+        {
+          "heading": "Scroll Margin for Anchors",
+          "level": 3,
+          "line": 360
+        },
+        {
+          "heading": "Aspect Ratio and Object Fit",
+          "level": 2,
+          "line": 369
+        },
+        {
+          "heading": "Responsive Aspect Ratios",
+          "level": 3,
+          "line": 371
+        },
+        {
+          "heading": "Object Positioning",
+          "level": 3,
+          "line": 388
+        },
+        {
+          "heading": "Advanced Spacing",
+          "level": 2,
+          "line": 403
+        },
+        {
+          "heading": "Logical Properties",
+          "level": 3,
+          "line": 405
+        },
+        {
+          "heading": "Space Between with Dividers",
+          "level": 3,
+          "line": 419
+        },
+        {
+          "heading": "Negative Margins for Bleeds",
+          "level": 3,
+          "line": 437
+        },
+        {
+          "heading": "Multi-Column Layout",
+          "level": 2,
+          "line": 456
+        },
+        {
+          "heading": "Text Columns",
+          "level": 3,
+          "line": 458
+        },
+        {
+          "heading": "Responsive Patterns",
+          "level": 2,
+          "line": 479
+        },
+        {
+          "heading": "Container Queries + Media Queries",
+          "level": 3,
+          "line": 481
+        },
+        {
+          "heading": "Breakpoint-Based Visibility",
+          "level": 3,
+          "line": 497
+        },
+        {
+          "heading": "Fluid Sizing with Clamp",
+          "level": 3,
+          "line": 514
+        },
+        {
+          "heading": "Print Styles",
+          "level": 2,
+          "line": 528
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 556
+        },
+        {
+          "heading": "1. Use Modern Layout Methods",
+          "level": 3,
+          "line": 558
+        },
+        {
+          "heading": "2. Handle Edge Cases",
+          "level": 3,
+          "line": 568
+        },
+        {
+          "heading": "3. Use Semantic Sizing",
+          "level": 3,
+          "line": 582
+        },
+        {
+          "heading": "4. Test All Breakpoints",
+          "level": 3,
+          "line": 592
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 41
+      }
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/patterns/references/reference.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 508,
+      "nonEmptyLines": 331,
+      "sections": [
+        {
+          "heading": "Tailwind CSS Documentation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Installation with Vite",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Utility Classes with Variants",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Custom Theme Configuration",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Arbitrary Values",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Color System",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "Dark Mode",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "State Variants",
+          "level": 2,
+          "line": 184
+        },
+        {
+          "heading": "Responsive Design",
+          "level": 2,
+          "line": 203
+        },
+        {
+          "heading": "Custom Utilities",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "Custom Variants",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "Applying Variants in CSS",
+          "level": 2,
+          "line": 325
+        },
+        {
+          "heading": "Layer Organization",
+          "level": 2,
+          "line": 364
+        },
+        {
+          "heading": "Functions and Directives",
+          "level": 2,
+          "line": 425
+        },
+        {
+          "heading": "Pseudo-elements",
+          "level": 2,
+          "line": 461
+        },
+        {
+          "heading": "Media Queries",
+          "level": 2,
+          "line": 479
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 504
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/patterns/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 863,
+      "nonEmptyLines": 691,
+      "sections": [
+        {
+          "heading": "Tailwind CSS Development Patterns",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Instructions",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Examples",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Responsive Card Component",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Constraints and Warnings",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Core Concepts",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Utility-First Approach",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Responsive Design",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "Layout Utilities",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Flexbox Layouts",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Grid Layouts",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Container & Max Width",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Spacing",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "Padding & Margin",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "Font Size & Weight",
+          "level": 3,
+          "line": 245
+        },
+        {
+          "heading": "Line Height & Letter Spacing",
+          "level": 3,
+          "line": 262
+        },
+        {
+          "heading": "Text Alignment",
+          "level": 3,
+          "line": 270
+        },
+        {
+          "heading": "Colors",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "Background Colors",
+          "level": 3,
+          "line": 280
+        },
+        {
+          "heading": "Text Colors",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "Opacity",
+          "level": 3,
+          "line": 298
+        },
+        {
+          "heading": "Interactive States",
+          "level": 2,
+          "line": 306
+        },
+        {
+          "heading": "Hover States",
+          "level": 3,
+          "line": 308
+        },
+        {
+          "heading": "Focus States",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Active & Disabled States",
+          "level": 3,
+          "line": 326
+        },
+        {
+          "heading": "Group Hover",
+          "level": 3,
+          "line": 334
+        },
+        {
+          "heading": "Component Patterns",
+          "level": 2,
+          "line": 343
+        },
+        {
+          "heading": "Card Component",
+          "level": 3,
+          "line": 345
+        },
+        {
+          "heading": "Responsive User Card",
+          "level": 3,
+          "line": 360
+        },
+        {
+          "heading": "Navigation Bar",
+          "level": 3,
+          "line": 384
+        },
+        {
+          "heading": "Form Elements",
+          "level": 3,
+          "line": 409
+        },
+        {
+          "heading": "Modal/Dialog",
+          "level": 3,
+          "line": 448
+        },
+        {
+          "heading": "Responsive Design Patterns",
+          "level": 2,
+          "line": 476
+        },
+        {
+          "heading": "Mobile-First Responsive Layout",
+          "level": 3,
+          "line": 478
+        },
+        {
+          "heading": "Responsive Grid Gallery",
+          "level": 3,
+          "line": 502
+        },
+        {
+          "heading": "Dark Mode",
+          "level": 2,
+          "line": 516
+        },
+        {
+          "heading": "Basic Dark Mode Support",
+          "level": 3,
+          "line": 518
+        },
+        {
+          "heading": "Animations & Transitions",
+          "level": 2,
+          "line": 536
+        },
+        {
+          "heading": "Basic Transitions",
+          "level": 3,
+          "line": 538
+        },
+        {
+          "heading": "Transform Effects",
+          "level": 3,
+          "line": 546
+        },
+        {
+          "heading": "Built-in Animations",
+          "level": 3,
+          "line": 556
+        },
+        {
+          "heading": "Performance Optimization",
+          "level": 2,
+          "line": 564
+        },
+        {
+          "heading": "Bundle Size Optimization",
+          "level": 3,
+          "line": 566
+        },
+        {
+          "heading": "CSS Optimization Techniques",
+          "level": 3,
+          "line": 583
+        },
+        {
+          "heading": "Development Performance",
+          "level": 3,
+          "line": 600
+        },
+        {
+          "heading": "Accessibility Guidelines",
+          "level": 2,
+          "line": 620
+        },
+        {
+          "heading": "Focus Management",
+          "level": 3,
+          "line": 622
+        },
+        {
+          "heading": "Screen Reader Support",
+          "level": 3,
+          "line": 636
+        },
+        {
+          "heading": "Color Contrast",
+          "level": 3,
+          "line": 655
+        },
+        {
+          "heading": "Motion Preferences",
+          "level": 3,
+          "line": 673
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 687
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 700
+        },
+        {
+          "heading": "CSS-First Configuration (v4.1+)",
+          "level": 3,
+          "line": 702
+        },
+        {
+          "heading": "JavaScript Configuration (Legacy)",
+          "level": 3,
+          "line": 742
+        },
+        {
+          "heading": "Vite Integration (v4.1+)",
+          "level": 3,
+          "line": 772
+        },
+        {
+          "heading": "Advanced v4.1 Features",
+          "level": 2,
+          "line": 786
+        },
+        {
+          "heading": "Native CSS Custom Properties",
+          "level": 3,
+          "line": 788
+        },
+        {
+          "heading": "Enhanced Arbitrary Values",
+          "level": 3,
+          "line": 796
+        },
+        {
+          "heading": "Container Queries",
+          "level": 3,
+          "line": 810
+        },
+        {
+          "heading": "Common Patterns with React/JSX",
+          "level": 2,
+          "line": 821
+        },
+        {
+          "heading": "References",
+          "level": 2,
+          "line": 858
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 64
+      }
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/ux/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/_sync_all.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 414,
+      "nonEmptyLines": 381,
+      "functions": [
+        {
+          "name": "h2r",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "h"
+          ]
+        },
+        {
+          "name": "r2h",
+          "startLine": 19,
+          "endLine": 20,
+          "params": [
+            "r",
+            "g",
+            "b"
+          ]
+        },
+        {
+          "name": "lum",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "h"
+          ]
+        },
+        {
+          "name": "is_dark",
+          "startLine": 27,
+          "endLine": 28,
+          "params": [
+            "bg"
+          ]
+        },
+        {
+          "name": "on_color",
+          "startLine": 30,
+          "endLine": 31,
+          "params": [
+            "bg"
+          ]
+        },
+        {
+          "name": "blend",
+          "startLine": 33,
+          "endLine": 36,
+          "params": [
+            "a",
+            "b",
+            "f"
+          ]
+        },
+        {
+          "name": "shift",
+          "startLine": 38,
+          "endLine": 40,
+          "params": [
+            "h",
+            "n"
+          ]
+        },
+        {
+          "name": "derive_row",
+          "startLine": 42,
+          "endLine": 57,
+          "params": [
+            "pt",
+            "pri",
+            "sec",
+            "acc",
+            "bg",
+            "notes"
+          ]
+        },
+        {
+          "name": "rebuild_colors",
+          "startLine": 188,
+          "endLine": 247,
+          "params": []
+        },
+        {
+          "name": "derive_ui_reasoning",
+          "startLine": 250,
+          "endLine": 356,
+          "params": [
+            "prod"
+          ]
+        },
+        {
+          "name": "rebuild_ui_reasoning",
+          "startLine": 359,
+          "endLine": 405,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "h2r",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "r2h",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "lum",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "is_dark",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "on_color",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "blend",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "shift",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "derive_row",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "rebuild_colors",
+          "line": 188,
+          "isDefault": false
+        },
+        {
+          "name": "derive_ui_reasoning",
+          "line": 250,
+          "isDefault": false
+        },
+        {
+          "name": "rebuild_ui_reasoning",
+          "line": 359,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "h2r",
+          "callee": "h.lstrip",
+          "lineNumber": 16
+        },
+        {
+          "caller": "h2r",
+          "callee": "tuple",
+          "lineNumber": 17
+        },
+        {
+          "caller": "h2r",
+          "callee": "int",
+          "lineNumber": 17
+        },
+        {
+          "caller": "r2h",
+          "callee": "max",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "min",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "int",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "max",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "min",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "int",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "max",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "min",
+          "lineNumber": 20
+        },
+        {
+          "caller": "r2h",
+          "callee": "int",
+          "lineNumber": 20
+        },
+        {
+          "caller": "lum",
+          "callee": "h2r",
+          "lineNumber": 23
+        },
+        {
+          "caller": "is_dark",
+          "callee": "lum",
+          "lineNumber": 28
+        },
+        {
+          "caller": "on_color",
+          "callee": "lum",
+          "lineNumber": 31
+        },
+        {
+          "caller": "blend",
+          "callee": "h2r",
+          "lineNumber": 34
+        },
+        {
+          "caller": "blend",
+          "callee": "h2r",
+          "lineNumber": 35
+        },
+        {
+          "caller": "blend",
+          "callee": "r2h",
+          "lineNumber": 36
+        },
+        {
+          "caller": "shift",
+          "callee": "h2r",
+          "lineNumber": 39
+        },
+        {
+          "caller": "shift",
+          "callee": "r2h",
+          "lineNumber": 40
+        },
+        {
+          "caller": "derive_row",
+          "callee": "is_dark",
+          "lineNumber": 44
+        },
+        {
+          "caller": "derive_row",
+          "callee": "on_color",
+          "lineNumber": 46
+        },
+        {
+          "caller": "derive_row",
+          "callee": "on_color",
+          "lineNumber": 47
+        },
+        {
+          "caller": "derive_row",
+          "callee": "on_color",
+          "lineNumber": 48
+        },
+        {
+          "caller": "derive_row",
+          "callee": "shift",
+          "lineNumber": 49
+        },
+        {
+          "caller": "derive_row",
+          "callee": "blend",
+          "lineNumber": 51
+        },
+        {
+          "caller": "derive_row",
+          "callee": "blend",
+          "lineNumber": 51
+        },
+        {
+          "caller": "derive_row",
+          "callee": "blend",
+          "lineNumber": 53
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "os.path.join",
+          "lineNumber": 189
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "open",
+          "lineNumber": 190
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "csv.DictReader",
+          "lineNumber": 191
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "list",
+          "lineNumber": 193
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "row.get(\"Product Type\", \"\").strip",
+          "lineNumber": 198
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "row.get",
+          "lineNumber": 198
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "print",
+          "lineNumber": 203
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "print",
+          "lineNumber": 208
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "open",
+          "lineNumber": 214
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "os.path.join",
+          "lineNumber": 214
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "list",
+          "lineNumber": 215
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "csv.DictReader",
+          "lineNumber": 215
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "enumerate",
+          "lineNumber": 220
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "str",
+          "lineNumber": 224
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "final_rows.append",
+          "lineNumber": 225
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "derive_row",
+          "lineNumber": 228
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "dict",
+          "lineNumber": 229
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "zip",
+          "lineNumber": 229
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "str",
+          "lineNumber": 229
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "final_rows.append",
+          "lineNumber": 230
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "print",
+          "lineNumber": 233
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "derive_row",
+          "lineNumber": 234
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "dict",
+          "lineNumber": 235
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "zip",
+          "lineNumber": 235
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "str",
+          "lineNumber": 235
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "final_rows.append",
+          "lineNumber": 236
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "open",
+          "lineNumber": 240
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "csv.DictWriter",
+          "lineNumber": 241
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "writer.writeheader",
+          "lineNumber": 242
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "writer.writerows",
+          "lineNumber": 243
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "len",
+          "lineNumber": 245
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "print",
+          "lineNumber": 246
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "len",
+          "lineNumber": 246
+        },
+        {
+          "caller": "rebuild_colors",
+          "callee": "print",
+          "lineNumber": 247
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "prod.get",
+          "lineNumber": 253
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "prod.get",
+          "lineNumber": 254
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "prod.get",
+          "lineNumber": 255
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "prod.get",
+          "lineNumber": 256
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "prod.get",
+          "lineNumber": 257
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "typo_map.items",
+          "lineNumber": 283
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "key.lower",
+          "lineNumber": 284
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 284
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "eff_map.items",
+          "lineNumber": 309
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "key.lower",
+          "lineNumber": 310
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 310
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 316
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 316
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 318
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "landing.lower",
+          "lineNumber": 320
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "landing.lower",
+          "lineNumber": 322
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "keywords.lower",
+          "lineNumber": 324
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "keywords.lower",
+          "lineNumber": 324
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 332
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 332
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "anti_patterns.append",
+          "lineNumber": 333
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 334
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "anti_patterns.append",
+          "lineNumber": 335
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 336
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "anti_patterns.append",
+          "lineNumber": 337
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 338
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "anti_patterns.append",
+          "lineNumber": 339
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "style.lower",
+          "lineNumber": 340
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "anti_patterns.append",
+          "lineNumber": 341
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "\" + \".join",
+          "lineNumber": 344
+        },
+        {
+          "caller": "derive_ui_reasoning",
+          "callee": "json.dumps",
+          "lineNumber": 353
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "os.path.join",
+          "lineNumber": 360
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "open",
+          "lineNumber": 361
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "csv.DictReader",
+          "lineNumber": 362
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "list",
+          "lineNumber": 364
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "row.get(\"UI_Category\", \"\").strip",
+          "lineNumber": 369
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "row.get",
+          "lineNumber": 369
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "print",
+          "lineNumber": 373
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "print",
+          "lineNumber": 377
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "open",
+          "lineNumber": 382
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "os.path.join",
+          "lineNumber": 382
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "list",
+          "lineNumber": 383
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "csv.DictReader",
+          "lineNumber": 383
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "enumerate",
+          "lineNumber": 387
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "str",
+          "lineNumber": 391
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "final_rows.append",
+          "lineNumber": 392
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "derive_ui_reasoning",
+          "lineNumber": 394
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "str",
+          "lineNumber": 395
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "final_rows.append",
+          "lineNumber": 396
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "open",
+          "lineNumber": 399
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "csv.DictWriter",
+          "lineNumber": 400
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "writer.writeheader",
+          "lineNumber": 401
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "writer.writerows",
+          "lineNumber": 402
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "print",
+          "lineNumber": 404
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "len",
+          "lineNumber": 404
+        },
+        {
+          "caller": "rebuild_ui_reasoning",
+          "callee": "print",
+          "lineNumber": 405
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/stacks/react-native.csv",
+      "language": "csv",
+      "fileCategory": "data",
+      "totalLines": 52,
+      "nonEmptyLines": 52,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 659,
+      "nonEmptyLines": 531,
+      "sections": [
+        {
+          "heading": "UI/UX Pro Max - Design Intelligence",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Must Use",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "Recommended",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Skip",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "1. Accessibility (CRITICAL)",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "2. Touch & Interaction (CRITICAL)",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "3. Performance (HIGH)",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "4. Style Selection (HIGH)",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "5. Layout & Responsive (HIGH)",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "6. Typography & Color (MEDIUM)",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "7. Animation (MEDIUM)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "8. Forms & Feedback (MEDIUM)",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "9. Navigation Patterns (HIGH)",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "10. Charts & Data (LOW)",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 302
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 308
+        },
+        {
+          "heading": "How to Use This Skill",
+          "level": 2,
+          "line": 335
+        },
+        {
+          "heading": "Step 1: Analyze User Requirements",
+          "level": 3,
+          "line": 353
+        },
+        {
+          "heading": "Step 2: Generate Design System (REQUIRED)",
+          "level": 3,
+          "line": 361
+        },
+        {
+          "heading": "Step 2b: Persist Design System (Master + Overrides Pattern)",
+          "level": 3,
+          "line": 380
+        },
+        {
+          "heading": "Step 3: Supplement with Detailed Searches (as needed)",
+          "level": 3,
+          "line": 414
+        },
+        {
+          "heading": "Step 4: Stack Guidelines (React Native)",
+          "level": 3,
+          "line": 439
+        },
+        {
+          "heading": "Search Reference",
+          "level": 2,
+          "line": 449
+        },
+        {
+          "heading": "Available Domains",
+          "level": 3,
+          "line": 451
+        },
+        {
+          "heading": "Available Stacks",
+          "level": 3,
+          "line": 467
+        },
+        {
+          "heading": "Example Workflow",
+          "level": 2,
+          "line": 475
+        },
+        {
+          "heading": "Step 1: Analyze Requirements",
+          "level": 3,
+          "line": 479
+        },
+        {
+          "heading": "Step 2: Generate Design System (REQUIRED)",
+          "level": 3,
+          "line": 485
+        },
+        {
+          "heading": "Step 3: Supplement with Detailed Searches (as needed)",
+          "level": 3,
+          "line": 493
+        },
+        {
+          "heading": "Step 4: Stack Guidelines",
+          "level": 3,
+          "line": 503
+        },
+        {
+          "heading": "Output Formats",
+          "level": 2,
+          "line": 513
+        },
+        {
+          "heading": "Tips for Better Results",
+          "level": 2,
+          "line": 527
+        },
+        {
+          "heading": "Query Strategy",
+          "level": 3,
+          "line": 529
+        },
+        {
+          "heading": "Common Sticking Points",
+          "level": 3,
+          "line": 536
+        },
+        {
+          "heading": "Pre-Delivery Checklist",
+          "level": 3,
+          "line": 548
+        },
+        {
+          "heading": "Common Rules for Professional UI",
+          "level": 2,
+          "line": 559
+        },
+        {
+          "heading": "Icons & Visual Elements",
+          "level": 3,
+          "line": 564
+        },
+        {
+          "heading": "Interaction (App)",
+          "level": 3,
+          "line": 580
+        },
+        {
+          "heading": "Light/Dark Mode Contrast",
+          "level": 3,
+          "line": 592
+        },
+        {
+          "heading": "Layout & Spacing",
+          "level": 3,
+          "line": 604
+        },
+        {
+          "heading": "Pre-Delivery Checklist",
+          "level": 2,
+          "line": 619
+        },
+        {
+          "heading": "Visual Quality",
+          "level": 3,
+          "line": 624
+        },
+        {
+          "heading": "Interaction",
+          "level": 3,
+          "line": 631
+        },
+        {
+          "heading": "Light/Dark Mode",
+          "level": 3,
+          "line": 639
+        },
+        {
+          "heading": "Layout",
+          "level": 3,
+          "line": 646
+        },
+        {
+          "heading": "Accessibility",
+          "level": 3,
+          "line": 654
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 49
+      }
+    },
+    {
+      "path": ".agents/tools/my-graphify/go.mod",
+      "language": "mod",
+      "fileCategory": "config",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/tools/my-graphify/go.sum",
+      "language": "sum",
+      "fileCategory": "config",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/tools/my-graphify/main.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 922,
+      "nonEmptyLines": 838,
+      "functions": [
+        {
+          "name": "getGraphStats",
+          "startLine": 22,
+          "endLine": 42,
+          "params": [
+            "root"
+          ]
+        },
+        {
+          "name": "getGodNodes",
+          "startLine": 45,
+          "endLine": 68,
+          "params": [
+            "root"
+          ]
+        },
+        {
+          "name": "loadFullGraph",
+          "startLine": 92,
+          "endLine": 99,
+          "params": [
+            "root"
+          ]
+        },
+        {
+          "name": "scoreNode",
+          "startLine": 101,
+          "endLine": 117,
+          "params": [
+            "n",
+            "terms"
+          ]
+        },
+        {
+          "name": "sketchGraph",
+          "startLine": 120,
+          "endLine": 202,
+          "params": [
+            "g",
+            "query",
+            "depth"
+          ]
+        },
+        {
+          "name": "detailNodes",
+          "startLine": 205,
+          "endLine": 267,
+          "params": [
+            "g",
+            "ids"
+          ]
+        },
+        {
+          "name": "graphOverview",
+          "startLine": 285,
+          "endLine": 367,
+          "params": [
+            "root"
+          ]
+        },
+        {
+          "name": "generateProjectSummary",
+          "startLine": 370,
+          "endLine": 387,
+          "params": [
+            "root"
+          ]
+        },
+        {
+          "name": "extractNodesFromSummary",
+          "startLine": 390,
+          "endLine": 404,
+          "params": [
+            "summary"
+          ]
+        },
+        {
+          "name": "main",
+          "startLine": 406,
+          "endLine": 922,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "gNode",
+          "startLine": 72,
+          "endLine": 79,
+          "methods": [],
+          "properties": [
+            "ID",
+            "Label",
+            "SourceFile",
+            "SourceLocation",
+            "Community",
+            "FileType"
+          ]
+        },
+        {
+          "name": "gLink",
+          "startLine": 81,
+          "endLine": 85,
+          "methods": [],
+          "properties": [
+            "Source",
+            "Target",
+            "Relation"
+          ]
+        },
+        {
+          "name": "fullGraph",
+          "startLine": 87,
+          "endLine": 90,
+          "methods": [],
+          "properties": [
+            "Nodes",
+            "Links"
+          ]
+        },
+        {
+          "name": "godNodeInfo",
+          "startLine": 271,
+          "endLine": 275,
+          "methods": [],
+          "properties": [
+            "Label",
+            "Edges",
+            "Community"
+          ]
+        },
+        {
+          "name": "overviewResult",
+          "startLine": 277,
+          "endLine": 283,
+          "methods": [],
+          "properties": [
+            "Nodes",
+            "Edges",
+            "Communities",
+            "GodNodes",
+            "TopCommunities"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getGraphStats",
+          "callee": "os.ReadFile",
+          "lineNumber": 23
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "filepath.Join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "json.Unmarshal",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "os.ReadFile",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "filepath.Join",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "json.Unmarshal",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "len",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "len",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getGraphStats",
+          "callee": "len",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getGodNodes",
+          "callee": "os.ReadFile",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getGodNodes",
+          "callee": "filepath.Join",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getGodNodes",
+          "callee": "json.Unmarshal",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getGodNodes",
+          "callee": "res.WriteString",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getGodNodes",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getGodNodes",
+          "callee": "res.String",
+          "lineNumber": 67
+        },
+        {
+          "caller": "loadFullGraph",
+          "callee": "os.ReadFile",
+          "lineNumber": 93
+        },
+        {
+          "caller": "loadFullGraph",
+          "callee": "filepath.Join",
+          "lineNumber": 93
+        },
+        {
+          "caller": "loadFullGraph",
+          "callee": "json.Unmarshal",
+          "lineNumber": 98
+        },
+        {
+          "caller": "scoreNode",
+          "callee": "strings.ToLower",
+          "lineNumber": 102
+        },
+        {
+          "caller": "scoreNode",
+          "callee": "strings.ToLower",
+          "lineNumber": 103
+        },
+        {
+          "caller": "scoreNode",
+          "callee": "strings.ToLower",
+          "lineNumber": 106
+        },
+        {
+          "caller": "scoreNode",
+          "callee": "strings.EqualFold",
+          "lineNumber": 108
+        },
+        {
+          "caller": "scoreNode",
+          "callee": "strings.Contains",
+          "lineNumber": 110
+        },
+        {
+          "caller": "scoreNode",
+          "callee": "strings.Contains",
+          "lineNumber": 112
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "make",
+          "lineNumber": 121
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 121
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "make",
+          "lineNumber": 125
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 125
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 127
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 129
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "strings.Fields",
+          "lineNumber": 132
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "scoreNode",
+          "lineNumber": 139
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 140
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "sort.Slice",
+          "lineNumber": 143
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 144
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "make",
+          "lineNumber": 153
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "make",
+          "lineNumber": 154
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 154
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "make",
+          "lineNumber": 155
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 155
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 158
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 159
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 171
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 182
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "append",
+          "lineNumber": 187
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "sort.Slice",
+          "lineNumber": 192
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "len",
+          "lineNumber": 199
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "json.MarshalIndent",
+          "lineNumber": 200
+        },
+        {
+          "caller": "sketchGraph",
+          "callee": "string",
+          "lineNumber": 201
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "make",
+          "lineNumber": 206
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "len",
+          "lineNumber": 206
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "strings.TrimSpace",
+          "lineNumber": 208
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "make",
+          "lineNumber": 210
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "len",
+          "lineNumber": 210
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "make",
+          "lineNumber": 215
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "make",
+          "lineNumber": 216
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "append",
+          "lineNumber": 221
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "append",
+          "lineNumber": 222
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "make",
+          "lineNumber": 226
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "append",
+          "lineNumber": 234
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "append",
+          "lineNumber": 258
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "resolve",
+          "lineNumber": 261
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "resolve",
+          "lineNumber": 262
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "json.MarshalIndent",
+          "lineNumber": 265
+        },
+        {
+          "caller": "detailNodes",
+          "callee": "string",
+          "lineNumber": 266
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "os.ReadFile",
+          "lineNumber": 287
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "filepath.Join",
+          "lineNumber": 287
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "json.Unmarshal",
+          "lineNumber": 295
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "os.ReadFile",
+          "lineNumber": 300
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "filepath.Join",
+          "lineNumber": 300
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "json.Unmarshal",
+          "lineNumber": 312
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "make",
+          "lineNumber": 317
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "len",
+          "lineNumber": 317
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "os.ReadFile",
+          "lineNumber": 325
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "filepath.Join",
+          "lineNumber": 325
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "json.Unmarshal",
+          "lineNumber": 327
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "make",
+          "lineNumber": 338
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "len",
+          "lineNumber": 338
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "append",
+          "lineNumber": 341
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "communityName",
+          "lineNumber": 344
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "make",
+          "lineNumber": 349
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "communityName",
+          "lineNumber": 353
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "append",
+          "lineNumber": 356
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "len",
+          "lineNumber": 361
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "len",
+          "lineNumber": 362
+        },
+        {
+          "caller": "graphOverview",
+          "callee": "len",
+          "lineNumber": 363
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "graphOverview",
+          "lineNumber": 371
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "time.Now().UTC().Format",
+          "lineNumber": 376
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "time.Now().UTC",
+          "lineNumber": 376
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "time.Now",
+          "lineNumber": 376
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "json.MarshalIndent",
+          "lineNumber": 382
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "os.WriteFile",
+          "lineNumber": 386
+        },
+        {
+          "caller": "generateProjectSummary",
+          "callee": "filepath.Join",
+          "lineNumber": 386
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.Split",
+          "lineNumber": 392
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.HasPrefix",
+          "lineNumber": 395
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.TrimSpace",
+          "lineNumber": 395
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.HasPrefix",
+          "lineNumber": 395
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.TrimSpace",
+          "lineNumber": 395
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.TrimSpace",
+          "lineNumber": 396
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.TrimLeft",
+          "lineNumber": 396
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.TrimSpace",
+          "lineNumber": 396
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.Contains",
+          "lineNumber": 398
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "len",
+          "lineNumber": 398
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "strings.Fields",
+          "lineNumber": 398
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "len",
+          "lineNumber": 398
+        },
+        {
+          "caller": "extractNodesFromSummary",
+          "callee": "append",
+          "lineNumber": 399
+        },
+        {
+          "caller": "main",
+          "callee": "slog.New",
+          "lineNumber": 408
+        },
+        {
+          "caller": "main",
+          "callee": "slog.NewJSONHandler",
+          "lineNumber": 408
+        },
+        {
+          "caller": "main",
+          "callee": "slog.SetDefault",
+          "lineNumber": 409
+        },
+        {
+          "caller": "main",
+          "callee": "server.NewMCPServer",
+          "lineNumber": 412
+        },
+        {
+          "caller": "main",
+          "callee": "os.Getwd",
+          "lineNumber": 418
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Abs",
+          "lineNumber": 419
+        },
+        {
+          "caller": "main",
+          "callee": "os.Getenv",
+          "lineNumber": 423
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Abs",
+          "lineNumber": 424
+        },
+        {
+          "caller": "main",
+          "callee": "os.Executable",
+          "lineNumber": 425
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.EvalSymlinks",
+          "lineNumber": 426
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Abs",
+          "lineNumber": 427
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Dir",
+          "lineNumber": 429
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Dir",
+          "lineNumber": 429
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Dir",
+          "lineNumber": 429
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Dir",
+          "lineNumber": 429
+        },
+        {
+          "caller": "main",
+          "callee": "os.Getwd",
+          "lineNumber": 434
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Abs",
+          "lineNumber": 435
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 439
+        },
+        {
+          "caller": "main",
+          "callee": "getGraphStats",
+          "lineNumber": 442
+        },
+        {
+          "caller": "main",
+          "callee": "getGodNodes",
+          "lineNumber": 443
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 444
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 447
+        },
+        {
+          "caller": "main",
+          "callee": "os.ReadFile",
+          "lineNumber": 448
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 449
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 449
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 453
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command",
+          "lineNumber": 454
+        },
+        {
+          "caller": "main",
+          "callee": "cmd.Output",
+          "lineNumber": 455
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 456
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 456
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 458
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 463
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 469
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command(\"graphify\", \"update\", root).Run",
+          "lineNumber": 470
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command",
+          "lineNumber": 470
+        },
+        {
+          "caller": "main",
+          "callee": "generateProjectSummary",
+          "lineNumber": 473
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Fprintf",
+          "lineNumber": 474
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 476
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 480
+        },
+        {
+          "caller": "main",
+          "callee": "os.MkdirAll",
+          "lineNumber": 481
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 482
+        },
+        {
+          "caller": "main",
+          "callee": "time.Now().Format",
+          "lineNumber": 483
+        },
+        {
+          "caller": "main",
+          "callee": "time.Now",
+          "lineNumber": 483
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 484
+        },
+        {
+          "caller": "main",
+          "callee": "os.ReadFile",
+          "lineNumber": 485
+        },
+        {
+          "caller": "main",
+          "callee": "os.WriteFile",
+          "lineNumber": 486
+        },
+        {
+          "caller": "main",
+          "callee": "append",
+          "lineNumber": 486
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 487
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 490
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command(\"open\", filepath.Join(root, \"graphify-out/graph.html\")).Run",
+          "lineNumber": 491
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command",
+          "lineNumber": 491
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 491
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 492
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 499
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 508
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Glob",
+          "lineNumber": 512
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 512
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 513
+        },
+        {
+          "caller": "main",
+          "callee": "sort.Strings",
+          "lineNumber": 514
+        },
+        {
+          "caller": "main",
+          "callee": "append",
+          "lineNumber": 515
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 515
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Glob",
+          "lineNumber": 519
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 520
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Glob",
+          "lineNumber": 524
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 524
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 528
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 529
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 530
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 533
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 536
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Base",
+          "lineNumber": 536
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Split",
+          "lineNumber": 539
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Base",
+          "lineNumber": 539
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 540
+        },
+        {
+          "caller": "main",
+          "callee": "strings.TrimSuffix",
+          "lineNumber": 542
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Glob",
+          "lineNumber": 543
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 543
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 545
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Base",
+          "lineNumber": 545
+        },
+        {
+          "caller": "main",
+          "callee": "append",
+          "lineNumber": 546
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Print",
+          "lineNumber": 552
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Scanln",
+          "lineNumber": 554
+        },
+        {
+          "caller": "main",
+          "callee": "strings.ToLower",
+          "lineNumber": 556
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 557
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 558
+        },
+        {
+          "caller": "main",
+          "callee": "os.Remove",
+          "lineNumber": 563
+        },
+        {
+          "caller": "main",
+          "callee": "os.Remove",
+          "lineNumber": 566
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 568
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command(\"rtk\", \"run\", \"graphify\", root, \"--update\", \"--force\").Run",
+          "lineNumber": 569
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command",
+          "lineNumber": 569
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 570
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 571
+        },
+        {
+          "caller": "main",
+          "callee": "graphOverview",
+          "lineNumber": 574
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 576
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 577
+        },
+        {
+          "caller": "main",
+          "callee": "json.MarshalIndent",
+          "lineNumber": 579
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 580
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 580
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 581
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 586
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 587
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 590
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sscanf",
+          "lineNumber": 591
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 595
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 596
+        },
+        {
+          "caller": "main",
+          "callee": "loadFullGraph",
+          "lineNumber": 598
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 600
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 601
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 603
+        },
+        {
+          "caller": "main",
+          "callee": "sketchGraph",
+          "lineNumber": 603
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 604
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 608
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 609
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 614
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 615
+        },
+        {
+          "caller": "main",
+          "callee": "loadFullGraph",
+          "lineNumber": 617
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 619
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 620
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 622
+        },
+        {
+          "caller": "main",
+          "callee": "detailNodes",
+          "lineNumber": 622
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Split",
+          "lineNumber": 622
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 623
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 626
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Println",
+          "lineNumber": 627
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 628
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 633
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sscanf",
+          "lineNumber": 634
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.IsAbs",
+          "lineNumber": 638
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 639
+        },
+        {
+          "caller": "main",
+          "callee": "os.ReadFile",
+          "lineNumber": 641
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 643
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 644
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Split",
+          "lineNumber": 647
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 647
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Contains",
+          "lineNumber": 650
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 657
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 658
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 663
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 664
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 667
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Printf",
+          "lineNumber": 669
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 671
+        },
+        {
+          "caller": "main",
+          "callee": "slog.Info",
+          "lineNumber": 676
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 679
+        },
+        {
+          "caller": "main",
+          "callee": "os.Getwd",
+          "lineNumber": 686
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Abs",
+          "lineNumber": 687
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 688
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 688
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 690
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultError",
+          "lineNumber": 714
+        },
+        {
+          "caller": "main",
+          "callee": "int",
+          "lineNumber": 721
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.IsAbs",
+          "lineNumber": 725
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 726
+        },
+        {
+          "caller": "main",
+          "callee": "os.ReadFile",
+          "lineNumber": 728
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultError",
+          "lineNumber": 730
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 730
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Split",
+          "lineNumber": 733
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 733
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Contains",
+          "lineNumber": 736
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultError",
+          "lineNumber": 743
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 743
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 748
+        },
+        {
+          "caller": "main",
+          "callee": "len",
+          "lineNumber": 749
+        },
+        {
+          "caller": "main",
+          "callee": "result.WriteString",
+          "lineNumber": 753
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 753
+        },
+        {
+          "caller": "main",
+          "callee": "result.WriteString",
+          "lineNumber": 755
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 755
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 758
+        },
+        {
+          "caller": "main",
+          "callee": "result.String",
+          "lineNumber": 758
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 762
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 771
+        },
+        {
+          "caller": "main",
+          "callee": "graphOverview",
+          "lineNumber": 774
+        },
+        {
+          "caller": "main",
+          "callee": "json.MarshalIndent",
+          "lineNumber": 775
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 776
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 776
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 777
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 778
+        },
+        {
+          "caller": "main",
+          "callee": "os.ReadFile",
+          "lineNumber": 781
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 781
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 782
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 783
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 783
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 784
+        },
+        {
+          "caller": "main",
+          "callee": "out.WriteString",
+          "lineNumber": 787
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 788
+        },
+        {
+          "caller": "main",
+          "callee": "out.String",
+          "lineNumber": 788
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 792
+        },
+        {
+          "caller": "main",
+          "callee": "slog.Info",
+          "lineNumber": 810
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command",
+          "lineNumber": 811
+        },
+        {
+          "caller": "main",
+          "callee": "updateCmd.Run",
+          "lineNumber": 812
+        },
+        {
+          "caller": "main",
+          "callee": "slog.Error",
+          "lineNumber": 813
+        },
+        {
+          "caller": "main",
+          "callee": "generateProjectSummary",
+          "lineNumber": 817
+        },
+        {
+          "caller": "main",
+          "callee": "slog.Warn",
+          "lineNumber": 818
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 822
+        },
+        {
+          "caller": "main",
+          "callee": "os.MkdirAll",
+          "lineNumber": 823
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 824
+        },
+        {
+          "caller": "main",
+          "callee": "time.Now().Format",
+          "lineNumber": 825
+        },
+        {
+          "caller": "main",
+          "callee": "time.Now",
+          "lineNumber": 825
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 826
+        },
+        {
+          "caller": "main",
+          "callee": "os.ReadFile",
+          "lineNumber": 827
+        },
+        {
+          "caller": "main",
+          "callee": "os.WriteFile",
+          "lineNumber": 828
+        },
+        {
+          "caller": "main",
+          "callee": "append",
+          "lineNumber": 828
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command(\"open\", filepath.Join(root, \"graphify-out/graph.html\")).Run",
+          "lineNumber": 831
+        },
+        {
+          "caller": "main",
+          "callee": "exec.Command",
+          "lineNumber": 831
+        },
+        {
+          "caller": "main",
+          "callee": "filepath.Join",
+          "lineNumber": 831
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 833
+        },
+        {
+          "caller": "main",
+          "callee": "fmt.Sprintf",
+          "lineNumber": 833
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 837
+        },
+        {
+          "caller": "main",
+          "callee": "int",
+          "lineNumber": 859
+        },
+        {
+          "caller": "main",
+          "callee": "loadFullGraph",
+          "lineNumber": 861
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultError",
+          "lineNumber": 863
+        },
+        {
+          "caller": "main",
+          "callee": "err.Error",
+          "lineNumber": 863
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 865
+        },
+        {
+          "caller": "main",
+          "callee": "sketchGraph",
+          "lineNumber": 865
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 869
+        },
+        {
+          "caller": "main",
+          "callee": "strings.Split",
+          "lineNumber": 885
+        },
+        {
+          "caller": "main",
+          "callee": "loadFullGraph",
+          "lineNumber": 886
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultError",
+          "lineNumber": 888
+        },
+        {
+          "caller": "main",
+          "callee": "err.Error",
+          "lineNumber": 888
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 890
+        },
+        {
+          "caller": "main",
+          "callee": "detailNodes",
+          "lineNumber": 890
+        },
+        {
+          "caller": "main",
+          "callee": "s.AddTool",
+          "lineNumber": 894
+        },
+        {
+          "caller": "main",
+          "callee": "graphOverview",
+          "lineNumber": 902
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultError",
+          "lineNumber": 904
+        },
+        {
+          "caller": "main",
+          "callee": "err.Error",
+          "lineNumber": 904
+        },
+        {
+          "caller": "main",
+          "callee": "json.MarshalIndent",
+          "lineNumber": 906
+        },
+        {
+          "caller": "main",
+          "callee": "mcp.NewToolResultText",
+          "lineNumber": 907
+        },
+        {
+          "caller": "main",
+          "callee": "string",
+          "lineNumber": 907
+        },
+        {
+          "caller": "main",
+          "callee": "make",
+          "lineNumber": 911
+        },
+        {
+          "caller": "main",
+          "callee": "signal.Notify",
+          "lineNumber": 912
+        },
+        {
+          "caller": "main",
+          "callee": "func() {\n\t\t<-sigChan\n\t\tos.Exit(0)\n\t}",
+          "lineNumber": 913
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 915
+        },
+        {
+          "caller": "main",
+          "callee": "server.ServeStdio",
+          "lineNumber": 918
+        },
+        {
+          "caller": "main",
+          "callee": "slog.Error",
+          "lineNumber": 919
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 920
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 10,
+        "classCount": 5
+      }
+    },
+    {
+      "path": ".agents/tools/my-graphify/my-graphify",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 39079,
+      "nonEmptyLines": 36467,
+      "metrics": {}
+    },
+    {
+      "path": ".claude/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 35,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "CodeGraph",
+          "level": 2,
+          "line": 2
+        },
+        {
+          "heading": "When to prefer codegraph over native search",
+          "level": 3,
+          "line": 6
+        },
+        {
+          "heading": "Rules of thumb",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "If `.codegraph/` doesn't exist",
+          "level": 3,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".claude/settings.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 16,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "permissions",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "enabledPlugins",
+          "level": 1,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-cli/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 83,
+      "nonEmptyLines": 57,
+      "sections": [
+        {
+          "heading": "GitNexus CLI Commands",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Commands",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "analyze — Build or refresh the index",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "status — Check index freshness",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "clean — Delete the index",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "wiki — Generate documentation from the graph",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "list — Show all indexed repos",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "After Indexing",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-debugging/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 89,
+      "nonEmptyLines": 67,
+      "sections": [
+        {
+          "heading": "Debugging with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Debugging Patterns",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Example: \"Payment endpoint returns 500 intermittently\"",
+          "level": 2,
+          "line": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-exploring/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 78,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "Exploring Codebases with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Example: \"How does payment processing work?\"",
+          "level": 2,
+          "line": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-guide/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 64,
+      "nonEmptyLines": 48,
+      "sections": [
+        {
+          "heading": "GitNexus Guide",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Always Start Here",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Skills",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Tools Reference",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Resources Reference",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Graph Schema",
+          "level": 2,
+          "line": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 97,
+      "nonEmptyLines": 73,
+      "sections": [
+        {
+          "heading": "Impact Analysis with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Understanding Output",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Risk Assessment",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Example: \"What breaks if I change validateUser?\"",
+          "level": 2,
+          "line": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-refactoring/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 121,
+      "nonEmptyLines": 92,
+      "sections": [
+        {
+          "heading": "Refactoring with GitNexus",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Checklists",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Rename Symbol",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Extract Module",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Split Function/Service",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Tools",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Risk Rules",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Example: Rename `validateUser` to `authenticateUser`",
+          "level": 2,
+          "line": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".codegraph/daemon.pid",
+      "language": "pid",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": ".graphifyignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 41,
+      "metrics": {}
+    }
+  ]
+}

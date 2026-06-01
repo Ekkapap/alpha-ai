@@ -1,0 +1,63 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "planning/archived/CODEBASE_ARCHITECTURE.md",
+      "language": "markdown",
+      "sizeLines": 180,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/DASHBOARD_BUILDER.md",
+      "language": "markdown",
+      "sizeLines": 668,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/DASHBOARD_BUILDER_PLAN.md",
+      "language": "markdown",
+      "sizeLines": 660,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/KPI_OWNER.md",
+      "language": "markdown",
+      "sizeLines": 547,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/MAIN.md",
+      "language": "markdown",
+      "sizeLines": 479,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/WIDGET_MODAL_PLAN.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/new_implement_plan.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/archived/new_requirements_plan.md",
+      "language": "markdown",
+      "sizeLines": 44,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "planning/archived/CODEBASE_ARCHITECTURE.md": [],
+    "planning/archived/DASHBOARD_BUILDER.md": [],
+    "planning/archived/DASHBOARD_BUILDER_PLAN.md": [],
+    "planning/archived/KPI_OWNER.md": [],
+    "planning/archived/MAIN.md": [],
+    "planning/archived/WIDGET_MODAL_PLAN.md": [],
+    "planning/archived/new_implement_plan.md": [],
+    "planning/archived/new_requirements_plan.md": []
+  }
+}

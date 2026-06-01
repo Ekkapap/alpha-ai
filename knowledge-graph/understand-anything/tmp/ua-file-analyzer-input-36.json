@@ -1,0 +1,35 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/operators-guide.md",
+      "language": "markdown",
+      "sizeLines": 324,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 262,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/plugin-ecosystem.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/subjects-guide.md",
+      "language": "markdown",
+      "sizeLines": 183,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-samber-ro/references/operators-guide.md": [],
+    ".agents/skills/framework/golang/golang-samber-ro/references/patterns.md": [],
+    ".agents/skills/framework/golang/golang-samber-ro/references/plugin-ecosystem.md": [],
+    ".agents/skills/framework/golang/golang-samber-ro/references/subjects-guide.md": []
+  }
+}

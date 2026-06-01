@@ -1,0 +1,28 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/ui/designer/assets/app-overview-generator.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/designer/assets/design-system.md",
+      "language": "markdown",
+      "sizeLines": 155,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/designer/assets/vibe-design-template.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/ui/designer/assets/app-overview-generator.md": [],
+    ".agents/skills/ui/designer/assets/design-system.md": [],
+    ".agents/skills/ui/designer/assets/vibe-design-template.md": []
+  }
+}

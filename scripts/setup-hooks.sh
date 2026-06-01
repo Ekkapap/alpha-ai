@@ -1,160 +1,84 @@
 #!/bin/bash
 # α/scripts/setup-hooks.sh
-# Universal Toolchain Installer — self-contained, no project-hook dependency
+# Platforms: macOS (darwin), Linux, Windows (Git Bash / MSYS2)
+# Installs alpha CLI: shell functions + builds Go binaries
 
-# 1. Resolve INSTALL_ROOT — walk up from this script to find α/
+set -euo pipefail
+
+# ── Resolve ALPHA dir ──────────────────────────────────────────────────────
 _DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-while [ "$_DIR" != "/" ] && [ ! -d "$_DIR/α" ]; do _DIR="$(dirname "$_DIR")"; done
-export INSTALL_ROOT="$_DIR"
-
+INSTALL_ROOT="$(dirname "$_DIR")"
+# Walk up if needed
+while [ "$INSTALL_ROOT" != "/" ] && [ ! -d "$INSTALL_ROOT/α" ]; do
+  INSTALL_ROOT="$(dirname "$INSTALL_ROOT")"
+done
 if [ ! -d "$INSTALL_ROOT/α" ]; then
-    echo "❌ Error: Could not find α/ directory."
-    exit 1
+  echo "❌ Could not find α/ directory." >&2; exit 1
 fi
-
 ALPHA="$INSTALL_ROOT/α"
-BIN_DIR="$ALPHA/hooks/bin"
-mkdir -p "$BIN_DIR"
-mkdir -p "$ALPHA/tools/bin/windows"
-mkdir -p "$ALPHA/tools/bin/darwin"
-mkdir -p "$ALPHA/tools/bin/linux"
-mkdir -p "$ALPHA/memories"
 
+# ── Platform detection ─────────────────────────────────────────────────────
 OS_NAME="$(uname -s)"
 IS_WINDOWS=false
+PLATFORM="linux"
 if [[ "$OS_NAME" == *"NT"* || "$OS_NAME" == *"MIN"* || "$OS_NAME" == *"MSYS"* ]]; then
-    IS_WINDOWS=true
+  IS_WINDOWS=true; PLATFORM="windows"
+elif [ "$OS_NAME" = "Darwin" ]; then
+  PLATFORM="darwin"
 fi
+echo "🖥️  Platform: $PLATFORM ($OS_NAME)"
 
-echo "🖥️  OS: $OS_NAME"
+BIN_DIR="$ALPHA/agents-resource/tools/bin/$PLATFORM"
+mkdir -p "$BIN_DIR"
+mkdir -p "$ALPHA/agents-resource/tools/bin/windows"
+mkdir -p "$ALPHA/agents-resource/tools/bin/darwin"
+mkdir -p "$ALPHA/agents-resource/tools/bin/linux"
+mkdir -p "$ALPHA/knowledge-graph/memories"
 
-# 2. Build binaries
+# ── Build Go binaries ──────────────────────────────────────────────────────
 GO_PATH=""
 if command -v go >/dev/null 2>&1; then
-    GO_PATH="go"
+  GO_PATH="go"
 elif [ -x "/c/Program Files/Go/bin/go.exe" ]; then
-    GO_PATH="/c/Program Files/Go/bin/go.exe"
+  GO_PATH="/c/Program Files/Go/bin/go.exe"
 fi
 
 if [ -n "$GO_PATH" ]; then
-    echo "🔨 Building tools..."
-    for tool in my-graphify my-understand; do
-        if [ -d "$ALPHA/tools/$tool" ]; then
-            if [ "$IS_WINDOWS" = true ]; then
-                (cd "$ALPHA/tools/$tool" && "$GO_PATH" build -o "$ALPHA/tools/bin/windows/${tool}.exe" main.go) && echo "   ✅ ${tool}.exe"
-            elif [ "$OS_NAME" = "Darwin" ]; then
-                (cd "$ALPHA/tools/$tool" && "$GO_PATH" build -o "$ALPHA/tools/bin/darwin/$tool" main.go) && echo "   ✅ $tool (darwin)"
-            else
-                (cd "$ALPHA/tools/$tool" && "$GO_PATH" build -o "$ALPHA/tools/bin/linux/$tool" main.go) && echo "   ✅ $tool (linux)"
-            fi
-        fi
-    done
-else
-    echo "⚠️  Go not found. Using existing binaries."
-fi
-
-# 3. Generate local shims in α/hooks/bin/
-#    These are the canonical per-tool definitions.
-#    Shell functions (step 4) call these with PROJECT_ROOT set.
-echo "🛠️  Generating α/hooks/bin/ shims..."
-
-_graphify_bin() {
-    # Emit binary-detection block for my-graphify into a shim file
-    local file="$1"
-    cat >> "$file" << 'EOF'
-if [ -f "$PROJECT_ROOT/α/tools/bin/windows/my-graphify.exe" ] && [[ "$(uname -s)" == *"NT"* || "$(uname -s)" == *"MIN"* || "$(uname -s)" == *"MSYS"* ]]; then
-  BIN="$PROJECT_ROOT/α/tools/bin/windows/my-graphify.exe"
-elif [ -f "$PROJECT_ROOT/α/tools/bin/darwin/my-graphify" ] && [ "$(uname -s)" = "Darwin" ]; then
-  BIN="$PROJECT_ROOT/α/tools/bin/darwin/my-graphify"
-else
-  BIN="$PROJECT_ROOT/α/tools/bin/linux/my-graphify"
-fi
-EOF
-}
-
-_understand_bin() {
-    local file="$1"
-    cat >> "$file" << 'EOF'
-if [ -f "$PROJECT_ROOT/α/tools/bin/windows/my-understand.exe" ] && [[ "$(uname -s)" == *"NT"* || "$(uname -s)" == *"MIN"* || "$(uname -s)" == *"MSYS"* ]]; then
-  BIN="$PROJECT_ROOT/α/tools/bin/windows/my-understand.exe"
-elif [ -f "$PROJECT_ROOT/α/tools/bin/darwin/my-understand" ] && [ "$(uname -s)" = "Darwin" ]; then
-  BIN="$PROJECT_ROOT/α/tools/bin/darwin/my-understand"
-else
-  BIN="$PROJECT_ROOT/α/tools/bin/linux/my-understand"
-fi
-EOF
-}
-
-_shim_header() {
-    local file="$1"
-    cat > "$file" << 'EOF'
-#!/bin/bash
-# Self-contained — walks up to find α/, no project-hook or PROJECT_ROOT needed
-if [[ -z "$PROJECT_ROOT" ]]; then
-  _d="$(pwd)"
-  while [ "$_d" != "/" ]; do
-    [ -d "$_d/α" ] && { PROJECT_ROOT="$_d"; break; }
-    _d="$(dirname "$_d")"
+  echo "🔨 Building binaries → agents-resource/tools/bin/$PLATFORM/"
+  for tool in graphify understand alpha; do
+    src="$ALPHA/agents-resource/tools/$tool"
+    [ -d "$src" ] || continue
+    if [ "$IS_WINDOWS" = true ]; then
+      out="$ALPHA/agents-resource/tools/bin/windows/${tool}.exe"
+    else
+      out="$BIN_DIR/$tool"
+    fi
+    (cd "$src" && "$GO_PATH" build -o "$out" main.go) && echo "   ✅ $tool ($PLATFORM)"
   done
-  [ -z "$PROJECT_ROOT" ] && { echo "❌ No α/ project found in directory tree." >&2; exit 1; }
+else
+  echo "⚠️  Go not found — using existing binaries."
 fi
-EOF
-}
 
-for cmd in awake sync focus forget overview sketch detail; do
-    f="$BIN_DIR/$cmd"
-    _shim_header "$f"
-    _graphify_bin "$f"
-    echo '"$BIN" '"$cmd"' "$@"' >> "$f"
-    chmod +x "$f"
-done
-
-f="$BIN_DIR/understand"
-_shim_header "$f"
-_understand_bin "$f"
-echo '"$BIN" "$@"' >> "$f"
-chmod +x "$f"
-
-cat > "$BIN_DIR/map" << 'EOF'
-#!/bin/bash
-if [[ -z "$PROJECT_ROOT" ]]; then echo "❌ PROJECT_ROOT not set"; exit 1; fi
-open "$PROJECT_ROOT/graphify-out/graph.html" 2>/dev/null || xdg-open "$PROJECT_ROOT/graphify-out/graph.html" 2>/dev/null
-EOF
-chmod +x "$BIN_DIR/map"
-
-for variant in "" "-update" "-cluster-only"; do
-    f="$BIN_DIR/graphify$variant"
-    _shim_header "$f"
-    flag=""
-    [[ "$variant" == "-update" ]] && flag=" --update"
-    [[ "$variant" == "-cluster-only" ]] && flag=" --cluster-only"
-    echo "bash \"\$PROJECT_ROOT/α/scripts/graphify.sh\" .$flag \"\$@\"" >> "$f"
-    chmod +x "$f"
-done
-
-echo "   ✅ Shims written to α/hooks/bin/"
-
-# 4. Inject self-contained shell functions into .zshrc / .bashrc
-#    No ~/.local/bin, no project-hook — functions detect α/ themselves.
-TOOLS=(awake sync focus forget overview sketch detail understand map graphify graphify-update graphify-cluster-only)
+# ── Shell function injection ───────────────────────────────────────────────
+# alpha() is the main entry point. Individual tool shortcuts are also provided.
+TOOLS=(awake sync focus forget overview sketch detail understand diff update map)
 
 _inject_shell_functions() {
-    local config_file="$1"
-    [ ! -f "$config_file" ] && return
+  local cfg="$1"
+  [ -f "$cfg" ] || return
 
-    # Remove previous block
-    if [ "$IS_WINDOWS" = true ]; then
-        sed -i '/# === ALPHA_HOOKS_START ===/,/# === ALPHA_HOOKS_END ===/d' "$config_file"
-    else
-        sed -i '' '/# === ALPHA_HOOKS_START ===/,/# === ALPHA_HOOKS_END ===/d' "$config_file"
-    fi
+  # Remove previous block
+  if [ "$IS_WINDOWS" = true ]; then
+    sed -i '/# === ALPHA_START ===/,/# === ALPHA_END ===/d' "$cfg"
+  else
+    sed -i '' '/# === ALPHA_START ===/,/# === ALPHA_END ===/d' "$cfg"
+  fi
 
-    # Build new block
-    local block
-    block="$(cat << 'BLOCK_EOF'
-# === ALPHA_HOOKS_START ===
-# Alpha AI Toolchain — self-contained, no project-hook needed
-_alpha_find_root() {
+  local block
+  block="$(cat << 'BLOCK'
+# === ALPHA_START ===
+# Alpha AI Toolchain — standalone, no ~/.local/bin/ dependency
+_alpha_root() {
   local d="$(pwd)"
   while [ "$d" != "/" ] && [ "$d" != "." ]; do
     [ -d "$d/α" ] && echo "$d" && return
@@ -162,23 +86,30 @@ _alpha_find_root() {
   done
   echo ""
 }
-_alpha_run() {
-  local tool="$1"; shift
-  local root="$(_alpha_find_root)"
-  if [ -z "$root" ]; then echo "❌ No α/ project found in directory tree." >&2; return 1; fi
-  PROJECT_ROOT="$root" exec "$root/α/hooks/bin/$tool" "$@"
+alpha() {
+  local root="$(_alpha_root)"
+  [ -z "$root" ] && { echo "❌ No α/ project found." >&2; return 1; }
+  local os_name="$(uname -s)"
+  local bin
+  case "$os_name" in
+    Darwin) bin="$root/α/agents-resource/tools/bin/darwin/alpha" ;;
+    *NT*|*MIN*|*MSYS*) bin="$root/α/agents-resource/tools/bin/windows/alpha.exe" ;;
+    *) bin="$root/α/agents-resource/tools/bin/linux/alpha" ;;
+  esac
+  [ -x "$bin" ] || { echo "❌ alpha binary not found at $bin" >&2; return 1; }
+  PROJECT_ROOT="$root" "$bin" "$@"
 }
-BLOCK_EOF
+BLOCK
 )"
 
-    # Append a function for each tool
-    for t in "${TOOLS[@]}"; do
-        block+=$'\n'"${t}() { _alpha_run ${t} \"\$@\"; }"
-    done
-    block+=$'\n'"# === ALPHA_HOOKS_END ==="
+  # Add shortcut functions
+  for t in "${TOOLS[@]}"; do
+    block+=$'\n'"${t}() { alpha --${t} \"\$@\"; }"
+  done
+  block+=$'\n'"# === ALPHA_END ==="
 
-    printf '\n%s\n' "$block" >> "$config_file"
-    echo "   ✅ Updated $config_file"
+  printf '\n%s\n' "$block" >> "$cfg"
+  echo "   ✅ Updated $cfg"
 }
 
 echo "🐚 Injecting shell functions..."
@@ -186,21 +117,19 @@ _inject_shell_functions "$HOME/.zshrc"
 _inject_shell_functions "$HOME/.bashrc"
 _inject_shell_functions "$HOME/.bash_profile"
 
-# 5. RTK interception (α-aware) — separate block, not mixed with hooks
+# ── RTK interception ───────────────────────────────────────────────────────
 _inject_rtk() {
-    local config_file="$1"
-    [ ! -f "$config_file" ] && return
+  local cfg="$1"
+  [ -f "$cfg" ] || return
+  if [ "$IS_WINDOWS" = true ]; then
+    sed -i '/# === RTK_START ===/,/# === RTK_END ===/d' "$cfg"
+  else
+    sed -i '' '/# === RTK_START ===/,/# === RTK_END ===/d' "$cfg"
+  fi
+  cat >> "$cfg" << 'RTK'
 
-    if [ "$IS_WINDOWS" = true ]; then
-        sed -i '/# === RTK_INTERCEPTION_START ===/,/# === RTK_INTERCEPTION_END ===/d' "$config_file"
-    else
-        sed -i '' '/# === RTK_INTERCEPTION_START ===/,/# === RTK_INTERCEPTION_END ===/d' "$config_file"
-    fi
-
-    cat >> "$config_file" << 'RTK_EOF'
-
-# === RTK_INTERCEPTION_START ===
-_rtk_run_or_fallback() {
+# === RTK_START ===
+_rtk_wrap() {
   local cmd="$1"; shift
   local d="$(pwd)"
   while [ "$d" != "/" ] && [ "$d" != "." ]; do
@@ -211,18 +140,18 @@ _rtk_run_or_fallback() {
   done
   command "$cmd" "$@"
 }
-ls()     { _rtk_run_or_fallback ls     "$@"; }
-grep()   { _rtk_run_or_fallback grep   "$@"; }
-git()    { _rtk_run_or_fallback git    "$@"; }
-npm()    { _rtk_run_or_fallback npm    "$@"; }
-npx()    { _rtk_run_or_fallback npx    "$@"; }
-pnpm()   { _rtk_run_or_fallback pnpm   "$@"; }
-docker() { _rtk_run_or_fallback docker "$@"; }
-find()   { _rtk_run_or_fallback find   "$@"; }
-diff()   { _rtk_run_or_fallback diff   "$@"; }
-# === RTK_INTERCEPTION_END ===
-RTK_EOF
-    echo "   ✅ RTK interception updated in $config_file"
+ls()     { _rtk_wrap ls     "$@"; }
+grep()   { _rtk_wrap grep   "$@"; }
+git()    { _rtk_wrap git    "$@"; }
+npm()    { _rtk_wrap npm    "$@"; }
+npx()    { _rtk_wrap npx    "$@"; }
+pnpm()   { _rtk_wrap pnpm   "$@"; }
+docker() { _rtk_wrap docker "$@"; }
+find()   { _rtk_wrap find   "$@"; }
+diff()   { _rtk_wrap diff   "$@"; }
+# === RTK_END ===
+RTK
+  echo "   ✅ RTK updated in $cfg"
 }
 
 echo "⚡ Updating RTK interception..."
@@ -232,4 +161,5 @@ _inject_rtk "$HOME/.bash_profile"
 
 echo ""
 echo "🚀 Done. Restart terminal or: source ~/.zshrc"
-echo "   Commands available: ${TOOLS[*]}"
+echo "   Entry point : alpha --<command>"
+echo "   Shortcuts   : ${TOOLS[*]}"

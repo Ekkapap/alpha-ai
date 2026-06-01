@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/.project_root",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/awake",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/focus",
+      "language": "unknown",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/forget",
+      "language": "unknown",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/graphify",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/graphify-cluster-only",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/graphify-update",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/map",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/hooks/bin/sync",
+      "language": "unknown",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/memories/latest_state.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/memories/session_summary_20260527_2246.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/PLAN_two_phase_query.md",
+      "language": "markdown",
+      "sizeLines": 66,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/scripts/graphify.sh",
+      "language": "shell",
+      "sizeLines": 73,
+      "fileCategory": "script"
+    },
+    {
+      "path": ".agents/scripts/setup-hooks.sh",
+      "language": "shell",
+      "sizeLines": 132,
+      "fileCategory": "script"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 174,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/better-auth-security/SKILL.MD",
+      "language": "markdown",
+      "sizeLines": 432,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/create-auth-skill/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 321,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/email-password/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 212,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/organization/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 479,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/two-factor/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 331,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/auth/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/electric-db/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/data/prisma/client-api/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 216,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/.project_root": [],
+    ".agents/hooks/bin/awake": [],
+    ".agents/hooks/bin/focus": [],
+    ".agents/hooks/bin/forget": [],
+    ".agents/hooks/bin/graphify": [],
+    ".agents/hooks/bin/graphify-cluster-only": [],
+    ".agents/hooks/bin/graphify-update": [],
+    ".agents/hooks/bin/map": [],
+    ".agents/hooks/bin/sync": [],
+    ".agents/memories/latest_state.md": [],
+    ".agents/memories/session_summary_20260527_2246.md": [],
+    ".agents/PLAN_two_phase_query.md": [],
+    ".agents/scripts/graphify.sh": [],
+    ".agents/scripts/setup-hooks.sh": [],
+    ".agents/skills/auth/better-auth/best-practices/SKILL.md": [],
+    ".agents/skills/auth/better-auth/better-auth-security/SKILL.MD": [],
+    ".agents/skills/auth/better-auth/create-auth-skill/SKILL.md": [],
+    ".agents/skills/auth/better-auth/email-password/SKILL.md": [],
+    ".agents/skills/auth/better-auth/organization/SKILL.md": [],
+    ".agents/skills/auth/better-auth/SKILL.md": [],
+    ".agents/skills/auth/better-auth/two-factor/SKILL.md": [],
+    ".agents/skills/auth/SKILL.md": [],
+    ".agents/skills/data/electric-db/SKILL.md": [],
+    ".agents/skills/data/prisma/cli/SKILL.md": [],
+    ".agents/skills/data/prisma/client-api/SKILL.md": []
+  }
+}

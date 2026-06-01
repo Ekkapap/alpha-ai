@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "app/views/menu/manage.php",
+      "language": "php",
+      "sizeLines": 391,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/mockup/summary_table.php",
+      "language": "php",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/profile/index.php",
+      "language": "php",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/stg_group/index.php",
+      "language": "php",
+      "sizeLines": 427,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/stg/index.php",
+      "language": "php",
+      "sizeLines": 482,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/views/user/manage.php",
+      "language": "php",
+      "sizeLines": 416,
+      "fileCategory": "code"
+    },
+    {
+      "path": "composer.phar",
+      "language": "phar",
+      "sizeLines": 150949,
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/ONBOARDING.md",
+      "language": "markdown",
+      "sizeLines": 196,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "dump_widgets.php",
+      "language": "php",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fix_controllers.php",
+      "language": "php",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "fix_office_column.php",
+      "language": "php",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_app_menu.php",
+      "language": "php",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_pagination_menu.php",
+      "language": "php",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_pagination_profile.php",
+      "language": "php",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_pagination_user.php",
+      "language": "php",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_profile.php",
+      "language": "php",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_sidebar.php",
+      "language": "php",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "patch_user_manage.php",
+      "language": "php",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "planning/result.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "planning/WIDGET.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/js/app-modal.js",
+      "language": "javascript",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/js/awesome-table.js",
+      "language": "javascript",
+      "sizeLines": 512,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/js/dashboard-builder.js",
+      "language": "javascript",
+      "sizeLines": 1601,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/js/dashboard-viewer.js",
+      "language": "javascript",
+      "sizeLines": 298,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/views/menu/manage.php": [],
+    "app/views/mockup/summary_table.php": [],
+    "app/views/profile/index.php": [],
+    "app/views/stg_group/index.php": [],
+    "app/views/stg/index.php": [],
+    "app/views/user/manage.php": [],
+    "composer.phar": [],
+    "docs/ONBOARDING.md": [],
+    "dump_widgets.php": [],
+    "fix_controllers.php": [],
+    "fix_office_column.php": [],
+    "patch_app_menu.php": [],
+    "patch_pagination_menu.php": [],
+    "patch_pagination_profile.php": [],
+    "patch_pagination_user.php": [],
+    "patch_profile.php": [],
+    "patch_sidebar.php": [],
+    "patch_user_manage.php": [],
+    "planning/result.md": [],
+    "planning/WIDGET.md": [],
+    "public/index.php": [],
+    "public/js/app-modal.js": [],
+    "public/js/awesome-table.js": [],
+    "public/js/dashboard-builder.js": [],
+    "public/js/dashboard-viewer.js": []
+  }
+}

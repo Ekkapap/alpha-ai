@@ -1,0 +1,28 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/workflows/graphify-cluster-only.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/workflows/graphify-update.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/workflows/graphify.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/workflows/graphify-cluster-only.md": [],
+    ".agents/workflows/graphify-update.md": [],
+    ".agents/workflows/graphify.md": []
+  }
+}

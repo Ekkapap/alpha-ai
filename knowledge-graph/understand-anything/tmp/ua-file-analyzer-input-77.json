@@ -1,0 +1,42 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "storage/sessions/sess_a28d20b32f4dcdc074a12c2d737d1948",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_a96182d75511fdfe32ae9f127af97ef7",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_c0d6baaab759b6ea62ee5c683f3c74c3",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_e5c661d92cafae39d3bc17d8df9c5461",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "storage/sessions/sess_f49bcbb6b9dc10952a90dba1f39d1213",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "storage/sessions/sess_a28d20b32f4dcdc074a12c2d737d1948": [],
+    "storage/sessions/sess_a96182d75511fdfe32ae9f127af97ef7": [],
+    "storage/sessions/sess_c0d6baaab759b6ea62ee5c683f3c74c3": [],
+    "storage/sessions/sess_e5c661d92cafae39d3bc17d8df9c5461": [],
+    "storage/sessions/sess_f49bcbb6b9dc10952a90dba1f39d1213": []
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/assets/templates/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "Changelog",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "[Unreleased]",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Deprecated",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Removed",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Other (dependencies, CI, tools...)",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "[1.0.0] - YYYY-MM-DD",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/assets/templates/CONTRIBUTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 55,
+      "nonEmptyLines": 39,
+      "sections": [
+        {
+          "heading": "Contributing to {project-name}",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Quick Start",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Development Workflow",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Code Guidelines",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Reporting Issues",
+          "level": 2,
+          "line": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/assets/templates/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 118,
+      "nonEmptyLines": 78,
+      "sections": [
+        {
+          "heading": "{project-name}",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🚀 Getting Started",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Pre-built binaries",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "From source",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Docker",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "Homebrew (macOS)",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "APT (debian/ubuntu)",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "✨ Features",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Feature Area 1",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Feature Area 2",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "🤝 Contributing",
+          "level": 2,
+          "line": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-documentation/assets/templates/llms.txt",
+      "language": "plaintext",
+      "fileCategory": "docs",
+      "totalLines": 67,
+      "nonEmptyLines": 43,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,935 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/Services/WidgetDataService.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 321,
+      "nonEmptyLines": 265,
+      "functions": [
+        {
+          "name": "__construct",
+          "startLine": 14,
+          "endLine": 18,
+          "params": [
+            "$db",
+            "$openApi"
+          ]
+        },
+        {
+          "name": "getWidgetData",
+          "startLine": 23,
+          "endLine": 80,
+          "params": [
+            "$widget",
+            "$isExport"
+          ]
+        },
+        {
+          "name": "getPaginatedWidgetData",
+          "startLine": 82,
+          "endLine": 159,
+          "params": [
+            "$widget",
+            "$page",
+            "$limit"
+          ]
+        },
+        {
+          "name": "fetchFromDbTable",
+          "startLine": 161,
+          "endLine": 211,
+          "params": [
+            "$sourceConfig",
+            "$widgetConfig",
+            "$widgetType",
+            "$isExport"
+          ]
+        },
+        {
+          "name": "applyCustomQuery",
+          "startLine": 216,
+          "endLine": 296,
+          "params": [
+            "$data",
+            "$customQuery"
+          ]
+        },
+        {
+          "name": "executeDirectDbQuery",
+          "startLine": 301,
+          "endLine": 320,
+          "params": [
+            "$sourceConfig",
+            "$customQuery"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "WidgetDataService",
+          "startLine": 9,
+          "endLine": 321,
+          "methods": [
+            "__construct",
+            "getWidgetData",
+            "getPaginatedWidgetData",
+            "fetchFromDbTable",
+            "applyCustomQuery",
+            "executeDirectDbQuery"
+          ],
+          "properties": [
+            "db",
+            "openApi"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "WidgetDataService",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getWidgetData",
+          "callee": "is_string",
+          "lineNumber": 28
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "json_decode",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "is_string",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "json_decode",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "empty",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "$this->executeDirectDbQuery",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "$this->fetchFromDbTable",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "$this->openApi->fetch",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "$this->db->first",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "$this->getWidgetData",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "empty",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "is_array",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "count",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "count",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "array_slice",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getWidgetData",
+          "callee": "$this->applyCustomQuery",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "is_string",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "json_decode",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "$this->getWidgetData",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "count",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "array_slice",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "empty",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "empty",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "preg_match",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "empty",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "preg_replace",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "$this->db->query",
+          "lineNumber": 120
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "$this->db->query",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "empty",
+          "lineNumber": 135
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "preg_match",
+          "lineNumber": 135
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "empty",
+          "lineNumber": 142
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "$this->db->query",
+          "lineNumber": 145
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "empty",
+          "lineNumber": 149
+        },
+        {
+          "caller": "getPaginatedWidgetData",
+          "callee": "$this->db->query",
+          "lineNumber": 153
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "empty",
+          "lineNumber": 164
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "preg_match",
+          "lineNumber": 169
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "strtoupper",
+          "lineNumber": 178
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "preg_match",
+          "lineNumber": 182
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "empty",
+          "lineNumber": 187
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "empty",
+          "lineNumber": 188
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "empty",
+          "lineNumber": 190
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "implode",
+          "lineNumber": 190
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "$this->db->query",
+          "lineNumber": 194
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "empty",
+          "lineNumber": 199
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "empty",
+          "lineNumber": 200
+        },
+        {
+          "caller": "fetchFromDbTable",
+          "callee": "$this->db->query",
+          "lineNumber": 210
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "empty",
+          "lineNumber": 218
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->setAttribute",
+          "lineNumber": 224
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->setAttribute",
+          "lineNumber": 225
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 228
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 231
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "substr",
+          "lineNumber": 232
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 234
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "substr",
+          "lineNumber": 235
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 237
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "date",
+          "lineNumber": 238
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 240
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "implode",
+          "lineNumber": 241
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 243
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "implode",
+          "lineNumber": 244
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 246
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "date",
+          "lineNumber": 247
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "strtotime",
+          "lineNumber": 247
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 249
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "date",
+          "lineNumber": 250
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "strtotime",
+          "lineNumber": 250
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->sqliteCreateFunction",
+          "lineNumber": 252
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "date",
+          "lineNumber": 253
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "strtotime",
+          "lineNumber": 253
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "reset",
+          "lineNumber": 257
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "is_array",
+          "lineNumber": 258
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "array_keys",
+          "lineNumber": 262
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "str_replace",
+          "lineNumber": 266
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->exec",
+          "lineNumber": 269
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "implode",
+          "lineNumber": 269
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "implode",
+          "lineNumber": 272
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "array_fill",
+          "lineNumber": 272
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "count",
+          "lineNumber": 272
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "implode",
+          "lineNumber": 273
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "array_map",
+          "lineNumber": 273
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "str_replace",
+          "lineNumber": 274
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->prepare",
+          "lineNumber": 278
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "is_array",
+          "lineNumber": 284
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "is_object",
+          "lineNumber": 284
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "json_encode",
+          "lineNumber": 285
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$stmt->execute",
+          "lineNumber": 289
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$sqlite->prepare",
+          "lineNumber": 293
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$stmtQuery->execute",
+          "lineNumber": 294
+        },
+        {
+          "caller": "applyCustomQuery",
+          "callee": "$stmtQuery->fetchAll",
+          "lineNumber": 295
+        },
+        {
+          "caller": "executeDirectDbQuery",
+          "callee": "empty",
+          "lineNumber": 304
+        },
+        {
+          "caller": "executeDirectDbQuery",
+          "callee": "preg_match",
+          "lineNumber": 304
+        },
+        {
+          "caller": "executeDirectDbQuery",
+          "callee": "empty",
+          "lineNumber": 312
+        },
+        {
+          "caller": "executeDirectDbQuery",
+          "callee": "preg_replace",
+          "lineNumber": 317
+        },
+        {
+          "caller": "executeDirectDbQuery",
+          "callee": "$this->db->query",
+          "lineNumber": 319
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "app/views/auth/login.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 129,
+      "nonEmptyLines": 114,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 433,
+      "nonEmptyLines": 396,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/manage/builder.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 252,
+      "nonEmptyLines": 239,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/manage/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 466,
+      "nonEmptyLines": 422,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/manage/widget_modal.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 527,
+      "nonEmptyLines": 493,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/preview.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/viewer.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/bar_chart.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/card_action.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/donut_chart.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/gauge_chart.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/grid_space.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/heatmap.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/line_chart.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/map_2d.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 58,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/map_3d.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 77,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/stats.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 34,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/dashboard/widgets/table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 25,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 570,
+      "nonEmptyLines": 508,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/input_modal.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 74,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/responsible/_assign_modal.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 339,
+      "nonEmptyLines": 304,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/kpi/responsible/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 294,
+      "nonEmptyLines": 267,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/layouts/app.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 862,
+      "nonEmptyLines": 787,
+      "functions": [
+        {
+          "name": "navActive",
+          "startLine": 497,
+          "endLine": 502,
+          "params": [
+            "$path",
+            "$currentPath",
+            "$exact"
+          ]
+        },
+        {
+          "name": "navClass",
+          "startLine": 503,
+          "endLine": 505,
+          "params": [
+            "$path",
+            "$currentPath",
+            "$exact"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "navActive",
+          "line": 497,
+          "isDefault": false
+        },
+        {
+          "name": "navClass",
+          "line": 503,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "navActive",
+          "callee": "strpos",
+          "lineNumber": 501
+        },
+        {
+          "caller": "navClass",
+          "callee": "navActive",
+          "lineNumber": 504
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/logs/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 144,
+      "nonEmptyLines": 125,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

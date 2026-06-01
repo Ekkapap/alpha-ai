@@ -1,0 +1,632 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/code-review-flags.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 32,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "Code Review Red Flags",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/common-go-bugs.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 834,
+      "nonEmptyLines": 666,
+      "sections": [
+        {
+          "heading": "Common Go Bugs",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Nil Pointer Dereference",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Interface Nil Gotcha",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Variable Shadowing with `:=`",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Slice and Map Gotchas",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Defer Gotchas",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "Error Handling Pitfalls",
+          "level": 2,
+          "line": 159
+        },
+        {
+          "heading": "Context Misuse",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "Concurrent Map Read/Write (Fatal)",
+          "level": 2,
+          "line": 236
+        },
+        {
+          "heading": "Copying sync Types",
+          "level": 2,
+          "line": 259
+        },
+        {
+          "heading": "WaitGroup.Add Inside Goroutine",
+          "level": 2,
+          "line": 288
+        },
+        {
+          "heading": "Missing Return After HTTP Error Response",
+          "level": 2,
+          "line": 316
+        },
+        {
+          "heading": "JSON Pitfalls",
+          "level": 2,
+          "line": 340
+        },
+        {
+          "heading": "Numbers into `interface{}` become `float64`",
+          "level": 3,
+          "line": 342
+        },
+        {
+          "heading": "Unexported fields silently ignored",
+          "level": 3,
+          "line": 365
+        },
+        {
+          "heading": "`strings.Trim` vs `strings.TrimPrefix`",
+          "level": 2,
+          "line": 387
+        },
+        {
+          "heading": "String Length and Indexing",
+          "level": 2,
+          "line": 403
+        },
+        {
+          "heading": "`break` in `select`/`switch` Inside `for` Loop",
+          "level": 2,
+          "line": 423
+        },
+        {
+          "heading": "Enum Zero Value with `iota`",
+          "level": 2,
+          "line": 452
+        },
+        {
+          "heading": "`recover()` Only Works in the Same Goroutine",
+          "level": 2,
+          "line": 476
+        },
+        {
+          "heading": "`os.Exit` Skips Deferred Functions",
+          "level": 2,
+          "line": 508
+        },
+        {
+          "heading": "`time.Time` Comparison: `==` vs `.Equal()`",
+          "level": 2,
+          "line": 539
+        },
+        {
+          "heading": "`sql.Rows` Must Be Closed",
+          "level": 2,
+          "line": 558
+        },
+        {
+          "heading": "Writing to a Closed Channel Panics",
+          "level": 2,
+          "line": 587
+        },
+        {
+          "heading": "Closed Channel in `select` Causes Busy Loop",
+          "level": 2,
+          "line": 613
+        },
+        {
+          "heading": "`select` with `default` Can Spin CPU",
+          "level": 2,
+          "line": 643
+        },
+        {
+          "heading": "Integer Conversion Silently Truncates",
+          "level": 2,
+          "line": 679
+        },
+        {
+          "heading": "`filepath.Join` Does Not Prevent Path Traversal",
+          "level": 2,
+          "line": 702
+        },
+        {
+          "heading": "Pointer Receiver Interface Satisfaction",
+          "level": 2,
+          "line": 723
+        },
+        {
+          "heading": "`regexp.MustCompile` in Hot Path",
+          "level": 2,
+          "line": 743
+        },
+        {
+          "heading": "`init()` Ordering Is Fragile",
+          "level": 2,
+          "line": 764
+        },
+        {
+          "heading": "Map Iteration Order Is Random",
+          "level": 2,
+          "line": 787
+        },
+        {
+          "heading": "`fallthrough` in `switch` Executes Unconditionally",
+          "level": 2,
+          "line": 811
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 33
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/compilation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 21,
+      "sections": [
+        {
+          "heading": "Compilation Issues",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Module Problems",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "CGO Issues",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Version Mismatch",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/concurrency-debug.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 106,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "Concurrency Debugging",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Goroutine Leaks",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Race Conditions",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Deadlocks",
+          "level": 2,
+          "line": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/diagnostic-tools.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 114,
+      "nonEmptyLines": 86,
+      "sections": [
+        {
+          "heading": "Diagnostic Tools",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Runtime Diagnostics (GODEBUG)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "GC Tracing",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Scheduler Tracing",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "GOTRACEBACK",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Delve Debugger",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Installation",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "Common Commands",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "IDE Integration",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Advanced Analysis",
+          "level": 2,
+          "line": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/methodology.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 236,
+      "nonEmptyLines": 173,
+      "sections": [
+        {
+          "heading": "General Debugging Methodology",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Step 1: Understand Expected vs Actual",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 2: Get the Full Error",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Step 3: Isolate the Problem",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Step 4: Check External Dependencies",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Step 5: Check Observability Tools",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Step 6: Compare with Working Code",
+          "level": 2,
+          "line": 156
+        },
+        {
+          "heading": "Step 7: Form a Hypothesis and Test It",
+          "level": 2,
+          "line": 167
+        },
+        {
+          "heading": "Step 8: Trace to Root Cause",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "Step 9: Fix and Verify",
+          "level": 2,
+          "line": 213
+        },
+        {
+          "heading": "Step 10: Defense-in-Depth",
+          "level": 2,
+          "line": 219
+        },
+        {
+          "heading": "When You're Stuck: Escalation Protocol",
+          "level": 2,
+          "line": 230
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/performance-debug.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "Performance Troubleshooting",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "CPU Profiling",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Memory Profiling",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Lock Contention",
+          "level": 2,
+          "line": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/pprof.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 117,
+      "nonEmptyLines": 86,
+      "sections": [
+        {
+          "heading": "pprof Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Enable pprof HTTP Server",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Quick Setup (Development)",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Secure Setup (Production)",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Profile Types",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Capturing Profiles",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Analyzing and Interpreting Profiles",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Remote Profiling (Production)",
+          "level": 2,
+          "line": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/production-debug.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 122,
+      "nonEmptyLines": 92,
+      "sections": [
+        {
+          "heading": "Production Debugging",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Production Debugging Checklist",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Step 1: Capture Immediately (don't restart!)",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Step 2: System Metrics",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Step 3: Analyze Locally",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Logging & Observability",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Strategic Log Placement",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Structured Logging (Go 1.21+)",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "Request ID Tracing",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Network & HTTP Debugging",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "HTTP Client Issues",
+          "level": 3,
+          "line": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/testing-debug.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 97,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "Test-Driven Debugging",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Reproduce the Bug in a Test",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Expand Edge Cases with Table Tests",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Useful Test Flags",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Debugging Flaky Tests",
+          "level": 2,
+          "line": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

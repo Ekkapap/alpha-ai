@@ -1,0 +1,211 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/config.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 51,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "Application Configuration with Cobra + Viper",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Where Config Lives",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Config Struct",
+          "level": 2,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/directory-layouts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 151,
+      "nonEmptyLines": 126,
+      "sections": [
+        {
+          "heading": "Directory Layouts",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Universal Layout (Most Projects)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Small Projects (Single Binary)",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Libraries (Reusable Code)",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "The cmd/ Directory Convention",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "Single Application",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Multiple Applications",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "Common Mistakes to Avoid",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "Don't Do This",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "Do This Instead",
+          "level": 3,
+          "line": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/testing-layout.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 215,
+      "nonEmptyLines": 161,
+      "sections": [
+        {
+          "heading": "Tests, Benchmarks, and Examples",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "File Naming Conventions",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Where to Place Tests",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Test Package Options",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Benchmarks",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "Examples",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Test Utilities",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "Test Fixtures",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "Running Tests",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "Test File Summary",
+          "level": 2,
+          "line": 207
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-project-layout/references/workspaces.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 106,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "Go Workspaces for Multi-Package Repositories",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "When to Use Workspaces",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Workspace Structure",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Creating a Workspace",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Workspace Commands",
+          "level": 2,
+          "line": 99
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

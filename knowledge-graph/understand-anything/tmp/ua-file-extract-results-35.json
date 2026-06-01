@@ -1,0 +1,573 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/advanced-types.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 258,
+      "nonEmptyLines": 198,
+      "sections": [
+        {
+          "heading": "Advanced Types Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Type Hierarchy",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Future[T] — Asynchronous Values",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Constructor",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Chaining",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Collecting Results",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Cancellation",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "IO[T] — Synchronous Side Effects",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Variants by Parameter Count",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "IOEither[T] — Synchronous Side Effects with Errors",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "Variants by Parameter Count",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Task[T] — Asynchronous Computations",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "From IO",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Variants by Parameter Count",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "TaskEither[T] — Async Computations with Errors",
+          "level": 2,
+          "line": 156
+        },
+        {
+          "heading": "Methods",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "State[S, A] — Stateful Computations",
+          "level": 2,
+          "line": 193
+        },
+        {
+          "heading": "Constructor",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "ReturnState — wrap a value without modifying state",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "State Manipulation",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "Chaining State Computations",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "When to Use Advanced Types",
+          "level": 2,
+          "line": 247
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/either.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 151,
+      "nonEmptyLines": 114,
+      "sections": [
+        {
+          "heading": "Either[L, R] API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Constructors",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Type Checking",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Value Extraction",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Transformations",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Swap — exchange left and right",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "MapLeft / MapRight — transform one side",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Match — pattern matching",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "ForEach — side effects",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Either vs Result",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "Either3[T1, T2, T3] — Three-Type Union",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Constructors",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Type Checking and Extraction",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Pattern Matching",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "Transformations",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Either4 and Either5",
+          "level": 2,
+          "line": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/monads-guide.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 163,
+      "nonEmptyLines": 112,
+      "sections": [
+        {
+          "heading": "Functional Programming and Monads in Go",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What is Functional Programming?",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "What is a Monad?",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "The Railway Metaphor",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Why Monads Are Valuable in Go",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "1. Compile-Time Nil Safety (Option)",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "2. Railway-Oriented Error Handling (Result)",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "3. Composable Pipelines",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "The Three Core Monads",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "Option — Represents Absence",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Result — Represents Fallibility",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Either — Represents Alternatives",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "When to Use mo vs Plain Go",
+          "level": 2,
+          "line": 149
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/option.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 151,
+      "nonEmptyLines": 114,
+      "sections": [
+        {
+          "heading": "Option[T] API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Constructors",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Query Methods",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Value Extraction",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Transformations",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Map — transform the value if present",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "MapValue — transform without filter",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "MapNone — provide value when absent",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "FlatMap — chain Options (same type)",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Match — handle both cases",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "ForEach — side effect on present value",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "Equality",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "Serialization",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Database Support",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Go 1.24+ omitzero Support",
+          "level": 2,
+          "line": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/pipelines.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 147,
+      "nonEmptyLines": 110,
+      "sections": [
+        {
+          "heading": "Pipeline Sub-Packages Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Sub-Packages Exist",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "option/ Package",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Transformation Functions",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Pipe Functions",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "result/ Package",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Transformation Functions",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Pipe Functions",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "either/ Package",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "Transformation Functions",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Pipe Functions",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "either3/, either4/, either5/ Packages",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "When to Use Pipes vs Direct Methods",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Example: Combined Usage",
+          "level": 3,
+          "line": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/result.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 145,
+      "nonEmptyLines": 113,
+      "sections": [
+        {
+          "heading": "Result[T] API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Constructors",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Do Notation",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Query Methods",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Value Extraction",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Transformations",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Map — transform successful value",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "MapValue — transform without error possibility",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "MapErr — transform error state",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "FlatMap — chain Results",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Match — handle both cases",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "ForEach — side effect on success",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Conversion",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "JSON Serialization",
+          "level": 2,
+          "line": 135
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    }
+  ]
+}

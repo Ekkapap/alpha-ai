@@ -1,0 +1,1346 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 19,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/next/references/async-patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 87,
+      "nonEmptyLines": 62,
+      "sections": [
+        {
+          "heading": "Async Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Async Params and SearchParams",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Pages and Layouts",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Route Handlers",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "SearchParams",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Synchronous Components",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "generateMetadata",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Async Cookies and Headers",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Migration Codemod",
+          "level": 2,
+          "line": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/bundling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 180,
+      "nonEmptyLines": 128,
+      "sections": [
+        {
+          "heading": "Bundling",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Server-Incompatible Packages",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Error Signs",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Solution 1: Mark as Client-Only",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Solution 2: Externalize from Server Bundle",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Solution 3: Client Component Wrapper",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "CSS Imports",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Polyfills",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "ESM/CommonJS Issues",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "Error Signs",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "Solution: Transpile Package",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Common Problematic Packages",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "Bundle Analysis",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "Migrating from Webpack to Turbopack",
+          "level": 2,
+          "line": 162
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/data-patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 297,
+      "nonEmptyLines": 228,
+      "sections": [
+        {
+          "heading": "Data Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Decision Tree",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Pattern 1: Server Components (Preferred for Reads)",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Pattern 2: Server Actions (Preferred for Mutations)",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Pattern 3: Route Handlers (APIs)",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Avoiding Data Waterfalls",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Problem: Sequential Fetches",
+          "level": 3,
+          "line": 136
+        },
+        {
+          "heading": "Solution 1: Parallel Fetching with Promise.all",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Solution 2: Streaming with Suspense",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "Solution 3: Preload Pattern",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "Client Component Data Fetching",
+          "level": 2,
+          "line": 227
+        },
+        {
+          "heading": "Option 1: Pass from Server Component (Preferred)",
+          "level": 3,
+          "line": 231
+        },
+        {
+          "heading": "Option 2: Fetch on Mount (When Necessary)",
+          "level": 3,
+          "line": 248
+        },
+        {
+          "heading": "Option 3: Server Action for Reads (Works But Not Ideal)",
+          "level": 3,
+          "line": 268
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 290
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/debug-tricks.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 105,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "Debug Tricks",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "MCP Endpoint (Dev Server)",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Request Format",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Available Tools",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "`get_errors`",
+          "level": 4,
+          "line": 37
+        },
+        {
+          "heading": "`get_routes`",
+          "level": 4,
+          "line": 43
+        },
+        {
+          "heading": "`get_project_metadata`",
+          "level": 4,
+          "line": 51
+        },
+        {
+          "heading": "`get_page_metadata`",
+          "level": 4,
+          "line": 58
+        },
+        {
+          "heading": "`get_logs`",
+          "level": 4,
+          "line": 65
+        },
+        {
+          "heading": "`get_server_action_by_id`",
+          "level": 4,
+          "line": 72
+        },
+        {
+          "heading": "Example: Get Errors",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Rebuild Specific Routes (Next.js 16+)",
+          "level": 2,
+          "line": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/directives.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 73,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "Directives",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "React Directives",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "`'use client'`",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "`'use server'`",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Next.js Directive",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "`'use cache'`",
+          "level": 3,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/error-handling.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 227,
+      "nonEmptyLines": 176,
+      "sections": [
+        {
+          "heading": "Error Handling",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Error Boundaries",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "`error.tsx`",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "`global-error.tsx`",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Server Actions: Navigation API Gotcha",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Redirects",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "Auth Errors",
+          "level": 2,
+          "line": 144
+        },
+        {
+          "heading": "Not Found",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "`not-found.tsx`",
+          "level": 3,
+          "line": 182
+        },
+        {
+          "heading": "Triggering Not Found",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Error Hierarchy",
+          "level": 2,
+          "line": 214
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/file-conventions.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 140,
+      "nonEmptyLines": 110,
+      "sections": [
+        {
+          "heading": "File Conventions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Project Structure",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Special Files",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Route Segments",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Parallel Routes",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Intercepting Routes",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Private Folders",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Middleware / Proxy",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Next.js 14-15: `middleware.ts`",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Next.js 16+: `proxy.ts`",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "File Conventions Reference",
+          "level": 2,
+          "line": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/font.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 245,
+      "nonEmptyLines": 190,
+      "sections": [
+        {
+          "heading": "Font Optimization",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Google Fonts",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Multiple Fonts",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Font Weights and Styles",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Local Fonts",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Tailwind CSS Integration",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "Preloading Subsets",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "Display Strategy",
+          "level": 2,
+          "line": 162
+        },
+        {
+          "heading": "Don't Use Manual Font Links",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "Font in Specific Components",
+          "level": 2,
+          "line": 229
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/functions.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 108,
+      "nonEmptyLines": 80,
+      "sections": [
+        {
+          "heading": "Functions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Navigation Hooks (Client)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Server Functions",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Generate Functions",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Request/Response",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Common Examples",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Navigation",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "Static Generation",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "After Response",
+          "level": 3,
+          "line": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/hydration-error.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 91,
+      "nonEmptyLines": 65,
+      "sections": [
+        {
+          "heading": "Hydration Errors",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Error Signs",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Debugging",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Common Causes and Fixes",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Browser-only APIs",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Date/Time Rendering",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Random Values or IDs",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "Invalid HTML Nesting",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Third-party Scripts",
+          "level": 3,
+          "line": 75
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/image.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 173,
+      "nonEmptyLines": 134,
+      "sections": [
+        {
+          "heading": "Image Optimization",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Always Use next/image",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Required Props",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Remote Images Configuration",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Responsive Images",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Blur Placeholder",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "Priority Loading",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "Static Export",
+          "level": 2,
+          "line": 152
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/metadata.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 301,
+      "nonEmptyLines": 233,
+      "sections": [
+        {
+          "heading": "Metadata",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Important: Server Components Only",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Static Metadata",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Dynamic Metadata",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Avoid Duplicate Fetches",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Viewport",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Title Templates",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Metadata File Conventions",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "SEO Best Practice: Static Files Are Often Enough",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "OG Image Generation",
+          "level": 1,
+          "line": 117
+        },
+        {
+          "heading": "Important Rules",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Basic OG Image",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "Dynamic OG Image",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Custom Fonts",
+          "level": 2,
+          "line": 209
+        },
+        {
+          "heading": "File Naming",
+          "level": 2,
+          "line": 235
+        },
+        {
+          "heading": "Styling Notes",
+          "level": 2,
+          "line": 240
+        },
+        {
+          "heading": "Multiple OG Images",
+          "level": 2,
+          "line": 247
+        },
+        {
+          "heading": "Multiple Sitemaps",
+          "level": 2,
+          "line": 272
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/parallel-routes.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 287,
+      "nonEmptyLines": 229,
+      "sections": [
+        {
+          "heading": "Parallel & Intercepting Routes",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "File Structure",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 1: Root Layout with Slot",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Step 2: Default File (Critical!)",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Step 3: Intercepting Route (Modal)",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Step 4: Full Page (Direct Access)",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Step 5: Modal Component with Correct Closing",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Why NOT `router.push('/')` or `<Link href=\"/\">`?",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Route Matcher Reference",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Handling Hard Navigation",
+          "level": 2,
+          "line": 181
+        },
+        {
+          "heading": "Common Gotchas",
+          "level": 2,
+          "line": 207
+        },
+        {
+          "heading": "1. Missing `default.tsx` → 404 on Refresh",
+          "level": 3,
+          "line": 209
+        },
+        {
+          "heading": "2. Modal Persists After Navigation",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "3. Nested Parallel Routes Need Defaults Too",
+          "level": 3,
+          "line": 217
+        },
+        {
+          "heading": "4. Intercepted Route Shows Wrong Content",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "5. TypeScript Errors with `params`",
+          "level": 3,
+          "line": 236
+        },
+        {
+          "heading": "Complete Example: Photo Gallery Modal",
+          "level": 2,
+          "line": 247
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/route-handlers.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 146,
+      "nonEmptyLines": 112,
+      "sections": [
+        {
+          "heading": "Route Handlers",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Supported Methods",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "GET Handler Conflicts with page.tsx",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Environment Behavior",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Dynamic Route Handlers",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Request Helpers",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "Response Helpers",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "When to Use Route Handlers vs Server Actions",
+          "level": 2,
+          "line": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/rsc-boundaries.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 159,
+      "nonEmptyLines": 129,
+      "sections": [
+        {
+          "heading": "RSC Boundaries",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Detection Rules",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. Async Client Components Are Invalid",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "2. Non-Serializable Props to Client Components",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "3. Server Actions Are the Exception",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 148
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/runtime-selection.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 39,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "Runtime Selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Use Node.js Runtime by Default",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use Each",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Node.js Runtime (Default)",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Edge Runtime",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Detection",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/scripts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 141,
+      "nonEmptyLines": 105,
+      "sections": [
+        {
+          "heading": "Scripts",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Use next/script",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Inline Scripts Need ID",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Don't Put Script in Head",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Loading Strategies",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Google Analytics",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Google Tag Manager",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Other Third-Party Scripts",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 133
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/self-hosting.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 371,
+      "nonEmptyLines": 292,
+      "sections": [
+        {
+          "heading": "Self-Hosting Next.js",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Start: Standalone Output",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Docker Deployment",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Dockerfile",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Docker Compose",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "PM2 Deployment",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "ISR and Cache Handlers",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "The Problem",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Solution: Custom Cache Handler",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "Redis Cache Handler Example",
+          "level": 4,
+          "line": 138
+        },
+        {
+          "heading": "S3 Cache Handler Example",
+          "level": 4,
+          "line": 188
+        },
+        {
+          "heading": "What Works vs What Needs Setup",
+          "level": 2,
+          "line": 226
+        },
+        {
+          "heading": "Image Optimization",
+          "level": 2,
+          "line": 240
+        },
+        {
+          "heading": "Option 1: Built-in (Simple)",
+          "level": 3,
+          "line": 244
+        },
+        {
+          "heading": "Option 2: External Loader (Recommended for Scale)",
+          "level": 3,
+          "line": 260
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 2,
+          "line": 282
+        },
+        {
+          "heading": "Build-time vs Runtime",
+          "level": 3,
+          "line": 284
+        },
+        {
+          "heading": "Runtime Configuration",
+          "level": 3,
+          "line": 295
+        },
+        {
+          "heading": "OpenNext: Serverless Without Vercel",
+          "level": 2,
+          "line": 309
+        },
+        {
+          "heading": "Health Check Endpoint",
+          "level": 2,
+          "line": 325
+        },
+        {
+          "heading": "Pre-Deployment Checklist",
+          "level": 2,
+          "line": 343
+        },
+        {
+          "heading": "Testing Cache Handler",
+          "level": 2,
+          "line": 355
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": ".agents/skills/framework/next/references/suspense-boundaries.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 67,
+      "nonEmptyLines": 51,
+      "sections": [
+        {
+          "heading": "Suspense Boundaries",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "useSearchParams",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "usePathname",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

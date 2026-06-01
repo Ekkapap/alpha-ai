@@ -1,0 +1,1934 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/data/prisma/database-setup/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 186,
+      "nonEmptyLines": 143,
+      "sections": [
+        {
+          "heading": "Prisma Database Setup",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "System Prerequisites (Prisma ORM 7)",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Bun Runtime",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Supported Databases",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Configuration Files",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Driver Adapters (Prisma ORM 7)",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Prisma Client Setup (Required)",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "PostgreSQL",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "MySQL",
+          "level": 3,
+          "line": 133
+        },
+        {
+          "heading": "SQLite",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "MongoDB (Prisma v6 only)",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Rule Files",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/driver-adapter/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 638,
+      "nonEmptyLines": 522,
+      "sections": [
+        {
+          "heading": "Prisma 7 Driver Adapter Implementation Guide",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "Architecture Overview",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Required Interfaces",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Interface Definitions",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "SqlQuery (input to queryRaw/executeRaw)",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "SqlResultSet (output from queryRaw)",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "ColumnTypeEnum values",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "SqlDriverAdapter",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "Transaction",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "SqlMigrationAwareDriverAdapterFactory",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "Implementation Steps",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "Step 1: Create the Queryable base class",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Step 2: Create the Transaction class",
+          "level": 3,
+          "line": 229
+        },
+        {
+          "heading": "Step 3: Create the Adapter class",
+          "level": 3,
+          "line": 262
+        },
+        {
+          "heading": "Step 4: Create the Factory class",
+          "level": 3,
+          "line": 337
+        },
+        {
+          "heading": "Conversion Helpers",
+          "level": 2,
+          "line": 368
+        },
+        {
+          "heading": "Argument Mapping (input)",
+          "level": 3,
+          "line": 370
+        },
+        {
+          "heading": "Row Mapping (output)",
+          "level": 3,
+          "line": 402
+        },
+        {
+          "heading": "Column Type Inference",
+          "level": 3,
+          "line": 444
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 461
+        },
+        {
+          "heading": "Database-Specific Notes",
+          "level": 2,
+          "line": 512
+        },
+        {
+          "heading": "SQLite",
+          "level": 3,
+          "line": 514
+        },
+        {
+          "heading": "PostgreSQL",
+          "level": 3,
+          "line": 521
+        },
+        {
+          "heading": "MySQL/MariaDB",
+          "level": 3,
+          "line": 530
+        },
+        {
+          "heading": "Testing Strategy",
+          "level": 2,
+          "line": 536
+        },
+        {
+          "heading": "Unit Tests (no PrismaClient)",
+          "level": 3,
+          "line": 538
+        },
+        {
+          "heading": "E2E Tests (with PrismaClient)",
+          "level": 3,
+          "line": 573
+        },
+        {
+          "heading": "Usage Example",
+          "level": 2,
+          "line": 607
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 623
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 29
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/expert/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 361,
+      "nonEmptyLines": 294,
+      "sections": [
+        {
+          "heading": "Prisma Expert",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "When Invoked",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Step 0: Recommend Specialist and Stop",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "Environment Detection",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Apply Strategy",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Problem Playbooks",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Schema Design",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Migrations",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Query Optimization",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "Connection Management",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "Transaction Patterns",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "Code Review Checklist",
+          "level": 2,
+          "line": 322
+        },
+        {
+          "heading": "Schema Quality",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "Query Patterns",
+          "level": 3,
+          "line": 332
+        },
+        {
+          "heading": "Performance",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Migration Safety",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "Anti-Patterns to Avoid",
+          "level": 2,
+          "line": 352
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 360
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/orm-v7/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 121,
+      "nonEmptyLines": 85,
+      "sections": [
+        {
+          "heading": "Links",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Upgrade",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Breaking Changes (v7)",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Minimum versions",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Prisma is now ESM",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Prisma schema + generation changes",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Driver adapters required for Prisma Client (new instantiation)",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Prisma Accelerate users (v6 → v7)",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Env vars are not loaded by default",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Prisma CLI config moved to `prisma.config.ts`",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Client middleware removed",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Metrics removed from Client Extensions",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Migrate/seed/generate behavior changes",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Prisma-specific env vars removed",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "MongoDB support",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "Upgrade Checklist (quick)",
+          "level": 2,
+          "line": 110
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/postgres/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 110,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "Prisma Postgres",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Core Workflows",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "1. Console-first workflow",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "2. Quick provisioning with create-db",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "3. Programmatic provisioning with Management API",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "4. Type-safe integration with Management API SDK",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Rule Files",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/upgrade-to-v7/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 228,
+      "nonEmptyLines": 175,
+      "sections": [
+        {
+          "heading": "Upgrade to Prisma ORM 7",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Important Notes",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "Upgrade Steps Overview",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Quick Upgrade Commands",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Breaking Changes Summary",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Rule Files",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Step-by-Step Migration",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "1. Update package.json for ESM",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "2. Update tsconfig.json",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "3. Update schema.prisma",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "4. Create prisma.config.ts",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "5. Install driver adapter",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "6. Update client instantiation",
+          "level": 3,
+          "line": 182
+        },
+        {
+          "heading": "7. Run migrations and generate",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 206
+        },
+        {
+          "heading": "\"Cannot find module\" errors",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "SSL certificate errors",
+          "level": 3,
+          "line": 212
+        },
+        {
+          "heading": "Connection timeout issues",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 226
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": ".agents/skills/data/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-benchmark/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1078,
+      "nonEmptyLines": 1078,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-benchmark/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 146,
+      "nonEmptyLines": 109,
+      "sections": [
+        {
+          "heading": "Go Benchmarking & Performance Measurement",
+          "level": 1,
+          "line": 28
+        },
+        {
+          "heading": "Writing Benchmarks",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "`b.Loop()` (Go 1.24+) — preferred",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Memory tracking",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "Sub-benchmarks and table-driven",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "Running Benchmarks",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Profiling from Benchmarks",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Reference Files",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Cross-References",
+          "level": 2,
+          "line": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/args.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 37,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/cli_test.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "executeCommand",
+          "startLine": 14,
+          "endLine": 21,
+          "params": [
+            "root"
+          ]
+        },
+        {
+          "name": "TestServeCommand",
+          "startLine": 23,
+          "endLine": 58,
+          "params": [
+            "t"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TestServeCommand",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "executeCommand",
+          "callee": "new",
+          "lineNumber": 15
+        },
+        {
+          "caller": "executeCommand",
+          "callee": "root.SetOut",
+          "lineNumber": 16
+        },
+        {
+          "caller": "executeCommand",
+          "callee": "root.SetErr",
+          "lineNumber": 17
+        },
+        {
+          "caller": "executeCommand",
+          "callee": "root.SetArgs",
+          "lineNumber": 18
+        },
+        {
+          "caller": "executeCommand",
+          "callee": "root.Execute",
+          "lineNumber": 19
+        },
+        {
+          "caller": "executeCommand",
+          "callee": "buf.String",
+          "lineNumber": 20
+        },
+        {
+          "caller": "TestServeCommand",
+          "callee": "t.Run",
+          "lineNumber": 48
+        },
+        {
+          "caller": "TestServeCommand",
+          "callee": "executeCommand",
+          "lineNumber": 49
+        },
+        {
+          "caller": "TestServeCommand",
+          "callee": "t.Errorf",
+          "lineNumber": 51
+        },
+        {
+          "caller": "TestServeCommand",
+          "callee": "t.Errorf",
+          "lineNumber": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/completion.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 12,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "customCompletionExamples",
+          "startLine": 37,
+          "endLine": 53,
+          "params": []
+        },
+        {
+          "name": "getAvailableServices",
+          "startLine": 55,
+          "endLine": 58,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "rootCmd.AddCommand",
+          "lineNumber": 13
+        },
+        {
+          "caller": "init",
+          "callee": "cobra.ExactValidArgs",
+          "lineNumber": 16
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.GenBashCompletionV2",
+          "lineNumber": 21
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.GenZshCompletion",
+          "lineNumber": 23
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.GenFishCompletion",
+          "lineNumber": 25
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.GenPowerShellCompletionWithDesc",
+          "lineNumber": 27
+        },
+        {
+          "caller": "customCompletionExamples",
+          "callee": "deployCmd.RegisterFlagCompletionFunc",
+          "lineNumber": 38
+        },
+        {
+          "caller": "customCompletionExamples",
+          "callee": "len",
+          "lineNumber": 48
+        },
+        {
+          "caller": "customCompletionExamples",
+          "callee": "getAvailableServices",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/config.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "initConfigComplete",
+          "startLine": 15,
+          "endLine": 40,
+          "params": []
+        },
+        {
+          "name": "loadConfig",
+          "startLine": 54,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "watchConfig",
+          "startLine": 65,
+          "endLine": 71,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "Config",
+          "startLine": 44,
+          "endLine": 52,
+          "methods": [],
+          "properties": [
+            "Port",
+            "Host",
+            "LogLevel",
+            "Database"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Config",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.SetConfigFile",
+          "lineNumber": 18
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "os.UserHomeDir",
+          "lineNumber": 20
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.AddConfigPath",
+          "lineNumber": 21
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.AddConfigPath",
+          "lineNumber": 22
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.SetConfigName",
+          "lineNumber": 23
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.SetConfigType",
+          "lineNumber": 24
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.SetEnvPrefix",
+          "lineNumber": 28
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.SetEnvKeyReplacer",
+          "lineNumber": 29
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "strings.NewReplacer",
+          "lineNumber": 29
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.AutomaticEnv",
+          "lineNumber": 30
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "viper.ReadInConfig",
+          "lineNumber": 33
+        },
+        {
+          "caller": "initConfigComplete",
+          "callee": "fmt.Errorf",
+          "lineNumber": 35
+        },
+        {
+          "caller": "loadConfig",
+          "callee": "viper.Unmarshal",
+          "lineNumber": 56
+        },
+        {
+          "caller": "loadConfig",
+          "callee": "fmt.Errorf",
+          "lineNumber": 57
+        },
+        {
+          "caller": "watchConfig",
+          "callee": "viper.OnConfigChange",
+          "lineNumber": 66
+        },
+        {
+          "caller": "watchConfig",
+          "callee": "slog.Info",
+          "lineNumber": 67
+        },
+        {
+          "caller": "watchConfig",
+          "callee": "viper.WatchConfig",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/exit_codes.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "mainWithExitCodes",
+          "startLine": 11,
+          "endLine": 20,
+          "params": []
+        },
+        {
+          "name": "Error",
+          "startLine": 27,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "Unwrap",
+          "startLine": 28,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExitError",
+          "startLine": 22,
+          "endLine": 25,
+          "methods": [
+            "Error",
+            "Unwrap"
+          ],
+          "properties": [
+            "Code",
+            "Err"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExitError",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "Error",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "Unwrap",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mainWithExitCodes",
+          "callee": "cmd.Execute",
+          "lineNumber": 12
+        },
+        {
+          "caller": "mainWithExitCodes",
+          "callee": "errors.As",
+          "lineNumber": 15
+        },
+        {
+          "caller": "mainWithExitCodes",
+          "callee": "os.Exit",
+          "lineNumber": 16
+        },
+        {
+          "caller": "mainWithExitCodes",
+          "callee": "os.Exit",
+          "lineNumber": 18
+        },
+        {
+          "caller": "Error",
+          "callee": "e.Err.Error",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/flags.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "flagExamples",
+          "startLine": 8,
+          "endLine": 41,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "flagExamples",
+          "callee": "rootCmd.PersistentFlags().StringVar",
+          "lineNumber": 12
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "rootCmd.PersistentFlags",
+          "lineNumber": 12
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags().IntP",
+          "lineNumber": 15
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 15
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags().String",
+          "lineNumber": 19
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 19
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.MarkFlagRequired",
+          "lineNumber": 20
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "rootCmd.MarkFlagsMutuallyExclusive",
+          "lineNumber": 23
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "rootCmd.MarkFlagsOneRequired",
+          "lineNumber": 26
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags().String",
+          "lineNumber": 30
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 30
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.RegisterFlagCompletionFunc",
+          "lineNumber": 31
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags().IntP",
+          "lineNumber": 39
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 39
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "viper.BindPFlag",
+          "lineNumber": 40
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags().Lookup",
+          "lineNumber": 40
+        },
+        {
+          "caller": "flagExamples",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/main.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "main",
+          "startLine": 8,
+          "endLine": 12,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "main",
+          "callee": "Execute",
+          "lineNumber": 9
+        },
+        {
+          "caller": "main",
+          "callee": "os.Exit",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/output.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 62,
+      "functions": [
+        {
+          "name": "outputExample",
+          "startLine": 17,
+          "endLine": 23,
+          "params": [
+            "cmd",
+            "result",
+            "err"
+          ]
+        },
+        {
+          "name": "isTerminal",
+          "startLine": 27,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "printUsers",
+          "startLine": 43,
+          "endLine": 63,
+          "params": [
+            "cmd",
+            "users"
+          ]
+        },
+        {
+          "name": "colorExamples",
+          "startLine": 68,
+          "endLine": 75,
+          "params": [
+            "cmd",
+            "env",
+            "err"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "User",
+          "startLine": 38,
+          "endLine": 41,
+          "methods": [],
+          "properties": [
+            "ID",
+            "Name"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "User",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "outputExample",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 19
+        },
+        {
+          "caller": "outputExample",
+          "callee": "cmd.OutOrStdout",
+          "lineNumber": 19
+        },
+        {
+          "caller": "isTerminal",
+          "callee": "os.Stdout.Stat",
+          "lineNumber": 28
+        },
+        {
+          "caller": "isTerminal",
+          "callee": "fi.Mode",
+          "lineNumber": 32
+        },
+        {
+          "caller": "printUsers",
+          "callee": "cmd.Flags().GetString",
+          "lineNumber": 44
+        },
+        {
+          "caller": "printUsers",
+          "callee": "cmd.Flags",
+          "lineNumber": 44
+        },
+        {
+          "caller": "printUsers",
+          "callee": "json.NewEncoder",
+          "lineNumber": 47
+        },
+        {
+          "caller": "printUsers",
+          "callee": "cmd.OutOrStdout",
+          "lineNumber": 47
+        },
+        {
+          "caller": "printUsers",
+          "callee": "enc.SetIndent",
+          "lineNumber": 48
+        },
+        {
+          "caller": "printUsers",
+          "callee": "enc.Encode",
+          "lineNumber": 49
+        },
+        {
+          "caller": "printUsers",
+          "callee": "fmt.Fprintf",
+          "lineNumber": 52
+        },
+        {
+          "caller": "printUsers",
+          "callee": "cmd.OutOrStdout",
+          "lineNumber": 52
+        },
+        {
+          "caller": "printUsers",
+          "callee": "tabwriter.NewWriter",
+          "lineNumber": 55
+        },
+        {
+          "caller": "printUsers",
+          "callee": "cmd.OutOrStdout",
+          "lineNumber": 55
+        },
+        {
+          "caller": "printUsers",
+          "callee": "fmt.Fprintln",
+          "lineNumber": 56
+        },
+        {
+          "caller": "printUsers",
+          "callee": "fmt.Fprintf",
+          "lineNumber": 58
+        },
+        {
+          "caller": "printUsers",
+          "callee": "w.Flush",
+          "lineNumber": 60
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "color.Green",
+          "lineNumber": 69
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "color.Red",
+          "lineNumber": 70
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "color.New(color.FgGreen, color.Bold).SprintFunc",
+          "lineNumber": 73
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "color.New",
+          "lineNumber": 73
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "fmt.Fprintf",
+          "lineNumber": 74
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "cmd.OutOrStdout",
+          "lineNumber": 74
+        },
+        {
+          "caller": "colorExamples",
+          "callee": "success",
+          "lineNumber": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/root.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 74,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "Execute",
+          "startLine": 27,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "init",
+          "startLine": 31,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "initConfig",
+          "startLine": 37,
+          "endLine": 74,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Execute",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Execute",
+          "callee": "rootCmd.Execute",
+          "lineNumber": 28
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.PersistentFlags().StringVar",
+          "lineNumber": 32
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.PersistentFlags",
+          "lineNumber": 32
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.PersistentFlags().String",
+          "lineNumber": 33
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.PersistentFlags",
+          "lineNumber": 33
+        },
+        {
+          "caller": "init",
+          "callee": "viper.BindPFlag",
+          "lineNumber": 34
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.PersistentFlags().Lookup",
+          "lineNumber": 34
+        },
+        {
+          "caller": "init",
+          "callee": "rootCmd.PersistentFlags",
+          "lineNumber": 34
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.SetConfigFile",
+          "lineNumber": 39
+        },
+        {
+          "caller": "initConfig",
+          "callee": "os.UserHomeDir",
+          "lineNumber": 41
+        },
+        {
+          "caller": "initConfig",
+          "callee": "fmt.Errorf",
+          "lineNumber": 43
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.AddConfigPath",
+          "lineNumber": 45
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.AddConfigPath",
+          "lineNumber": 46
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.SetConfigName",
+          "lineNumber": 47
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.SetConfigType",
+          "lineNumber": 48
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.SetEnvPrefix",
+          "lineNumber": 51
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.SetEnvKeyReplacer",
+          "lineNumber": 52
+        },
+        {
+          "caller": "initConfig",
+          "callee": "strings.NewReplacer",
+          "lineNumber": 52
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.AutomaticEnv",
+          "lineNumber": 53
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.ReadInConfig",
+          "lineNumber": 55
+        },
+        {
+          "caller": "initConfig",
+          "callee": "fmt.Errorf",
+          "lineNumber": 57
+        },
+        {
+          "caller": "initConfig",
+          "callee": "strings.ToLower",
+          "lineNumber": 63
+        },
+        {
+          "caller": "initConfig",
+          "callee": "viper.GetString",
+          "lineNumber": 63
+        },
+        {
+          "caller": "initConfig",
+          "callee": "slog.SetDefault",
+          "lineNumber": 71
+        },
+        {
+          "caller": "initConfig",
+          "callee": "slog.New",
+          "lineNumber": 71
+        },
+        {
+          "caller": "initConfig",
+          "callee": "slog.NewTextHandler",
+          "lineNumber": 71
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/serve.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 22,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "rootCmd.AddCommand",
+          "lineNumber": 23
+        },
+        {
+          "caller": "init",
+          "callee": "serveCmd.Flags().IntP",
+          "lineNumber": 24
+        },
+        {
+          "caller": "init",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 24
+        },
+        {
+          "caller": "init",
+          "callee": "viper.BindPFlag",
+          "lineNumber": 25
+        },
+        {
+          "caller": "init",
+          "callee": "serveCmd.Flags().Lookup",
+          "lineNumber": 25
+        },
+        {
+          "caller": "init",
+          "callee": "serveCmd.Flags",
+          "lineNumber": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/signal.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/assets/examples/version.go",
+      "language": "go",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "init",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "init",
+          "callee": "rootCmd.AddCommand",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 342,
+      "nonEmptyLines": 342,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-cli/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 205,
+      "nonEmptyLines": 145,
+      "sections": [
+        {
+          "heading": "Go CLI Best Practices",
+          "level": 1,
+          "line": 28
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Project Structure",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Root Command Setup",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Subcommands",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Flags",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Persistent vs Local",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Required Flags",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Flag Validation with RegisterFlagCompletionFunc",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Always Bind Flags to Viper",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Argument Validation",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Configuration with Viper",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "Example Config File (.myapp.yaml)",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "Version and Build Info",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "Exit Codes",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "I/O Patterns",
+          "level": 2,
+          "line": 165
+        },
+        {
+          "heading": "Signal Handling",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "Shell Completions",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "Testing CLI Commands",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 188
+        },
+        {
+          "heading": "Related Skills",
+          "level": 2,
+          "line": 203
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-code-style/evals/evals.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 550,
+      "nonEmptyLines": 550,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

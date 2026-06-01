@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/graphify/SKILL.md.bak",
+      "language": "bak",
+      "sizeLines": 1426,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/runtime/bun/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 696,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/runtime/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/integration/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/rules/ssr-dehydration.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/query/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/state/tanstack/store/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 305,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/designer/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 191,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/guidelines/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 133,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/combobox/references/api.md",
+      "language": "markdown",
+      "sizeLines": 199,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/combobox/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 279,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/combobox/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/custom-components/references/api.md",
+      "language": "markdown",
+      "sizeLines": 407,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/custom-components/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 431,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/custom-components/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 112,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/components/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/use-form/references/api.md",
+      "language": "markdown",
+      "sizeLines": 313,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/use-form/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 310,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/mantine/use-form/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/screenshot-to-code/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 130,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/graphify/SKILL.md.bak": [],
+    ".agents/skills/runtime/bun/SKILL.md": [],
+    ".agents/skills/runtime/SKILL.md": [],
+    ".agents/skills/SKILL.md": [],
+    ".agents/skills/state/SKILL.md": [],
+    ".agents/skills/state/tanstack/integration/SKILL.md": [],
+    ".agents/skills/state/tanstack/query/rules/ssr-dehydration.md": [],
+    ".agents/skills/state/tanstack/query/SKILL.md": [],
+    ".agents/skills/state/tanstack/SKILL.md": [],
+    ".agents/skills/state/tanstack/store/SKILL.md": [],
+    ".agents/skills/ui/designer/SKILL.md": [],
+    ".agents/skills/ui/guidelines/SKILL.md": [],
+    ".agents/skills/ui/mantine/best-practices/SKILL.md": [],
+    ".agents/skills/ui/mantine/components/combobox/references/api.md": [],
+    ".agents/skills/ui/mantine/components/combobox/references/patterns.md": [],
+    ".agents/skills/ui/mantine/components/combobox/SKILL.md": [],
+    ".agents/skills/ui/mantine/components/custom-components/references/api.md": [],
+    ".agents/skills/ui/mantine/components/custom-components/references/patterns.md": [],
+    ".agents/skills/ui/mantine/components/custom-components/SKILL.md": [],
+    ".agents/skills/ui/mantine/components/SKILL.md": [],
+    ".agents/skills/ui/mantine/SKILL.md": [],
+    ".agents/skills/ui/mantine/use-form/references/api.md": [],
+    ".agents/skills/ui/mantine/use-form/references/patterns.md": [],
+    ".agents/skills/ui/mantine/use-form/SKILL.md": [],
+    ".agents/skills/ui/screenshot-to-code/SKILL.md": []
+  }
+}

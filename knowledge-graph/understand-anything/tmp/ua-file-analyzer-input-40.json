@@ -1,0 +1,77 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/code-review-flags.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/common-go-bugs.md",
+      "language": "markdown",
+      "sizeLines": 834,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/compilation.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/concurrency-debug.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/diagnostic-tools.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/methodology.md",
+      "language": "markdown",
+      "sizeLines": 236,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/performance-debug.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/pprof.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/production-debug.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-troubleshooting/references/testing-debug.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-troubleshooting/references/code-review-flags.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/common-go-bugs.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/compilation.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/concurrency-debug.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/diagnostic-tools.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/methodology.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/performance-debug.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/pprof.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/production-debug.md": [],
+    ".agents/skills/framework/golang/golang-troubleshooting/references/testing-debug.md": []
+  }
+}

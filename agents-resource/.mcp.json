@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "ALPHA": {
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f", "[ALPHA_DIR]/docker-compose.yml",
+        "run", "--rm", "-i", "--no-deps",
+        "alpha"
+      ],
+      "env": {
+        "HOST_PROJECT_ROOT": "${env:PWD}",
+        "COMPOSE_PROFILES": "mcp"
+      },
+      "_note": "Replace [ALPHA_DIR] with absolute path to the α/ directory. HOST_PROJECT_ROOT is set from the workspace root (parent of α/)."
+    },
+    "MYSQL": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@benborla29/mcp-server-mysql"
+      ],
+      "env": {
+        "MYSQL_HOST": "",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "",
+        "MYSQL_PASS": "",
+        "MYSQL_DB": "dbname",
+        "ALLOW_INSERT_OPERATION": "true",
+        "ALLOW_UPDATE_OPERATION": "true",
+        "ALLOW_DELETE_OPERATION": "true",
+        "ALLOW_DDL_OPERATIONS": "true",
+        "SCHEMA_DDL_PERMISSIONS": "dbname:true"
+      }
+    }
+  }
+}

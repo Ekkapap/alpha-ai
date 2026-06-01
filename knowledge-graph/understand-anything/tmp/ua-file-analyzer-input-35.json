@@ -1,0 +1,49 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/advanced-types.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/either.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/monads-guide.md",
+      "language": "markdown",
+      "sizeLines": 163,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/option.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/pipelines.md",
+      "language": "markdown",
+      "sizeLines": 147,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-mo/references/result.md",
+      "language": "markdown",
+      "sizeLines": 145,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-samber-mo/references/advanced-types.md": [],
+    ".agents/skills/framework/golang/golang-samber-mo/references/either.md": [],
+    ".agents/skills/framework/golang/golang-samber-mo/references/monads-guide.md": [],
+    ".agents/skills/framework/golang/golang-samber-mo/references/option.md": [],
+    ".agents/skills/framework/golang/golang-samber-mo/references/pipelines.md": [],
+    ".agents/skills/framework/golang/golang-samber-mo/references/result.md": []
+  }
+}

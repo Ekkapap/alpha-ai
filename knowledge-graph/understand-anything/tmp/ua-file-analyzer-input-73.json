@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/ui/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/design-system/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 866,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/layout/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 594,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/patterns/references/reference.md",
+      "language": "markdown",
+      "sizeLines": 507,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/patterns/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 863,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ui/tailwind/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ux/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/_sync_all.py",
+      "language": "python",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/data/stacks/react-native.csv",
+      "language": "csv",
+      "sizeLines": 52,
+      "fileCategory": "data"
+    },
+    {
+      "path": ".agents/skills/ux/ux-pro-max/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 658,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/tools/my-graphify/go.mod",
+      "language": "mod",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/tools/my-graphify/go.sum",
+      "language": "sum",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/tools/my-graphify/main.go",
+      "language": "go",
+      "sizeLines": 922,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/tools/my-graphify/my-graphify",
+      "language": "unknown",
+      "sizeLines": 39078,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/settings.json",
+      "language": "json",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 83,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-debugging/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-exploring/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-guide/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/gitnexus/gitnexus-refactoring/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 121,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".codegraph/daemon.pid",
+      "language": "pid",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".graphifyignore",
+      "language": "unknown",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/ui/SKILL.md": [],
+    ".agents/skills/ui/tailwind/design-system/SKILL.md": [],
+    ".agents/skills/ui/tailwind/layout/SKILL.md": [],
+    ".agents/skills/ui/tailwind/patterns/references/reference.md": [],
+    ".agents/skills/ui/tailwind/patterns/SKILL.md": [],
+    ".agents/skills/ui/tailwind/SKILL.md": [],
+    ".agents/skills/ux/SKILL.md": [],
+    ".agents/skills/ux/ux-pro-max/data/_sync_all.py": [],
+    ".agents/skills/ux/ux-pro-max/data/stacks/react-native.csv": [],
+    ".agents/skills/ux/ux-pro-max/SKILL.md": [],
+    ".agents/tools/my-graphify/go.mod": [],
+    ".agents/tools/my-graphify/go.sum": [],
+    ".agents/tools/my-graphify/main.go": [],
+    ".agents/tools/my-graphify/my-graphify": [],
+    ".claude/CLAUDE.md": [],
+    ".claude/settings.json": [],
+    ".claude/skills/gitnexus/gitnexus-cli/SKILL.md": [],
+    ".claude/skills/gitnexus/gitnexus-debugging/SKILL.md": [],
+    ".claude/skills/gitnexus/gitnexus-exploring/SKILL.md": [],
+    ".claude/skills/gitnexus/gitnexus-guide/SKILL.md": [],
+    ".claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md": [],
+    ".claude/skills/gitnexus/gitnexus-refactoring/SKILL.md": [],
+    ".codegraph/daemon.pid": [],
+    ".gitattributes": [],
+    ".graphifyignore": []
+  }
+}

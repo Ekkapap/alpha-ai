@@ -1,0 +1,245 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/references/algorithm-guide.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 200,
+      "nonEmptyLines": 147,
+      "sections": [
+        {
+          "heading": "Algorithm Selection Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Decision Tree",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Algorithm Deep Dives",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "LRU (Least Recently Used)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "LFU (Least Frequently Used)",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "TinyLFU",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "W-TinyLFU (Weighted TinyLFU)",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "S3FIFO (Segmented Small-Size FIFO)",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "ARC (Adaptive Replacement Cache)",
+          "level": 3,
+          "line": 98
+        },
+        {
+          "heading": "TwoQueue",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "SIEVE",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "FIFO (First In, First Out)",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Comparison Matrix",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "Measuring Hit Rate",
+          "level": 2,
+          "line": 156
+        },
+        {
+          "heading": "Switching Algorithms",
+          "level": 2,
+          "line": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/references/api-reference.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 125,
+      "nonEmptyLines": 102,
+      "sections": [
+        {
+          "heading": "API Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Constructor",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Builder Methods",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Read Operations",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Write Operations",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Maintenance Operations",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Loader Type",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Hasher Type (for Sharding)",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "Prometheus Integration",
+          "level": 2,
+          "line": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-hot/references/production-patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 228,
+      "nonEmptyLines": 172,
+      "sections": [
+        {
+          "heading": "Production Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Stale-While-Revalidate",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Sharding",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Missing Key Caching (Negative Caching)",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Dedicated missing cache (recommended)",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Shared missing cache",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "Manual missing key marking",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Loader Chains",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Copy-on-Read / Copy-on-Write",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "Prometheus Monitoring",
+          "level": 2,
+          "line": 159
+        },
+        {
+          "heading": "Setup",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "Key PromQL Queries",
+          "level": 3,
+          "line": 174
+        },
+        {
+          "heading": "Warm-Up on Startup",
+          "level": 2,
+          "line": 194
+        },
+        {
+          "heading": "Graceful Shutdown",
+          "level": 2,
+          "line": 216
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/architecture.md",
+      "language": "markdown",
+      "sizeLines": 268,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/checklist.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/cookies.md",
+      "language": "markdown",
+      "sizeLines": 200,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/cryptography.md",
+      "language": "markdown",
+      "sizeLines": 403,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/filesystem.md",
+      "language": "markdown",
+      "sizeLines": 255,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/injection.md",
+      "language": "markdown",
+      "sizeLines": 315,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/logging.md",
+      "language": "markdown",
+      "sizeLines": 163,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/memory-safety.md",
+      "language": "markdown",
+      "sizeLines": 241,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/network.md",
+      "language": "markdown",
+      "sizeLines": 252,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/secrets.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/third-party.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-security/references/threat-modeling.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/framework/golang/golang-security/references/architecture.md": [],
+    ".agents/skills/framework/golang/golang-security/references/checklist.md": [],
+    ".agents/skills/framework/golang/golang-security/references/cookies.md": [],
+    ".agents/skills/framework/golang/golang-security/references/cryptography.md": [],
+    ".agents/skills/framework/golang/golang-security/references/filesystem.md": [],
+    ".agents/skills/framework/golang/golang-security/references/injection.md": [],
+    ".agents/skills/framework/golang/golang-security/references/logging.md": [],
+    ".agents/skills/framework/golang/golang-security/references/memory-safety.md": [],
+    ".agents/skills/framework/golang/golang-security/references/network.md": [],
+    ".agents/skills/framework/golang/golang-security/references/secrets.md": [],
+    ".agents/skills/framework/golang/golang-security/references/third-party.md": [],
+    ".agents/skills/framework/golang/golang-security/references/threat-modeling.md": []
+  }
+}

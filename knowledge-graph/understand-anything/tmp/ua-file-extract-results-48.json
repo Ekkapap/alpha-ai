@@ -1,0 +1,349 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".mcp.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "mcpServers",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 32,
+      "sections": [
+        {
+          "heading": "GitNexus — Code Intelligence",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "Always Do",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Never Do",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "CLI",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 149,
+      "nonEmptyLines": 114,
+      "sections": [
+        {
+          "heading": "cockpit-new — Architecture",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Functional Areas",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Key Execution Flows",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "1. Widget Builder Initialization (7 steps)",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "2. Chart Rendering Preview (6 steps) — cross-module",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "3. Paginated Widget Data Retrieval (6 steps) — cross-module",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "4. Preview Table Render (6 steps)",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "5. Save Widget (5 steps)",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Architecture Diagram",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "Cross-Cutting Observations",
+          "level": 2,
+          "line": 144
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 32,
+      "sections": [
+        {
+          "heading": "GitNexus — Code Intelligence",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "Always Do",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Never Do",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "CLI",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "GEMINI.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 51,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "GLOBAL RULES",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "graphify",
+          "level": 2,
+          "line": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "require",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "autoload",
+          "level": 1,
+          "line": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "docker-entrypoint.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "install.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 151,
+      "nonEmptyLines": 125,
+      "functions": [
+        {
+          "name": "info",
+          "startLine": 17,
+          "endLine": 19,
+          "params": []
+        },
+        {
+          "name": "warn",
+          "startLine": 21,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "error",
+          "startLine": 25,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "detect_os",
+          "startLine": 31,
+          "endLine": 37,
+          "params": []
+        },
+        {
+          "name": "detect_arch",
+          "startLine": 40,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "get_latest_version",
+          "startLine": 51,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "get_target",
+          "startLine": 72,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "install",
+          "startLine": 87,
+          "endLine": 120,
+          "params": []
+        },
+        {
+          "name": "verify",
+          "startLine": 123,
+          "endLine": 130,
+          "params": []
+        },
+        {
+          "name": "main",
+          "startLine": 132,
+          "endLine": 149,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "setup.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

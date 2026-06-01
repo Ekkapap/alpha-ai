@@ -1,0 +1,1423 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/.project_root",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/awake",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/focus",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/forget",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/graphify",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/graphify-cluster-only",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/graphify-update",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/map",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/hooks/bin/sync",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": ".agents/memories/latest_state.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 97,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "Cockpit-New State",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "UI",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "AwesomeTable",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Routing",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Cache",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Dashboard",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Manager",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Builder",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Widget Modal (multi-step config)",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Data Sources",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Custom SQL",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Draft / Autosave",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "KPI Responsible",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Permissions",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Menu System",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Agent Tools (.agents/)",
+          "level": 2,
+          "line": 85
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/memories/session_summary_20260527_2246.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/PLAN_two_phase_query.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 67,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "Two-Phase Graph Query — Plan",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "สิ่งที่ทำเสร็จแล้ว",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "ปัญหาที่เจอ",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "สิ่งที่ต้องทำต่อ",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "1. เพิ่ม `overview` tool (Phase 0)",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. เพิ่ม `project_summary.json` ใน graphify-out/",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "3. Flow ที่ agent ควรใช้",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "ไฟล์ที่เกี่ยวข้อง",
+          "level": 2,
+          "line": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/scripts/graphify.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 73,
+      "nonEmptyLines": 62,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/scripts/setup-hooks.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 132,
+      "nonEmptyLines": 113,
+      "functions": [
+        {
+          "name": "is_protected",
+          "startLine": 23,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "generate_tool",
+          "startLine": 40,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "update_config",
+          "startLine": 86,
+          "endLine": 101,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/best-practices/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 175,
+      "nonEmptyLines": 114,
+      "sections": [
+        {
+          "heading": "Better Auth Integration Guide",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Setup Workflow",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "File Location",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "CLI Commands",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Core Config Options",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Database",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Session Management",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "User & Account Config",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "Email Flows",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Security",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Hooks",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Plugins",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Client",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "Type Safety",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "Common Gotchas",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/better-auth-security/SKILL.MD",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 432,
+      "nonEmptyLines": 343,
+      "sections": [
+        {
+          "heading": "Secret Management",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Configuring the Secret",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Secret Requirements",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Rate Limiting",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Default Configuration",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Storage Options",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Custom Storage",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Per-Endpoint Rules",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "CSRF Protection",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Configuration",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Trusted Origins",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "Configuring Trusted Origins",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Wildcard Patterns",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Dynamic Trusted Origins",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "Session Security",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Session Expiration",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Session Caching Strategies",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Cookie Security",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "Custom Cookie Configuration",
+          "level": 3,
+          "line": 186
+        },
+        {
+          "heading": "Cross-Subdomain Cookies",
+          "level": 3,
+          "line": 203
+        },
+        {
+          "heading": "OAuth / Social Provider Security",
+          "level": 2,
+          "line": 217
+        },
+        {
+          "heading": "State Parameter Storage",
+          "level": 3,
+          "line": 221
+        },
+        {
+          "heading": "Encrypting OAuth Tokens",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "IP-Based Security",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "IP Address Configuration",
+          "level": 3,
+          "line": 245
+        },
+        {
+          "heading": "Database Hooks for Security Auditing",
+          "level": 2,
+          "line": 262
+        },
+        {
+          "heading": "Background Tasks",
+          "level": 2,
+          "line": 314
+        },
+        {
+          "heading": "Account Enumeration Prevention",
+          "level": 2,
+          "line": 335
+        },
+        {
+          "heading": "Complete Security Configuration Example",
+          "level": 2,
+          "line": 339
+        },
+        {
+          "heading": "Security Checklist",
+          "level": 2,
+          "line": 419
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 30
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/create-auth-skill/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 321,
+      "nonEmptyLines": 237,
+      "sections": [
+        {
+          "heading": "Create Auth Skill",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "Phase 1: Planning (REQUIRED before implementation)",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Step 1: Scan the project",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Step 2: Ask planning questions",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Step 3: Summarize the plan",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "Phase 2: Implementation",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "Installation",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "Server Config (auth.ts)",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "Client Config (auth-client.ts)",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "Route Handler Setup",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "Database Migrations",
+          "level": 2,
+          "line": 233
+        },
+        {
+          "heading": "Database Adapters",
+          "level": 2,
+          "line": 245
+        },
+        {
+          "heading": "Common Plugins",
+          "level": 2,
+          "line": 258
+        },
+        {
+          "heading": "Auth UI Implementation",
+          "level": 2,
+          "line": 274
+        },
+        {
+          "heading": "Security Checklist",
+          "level": 2,
+          "line": 289
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 303
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 315
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/email-password/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 212,
+      "nonEmptyLines": 163,
+      "sections": [
+        {
+          "heading": "Quick Start",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Email Verification Setup",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Requiring Email Verification",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Client Side Validation",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Callback URLs",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Password Reset Flows",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Security Considerations",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Token Security",
+          "level": 4,
+          "line": 114
+        },
+        {
+          "heading": "Session Revocation",
+          "level": 4,
+          "line": 129
+        },
+        {
+          "heading": "Password Requirements",
+          "level": 4,
+          "line": 142
+        },
+        {
+          "heading": "Sending the Password Reset",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Password Hashing",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "Custom Hashing Algorithm",
+          "level": 3,
+          "line": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/organization/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 479,
+      "nonEmptyLines": 382,
+      "sections": [
+        {
+          "heading": "Setup",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Client-Side Setup",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Creating Organizations",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Controlling Organization Creation",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Creating Organizations on Behalf of Users",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Active Organizations",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Members",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "Adding Members (Server-Side)",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Assigning Multiple Roles",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Removing Members",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Updating Member Roles",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Membership Limits",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Invitations",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "Setting Up Invitation Emails",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Sending Invitations",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Shareable Invitation URLs",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Invitation Configuration",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "Roles & Permissions",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "Checking Permissions",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Teams",
+          "level": 2,
+          "line": 234
+        },
+        {
+          "heading": "Enabling Teams",
+          "level": 3,
+          "line": 236
+        },
+        {
+          "heading": "Creating Teams",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "Managing Team Members",
+          "level": 3,
+          "line": 260
+        },
+        {
+          "heading": "Team Limits",
+          "level": 3,
+          "line": 266
+        },
+        {
+          "heading": "Dynamic Access Control",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "Enabling Dynamic Access Control",
+          "level": 3,
+          "line": 280
+        },
+        {
+          "heading": "Creating Custom Roles",
+          "level": 3,
+          "line": 297
+        },
+        {
+          "heading": "Lifecycle Hooks",
+          "level": 2,
+          "line": 311
+        },
+        {
+          "heading": "Schema Customization",
+          "level": 2,
+          "line": 351
+        },
+        {
+          "heading": "Security Considerations",
+          "level": 2,
+          "line": 386
+        },
+        {
+          "heading": "Owner Protection",
+          "level": 3,
+          "line": 388
+        },
+        {
+          "heading": "Organization Deletion",
+          "level": 3,
+          "line": 406
+        },
+        {
+          "heading": "Invitation Security",
+          "level": 3,
+          "line": 432
+        },
+        {
+          "heading": "Complete Configuration Example",
+          "level": 2,
+          "line": 438
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/auth/better-auth/two-factor/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 331,
+      "nonEmptyLines": 264,
+      "sections": [
+        {
+          "heading": "Setup",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Client-Side Setup",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Enabling 2FA for Users",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "TOTP (Authenticator App)",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Displaying the QR Code",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Verifying TOTP Codes",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "TOTP Configuration Options",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "OTP (Email/SMS)",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Configuring OTP Delivery",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "Sending and Verifying OTP",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "OTP Storage Security",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "Backup Codes",
+          "level": 2,
+          "line": 157
+        },
+        {
+          "heading": "Displaying Backup Codes",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "Regenerating Backup Codes",
+          "level": 3,
+          "line": 178
+        },
+        {
+          "heading": "Using Backup Codes for Recovery",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "Backup Code Configuration",
+          "level": 3,
+          "line": 202
+        },
+        {
+          "heading": "Handling 2FA During Sign-In",
+          "level": 2,
+          "line": 214
+        },
+        {
+          "heading": "Sign-In Flow",
+          "level": 3,
+          "line": 218
+        },
+        {
+          "heading": "Trusted Devices",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "Security Considerations",
+          "level": 2,
+          "line": 247
+        },
+        {
+          "heading": "Session Management",
+          "level": 3,
+          "line": 249
+        },
+        {
+          "heading": "Rate Limiting",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "Encryption at Rest",
+          "level": 3,
+          "line": 271
+        },
+        {
+          "heading": "Disabling 2FA",
+          "level": 2,
+          "line": 277
+        },
+        {
+          "heading": "Complete Configuration Example",
+          "level": 2,
+          "line": 289
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": ".agents/skills/auth/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": ".agents/skills/data/electric-db/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 206,
+      "nonEmptyLines": 169,
+      "sections": [
+        {
+          "heading": "ElectricSQL + TanStack DB — Best Practice",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Concept",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "แหล่งความรู้",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Core Concepts",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Shape — หน่วย sync",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Collection — client-side table",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "useQuery — reactive join บน client",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "1. Filter Shape ให้แคบที่สุด",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "2. One Shape Per Table — join บน client",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "3. Composite key",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "4. แทน refetchInterval",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "5. Optimistic Update",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "ตัวอย่างเต็ม — Query Dashboard",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "เปรียบเทียบ",
+          "level": 2,
+          "line": 190
+        },
+        {
+          "heading": "ข้อจำกัด",
+          "level": 2,
+          "line": 202
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/cli/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 243,
+      "nonEmptyLines": 179,
+      "sections": [
+        {
+          "heading": "Prisma CLI Reference",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Command Categories",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Project Setup",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Client Generation",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Bun Runtime",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Local Development Database",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Database Operations",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "Migrations (Development)",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Migrations (Production)",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "Utility Commands",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "Prisma 7 Changes",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "New Configuration File",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Removed Flags",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "Rule Files",
+          "level": 2,
+          "line": 217
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 241
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": ".agents/skills/data/prisma/client-api/SKILL.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 216,
+      "nonEmptyLines": 175,
+      "sections": [
+        {
+          "heading": "Prisma Client API Reference",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "When to Apply",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Rule Categories by Priority",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Quick Reference",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Client Instantiation (v7)",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Model Query Methods",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Query Options",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Client Methods",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Quick Examples",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "Find records",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Create records",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Update records",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "Delete records",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "Transactions",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "Rule Files",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Filter Operators",
+          "level": 2,
+          "line": 183
+        },
+        {
+          "heading": "Relation Filters",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 208
+        },
+        {
+          "heading": "How to Use",
+          "level": 2,
+          "line": 214
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    }
+  ]
+}

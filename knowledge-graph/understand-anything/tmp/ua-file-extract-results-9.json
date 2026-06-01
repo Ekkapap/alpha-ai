@@ -1,0 +1,612 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "public/router.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 47,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "run_migration.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 26,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/generate-batches.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 297,
+      "nonEmptyLines": 261,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 27,
+          "endLine": 295,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "process.argv.slice",
+          "lineNumber": 28
+        },
+        {
+          "caller": "run",
+          "callee": "fs.existsSync",
+          "lineNumber": 31
+        },
+        {
+          "caller": "run",
+          "callee": "console.error",
+          "lineNumber": 32
+        },
+        {
+          "caller": "run",
+          "callee": "process.exit",
+          "lineNumber": 33
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 36
+        },
+        {
+          "caller": "run",
+          "callee": "JSON.parse",
+          "lineNumber": 37
+        },
+        {
+          "caller": "run",
+          "callee": "fs.readFileSync",
+          "lineNumber": 37
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 40
+        },
+        {
+          "caller": "run",
+          "callee": "parseInt",
+          "lineNumber": 42
+        },
+        {
+          "caller": "run",
+          "callee": "parseInt",
+          "lineNumber": 43
+        },
+        {
+          "caller": "run",
+          "callee": "console.error",
+          "lineNumber": 46
+        },
+        {
+          "caller": "run",
+          "callee": "process.exit",
+          "lineNumber": 47
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 53
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 61
+        },
+        {
+          "caller": "run",
+          "callee": "path.join",
+          "lineNumber": 63
+        },
+        {
+          "caller": "run",
+          "callee": "path.join",
+          "lineNumber": 64
+        },
+        {
+          "caller": "run",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 66
+        },
+        {
+          "caller": "run",
+          "callee": "fs.mkdirSync",
+          "lineNumber": 67
+        },
+        {
+          "caller": "run",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 74
+        },
+        {
+          "caller": "run",
+          "callee": "JSON.stringify",
+          "lineNumber": 74
+        },
+        {
+          "caller": "run",
+          "callee": "execSync",
+          "lineNumber": 77
+        },
+        {
+          "caller": "run",
+          "callee": "console.error",
+          "lineNumber": 79
+        },
+        {
+          "caller": "run",
+          "callee": "JSON.parse",
+          "lineNumber": 83
+        },
+        {
+          "caller": "run",
+          "callee": "fs.readFileSync",
+          "lineNumber": 83
+        },
+        {
+          "caller": "run",
+          "callee": "globalFunctions[fn.name].push",
+          "lineNumber": 99
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 111
+        },
+        {
+          "caller": "run",
+          "callee": "path.join",
+          "lineNumber": 118
+        },
+        {
+          "caller": "run",
+          "callee": "path.basename",
+          "lineNumber": 124
+        },
+        {
+          "caller": "run",
+          "callee": "path.join",
+          "lineNumber": 131
+        },
+        {
+          "caller": "run",
+          "callee": "fs.existsSync",
+          "lineNumber": 132
+        },
+        {
+          "caller": "run",
+          "callee": "fs.readFileSync",
+          "lineNumber": 133
+        },
+        {
+          "caller": "run",
+          "callee": "content.split('\\n').find",
+          "lineNumber": 134
+        },
+        {
+          "caller": "run",
+          "callee": "content.split",
+          "lineNumber": 134
+        },
+        {
+          "caller": "run",
+          "callee": "l.trim().startsWith",
+          "lineNumber": 134
+        },
+        {
+          "caller": "run",
+          "callee": "l.trim",
+          "lineNumber": 134
+        },
+        {
+          "caller": "run",
+          "callee": "firstLine.replace(/^#+\\s*/, '').trim",
+          "lineNumber": 136
+        },
+        {
+          "caller": "run",
+          "callee": "firstLine.replace",
+          "lineNumber": 136
+        },
+        {
+          "caller": "run",
+          "callee": "nodes.push",
+          "lineNumber": 144
+        },
+        {
+          "caller": "run",
+          "callee": "[res.language, category].filter",
+          "lineNumber": 150
+        },
+        {
+          "caller": "run",
+          "callee": "nodes.push",
+          "lineNumber": 158
+        },
+        {
+          "caller": "run",
+          "callee": "edges.push",
+          "lineNumber": 170
+        },
+        {
+          "caller": "run",
+          "callee": "nodes.push",
+          "lineNumber": 184
+        },
+        {
+          "caller": "run",
+          "callee": "edges.push",
+          "lineNumber": 196
+        },
+        {
+          "caller": "run",
+          "callee": "edges.push",
+          "lineNumber": 209
+        },
+        {
+          "caller": "run",
+          "callee": "callee.split",
+          "lineNumber": 227
+        },
+        {
+          "caller": "run",
+          "callee": "callee.split",
+          "lineNumber": 232
+        },
+        {
+          "caller": "run",
+          "callee": "cleanCallee.replace(/^\\$/, '').replace(/^this->/, '').replace(/^self::/, '').replace(/^static::/, '').trim",
+          "lineNumber": 240
+        },
+        {
+          "caller": "run",
+          "callee": "cleanCallee.replace(/^\\$/, '').replace(/^this->/, '').replace(/^self::/, '').replace",
+          "lineNumber": 240
+        },
+        {
+          "caller": "run",
+          "callee": "cleanCallee.replace(/^\\$/, '').replace(/^this->/, '').replace",
+          "lineNumber": 240
+        },
+        {
+          "caller": "run",
+          "callee": "cleanCallee.replace(/^\\$/, '').replace",
+          "lineNumber": 240
+        },
+        {
+          "caller": "run",
+          "callee": "cleanCallee.replace",
+          "lineNumber": 240
+        },
+        {
+          "caller": "run",
+          "callee": "res.functions?.some",
+          "lineNumber": 244
+        },
+        {
+          "caller": "run",
+          "callee": "definitions.find",
+          "lineNumber": 254
+        },
+        {
+          "caller": "run",
+          "callee": "d.className.toLowerCase",
+          "lineNumber": 255
+        },
+        {
+          "caller": "run",
+          "callee": "path.basename(d.filePath).toLowerCase",
+          "lineNumber": 256
+        },
+        {
+          "caller": "run",
+          "callee": "path.basename",
+          "lineNumber": 256
+        },
+        {
+          "caller": "run",
+          "callee": "parts.some",
+          "lineNumber": 257
+        },
+        {
+          "caller": "run",
+          "callee": "p.toLowerCase",
+          "lineNumber": 258
+        },
+        {
+          "caller": "run",
+          "callee": "pLower.includes",
+          "lineNumber": 259
+        },
+        {
+          "caller": "run",
+          "callee": "classLower.includes",
+          "lineNumber": 259
+        },
+        {
+          "caller": "run",
+          "callee": "pLower.includes",
+          "lineNumber": 259
+        },
+        {
+          "caller": "run",
+          "callee": "fileLower.includes",
+          "lineNumber": 259
+        },
+        {
+          "caller": "run",
+          "callee": "edges.push",
+          "lineNumber": 275
+        },
+        {
+          "caller": "run",
+          "callee": "fs.writeFileSync",
+          "lineNumber": 289
+        },
+        {
+          "caller": "run",
+          "callee": "JSON.stringify",
+          "lineNumber": 289
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 290
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 293
+        },
+        {
+          "caller": "run",
+          "callee": "console.log",
+          "lineNumber": 294
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/understand.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 64,
+      "nonEmptyLines": 48,
+      "sections": [
+        {
+          "heading": "Understand Anything — คู่มือการรันสแกนระบบและ Dashboard ด้วยตัวเอง (Manual Execution Guide)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🧭 ลำดับขั้นตอนการทำงาน (Workflow)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "🛠️ ขั้นตอนการรันคำสั่งด้วยตัวเอง (Step-by-Step Commands)",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "ขั้นที่ 1: ค้นหาและเตรียมข้อมูลดิบ (Project Scan)",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "ขั้นที่ 2: แบ่งกลุ่มไฟล์เชิงโครงสร้าง (Louvain Batching)",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "ขั้นที่ 3: สแกนสกัดโครงสร้างความเร็วสูง (Deterministic Analysis)",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "ขั้นที่ 4: รวบรวมข้อมูลเป็นแผนผังกราฟหลัก (Graph Merge)",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "🖥️ วิธีการรัน Dashboard เพื่อแสดงผล",
+          "level": 2,
+          "line": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "storage/redis-data/appendonlydir/appendonly.aof.1.base.rdb",
+      "language": "rdb",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "storage/redis-data/appendonlydir/appendonly.aof.1.incr.aof",
+      "language": "aof",
+      "fileCategory": "code",
+      "totalLines": 3927,
+      "nonEmptyLines": 3927,
+      "metrics": {}
+    },
+    {
+      "path": "storage/redis-data/appendonlydir/appendonly.aof.manifest",
+      "language": "manifest",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "storage/redis-data/dump.rdb",
+      "language": "rdb",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_2c34dee4e0f3e8ebd73e9fb3b25437ac",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_332700b6965dd6515e8aa602ae3f7be7",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_3b2d005da6fe6c24084700234e5407b1",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_3e78d0db598fb4270036a2b6bf5a53a4",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_47bf870919b07420486a27729af9d0a0",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_5f5988bede62856f2f3fb67634f07ffd",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_6978b8b1b84994cb37cc8d25036960a3",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_771ef5c10eea7d3c763b345630b81089",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_797f1aa210dd906eaaca486221343118",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_80044aa477d7039abd29fcf314910fc2",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_823c06e6764a42e82e2b2d6828e1cd8e",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_a28d20b32f4dcdc074a12c2d737d1948",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_a96182d75511fdfe32ae9f127af97ef7",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_c0d6baaab759b6ea62ee5c683f3c74c3",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_e5c661d92cafae39d3bc17d8df9c5461",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "storage/sessions/sess_f49bcbb6b9dc10952a90dba1f39d1213",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

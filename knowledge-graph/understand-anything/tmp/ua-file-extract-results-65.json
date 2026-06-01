@@ -1,0 +1,260 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "schema/mysql/dashboard_widgets.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 22,
+      "nonEmptyLines": 22,
+      "definitions": [
+        {
+          "name": "dashboard_widgets",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/dashboards.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "definitions": [
+        {
+          "name": "dashboards",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/kpi.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 58,
+      "nonEmptyLines": 58,
+      "definitions": [
+        {
+          "name": "kpi",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/kpi_responsible.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "definitions": [
+        {
+          "name": "kpi_responsible",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/menus.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 18,
+      "nonEmptyLines": 17,
+      "definitions": [
+        {
+          "name": "menus",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/office.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 20,
+      "nonEmptyLines": 20,
+      "definitions": [
+        {
+          "name": "office",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/stg.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "definitions": [
+        {
+          "name": "stg",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/stg_group.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 10,
+      "nonEmptyLines": 10,
+      "definitions": [
+        {
+          "name": "stg_group",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/system_logs.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "definitions": [
+        {
+          "name": "system_logs",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/user.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "definitions": [
+        {
+          "name": "user",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    },
+    {
+      "path": "schema/mysql/user_invitations.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "definitions": [
+        {
+          "name": "user_invitations",
+          "kind": "table",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 1
+      }
+    }
+  ]
+}

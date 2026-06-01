@@ -1,0 +1,63 @@
+{
+  "projectRoot": "/Users/neo/Programming/SSJ/cockpit-new",
+  "batchFiles": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "language": "markdown",
+      "sizeLines": 149,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "GEMINI.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "composer.json",
+      "language": "json",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docker-entrypoint.sh",
+      "language": "shell",
+      "sizeLines": 18,
+      "fileCategory": "script"
+    },
+    {
+      "path": "install.sh",
+      "language": "shell",
+      "sizeLines": 151,
+      "fileCategory": "script"
+    },
+    {
+      "path": "setup.sh",
+      "language": "shell",
+      "sizeLines": 7,
+      "fileCategory": "script"
+    }
+  ],
+  "batchImportData": {
+    "AGENTS.md": [],
+    "ARCHITECTURE.md": [],
+    "CLAUDE.md": [],
+    "GEMINI.md": [],
+    "composer.json": [],
+    "docker-entrypoint.sh": [],
+    "install.sh": [],
+    "setup.sh": []
+  }
+}

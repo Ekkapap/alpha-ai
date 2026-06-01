@@ -1,0 +1,6977 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/views/menu/manage.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 391,
+      "nonEmptyLines": 338,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/mockup/summary_table.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 121,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/profile/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 257,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/stg_group/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 427,
+      "nonEmptyLines": 388,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/stg/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 482,
+      "nonEmptyLines": 437,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/views/user/manage.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 416,
+      "nonEmptyLines": 369,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "composer.phar",
+      "language": "phar",
+      "fileCategory": "code",
+      "totalLines": 150950,
+      "nonEmptyLines": 101243,
+      "metrics": {}
+    },
+    {
+      "path": "docs/ONBOARDING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 196,
+      "nonEmptyLines": 189,
+      "sections": [
+        {
+          "heading": "Onboarding Guide — cockpit-new",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🚀 Tech Stack",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "🏗️ Architecture Layers",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Default Layer",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "🎯 Guided Walkthrough Tours",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "⚠️ Complexity Hotspots",
+          "level": 2,
+          "line": 171
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "dump_widgets.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fix_controllers.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 29,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "fix_office_column.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_app_menu.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 41,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_pagination_menu.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 59,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_pagination_profile.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 66,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_pagination_user.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 65,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_profile.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_sidebar.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 111,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "patch_user_manage.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 116,
+      "nonEmptyLines": 102,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "planning/result.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "planning/WIDGET.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 64,
+      "nonEmptyLines": 52,
+      "sections": [
+        {
+          "heading": "📋 Widget Creation Flow Plan",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Step 2: Data Source Configuration",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2.1 การตั้งค่า Open API",
+          "level": 3,
+          "line": 8
+        },
+        {
+          "heading": "Step 3: Data Preview, Column Mapping & Advance Query",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Tab 1: Default (Column Mapping)",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Tab 2: Advance (Data Query & Aggregate)",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Step 4: Widget Preview & Configurations",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "องค์ประกอบในหน้า Step 4",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "💻 แนวทางการ Implement",
+          "level": 2,
+          "line": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "public/index.php",
+      "language": "php",
+      "fileCategory": "code",
+      "totalLines": 145,
+      "nonEmptyLines": 124,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/js/app-modal.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 83,
+      "nonEmptyLines": 72,
+      "callGraph": [
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 27
+        },
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 28
+        },
+        {
+          "caller": "show",
+          "callee": "$('#app-modal-icon').html",
+          "lineNumber": 31
+        },
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 31
+        },
+        {
+          "caller": "show",
+          "callee": "$('#app-modal-title').text",
+          "lineNumber": 32
+        },
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 32
+        },
+        {
+          "caller": "show",
+          "callee": "$('#app-modal-message').html",
+          "lineNumber": 33
+        },
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 33
+        },
+        {
+          "caller": "show",
+          "callee": "$('#app-modal-btn-confirm').text(opt.confirmText).off('click').on",
+          "lineNumber": 36
+        },
+        {
+          "caller": "show",
+          "callee": "$('#app-modal-btn-confirm').text(opt.confirmText).off",
+          "lineNumber": 36
+        },
+        {
+          "caller": "show",
+          "callee": "$('#app-modal-btn-confirm').text",
+          "lineNumber": 36
+        },
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 36
+        },
+        {
+          "caller": "show",
+          "callee": "hide",
+          "lineNumber": 37
+        },
+        {
+          "caller": "show",
+          "callee": "opt.onConfirm",
+          "lineNumber": 38
+        },
+        {
+          "caller": "show",
+          "callee": "$",
+          "lineNumber": 41
+        },
+        {
+          "caller": "show",
+          "callee": "$btnCancel.text(opt.cancelText).show().off('click').on",
+          "lineNumber": 43
+        },
+        {
+          "caller": "show",
+          "callee": "$btnCancel.text(opt.cancelText).show().off",
+          "lineNumber": 43
+        },
+        {
+          "caller": "show",
+          "callee": "$btnCancel.text(opt.cancelText).show",
+          "lineNumber": 43
+        },
+        {
+          "caller": "show",
+          "callee": "$btnCancel.text",
+          "lineNumber": 43
+        },
+        {
+          "caller": "show",
+          "callee": "hide",
+          "lineNumber": 44
+        },
+        {
+          "caller": "show",
+          "callee": "opt.onCancel",
+          "lineNumber": 45
+        },
+        {
+          "caller": "show",
+          "callee": "$btnCancel.hide",
+          "lineNumber": 48
+        },
+        {
+          "caller": "show",
+          "callee": "$overlay.removeClass('hidden').addClass",
+          "lineNumber": 52
+        },
+        {
+          "caller": "show",
+          "callee": "$overlay.removeClass",
+          "lineNumber": 52
+        },
+        {
+          "caller": "show",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 54
+        },
+        {
+          "caller": "show",
+          "callee": "$overlay.removeClass('opacity-0').addClass",
+          "lineNumber": 55
+        },
+        {
+          "caller": "show",
+          "callee": "$overlay.removeClass",
+          "lineNumber": 55
+        },
+        {
+          "caller": "show",
+          "callee": "$modal.removeClass('scale-95 opacity-0').addClass",
+          "lineNumber": 56
+        },
+        {
+          "caller": "show",
+          "callee": "$modal.removeClass",
+          "lineNumber": 56
+        },
+        {
+          "caller": "hide",
+          "callee": "$",
+          "lineNumber": 61
+        },
+        {
+          "caller": "hide",
+          "callee": "$",
+          "lineNumber": 62
+        },
+        {
+          "caller": "hide",
+          "callee": "$overlay.removeClass('opacity-100').addClass",
+          "lineNumber": 64
+        },
+        {
+          "caller": "hide",
+          "callee": "$overlay.removeClass",
+          "lineNumber": 64
+        },
+        {
+          "caller": "hide",
+          "callee": "$modal.removeClass('scale-100 opacity-100').addClass",
+          "lineNumber": 65
+        },
+        {
+          "caller": "hide",
+          "callee": "$modal.removeClass",
+          "lineNumber": 65
+        },
+        {
+          "caller": "hide",
+          "callee": "setTimeout",
+          "lineNumber": 67
+        },
+        {
+          "caller": "hide",
+          "callee": "$overlay.removeClass('flex').addClass",
+          "lineNumber": 68
+        },
+        {
+          "caller": "hide",
+          "callee": "$overlay.removeClass",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/js/awesome-table.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 512,
+      "nonEmptyLines": 447,
+      "callGraph": [
+        {
+          "caller": "getMobileKeys",
+          "callee": "keys.push",
+          "lineNumber": 46
+        },
+        {
+          "caller": "checkPermission",
+          "callee": "action.permission",
+          "lineNumber": 98
+        },
+        {
+          "caller": "checkPermission",
+          "callee": "(user.permissions || []).includes",
+          "lineNumber": 99
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$thead.empty",
+          "lineNumber": 106
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$",
+          "lineNumber": 107
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$tr.append",
+          "lineNumber": 110
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$tr.append",
+          "lineNumber": 114
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "settings.columns.forEach",
+          "lineNumber": 117
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "mobileKeys.indexOf",
+          "lineNumber": 119
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "label.replace",
+          "lineNumber": 124
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$tr.append",
+          "lineNumber": 127
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$tr.append",
+          "lineNumber": 136
+        },
+        {
+          "caller": "renderHeader",
+          "callee": "$thead.append",
+          "lineNumber": 139
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.empty",
+          "lineNumber": 144
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.append",
+          "lineNumber": 148
+        },
+        {
+          "caller": "renderRows",
+          "callee": "desktopColspan",
+          "lineNumber": 150
+        },
+        {
+          "caller": "renderRows",
+          "callee": "currentData.forEach",
+          "lineNumber": 158
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 162
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.data",
+          "lineNumber": 163
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.data",
+          "lineNumber": 164
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.addClass('cursor-pointer').on",
+          "lineNumber": 167
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.addClass",
+          "lineNumber": 167
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$(e.target).closest",
+          "lineNumber": 168
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 168
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.onRowClick",
+          "lineNumber": 169
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 175
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 176
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobileExpandTd.append",
+          "lineNumber": 187
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.append",
+          "lineNumber": 188
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 192
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 193
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$toggleTd.append",
+          "lineNumber": 194
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.append",
+          "lineNumber": 195
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.columns.forEach",
+          "lineNumber": 199
+        },
+        {
+          "caller": "renderRows",
+          "callee": "col.render",
+          "lineNumber": 201
+        },
+        {
+          "caller": "renderRows",
+          "callee": "mobileKeys.indexOf",
+          "lineNumber": 202
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.append",
+          "lineNumber": 205
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 210
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 211
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.actions.forEach",
+          "lineNumber": 213
+        },
+        {
+          "caller": "renderRows",
+          "callee": "checkPermission",
+          "lineNumber": 214
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 216
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.append",
+          "lineNumber": 217
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.attr",
+          "lineNumber": 219
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.on",
+          "lineNumber": 220
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.stopPropagation",
+          "lineNumber": 221
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.preventDefault",
+          "lineNumber": 221
+        },
+        {
+          "caller": "renderRows",
+          "callee": "act.action",
+          "lineNumber": 222
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$actionGroup.append",
+          "lineNumber": 224
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$actionTd.append",
+          "lineNumber": 228
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.append",
+          "lineNumber": 229
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.append",
+          "lineNumber": 232
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 235
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 237
+        },
+        {
+          "caller": "renderRows",
+          "callee": "desktopColspan",
+          "lineNumber": 237
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 238
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.columns.filter",
+          "lineNumber": 245
+        },
+        {
+          "caller": "renderRows",
+          "callee": "mobileKeys.indexOf",
+          "lineNumber": 245
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 247
+        },
+        {
+          "caller": "renderRows",
+          "callee": "hiddenCols.forEach",
+          "lineNumber": 248
+        },
+        {
+          "caller": "renderRows",
+          "callee": "col.render",
+          "lineNumber": 250
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$detailSection.append",
+          "lineNumber": 252
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobileCard.append",
+          "lineNumber": 258
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 263
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.actions.forEach",
+          "lineNumber": 264
+        },
+        {
+          "caller": "renderRows",
+          "callee": "checkPermission",
+          "lineNumber": 265
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 267
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.append",
+          "lineNumber": 268
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.append",
+          "lineNumber": 269
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.attr",
+          "lineNumber": 270
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.on",
+          "lineNumber": 271
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.stopPropagation",
+          "lineNumber": 272
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.preventDefault",
+          "lineNumber": 272
+        },
+        {
+          "caller": "renderRows",
+          "callee": "act.action",
+          "lineNumber": 273
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$actSection.append",
+          "lineNumber": 275
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobileCard.append",
+          "lineNumber": 278
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 283
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 284
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 295
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subToggleBtn.on",
+          "lineNumber": 298
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.stopPropagation",
+          "lineNumber": 299
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$(this).find",
+          "lineNumber": 300
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 300
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subContainer.hasClass",
+          "lineNumber": 301
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subContainer.removeClass",
+          "lineNumber": 302
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$chevron.addClass",
+          "lineNumber": 303
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.accordion.renderSubTable",
+          "lineNumber": 305
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subContainer.addClass",
+          "lineNumber": 309
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$chevron.removeClass",
+          "lineNumber": 310
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subSection.append($subToggleBtn).append",
+          "lineNumber": 314
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subSection.append",
+          "lineNumber": 314
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobileCard.append",
+          "lineNumber": 315
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobilePanelTd.append",
+          "lineNumber": 318
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobilePanelTr.append",
+          "lineNumber": 319
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.append",
+          "lineNumber": 320
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn\n                                .removeClass('bg-transparent text-slate-400 dark:text-slate-500 border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-500 dark:hover:text-indigo-400')\n                                .addClass",
+          "lineNumber": 325
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn\n                                .removeClass",
+          "lineNumber": 325
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn.find('.mobile-expand-icon')\n                                .removeClass('fa-regular fa-eye')\n                                .addClass",
+          "lineNumber": 328
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn.find('.mobile-expand-icon')\n                                .removeClass",
+          "lineNumber": 328
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn.find",
+          "lineNumber": 328
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn\n                                .removeClass('bg-indigo-500 dark:bg-indigo-600 text-white border-indigo-500 dark:border-indigo-600 shadow-sm shadow-indigo-500/30')\n                                .addClass",
+          "lineNumber": 332
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn\n                                .removeClass",
+          "lineNumber": 332
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn.find('.mobile-expand-icon')\n                                .removeClass('fa-solid fa-eye')\n                                .addClass",
+          "lineNumber": 335
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn.find('.mobile-expand-icon')\n                                .removeClass",
+          "lineNumber": 335
+        },
+        {
+          "caller": "setEyeActive",
+          "callee": "$btn.find",
+          "lineNumber": 335
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobileExpandBtn.on",
+          "lineNumber": 341
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.stopPropagation",
+          "lineNumber": 342
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 343
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobilePanelTr.hasClass",
+          "lineNumber": 344
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobilePanelTr.addClass",
+          "lineNumber": 348
+        },
+        {
+          "caller": "renderRows",
+          "callee": "setEyeActive",
+          "lineNumber": 349
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find('.mobile-expand-panel:not(.hidden)').each",
+          "lineNumber": 353
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find",
+          "lineNumber": 353
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$(this).addClass",
+          "lineNumber": 354
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 354
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find('.mobile-expand-btn').each",
+          "lineNumber": 356
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find",
+          "lineNumber": 356
+        },
+        {
+          "caller": "renderRows",
+          "callee": "setEyeActive",
+          "lineNumber": 357
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 357
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$mobilePanelTr.removeClass",
+          "lineNumber": 361
+        },
+        {
+          "caller": "renderRows",
+          "callee": "setEyeActive",
+          "lineNumber": 362
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 369
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 370
+        },
+        {
+          "caller": "renderRows",
+          "callee": "desktopColspan",
+          "lineNumber": 370
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 371
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$desktopDetailTd.append",
+          "lineNumber": 373
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$desktopDetailTr.append",
+          "lineNumber": 374
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.append",
+          "lineNumber": 375
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.find('.toggle-accordion-btn').on",
+          "lineNumber": 377
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tr.find",
+          "lineNumber": 377
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.stopPropagation",
+          "lineNumber": 378
+        },
+        {
+          "caller": "renderRows",
+          "callee": "e.preventDefault",
+          "lineNumber": 378
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 379
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$desktopDetailTr.is",
+          "lineNumber": 380
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find('.accordion-detail-row:not(.hidden)').not($desktopDetailTr).each",
+          "lineNumber": 383
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find('.accordion-detail-row:not(.hidden)').not",
+          "lineNumber": 383
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find",
+          "lineNumber": 383
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$(this).addClass",
+          "lineNumber": 384
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 384
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find('.toggle-accordion-btn.rotate-90').not($btn).each",
+          "lineNumber": 386
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find('.toggle-accordion-btn.rotate-90').not",
+          "lineNumber": 386
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$tbody.find",
+          "lineNumber": 386
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$(this).removeClass",
+          "lineNumber": 387
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$",
+          "lineNumber": 387
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$desktopDetailTr.addClass",
+          "lineNumber": 391
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.removeClass",
+          "lineNumber": 392
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$desktopDetailTr.removeClass",
+          "lineNumber": 394
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$btn.addClass",
+          "lineNumber": 395
+        },
+        {
+          "caller": "renderRows",
+          "callee": "$subContainer.empty",
+          "lineNumber": 397
+        },
+        {
+          "caller": "renderRows",
+          "callee": "settings.accordion.renderSubTable",
+          "lineNumber": 398
+        },
+        {
+          "caller": "loadData",
+          "callee": "$tbody.empty().append",
+          "lineNumber": 411
+        },
+        {
+          "caller": "loadData",
+          "callee": "$tbody.empty",
+          "lineNumber": 411
+        },
+        {
+          "caller": "loadData",
+          "callee": "desktopColspan",
+          "lineNumber": 413
+        },
+        {
+          "caller": "loadData",
+          "callee": "$.ajax",
+          "lineNumber": 419
+        },
+        {
+          "caller": "loadData",
+          "callee": "$.extend",
+          "lineNumber": 422
+        },
+        {
+          "caller": "loadData",
+          "callee": "JSON.stringify",
+          "lineNumber": 428
+        },
+        {
+          "caller": "loadData",
+          "callee": "$container.data",
+          "lineNumber": 430
+        },
+        {
+          "caller": "loadData",
+          "callee": "$container.data",
+          "lineNumber": 431
+        },
+        {
+          "caller": "loadData",
+          "callee": "renderRows",
+          "lineNumber": 435
+        },
+        {
+          "caller": "loadData",
+          "callee": "renderPagination",
+          "lineNumber": 436
+        },
+        {
+          "caller": "loadData",
+          "callee": "renderError",
+          "lineNumber": 438
+        },
+        {
+          "caller": "loadData",
+          "callee": "renderError",
+          "lineNumber": 442
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$pagination.empty",
+          "lineNumber": 449
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "Math.min",
+          "lineNumber": 452
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "Math.ceil",
+          "lineNumber": 453
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 455
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 456
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "settings.pageSizeOptions.forEach",
+          "lineNumber": 458
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$sel.append",
+          "lineNumber": 459
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$sel.on",
+          "lineNumber": 461
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "parseInt",
+          "lineNumber": 461
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$(this).val",
+          "lineNumber": 461
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 461
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "loadData",
+          "lineNumber": 461
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$left.append('แสดง').append($sel).append",
+          "lineNumber": 462
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$left.append('แสดง').append",
+          "lineNumber": 462
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$left.append",
+          "lineNumber": 462
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "totalRows.toLocaleString",
+          "lineNumber": 462
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 464
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 467
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$prev.on",
+          "lineNumber": 468
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "loadData",
+          "lineNumber": 468
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$right.append",
+          "lineNumber": 469
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "Math.max",
+          "lineNumber": 471
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "Math.min",
+          "lineNumber": 472
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 475
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$pb.on",
+          "lineNumber": 476
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "(function (pg) { return function () { currentPage = pg; loadData(); }; })",
+          "lineNumber": 476
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "loadData",
+          "lineNumber": 476
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$right.append",
+          "lineNumber": 477
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$",
+          "lineNumber": 480
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$next.on",
+          "lineNumber": 481
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "loadData",
+          "lineNumber": 481
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$right.append",
+          "lineNumber": 482
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$pagination.append($left).append",
+          "lineNumber": 485
+        },
+        {
+          "caller": "renderPagination",
+          "callee": "$pagination.append",
+          "lineNumber": 485
+        },
+        {
+          "caller": "renderError",
+          "callee": "$tbody.empty().append",
+          "lineNumber": 490
+        },
+        {
+          "caller": "renderError",
+          "callee": "$tbody.empty",
+          "lineNumber": 490
+        },
+        {
+          "caller": "renderError",
+          "callee": "desktopColspan",
+          "lineNumber": 492
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/js/dashboard-builder.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1601,
+      "nonEmptyLines": 1412,
+      "callGraph": [
+        {
+          "caller": "initBuilder",
+          "callee": "renderWidgetList",
+          "lineNumber": 38
+        },
+        {
+          "caller": "initBuilder",
+          "callee": "initSortable",
+          "lineNumber": 39
+        },
+        {
+          "caller": "initBuilder",
+          "callee": "initColorSwatches",
+          "lineNumber": 40
+        },
+        {
+          "caller": "initBuilder",
+          "callee": "bindEvents",
+          "lineNumber": 41
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "$widgetList.empty",
+          "lineNumber": 45
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "$widgetEmpty.removeClass",
+          "lineNumber": 48
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "$widgetEmpty.addClass",
+          "lineNumber": 50
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "widgets.sort((a, b) => a.sort_order - b.sort_order).forEach",
+          "lineNumber": 52
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "widgets.sort",
+          "lineNumber": 52
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "BUILDER_CONFIG.widgetTypes.find",
+          "lineNumber": 53
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "escapeHtml",
+          "lineNumber": 70
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "escapeHtml",
+          "lineNumber": 80
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "$widgetList.append",
+          "lineNumber": 94
+        },
+        {
+          "caller": "renderWidgetList",
+          "callee": "$widgetCount.text",
+          "lineNumber": 98
+        },
+        {
+          "caller": "initSortable",
+          "callee": "$widgetList.children('.widget-row').each",
+          "lineNumber": 110
+        },
+        {
+          "caller": "initSortable",
+          "callee": "$widgetList.children",
+          "lineNumber": 110
+        },
+        {
+          "caller": "initSortable",
+          "callee": "newOrder.push",
+          "lineNumber": 111
+        },
+        {
+          "caller": "initSortable",
+          "callee": "$(this).data",
+          "lineNumber": 111
+        },
+        {
+          "caller": "initSortable",
+          "callee": "$",
+          "lineNumber": 111
+        },
+        {
+          "caller": "initSortable",
+          "callee": "saveReorder",
+          "lineNumber": 115
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$",
+          "lineNumber": 123
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$selector.empty",
+          "lineNumber": 124
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "Object.keys(BUILDER_CONFIG.colorThemes).forEach",
+          "lineNumber": 126
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "Object.keys",
+          "lineNumber": 126
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$selector.append",
+          "lineNumber": 128
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$('.color-swatch').on",
+          "lineNumber": 136
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$",
+          "lineNumber": 136
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$('.color-swatch').removeClass",
+          "lineNumber": 137
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$",
+          "lineNumber": 137
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$(this).addClass",
+          "lineNumber": 138
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$",
+          "lineNumber": 138
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$('#w-color-theme').val",
+          "lineNumber": 139
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$",
+          "lineNumber": 139
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$(this).data",
+          "lineNumber": 139
+        },
+        {
+          "caller": "initColorSwatches",
+          "callee": "$",
+          "lineNumber": 139
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-grid-desktop').on",
+          "lineNumber": 145
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 145
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#val-grid-desktop').text",
+          "lineNumber": 145
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 145
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).val",
+          "lineNumber": 145
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 145
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-grid-mobile').on",
+          "lineNumber": 146
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 146
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#val-grid-mobile').text",
+          "lineNumber": 146
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 146
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).val",
+          "lineNumber": 146
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 146
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-icon').on",
+          "lineNumber": 149
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 149
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).val",
+          "lineNumber": 150
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 150
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-icon-preview i').attr",
+          "lineNumber": 151
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 151
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.builder-palette-item').on",
+          "lineNumber": 155
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 155
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).data",
+          "lineNumber": 156
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 156
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "openModal",
+          "lineNumber": 157
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-add-widget').on",
+          "lineNumber": 160
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 160
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "openModal",
+          "lineNumber": 161
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$widgetList.on",
+          "lineNumber": 165
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).closest('.widget-row').data",
+          "lineNumber": 166
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).closest",
+          "lineNumber": 166
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 166
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$.ajax",
+          "lineNumber": 167
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "appUrl",
+          "lineNumber": 168
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "widgets.findIndex",
+          "lineNumber": 172
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "widgets.push",
+          "lineNumber": 176
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "renderWidgetList",
+          "lineNumber": 178
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "openModal",
+          "lineNumber": 179
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "showToast",
+          "lineNumber": 181
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "showToast",
+          "lineNumber": 185
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$widgetList.on",
+          "lineNumber": 190
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).closest('.widget-row').data",
+          "lineNumber": 191
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).closest",
+          "lineNumber": 191
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 191
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "widgets.find",
+          "lineNumber": 192
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "AppModal.confirm",
+          "lineNumber": 194
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "deleteWidget",
+          "lineNumber": 195
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$widgetList.on",
+          "lineNumber": 199
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).closest('.widget-row').data",
+          "lineNumber": 200
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).closest",
+          "lineNumber": 200
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 200
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).prop",
+          "lineNumber": 201
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 201
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "toggleWidgetStatus",
+          "lineNumber": 202
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 202
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-next-step').on",
+          "lineNumber": 206
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 206
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-prev-step').on",
+          "lineNumber": 207
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 207
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.close-widget-modal').on",
+          "lineNumber": 208
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 208
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-toggle-fullscreen').on",
+          "lineNumber": 211
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 211
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$modal.find",
+          "lineNumber": 212
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$panel.hasClass",
+          "lineNumber": 213
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$panel.removeClass('fullscreen-mode')\n                      .css",
+          "lineNumber": 216
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$panel.removeClass",
+          "lineNumber": 216
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).html",
+          "lineNumber": 223
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 223
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$panel.addClass('fullscreen-mode')\n                      .css",
+          "lineNumber": 225
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$panel.addClass",
+          "lineNumber": 225
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).html",
+          "lineNumber": 232
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 232
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-manual-save-draft').on",
+          "lineNumber": 237
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 237
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "saveWidget",
+          "lineNumber": 238
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-restore-draft').on",
+          "lineNumber": 242
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 242
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-discard-draft').on",
+          "lineNumber": 243
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 243
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(document).on",
+          "lineNumber": 246
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 246
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).data",
+          "lineNumber": 247
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 247
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.step3-tab-btn').removeClass('active border-indigo-600 text-indigo-600 dark:text-indigo-400')\n                              .addClass",
+          "lineNumber": 250
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.step3-tab-btn').removeClass",
+          "lineNumber": 250
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 250
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).addClass('active border-indigo-600 text-indigo-600 dark:text-indigo-400')\n                   .removeClass",
+          "lineNumber": 252
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).addClass",
+          "lineNumber": 252
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 252
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.step3-tab-panel').addClass",
+          "lineNumber": 256
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 256
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(`#step3-tab-panel-${tab}`).removeClass",
+          "lineNumber": 257
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 257
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-step3-mode').val",
+          "lineNumber": 260
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 260
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "renderColumnMappingList",
+          "lineNumber": 264
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "renderColumnMappingList",
+          "lineNumber": 266
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(document).on",
+          "lineNumber": 271
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 271
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 272
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.html",
+          "lineNumber": 273
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop('disabled', true).html",
+          "lineNumber": 274
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop",
+          "lineNumber": 274
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#query-error-box').addClass('hidden').empty",
+          "lineNumber": 276
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#query-error-box').addClass",
+          "lineNumber": 276
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 276
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#preview-query-table').html",
+          "lineNumber": 277
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 277
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('input[name=\"source_type\"]:checked').val",
+          "lineNumber": 286
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 286
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 290
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 290
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 291
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 291
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 292
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 292
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 296
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 296
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 297
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 297
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 298
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 298
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-payload').val",
+          "lineNumber": 299
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 299
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 300
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 300
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "JSON.parse",
+          "lineNumber": 305
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 305
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 305
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 306
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 306
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "showToast",
+          "lineNumber": 309
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop('disabled', false).html",
+          "lineNumber": 310
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop",
+          "lineNumber": 310
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$.ajax",
+          "lineNumber": 315
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "appUrl",
+          "lineNumber": 316
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "JSON.stringify",
+          "lineNumber": 320
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop('disabled', false).html",
+          "lineNumber": 323
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop",
+          "lineNumber": 323
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "renderQueryResultsTable",
+          "lineNumber": 325
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "renderColumnMappingList",
+          "lineNumber": 326
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#query-error-box').removeClass('hidden').text",
+          "lineNumber": 328
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#query-error-box').removeClass",
+          "lineNumber": 328
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 328
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#preview-query-table').html",
+          "lineNumber": 329
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 329
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop('disabled', false).html",
+          "lineNumber": 333
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$btn.prop",
+          "lineNumber": 333
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#query-error-box').removeClass('hidden').text",
+          "lineNumber": 335
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#query-error-box').removeClass",
+          "lineNumber": 335
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 335
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#preview-query-table').html",
+          "lineNumber": 336
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 336
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$form.on",
+          "lineNumber": 342
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.step-dot').on",
+          "lineNumber": 349
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 349
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).data",
+          "lineNumber": 350
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 350
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "saveDraft",
+          "lineNumber": 353
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "updateStepper",
+          "lineNumber": 356
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(document).on",
+          "lineNumber": 361
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 361
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).is",
+          "lineNumber": 362
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 362
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.col-map-checkbox').prop('checked', checked).trigger",
+          "lineNumber": 363
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.col-map-checkbox').prop",
+          "lineNumber": 363
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 363
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('input[name=\"source_type\"]').on",
+          "lineNumber": 367
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 367
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-expose').is",
+          "lineNumber": 371
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 371
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 372
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 372
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 373
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 373
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('.source-config-panel').addClass",
+          "lineNumber": 377
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 377
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).val",
+          "lineNumber": 378
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 378
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#source-config-db').removeClass",
+          "lineNumber": 380
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 380
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#shared-expose-container').removeClass",
+          "lineNumber": 381
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 381
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#source-config-api').removeClass",
+          "lineNumber": 383
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 383
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-method').trigger",
+          "lineNumber": 384
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 384
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#shared-expose-container').removeClass",
+          "lineNumber": 385
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 385
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#source-config-static').removeClass",
+          "lineNumber": 387
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 387
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#shared-expose-container').removeClass",
+          "lineNumber": 388
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 388
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#source-config-shared').removeClass",
+          "lineNumber": 390
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 390
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#shared-expose-container').addClass",
+          "lineNumber": 391
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 391
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "fetchSharedSources",
+          "lineNumber": 392
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#shared-expose-container').addClass",
+          "lineNumber": 394
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 394
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-expose').prop('checked', state.expose).trigger",
+          "lineNumber": 400
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-expose').prop",
+          "lineNumber": 400
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 400
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 401
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 401
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-title').val",
+          "lineNumber": 405
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 405
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 407
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 407
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-expose').on",
+          "lineNumber": 413
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 413
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).is",
+          "lineNumber": 414
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 414
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-scope-wrapper').removeClass",
+          "lineNumber": 415
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 415
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 417
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 417
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 418
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 418
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-title').val",
+          "lineNumber": 418
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 418
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-scope-wrapper').addClass",
+          "lineNumber": 421
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 421
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-title').on",
+          "lineNumber": 426
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 426
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-expose').is",
+          "lineNumber": 427
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 427
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 427
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 427
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 428
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 428
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).val",
+          "lineNumber": 428
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 428
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#src-api-method').on",
+          "lineNumber": 433
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 433
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).val",
+          "lineNumber": 434
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 434
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#payload-container').removeClass",
+          "lineNumber": 435
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 435
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#payload-container').addClass",
+          "lineNumber": 437
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 437
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$form.on",
+          "lineNumber": 442
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "e.preventDefault",
+          "lineNumber": 443
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "saveWidget",
+          "lineNumber": 444
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "fetchTables",
+          "lineNumber": 448
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#btn-toggle-palette').on",
+          "lineNumber": 451
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 451
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#widget-palette').toggleClass",
+          "lineNumber": 452
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 452
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$('#widget-palette').on",
+          "lineNumber": 454
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 454
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$(this).removeClass",
+          "lineNumber": 456
+        },
+        {
+          "caller": "bindEvents",
+          "callee": "$",
+          "lineNumber": 456
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "$.ajax",
+          "lineNumber": 464
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "appUrl",
+          "lineNumber": 465
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "$",
+          "lineNumber": 469
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "$select.find('option:not(:first)').remove",
+          "lineNumber": 470
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "$select.find",
+          "lineNumber": 470
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "res.data.forEach",
+          "lineNumber": 471
+        },
+        {
+          "caller": "fetchTables",
+          "callee": "$select.append",
+          "lineNumber": 472
+        },
+        {
+          "caller": "saveReorder",
+          "callee": "$.ajax",
+          "lineNumber": 480
+        },
+        {
+          "caller": "saveReorder",
+          "callee": "appUrl",
+          "lineNumber": 481
+        },
+        {
+          "caller": "saveReorder",
+          "callee": "showToast",
+          "lineNumber": 486
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "$.ajax",
+          "lineNumber": 493
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "appUrl",
+          "lineNumber": 494
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "widgets.filter",
+          "lineNumber": 498
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "renderWidgetList",
+          "lineNumber": 499
+        },
+        {
+          "caller": "deleteWidget",
+          "callee": "showToast",
+          "lineNumber": 500
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "$.ajax",
+          "lineNumber": 507
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "appUrl",
+          "lineNumber": 508
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "widgets.find",
+          "lineNumber": 512
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "showToast",
+          "lineNumber": 516
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "$checkbox.prop",
+          "lineNumber": 518
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "showToast",
+          "lineNumber": 519
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "$checkbox.prop",
+          "lineNumber": 523
+        },
+        {
+          "caller": "toggleWidgetStatus",
+          "callee": "showToast",
+          "lineNumber": 524
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-title').val",
+          "lineNumber": 533
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 533
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-title').closest('.step-content').data",
+          "lineNumber": 534
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-title').closest",
+          "lineNumber": 534
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 534
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "updateStepper",
+          "lineNumber": 537
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-title')[0].reportValidity",
+          "lineNumber": 539
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 539
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$form[0].checkValidity",
+          "lineNumber": 544
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$form.find(':invalid').first",
+          "lineNumber": 546
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$form.find",
+          "lineNumber": 546
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$invalid.closest('.step-content').data",
+          "lineNumber": 548
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$invalid.closest",
+          "lineNumber": 548
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "updateStepper",
+          "lineNumber": 551
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 555
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$dot.addClass",
+          "lineNumber": 556
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$dot.html",
+          "lineNumber": 557
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "setTimeout",
+          "lineNumber": 559
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$dot.removeClass",
+          "lineNumber": 560
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$invalid[0].reportValidity",
+          "lineNumber": 563
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-id').val",
+          "lineNumber": 569
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 569
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "appUrl",
+          "lineNumber": 571
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "appUrl",
+          "lineNumber": 572
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#widget-specific-config [data-cfg]').each",
+          "lineNumber": 576
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 576
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).data",
+          "lineNumber": 577
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 577
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).attr",
+          "lineNumber": 578
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 578
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).is",
+          "lineNumber": 579
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 579
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).val",
+          "lineNumber": 581
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 581
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('.column-mapping-item').each",
+          "lineNumber": 587
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 587
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).find('.col-map-checkbox').data",
+          "lineNumber": 588
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).find",
+          "lineNumber": 588
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 588
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).find('.col-map-checkbox').is",
+          "lineNumber": 589
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).find",
+          "lineNumber": 589
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 589
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).find('.col-map-label').val",
+          "lineNumber": 590
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$(this).find",
+          "lineNumber": 590
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 590
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "columnsConfig.push",
+          "lineNumber": 592
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-config-json').val",
+          "lineNumber": 600
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 600
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "JSON.stringify",
+          "lineNumber": 600
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('input[name=\"source_type\"]:checked').val",
+          "lineNumber": 603
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 603
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-step3-mode').val",
+          "lineNumber": 604
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 604
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 605
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 605
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-shared-widget-id').val",
+          "lineNumber": 610
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 610
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-share-expose').is",
+          "lineNumber": 615
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 615
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 616
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 616
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 617
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 617
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 621
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 621
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 622
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 622
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 631
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 631
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 632
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 632
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-api-key').val",
+          "lineNumber": 633
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 633
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 634
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 634
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-api-payload').val",
+          "lineNumber": 635
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 635
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "JSON.parse",
+          "lineNumber": 645
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 645
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 645
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-source-config').val",
+          "lineNumber": 665
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 665
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "JSON.stringify",
+          "lineNumber": 665
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$form.serialize",
+          "lineNumber": 668
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "postData.replace",
+          "lineNumber": 670
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$.ajax",
+          "lineNumber": 673
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "localStorage.removeItem",
+          "lineNumber": 680
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "getDraftKey",
+          "lineNumber": 680
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "showToast",
+          "lineNumber": 683
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-id').val",
+          "lineNumber": 686
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 686
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#w-id').val",
+          "lineNumber": 688
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 688
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$('#widget-modal-title').text",
+          "lineNumber": 689
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$",
+          "lineNumber": 689
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "$.ajax",
+          "lineNumber": 692
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "appUrl",
+          "lineNumber": 693
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "widgets.findIndex",
+          "lineNumber": 697
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "widgets.push",
+          "lineNumber": 701
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "renderWidgetList",
+          "lineNumber": 703
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "closeModal",
+          "lineNumber": 710
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "setTimeout",
+          "lineNumber": 711
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "window.location.reload",
+          "lineNumber": 711
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "showToast",
+          "lineNumber": 714
+        },
+        {
+          "caller": "saveWidget",
+          "callee": "showToast",
+          "lineNumber": 719
+        },
+        {
+          "caller": "getDraftKey",
+          "callee": "$('#w-id').val",
+          "lineNumber": 727
+        },
+        {
+          "caller": "getDraftKey",
+          "callee": "$",
+          "lineNumber": 727
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#widget-specific-config [data-cfg]').each",
+          "lineNumber": 734
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 734
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).data",
+          "lineNumber": 735
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 735
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).attr",
+          "lineNumber": 736
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 736
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).is",
+          "lineNumber": 737
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 737
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).val",
+          "lineNumber": 739
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 739
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('.column-mapping-item').each",
+          "lineNumber": 745
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 745
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).find('.col-map-checkbox').data",
+          "lineNumber": 746
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).find",
+          "lineNumber": 746
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 746
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).find('.col-map-checkbox').is",
+          "lineNumber": 747
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).find",
+          "lineNumber": 747
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 747
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).find('.col-map-label').val",
+          "lineNumber": 748
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$(this).find",
+          "lineNumber": 748
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 748
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "columnsConfig.push",
+          "lineNumber": 750
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-id').val",
+          "lineNumber": 758
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 758
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-widget-type').val",
+          "lineNumber": 759
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 759
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-title').val",
+          "lineNumber": 760
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 760
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-subtitle').val",
+          "lineNumber": 761
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 761
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-icon').val",
+          "lineNumber": 762
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 762
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-color-theme').val",
+          "lineNumber": 763
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 763
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-grid-desktop').val",
+          "lineNumber": 764
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 764
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-grid-mobile').val",
+          "lineNumber": 765
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 765
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-refresh').val",
+          "lineNumber": 766
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 766
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-status').val",
+          "lineNumber": 767
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 767
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('input[name=\"source_type\"]:checked').val",
+          "lineNumber": 768
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 768
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 771
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 771
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 772
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 772
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 773
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 773
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 774
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 774
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 775
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 775
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-api-payload').val",
+          "lineNumber": 776
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 776
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 777
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 777
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 778
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 778
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-api-key').val",
+          "lineNumber": 779
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 779
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#src-shared-widget-id').val",
+          "lineNumber": 780
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 780
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-share-expose').is",
+          "lineNumber": 781
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 781
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 782
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 782
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 783
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 783
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$('#w-step3-mode').val",
+          "lineNumber": 792
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "$",
+          "lineNumber": 792
+        },
+        {
+          "caller": "getWidgetFormData",
+          "callee": "new Date().toISOString",
+          "lineNumber": 794
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-id').val",
+          "lineNumber": 801
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 801
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-widget-type').val",
+          "lineNumber": 802
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 802
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-title').val",
+          "lineNumber": 803
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 803
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-subtitle').val",
+          "lineNumber": 804
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 804
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-icon').val(data.icon).trigger",
+          "lineNumber": 805
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-icon').val",
+          "lineNumber": 805
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 805
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$(`.color-swatch[data-color=\"${data.color_theme || 'indigo'}\"]`).click",
+          "lineNumber": 808
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 808
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-grid-desktop').val(data.grid_desktop).trigger",
+          "lineNumber": 810
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-grid-desktop').val",
+          "lineNumber": 810
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 810
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-grid-mobile').val(data.grid_mobile).trigger",
+          "lineNumber": 811
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-grid-mobile').val",
+          "lineNumber": 811
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 811
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-refresh').val",
+          "lineNumber": 812
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 812
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-status').val",
+          "lineNumber": 813
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 813
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$(`input[name=\"source_type\"][value=\"${data.source_type}\"]`).prop('checked', true).trigger",
+          "lineNumber": 816
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$(`input[name=\"source_type\"][value=\"${data.source_type}\"]`).prop",
+          "lineNumber": 816
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 816
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 819
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 819
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 820
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 820
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 821
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 821
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-method').val(data.src_api_method).trigger",
+          "lineNumber": 822
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 822
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 822
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 823
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 823
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-payload').val",
+          "lineNumber": 824
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 824
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 825
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 825
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 826
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 826
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-api-key').val",
+          "lineNumber": 827
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 827
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-expose').prop('checked', true).trigger",
+          "lineNumber": 830
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-expose').prop",
+          "lineNumber": 830
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 830
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 831
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 831
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 832
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 832
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-expose').prop('checked', false).trigger",
+          "lineNumber": 834
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-expose').prop",
+          "lineNumber": 834
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 834
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 835
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 835
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 836
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 836
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "fetchSharedSources",
+          "lineNumber": 840
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#src-shared-widget-id').val",
+          "lineNumber": 842
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 842
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$(`.step3-tab-btn[data-tab=\"${data.step3_mode}\"]`).trigger",
+          "lineNumber": 853
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 853
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$(`.step3-tab-btn[data-tab=\"default\"]`).trigger",
+          "lineNumber": 855
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 855
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "BUILDER_CONFIG.widgetTypes.find",
+          "lineNumber": 859
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$('#display-widget-type').text",
+          "lineNumber": 860
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "$",
+          "lineNumber": 860
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "buildConfigUI",
+          "lineNumber": 861
+        },
+        {
+          "caller": "restoreWidgetFormData",
+          "callee": "updateStepper",
+          "lineNumber": 863
+        },
+        {
+          "caller": "saveDraft",
+          "callee": "getDraftKey",
+          "lineNumber": 872
+        },
+        {
+          "caller": "saveDraft",
+          "callee": "getWidgetFormData",
+          "lineNumber": 873
+        },
+        {
+          "caller": "saveDraft",
+          "callee": "localStorage.setItem",
+          "lineNumber": 874
+        },
+        {
+          "caller": "saveDraft",
+          "callee": "JSON.stringify",
+          "lineNumber": 874
+        },
+        {
+          "caller": "saveDraft",
+          "callee": "showToast",
+          "lineNumber": 879
+        },
+        {
+          "caller": "discardDraft",
+          "callee": "getDraftKey",
+          "lineNumber": 884
+        },
+        {
+          "caller": "discardDraft",
+          "callee": "localStorage.removeItem",
+          "lineNumber": 885
+        },
+        {
+          "caller": "discardDraft",
+          "callee": "$('#draft-recovery-banner').addClass",
+          "lineNumber": 886
+        },
+        {
+          "caller": "discardDraft",
+          "callee": "$",
+          "lineNumber": 886
+        },
+        {
+          "caller": "discardDraft",
+          "callee": "showToast",
+          "lineNumber": 889
+        },
+        {
+          "caller": "restoreDraft",
+          "callee": "restoreWidgetFormData",
+          "lineNumber": 894
+        },
+        {
+          "caller": "restoreDraft",
+          "callee": "$('#draft-recovery-banner').addClass",
+          "lineNumber": 895
+        },
+        {
+          "caller": "restoreDraft",
+          "callee": "$",
+          "lineNumber": 895
+        },
+        {
+          "caller": "restoreDraft",
+          "callee": "showToast",
+          "lineNumber": 898
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#widget-palette').removeClass",
+          "lineNumber": 914
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 914
+        },
+        {
+          "caller": "openModal",
+          "callee": "$form[0].reset",
+          "lineNumber": 916
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('.step-dot').removeClass",
+          "lineNumber": 918
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 918
+        },
+        {
+          "caller": "openModal",
+          "callee": "updateStepper",
+          "lineNumber": 919
+        },
+        {
+          "caller": "openModal",
+          "callee": "BUILDER_CONFIG.widgetTypes.find",
+          "lineNumber": 922
+        },
+        {
+          "caller": "openModal",
+          "callee": "['DB_TABLE', 'OPEN_API', 'STATIC'].includes",
+          "lineNumber": 936
+        },
+        {
+          "caller": "openModal",
+          "callee": "JSON.parse",
+          "lineNumber": 938
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#source-type-none').removeClass",
+          "lineNumber": 948
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 948
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('input[name=\"source_type\"][value=\"NONE\"]').prop('checked', true).trigger",
+          "lineNumber": 949
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('input[name=\"source_type\"][value=\"NONE\"]').prop",
+          "lineNumber": 949
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 949
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#source-type-none').addClass",
+          "lineNumber": 951
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 951
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`input[name=\"source_type\"][value=\"${targetSrcType}\"]`).prop('checked', true).trigger",
+          "lineNumber": 953
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`input[name=\"source_type\"][value=\"${targetSrcType}\"]`).prop",
+          "lineNumber": 953
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 953
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-id').val",
+          "lineNumber": 962
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 962
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#widget-modal-title').text",
+          "lineNumber": 963
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 963
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-title').val",
+          "lineNumber": 964
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 964
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-subtitle').val",
+          "lineNumber": 965
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 965
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-icon').val(widget.icon || typeInfo.icon).trigger",
+          "lineNumber": 967
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-icon').val",
+          "lineNumber": 967
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 967
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`.color-swatch[data-color=\"${widget.color_theme || 'indigo'}\"]`).click",
+          "lineNumber": 969
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 969
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-grid-desktop').val(widget.grid_desktop).trigger",
+          "lineNumber": 971
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-grid-desktop').val",
+          "lineNumber": 971
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 971
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-grid-mobile').val(widget.grid_mobile).trigger",
+          "lineNumber": 972
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-grid-mobile').val",
+          "lineNumber": 972
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 972
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-refresh').val",
+          "lineNumber": 973
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 973
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-status').val",
+          "lineNumber": 974
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 974
+        },
+        {
+          "caller": "openModal",
+          "callee": "JSON.parse",
+          "lineNumber": 978
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-query').val",
+          "lineNumber": 979
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 979
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 982
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 982
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 983
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 983
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 985
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 985
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-method').val(src.method || 'GET').trigger",
+          "lineNumber": 986
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 986
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 986
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-key').val",
+          "lineNumber": 987
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 987
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 988
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 988
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-payload').val",
+          "lineNumber": 989
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 989
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 992
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 992
+        },
+        {
+          "caller": "openModal",
+          "callee": "JSON.stringify",
+          "lineNumber": 992
+        },
+        {
+          "caller": "openModal",
+          "callee": "fetchSharedSources",
+          "lineNumber": 994
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`.step3-tab-btn[data-tab=\"${src.step3_mode}\"]`).trigger",
+          "lineNumber": 997
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 997
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`.step3-tab-btn[data-tab=\"advance\"]`).trigger",
+          "lineNumber": 999
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 999
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`.step3-tab-btn[data-tab=\"default\"]`).trigger",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "openModal",
+          "callee": "JSON.parse",
+          "lineNumber": 1008
+        },
+        {
+          "caller": "openModal",
+          "callee": "JSON.parse",
+          "lineNumber": 1009
+        },
+        {
+          "caller": "openModal",
+          "callee": "Array.isArray",
+          "lineNumber": 1013
+        },
+        {
+          "caller": "openModal",
+          "callee": "cfg.columns.forEach",
+          "lineNumber": 1014
+        },
+        {
+          "caller": "openModal",
+          "callee": "cfg.columns.map",
+          "lineNumber": 1020
+        },
+        {
+          "caller": "openModal",
+          "callee": "cfg.columns.map",
+          "lineNumber": 1022
+        },
+        {
+          "caller": "openModal",
+          "callee": "buildConfigUI",
+          "lineNumber": 1028
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-id').val",
+          "lineNumber": 1031
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1031
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#widget-modal-title').text",
+          "lineNumber": 1032
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1032
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-icon').val(typeInfo.icon).trigger",
+          "lineNumber": 1033
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-icon').val",
+          "lineNumber": 1033
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1033
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('.color-swatch[data-color=\"indigo\"]').click",
+          "lineNumber": 1034
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1034
+        },
+        {
+          "caller": "openModal",
+          "callee": "buildConfigUI",
+          "lineNumber": 1036
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-share-expose').prop('checked', false).trigger",
+          "lineNumber": 1037
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-share-expose').prop",
+          "lineNumber": 1037
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1037
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-share-scope').val",
+          "lineNumber": 1038
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1038
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#w-share-name').val",
+          "lineNumber": 1039
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1039
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-api-key').val",
+          "lineNumber": 1040
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1040
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#src-shared-widget-id').val",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "openModal",
+          "callee": "$(`.step3-tab-btn[data-tab=\"default\"]`).trigger",
+          "lineNumber": 1042
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1042
+        },
+        {
+          "caller": "openModal",
+          "callee": "localStorage.getItem",
+          "lineNumber": 1048
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#draft-recovery-banner').addClass",
+          "lineNumber": 1050
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1050
+        },
+        {
+          "caller": "openModal",
+          "callee": "JSON.parse",
+          "lineNumber": 1056
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#draft-saved-time').text",
+          "lineNumber": 1062
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1062
+        },
+        {
+          "caller": "openModal",
+          "callee": "savedDate.toLocaleString",
+          "lineNumber": 1062
+        },
+        {
+          "caller": "openModal",
+          "callee": "$('#draft-recovery-banner').removeClass",
+          "lineNumber": 1063
+        },
+        {
+          "caller": "openModal",
+          "callee": "$",
+          "lineNumber": 1063
+        },
+        {
+          "caller": "openModal",
+          "callee": "$modal.removeClass",
+          "lineNumber": 1071
+        },
+        {
+          "caller": "openModal",
+          "callee": "setTimeout",
+          "lineNumber": 1072
+        },
+        {
+          "caller": "openModal",
+          "callee": "$modalContent.removeClass('scale-95 opacity-0').addClass",
+          "lineNumber": 1073
+        },
+        {
+          "caller": "openModal",
+          "callee": "$modalContent.removeClass",
+          "lineNumber": 1073
+        },
+        {
+          "caller": "closeModal",
+          "callee": "saveDraft",
+          "lineNumber": 1080
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$modalContent.removeClass('scale-100 opacity-100').addClass",
+          "lineNumber": 1086
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$modalContent.removeClass",
+          "lineNumber": 1086
+        },
+        {
+          "caller": "closeModal",
+          "callee": "setTimeout",
+          "lineNumber": 1087
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$modal.addClass",
+          "lineNumber": 1088
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$('#draft-recovery-banner').addClass",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$modalContent.removeClass('fullscreen-mode').css",
+          "lineNumber": 1091
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$modalContent.removeClass",
+          "lineNumber": 1091
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$('#btn-toggle-fullscreen').html",
+          "lineNumber": 1097
+        },
+        {
+          "caller": "closeModal",
+          "callee": "$",
+          "lineNumber": 1097
+        },
+        {
+          "caller": "nextStep",
+          "callee": "$('#w-title').val",
+          "lineNumber": 1104
+        },
+        {
+          "caller": "nextStep",
+          "callee": "$",
+          "lineNumber": 1104
+        },
+        {
+          "caller": "nextStep",
+          "callee": "$('#w-title')[0].reportValidity",
+          "lineNumber": 1105
+        },
+        {
+          "caller": "nextStep",
+          "callee": "$",
+          "lineNumber": 1105
+        },
+        {
+          "caller": "nextStep",
+          "callee": "saveDraft",
+          "lineNumber": 1112
+        },
+        {
+          "caller": "nextStep",
+          "callee": "updateStepper",
+          "lineNumber": 1115
+        },
+        {
+          "caller": "prevStep",
+          "callee": "saveDraft",
+          "lineNumber": 1122
+        },
+        {
+          "caller": "prevStep",
+          "callee": "updateStepper",
+          "lineNumber": 1125
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('.step-dot').each",
+          "lineNumber": 1131
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1131
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).data",
+          "lineNumber": 1132
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1132
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).hasClass",
+          "lineNumber": 1133
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1133
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass('active inactive').addClass",
+          "lineNumber": 1135
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass",
+          "lineNumber": 1135
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1135
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).html",
+          "lineNumber": 1136
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1136
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass('done inactive').addClass",
+          "lineNumber": 1138
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass",
+          "lineNumber": 1138
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1138
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).html",
+          "lineNumber": 1139
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1139
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).html",
+          "lineNumber": 1140
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1140
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass('done active').addClass",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).html",
+          "lineNumber": 1143
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1143
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).html",
+          "lineNumber": 1144
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1144
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('.step-line').each",
+          "lineNumber": 1149
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1149
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).addClass",
+          "lineNumber": 1151
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1151
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).removeClass",
+          "lineNumber": 1153
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1153
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('.step-content').addClass",
+          "lineNumber": 1158
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1158
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(`.step-content[data-step=\"${currentStep}\"]`).removeClass",
+          "lineNumber": 1159
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1159
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#btn-prev-step').addClass",
+          "lineNumber": 1163
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1163
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#btn-prev-step').removeClass",
+          "lineNumber": 1165
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1165
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#w-step3-mode').val",
+          "lineNumber": 1169
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1169
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "renderColumnMappingList",
+          "lineNumber": 1171
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "fetchSourceSchemaAndPreview",
+          "lineNumber": 1173
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#w-widget-type').val",
+          "lineNumber": 1179
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1179
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#widget-specific-config [data-cfg]').each",
+          "lineNumber": 1181
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1181
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).data",
+          "lineNumber": 1182
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1182
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).attr",
+          "lineNumber": 1183
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1183
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).is",
+          "lineNumber": 1184
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1184
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$(this).val",
+          "lineNumber": 1186
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1186
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "buildConfigUI",
+          "lineNumber": 1189
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "loadPreviewWidget",
+          "lineNumber": 1190
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('.step-dot').removeClass",
+          "lineNumber": 1194
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1194
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#btn-next-step').addClass",
+          "lineNumber": 1197
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1197
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#btn-save-widget').removeClass",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1198
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#btn-next-step').removeClass",
+          "lineNumber": 1200
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1200
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$('#btn-save-widget').addClass",
+          "lineNumber": 1201
+        },
+        {
+          "caller": "updateStepper",
+          "callee": "$",
+          "lineNumber": 1201
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#btn-load-preview').addClass",
+          "lineNumber": 1206
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1206
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#widget-preview-content').removeClass('hidden').html",
+          "lineNumber": 1207
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#widget-preview-content').removeClass",
+          "lineNumber": 1207
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1207
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#widget-specific-config [data-cfg]').each",
+          "lineNumber": 1213
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1213
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$(this).data",
+          "lineNumber": 1214
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1214
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$(this).attr",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1215
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$(this).is",
+          "lineNumber": 1216
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1216
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$(this).val",
+          "lineNumber": 1218
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1218
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('input[name=\"source_type\"]:checked').val",
+          "lineNumber": 1223
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1223
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 1226
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1226
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 1226
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1226
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1228
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "JSON.parse",
+          "lineNumber": 1230
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 1230
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1230
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "data.set",
+          "lineNumber": 1234
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "JSON.stringify",
+          "lineNumber": 1234
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "data.set",
+          "lineNumber": 1235
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "JSON.stringify",
+          "lineNumber": 1235
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$.ajax",
+          "lineNumber": 1237
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "appUrl",
+          "lineNumber": 1238
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#widget-preview-content').html",
+          "lineNumber": 1245
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1245
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1249
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$widget.data",
+          "lineNumber": 1250
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "window.DashboardViewer.generateMockData",
+          "lineNumber": 1251
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "window.DashboardViewer.renderAwesomeTableWidget",
+          "lineNumber": 1254
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "window.DashboardViewer.renderWidgetData",
+          "lineNumber": 1256
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#widget-preview-content').html",
+          "lineNumber": 1260
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1260
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$('#widget-preview-content').html",
+          "lineNumber": 1264
+        },
+        {
+          "caller": "loadPreviewWidget",
+          "callee": "$",
+          "lineNumber": 1264
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1270
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$container.empty",
+          "lineNumber": 1271
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "JSON.parse",
+          "lineNumber": 1275
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "['BAR_CHART', 'LINE_CHART', 'DONUT_CHART'].includes",
+          "lineNumber": 1281
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1284
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1285
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(tplId).html",
+          "lineNumber": 1285
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1285
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$('.column-mapping-item').each",
+          "lineNumber": 1289
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1289
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(this).find('.col-map-checkbox').data",
+          "lineNumber": 1290
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(this).find",
+          "lineNumber": 1290
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1290
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(this).find('.col-map-checkbox').is",
+          "lineNumber": 1291
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(this).find",
+          "lineNumber": 1291
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1291
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(this).find('.col-map-label').val",
+          "lineNumber": 1292
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$(this).find",
+          "lineNumber": 1292
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1292
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "selectedCols.push",
+          "lineNumber": 1294
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "clone.find",
+          "lineNumber": 1298
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$selects.each",
+          "lineNumber": 1299
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$",
+          "lineNumber": 1300
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$select.find('option:not(:first)').remove",
+          "lineNumber": 1301
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$select.find",
+          "lineNumber": 1301
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "selectedCols.forEach",
+          "lineNumber": 1302
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$select.append",
+          "lineNumber": 1303
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$container.append",
+          "lineNumber": 1307
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "Object.keys(cfg).forEach",
+          "lineNumber": 1310
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "Object.keys",
+          "lineNumber": 1310
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$container.find",
+          "lineNumber": 1311
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$el.attr",
+          "lineNumber": 1313
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$el.prop",
+          "lineNumber": 1314
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$el.is",
+          "lineNumber": 1315
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$el.val",
+          "lineNumber": 1316
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "JSON.stringify",
+          "lineNumber": 1316
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$el.val",
+          "lineNumber": 1318
+        },
+        {
+          "caller": "buildConfigUI",
+          "callee": "$container.html",
+          "lineNumber": 1323
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#w-step3-mode').val",
+          "lineNumber": 1330
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1330
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1335
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1335
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1344
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1344
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('input[name=\"source_type\"]:checked').val",
+          "lineNumber": 1350
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1350
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1352
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1352
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1353
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1353
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-db-table').val",
+          "lineNumber": 1359
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1359
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-db-where').val",
+          "lineNumber": 1359
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1359
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1361
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1361
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1362
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1362
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-api-url').val",
+          "lineNumber": 1367
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1367
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-api-method').val",
+          "lineNumber": 1368
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1368
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-api-jsonpath').val",
+          "lineNumber": 1369
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1369
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-api-payload').val",
+          "lineNumber": 1370
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1370
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1373
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1373
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1374
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1374
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "JSON.parse",
+          "lineNumber": 1378
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#src-static-json').val",
+          "lineNumber": 1378
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1378
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1380
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1380
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1381
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1381
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$.ajax",
+          "lineNumber": 1386
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "appUrl",
+          "lineNumber": 1387
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "JSON.stringify",
+          "lineNumber": 1391
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "renderPreviewTable",
+          "lineNumber": 1396
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "renderColumnMappingList",
+          "lineNumber": 1397
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1399
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1399
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1400
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1400
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1405
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1405
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$('#column-mapping-list').html",
+          "lineNumber": 1406
+        },
+        {
+          "caller": "fetchSourceSchemaAndPreview",
+          "callee": "$",
+          "lineNumber": 1406
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1413
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "$",
+          "lineNumber": 1413
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "columns.forEach",
+          "lineNumber": 1418
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "escapeHtml",
+          "lineNumber": 1419
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "data.forEach",
+          "lineNumber": 1427
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "columns.forEach",
+          "lineNumber": 1429
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "escapeHtml",
+          "lineNumber": 1431
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "escapeHtml",
+          "lineNumber": 1431
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "$('#preview-raw-table').html",
+          "lineNumber": 1437
+        },
+        {
+          "caller": "renderPreviewTable",
+          "callee": "$",
+          "lineNumber": 1437
+        },
+        {
+          "caller": "getActiveMappedColumns",
+          "callee": "$('#w-step3-mode').val",
+          "lineNumber": 1448
+        },
+        {
+          "caller": "getActiveMappedColumns",
+          "callee": "$",
+          "lineNumber": 1448
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1453
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$list.empty",
+          "lineNumber": 1454
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$list.html",
+          "lineNumber": 1457
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "getActiveMappedColumns",
+          "lineNumber": 1461
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "columns.forEach",
+          "lineNumber": 1463
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "escapeHtml",
+          "lineNumber": 1470
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "escapeHtml",
+          "lineNumber": 1471
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "escapeHtml",
+          "lineNumber": 1477
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "escapeHtml",
+          "lineNumber": 1478
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "escapeHtml",
+          "lineNumber": 1479
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$list.append",
+          "lineNumber": 1483
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "columns.every",
+          "lineNumber": 1487
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$('#check-all-cols').prop",
+          "lineNumber": 1490
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1490
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$('.col-map-checkbox, .col-map-label').off('change input').on",
+          "lineNumber": 1493
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$('.col-map-checkbox, .col-map-label').off",
+          "lineNumber": 1493
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1493
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$(this).data",
+          "lineNumber": 1494
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1494
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "getActiveMappedColumns",
+          "lineNumber": 1495
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$(this).hasClass",
+          "lineNumber": 1498
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1498
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$(this).is",
+          "lineNumber": 1499
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1499
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1502
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1502
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$('#check-all-cols').prop",
+          "lineNumber": 1503
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1503
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$(this).val",
+          "lineNumber": 1505
+        },
+        {
+          "caller": "renderColumnMappingList",
+          "callee": "$",
+          "lineNumber": 1505
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "$('#preview-query-table').html",
+          "lineNumber": 1513
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "$",
+          "lineNumber": 1513
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "columns.forEach",
+          "lineNumber": 1518
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "escapeHtml",
+          "lineNumber": 1519
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "data.slice(0, 5).forEach",
+          "lineNumber": 1527
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "data.slice",
+          "lineNumber": 1527
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "columns.forEach",
+          "lineNumber": 1529
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "escapeHtml",
+          "lineNumber": 1531
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "escapeHtml",
+          "lineNumber": 1531
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "$('#preview-query-table').html",
+          "lineNumber": 1537
+        },
+        {
+          "caller": "renderQueryResultsTable",
+          "callee": "$",
+          "lineNumber": 1537
+        },
+        {
+          "caller": "escapeHtml",
+          "callee": "(unsafe + '').replace",
+          "lineNumber": 1549
+        },
+        {
+          "caller": "showToast",
+          "callee": "Date.now",
+          "lineNumber": 1561
+        },
+        {
+          "caller": "showToast",
+          "callee": "escapeHtml",
+          "lineNumber": 1567
+        },
+        {
+          "caller": "showToast",
+          "callee": "$",
+          "lineNumber": 1571
+        },
+        {
+          "caller": "showToast",
+          "callee": "$('#toast-box').append",
+          "lineNumber": 1572
+        },
+        {
+          "caller": "showToast",
+          "callee": "$",
+          "lineNumber": 1572
+        },
+        {
+          "caller": "showToast",
+          "callee": "setTimeout",
+          "lineNumber": 1574
+        },
+        {
+          "caller": "showToast",
+          "callee": "$toast.removeClass('translate-y-4 opacity-0').addClass",
+          "lineNumber": 1574
+        },
+        {
+          "caller": "showToast",
+          "callee": "$toast.removeClass",
+          "lineNumber": 1574
+        },
+        {
+          "caller": "showToast",
+          "callee": "setTimeout",
+          "lineNumber": 1576
+        },
+        {
+          "caller": "showToast",
+          "callee": "$toast.removeClass('translate-y-0 opacity-100').addClass",
+          "lineNumber": 1577
+        },
+        {
+          "caller": "showToast",
+          "callee": "$toast.removeClass",
+          "lineNumber": 1577
+        },
+        {
+          "caller": "showToast",
+          "callee": "setTimeout",
+          "lineNumber": 1578
+        },
+        {
+          "caller": "showToast",
+          "callee": "$toast.remove",
+          "lineNumber": 1578
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$",
+          "lineNumber": 1583
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$select.find('option:not(:first)').remove",
+          "lineNumber": 1584
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$select.find",
+          "lineNumber": 1584
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$.ajax",
+          "lineNumber": 1586
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "appUrl",
+          "lineNumber": 1587
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "res.data.forEach",
+          "lineNumber": 1591
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$('#w-id').val",
+          "lineNumber": 1592
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$",
+          "lineNumber": 1592
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "$select.append",
+          "lineNumber": 1594
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "escapeHtml",
+          "lineNumber": 1594
+        },
+        {
+          "caller": "fetchSharedSources",
+          "callee": "escapeHtml",
+          "lineNumber": 1594
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/js/dashboard-viewer.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 298,
+      "nonEmptyLines": 258,
+      "callGraph": [
+        {
+          "caller": "loadWidgetData",
+          "callee": "$widget.data",
+          "lineNumber": 22
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "$widget.data",
+          "lineNumber": 23
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "$widget.data",
+          "lineNumber": 24
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "$widget.data",
+          "lineNumber": 28
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "generateMockData",
+          "lineNumber": 31
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "$widget.find('.glass-card').append",
+          "lineNumber": 32
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "$widget.find",
+          "lineNumber": 32
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "renderAwesomeTableWidget",
+          "lineNumber": 35
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "renderWidgetData",
+          "lineNumber": 37
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "renderAwesomeTableWidget",
+          "lineNumber": 43
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "$.ajax",
+          "lineNumber": 47
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "renderWidgetData",
+          "lineNumber": 52
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "parseInt",
+          "lineNumber": 54
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "setTimeout",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "loadWidgetData",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "parseInt",
+          "lineNumber": 55
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "showWidgetError",
+          "lineNumber": 58
+        },
+        {
+          "caller": "loadWidgetData",
+          "callee": "showWidgetError",
+          "lineNumber": 62
+        },
+        {
+          "caller": "showWidgetError",
+          "callee": "$widget.find('.widget-content').html",
+          "lineNumber": 68
+        },
+        {
+          "caller": "showWidgetError",
+          "callee": "$widget.find",
+          "lineNumber": 68
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.floor",
+          "lineNumber": 77
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.random",
+          "lineNumber": 77
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "labels.map",
+          "lineNumber": 91
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.floor",
+          "lineNumber": 91
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.random",
+          "lineNumber": 91
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "labels.map",
+          "lineNumber": 94
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.floor",
+          "lineNumber": 96
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.random",
+          "lineNumber": 96
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.floor",
+          "lineNumber": 97
+        },
+        {
+          "caller": "generateMockData",
+          "callee": "Math.random",
+          "lineNumber": 97
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "$widget.find",
+          "lineNumber": 102
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "Number(val).toLocaleString",
+          "lineNumber": 108
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "Number",
+          "lineNumber": 108
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "$content.find('.widget-value').text",
+          "lineNumber": 109
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "$content.find",
+          "lineNumber": 109
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "Array.isArray",
+          "lineNumber": 116
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "data.forEach",
+          "lineNumber": 118
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "Object.entries(row).forEach",
+          "lineNumber": 123
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "Object.entries",
+          "lineNumber": 123
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "$content.html",
+          "lineNumber": 134
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "$content.html",
+          "lineNumber": 136
+        },
+        {
+          "caller": "renderWidgetData",
+          "callee": "renderApexChart",
+          "lineNumber": 145
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "$widget.find('.widget-content').html",
+          "lineNumber": 153
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "$widget.find",
+          "lineNumber": 153
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "$widget.find",
+          "lineNumber": 157
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "$content.empty",
+          "lineNumber": 158
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "Array.isArray",
+          "lineNumber": 170
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "Object.keys",
+          "lineNumber": 171
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "$widget.data",
+          "lineNumber": 174
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "JSON.parse",
+          "lineNumber": 176
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "Array.isArray",
+          "lineNumber": 186
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "config.value_field.split(',').map(s => s.trim()).filter",
+          "lineNumber": 189
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "config.value_field.split(',').map",
+          "lineNumber": 189
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "config.value_field.split",
+          "lineNumber": 189
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "s.trim",
+          "lineNumber": 189
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "keys.filter",
+          "lineNumber": 193
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "Array.isArray",
+          "lineNumber": 198
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "config.columns.forEach",
+          "lineNumber": 199
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "data.map",
+          "lineNumber": 206
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "data.map",
+          "lineNumber": 207
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "parseFloat",
+          "lineNumber": 207
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "data.map",
+          "lineNumber": 212
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "valKeys.map",
+          "lineNumber": 213
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "data.map",
+          "lineNumber": 216
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "parseFloat",
+          "lineNumber": 216
+        },
+        {
+          "caller": "renderApexChart",
+          "callee": "chart.render",
+          "lineNumber": 223
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$widget.find",
+          "lineNumber": 227
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$content.empty",
+          "lineNumber": 228
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$",
+          "lineNumber": 232
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$",
+          "lineNumber": 240
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$content.append($exportBtnContainer).append",
+          "lineNumber": 241
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$content.append",
+          "lineNumber": 241
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "Object.keys(mockData[0]).map",
+          "lineNumber": 244
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "Object.keys",
+          "lineNumber": 244
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "cols.forEach",
+          "lineNumber": 247
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "mockData.forEach",
+          "lineNumber": 249
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "cols.forEach",
+          "lineNumber": 251
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$tableContainer.html",
+          "lineNumber": 255
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$.ajax",
+          "lineNumber": 260
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "Object.keys(res.data[0]).forEach",
+          "lineNumber": 268
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "Object.keys",
+          "lineNumber": 268
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "cols.push",
+          "lineNumber": 269
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "$tableContainer.awesomeTable",
+          "lineNumber": 276
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "showWidgetError",
+          "lineNumber": 282
+        },
+        {
+          "caller": "renderAwesomeTableWidget",
+          "callee": "showWidgetError",
+          "lineNumber": 286
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

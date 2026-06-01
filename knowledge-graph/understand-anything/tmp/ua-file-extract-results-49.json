@@ -1,0 +1,1377 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "graphify-out/.graphify_analysis.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 501,
+      "nonEmptyLines": 501,
+      "sections": [
+        {
+          "heading": "communities",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "cohesion",
+          "level": 1,
+          "line": 404
+        },
+        {
+          "heading": "gods",
+          "level": 1,
+          "line": 432
+        },
+        {
+          "heading": "surprises",
+          "level": 1,
+          "line": 484
+        },
+        {
+          "heading": "tokens",
+          "level": 1,
+          "line": 497
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "graphify-out/.graphify_labels.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "sections": [
+        {
+          "heading": "0",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "2",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "3",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "4",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "5",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "6",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "7",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "8",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "9",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "10",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "11",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "12",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "13",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "14",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "15",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "16",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "17",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "18",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "19",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "20",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "21",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "22",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "23",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "24",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "25",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "graphify-out/GRAPH_REPORT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 440,
+      "nonEmptyLines": 359,
+      "sections": [
+        {
+          "heading": "Graph Report - cockpit-new  (2026-05-27)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Corpus Check",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Graph Freshness",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Community Hubs (Navigation)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "God Nodes (most connected - your core abstractions)",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Surprising Connections (you probably didn't know these)",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "Communities (147 total, 28 thin omitted)",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Community 0 - \"Community 0\"",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Community 1 - \"Community 1\"",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "Community 2 - \"Community 2\"",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "Community 3 - \"Community 3\"",
+          "level": 3,
+          "line": 147
+        },
+        {
+          "heading": "Community 4 - \"Community 4\"",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "Community 5 - \"Community 5\"",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "Community 6 - \"Community 6\"",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "Community 7 - \"Community 7\"",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "Community 8 - \"Community 8\"",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "Community 9 - \"Community 9\"",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "Community 11 - \"Community 11\"",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "Community 12 - \"Community 12\"",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "Community 13 - \"Community 13\"",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Community 14 - \"Community 14\"",
+          "level": 3,
+          "line": 187
+        },
+        {
+          "heading": "Community 15 - \"Community 15\"",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "Community 17 - \"Community 17\"",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "Community 19 - \"Community 19\"",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "Community 21 - \"Community 21\"",
+          "level": 3,
+          "line": 203
+        },
+        {
+          "heading": "Community 22 - \"Community 22\"",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "Community 23 - \"Community 23\"",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "Community 24 - \"Community 24\"",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "Community 25 - \"Community 25\"",
+          "level": 3,
+          "line": 219
+        },
+        {
+          "heading": "Community 26 - \"Community 26\"",
+          "level": 3,
+          "line": 223
+        },
+        {
+          "heading": "Community 27 - \"Community 27\"",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "Community 28 - \"Community 28\"",
+          "level": 3,
+          "line": 231
+        },
+        {
+          "heading": "Community 29 - \"Community 29\"",
+          "level": 3,
+          "line": 235
+        },
+        {
+          "heading": "Community 30 - \"Community 30\"",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "Community 32 - \"Community 32\"",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "Community 33 - \"Community 33\"",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "Community 34 - \"Community 34\"",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Community 37 - \"Community 37\"",
+          "level": 3,
+          "line": 255
+        },
+        {
+          "heading": "Community 39 - \"Community 39\"",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "Community 40 - \"Community 40\"",
+          "level": 3,
+          "line": 263
+        },
+        {
+          "heading": "Community 41 - \"Community 41\"",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "Community 42 - \"Community 42\"",
+          "level": 3,
+          "line": 271
+        },
+        {
+          "heading": "Community 43 - \"Community 43\"",
+          "level": 3,
+          "line": 275
+        },
+        {
+          "heading": "Community 44 - \"Community 44\"",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "Community 45 - \"Community 45\"",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "Community 49 - \"Community 49\"",
+          "level": 3,
+          "line": 287
+        },
+        {
+          "heading": "Community 53 - \"Community 53\"",
+          "level": 3,
+          "line": 291
+        },
+        {
+          "heading": "Community 55 - \"Community 55\"",
+          "level": 3,
+          "line": 295
+        },
+        {
+          "heading": "Community 56 - \"Community 56\"",
+          "level": 3,
+          "line": 299
+        },
+        {
+          "heading": "Community 57 - \"Community 57\"",
+          "level": 3,
+          "line": 303
+        },
+        {
+          "heading": "Community 58 - \"Community 58\"",
+          "level": 3,
+          "line": 307
+        },
+        {
+          "heading": "Community 59 - \"Community 59\"",
+          "level": 3,
+          "line": 311
+        },
+        {
+          "heading": "Community 60 - \"Community 60\"",
+          "level": 3,
+          "line": 315
+        },
+        {
+          "heading": "Community 61 - \"Community 61\"",
+          "level": 3,
+          "line": 319
+        },
+        {
+          "heading": "Community 62 - \"Community 62\"",
+          "level": 3,
+          "line": 323
+        },
+        {
+          "heading": "Community 63 - \"Community 63\"",
+          "level": 3,
+          "line": 327
+        },
+        {
+          "heading": "Community 68 - \"Community 68\"",
+          "level": 3,
+          "line": 331
+        },
+        {
+          "heading": "Community 69 - \"Community 69\"",
+          "level": 3,
+          "line": 335
+        },
+        {
+          "heading": "Community 70 - \"Community 70\"",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Community 71 - \"Community 71\"",
+          "level": 3,
+          "line": 343
+        },
+        {
+          "heading": "Community 72 - \"Community 72\"",
+          "level": 3,
+          "line": 347
+        },
+        {
+          "heading": "Community 73 - \"Community 73\"",
+          "level": 3,
+          "line": 351
+        },
+        {
+          "heading": "Community 74 - \"Community 74\"",
+          "level": 3,
+          "line": 355
+        },
+        {
+          "heading": "Community 75 - \"Community 75\"",
+          "level": 3,
+          "line": 359
+        },
+        {
+          "heading": "Community 76 - \"Community 76\"",
+          "level": 3,
+          "line": 363
+        },
+        {
+          "heading": "Community 77 - \"Community 77\"",
+          "level": 3,
+          "line": 367
+        },
+        {
+          "heading": "Community 78 - \"Community 78\"",
+          "level": 3,
+          "line": 371
+        },
+        {
+          "heading": "Community 79 - \"Community 79\"",
+          "level": 3,
+          "line": 375
+        },
+        {
+          "heading": "Community 80 - \"Community 80\"",
+          "level": 3,
+          "line": 379
+        },
+        {
+          "heading": "Community 81 - \"Community 81\"",
+          "level": 3,
+          "line": 383
+        },
+        {
+          "heading": "Community 82 - \"Community 82\"",
+          "level": 3,
+          "line": 387
+        },
+        {
+          "heading": "Community 85 - \"Community 85\"",
+          "level": 3,
+          "line": 391
+        },
+        {
+          "heading": "Community 86 - \"Community 86\"",
+          "level": 3,
+          "line": 395
+        },
+        {
+          "heading": "Community 87 - \"Community 87\"",
+          "level": 3,
+          "line": 399
+        },
+        {
+          "heading": "Community 88 - \"Community 88\"",
+          "level": 3,
+          "line": 403
+        },
+        {
+          "heading": "Community 91 - \"Community 91\"",
+          "level": 3,
+          "line": 407
+        },
+        {
+          "heading": "Community 92 - \"Community 92\"",
+          "level": 3,
+          "line": 411
+        },
+        {
+          "heading": "Community 93 - \"Community 93\"",
+          "level": 3,
+          "line": 415
+        },
+        {
+          "heading": "Knowledge Gaps",
+          "level": 2,
+          "line": 419
+        },
+        {
+          "heading": "Suggested Questions",
+          "level": 2,
+          "line": 424
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 81
+      }
+    },
+    {
+      "path": "graphify-out/cost.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "runs",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "total_input_tokens",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "total_output_tokens",
+          "level": 1,
+          "line": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "graphify-out/graph.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 305,
+      "nonEmptyLines": 291,
+      "metrics": {}
+    },
+    {
+      "path": "graphify-out/graph.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 25908,
+      "nonEmptyLines": 25908,
+      "sections": [
+        {
+          "heading": "directed",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "multigraph",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "graph",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "nodes",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "links",
+          "level": 1,
+          "line": 10622
+        },
+        {
+          "heading": "hyperedges",
+          "level": 1,
+          "line": 25906
+        },
+        {
+          "heading": "built_at_commit",
+          "level": 1,
+          "line": 25907
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "graphify-out/manifest.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 494,
+      "nonEmptyLines": 494,
+      "sections": [
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_sidebar.php",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_user_manage.php",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_profile.php",
+          "level": 1,
+          "line": 10
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/alter.php",
+          "level": 1,
+          "line": 14
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_app_menu.php",
+          "level": 1,
+          "line": 18
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_pagination_menu.php",
+          "level": 1,
+          "line": 22
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_pagination_user.php",
+          "level": 1,
+          "line": 26
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/alter_user_requested_office.php",
+          "level": 1,
+          "line": 30
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/dump_widgets.php",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/fix_controllers.php",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/run_migration.php",
+          "level": 1,
+          "line": 42
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/patch_pagination_profile.php",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/fix_office_column.php",
+          "level": 1,
+          "line": 50
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Middleware/MiddlewareInterface.php",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Middleware/RoleMiddleware.php",
+          "level": 1,
+          "line": 58
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Middleware/AuthMiddleware.php",
+          "level": 1,
+          "line": 62
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Middleware/GuestMiddleware.php",
+          "level": 1,
+          "line": 66
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Middleware/PermissionMiddleware.php",
+          "level": 1,
+          "line": 70
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Container.php",
+          "level": 1,
+          "line": 74
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Response.php",
+          "level": 1,
+          "line": 78
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Request.php",
+          "level": 1,
+          "line": 82
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/View.php",
+          "level": 1,
+          "line": 86
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Router.php",
+          "level": 1,
+          "line": 90
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/helpers.php",
+          "level": 1,
+          "line": 94
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Database/DatabaseManager.php",
+          "level": 1,
+          "line": 98
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Database/BaseRepository.php",
+          "level": 1,
+          "line": 102
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Core/Cache/CacheManager.php",
+          "level": 1,
+          "line": 106
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/config/app.php",
+          "level": 1,
+          "line": 110
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/config/permissions.php",
+          "level": 1,
+          "line": 114
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/config/database.php",
+          "level": 1,
+          "line": 118
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/OfficeRepository.php",
+          "level": 1,
+          "line": 122
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/KpiRepository.php",
+          "level": 1,
+          "line": 126
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/KpiResponsibleRepository.php",
+          "level": 1,
+          "line": 130
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/StgGroupRepository.php",
+          "level": 1,
+          "line": 134
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/DashboardRepository.php",
+          "level": 1,
+          "line": 138
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/DashboardWidgetRepository.php",
+          "level": 1,
+          "line": 142
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/StgRepository.php",
+          "level": 1,
+          "line": 146
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/LogRepository.php",
+          "level": 1,
+          "line": 150
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Repositories/UserRepository.php",
+          "level": 1,
+          "line": 154
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/DashboardManagerController.php",
+          "level": 1,
+          "line": 158
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/DashboardApiController.php",
+          "level": 1,
+          "line": 162
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/DashboardBuilderController.php",
+          "level": 1,
+          "line": 166
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/KpiInputController.php",
+          "level": 1,
+          "line": 170
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/MenuController.php",
+          "level": 1,
+          "line": 174
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/StrategyManagementController.php",
+          "level": 1,
+          "line": 178
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/DashboardController.php",
+          "level": 1,
+          "line": 182
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/UserManagementController.php",
+          "level": 1,
+          "line": 186
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/AuthController.php",
+          "level": 1,
+          "line": 190
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/ProfileController.php",
+          "level": 1,
+          "line": 194
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/LogsController.php",
+          "level": 1,
+          "line": 198
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/KpiResponsibleController.php",
+          "level": 1,
+          "line": 202
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Controllers/DashboardViewerController.php",
+          "level": 1,
+          "line": 206
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/auth/login.php",
+          "level": 1,
+          "line": 210
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/user/manage.php",
+          "level": 1,
+          "line": 214
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/preview.php",
+          "level": 1,
+          "line": 218
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/index.php",
+          "level": 1,
+          "line": 222
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/viewer.php",
+          "level": 1,
+          "line": 226
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/manage/index.php",
+          "level": 1,
+          "line": 230
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/manage/widget_modal.php",
+          "level": 1,
+          "line": 234
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/manage/builder.php",
+          "level": 1,
+          "line": 238
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/bar_chart.php",
+          "level": 1,
+          "line": 242
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/grid_space.php",
+          "level": 1,
+          "line": 246
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/map_3d.php",
+          "level": 1,
+          "line": 250
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/card_action.php",
+          "level": 1,
+          "line": 254
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/map_2d.php",
+          "level": 1,
+          "line": 258
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/stats.php",
+          "level": 1,
+          "line": 262
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/line_chart.php",
+          "level": 1,
+          "line": 266
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/gauge_chart.php",
+          "level": 1,
+          "line": 270
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/donut_chart.php",
+          "level": 1,
+          "line": 274
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/heatmap.php",
+          "level": 1,
+          "line": 278
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/dashboard/widgets/table.php",
+          "level": 1,
+          "line": 282
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/logs/index.php",
+          "level": 1,
+          "line": 286
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/profile/index.php",
+          "level": 1,
+          "line": 290
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/layouts/app.php",
+          "level": 1,
+          "line": 294
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/stg_group/index.php",
+          "level": 1,
+          "line": 298
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/menu/manage.php",
+          "level": 1,
+          "line": 302
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/kpi/index.php",
+          "level": 1,
+          "line": 306
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/kpi/input_modal.php",
+          "level": 1,
+          "line": 310
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/kpi/responsible/index.php",
+          "level": 1,
+          "line": 314
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/kpi/responsible/_assign_modal.php",
+          "level": 1,
+          "line": 318
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/mockup/summary_table.php",
+          "level": 1,
+          "line": 322
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/views/stg/index.php",
+          "level": 1,
+          "line": 326
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/routes/web.php",
+          "level": 1,
+          "line": 330
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/routes/api.php",
+          "level": 1,
+          "line": 334
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/KpiTableService.php",
+          "level": 1,
+          "line": 338
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/AuthService.php",
+          "level": 1,
+          "line": 342
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/DashboardRenderService.php",
+          "level": 1,
+          "line": 346
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/WidgetDataService.php",
+          "level": 1,
+          "line": 350
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/OpenApiService.php",
+          "level": 1,
+          "line": 354
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/LogService.php",
+          "level": 1,
+          "line": 358
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/app/Services/KpiResponsibleService.php",
+          "level": 1,
+          "line": 362
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/menus.sql",
+          "level": 1,
+          "line": 366
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/dashboards.sql",
+          "level": 1,
+          "line": 370
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/office.sql",
+          "level": 1,
+          "line": 374
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/user_invitations.sql",
+          "level": 1,
+          "line": 378
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/dashboard_widgets.sql",
+          "level": 1,
+          "line": 382
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/kpi.sql",
+          "level": 1,
+          "line": 386
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/stg.sql",
+          "level": 1,
+          "line": 390
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/kpi_responsible.sql",
+          "level": 1,
+          "line": 394
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/system_logs.sql",
+          "level": 1,
+          "line": 398
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/user.sql",
+          "level": 1,
+          "line": 402
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/schema/mysql/stg_group.sql",
+          "level": 1,
+          "line": 406
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/public/index.php",
+          "level": 1,
+          "line": 410
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/public/router.php",
+          "level": 1,
+          "line": 414
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/public/js/app-modal.js",
+          "level": 1,
+          "line": 418
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/public/js/dashboard-viewer.js",
+          "level": 1,
+          "line": 422
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/public/js/dashboard-builder.js",
+          "level": 1,
+          "line": 426
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/public/js/awesome-table.js",
+          "level": 1,
+          "line": 430
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/ARCHITECTURE.md",
+          "level": 1,
+          "line": 434
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/docker-compose.yml",
+          "level": 1,
+          "line": 438
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/GEMINI.md",
+          "level": 1,
+          "line": 442
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/AGENTS.md",
+          "level": 1,
+          "line": 446
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/CLAUDE.md",
+          "level": 1,
+          "line": 450
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/result.md",
+          "level": 1,
+          "line": 454
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/WIDGET.md",
+          "level": 1,
+          "line": 458
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/new_implement_plan.md",
+          "level": 1,
+          "line": 462
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/WIDGET_MODAL_PLAN.md",
+          "level": 1,
+          "line": 466
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/DASHBOARD_BUILDER.md",
+          "level": 1,
+          "line": 470
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/CODEBASE_ARCHITECTURE.md",
+          "level": 1,
+          "line": 474
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/MAIN.md",
+          "level": 1,
+          "line": 478
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/KPI_OWNER.md",
+          "level": 1,
+          "line": 482
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/DASHBOARD_BUILDER_PLAN.md",
+          "level": 1,
+          "line": 486
+        },
+        {
+          "heading": "/Users/neo/Programming/SSJ/cockpit-new/planning/archived/new_requirements_plan.md",
+          "level": 1,
+          "line": 490
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 123
+      }
+    },
+    {
+      "path": "graphify-out/project_summary.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 68,
+      "nonEmptyLines": 68,
+      "sections": [
+        {
+          "heading": "communities",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "generated_at",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "god_nodes",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "stats",
+          "level": 1,
+          "line": 56
+        },
+        {
+          "heading": "top_communities",
+          "level": 1,
+          "line": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

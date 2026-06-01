@@ -1,0 +1,341 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/operators-guide.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 324,
+      "nonEmptyLines": 269,
+      "sections": [
+        {
+          "heading": "Operators Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Pipeline Construction",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Creation Operators",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Transformation Operators",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "Filtering Operators",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Combining Operators",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "Math and Aggregation",
+          "level": 2,
+          "line": 163
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 177
+        },
+        {
+          "heading": "Timing and Buffering",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "Side Effects (Tap / Do)",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "Connectable and Sharing",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "Context Operators",
+          "level": 2,
+          "line": 250
+        },
+        {
+          "heading": "Conditional Operators",
+          "level": 2,
+          "line": 261
+        },
+        {
+          "heading": "Terminal Operators",
+          "level": 2,
+          "line": 273
+        },
+        {
+          "heading": "Observer and Subscription",
+          "level": 2,
+          "line": 283
+        },
+        {
+          "heading": "Scheduling",
+          "level": 2,
+          "line": 305
+        },
+        {
+          "heading": "Concurrency Modes",
+          "level": 2,
+          "line": 312
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/patterns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 262,
+      "nonEmptyLines": 211,
+      "sections": [
+        {
+          "heading": "Reactive Patterns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Pattern 1: API Call with Retry and Timeout",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Pattern 2: WebSocket Event Stream (Hot Observable)",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Pattern 3: Fan-In from Multiple Sources",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Pattern 4: Dependent Data Combination",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Pattern 5: Running Aggregation with Scan",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Pattern 6: Error Recovery Cascade",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "Pattern 7: File System Watcher",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "Pattern 8: Graceful Shutdown",
+          "level": 2,
+          "line": 204
+        },
+        {
+          "heading": "Pattern 9: Event-Driven Pipeline with Logging",
+          "level": 2,
+          "line": 237
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/plugin-ecosystem.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 166,
+      "nonEmptyLines": 124,
+      "sections": [
+        {
+          "heading": "Plugin Ecosystem",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Data Manipulation",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Encoding and Serialization",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Scheduling",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Network and I/O",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Observability and Logging",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Rate Limiting",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "Text Processing",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "System Integration",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "Validation",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 143
+        },
+        {
+          "heading": "Utilities",
+          "level": 2,
+          "line": 149
+        },
+        {
+          "heading": "Plugin Design Convention",
+          "level": 2,
+          "line": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": ".agents/skills/framework/golang/golang-samber-ro/references/subjects-guide.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 183,
+      "nonEmptyLines": 128,
+      "sections": [
+        {
+          "heading": "Subjects Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "When to Use Subjects vs Cold Observables",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Subject Types",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "PublishSubject",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "BehaviorSubject",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "ReplaySubject",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "AsyncSubject",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "UnicastSubject",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Cold to Hot Conversion",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Share",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "ShareReplay",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "Connectable Observable",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "Subject Decision Table",
+          "level": 2,
+          "line": 165
+        },
+        {
+          "heading": "Common Subject Mistakes",
+          "level": 2,
+          "line": 175
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    }
+  ]
+}
