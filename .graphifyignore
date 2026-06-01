@@ -1,51 +1,34 @@
-node_modules
-.next
-out
-build
-dist
-.git
-graphify-out
-*.log
 .DS_Store
-postcss.config.mjs
-next-env.d.ts
-eslint.config.mjs
-next.config.ts
-
-# Git
 .git/
+.github
+.vscode/
+.understand-url
+.understandignore
+.gitignore
+.claude/
 
-# Binaries & build artifacts
-*.exe
-*_linux_amd64
-*_darwin_amd64
-agent_test
-agent_linux_amd64
+**/*.json
+**/*.yml
+**/*.md
 
-# Raw dumps
-raw/
+**/docs/**
+**/knowledge-graph/**
+**/docker/**
+**/logs/**
+**/scripts/**
+agents-resource/skills/
+**/agents-resource/skills/
+**/agents-resource/skills/**
+**/agents-resource/skills/**/*
+**/knowledge-graph/graphify-out-backup/**
+**/knowledge-graph/graphify-out-backup/**/*
 
-# Go dependencies
-go.sum
-vendor/
+graphify-out
+graphify-out/
+**/graphify-out/
+**/graphify-out/**
+**/graphify-out/**/*
 
-# Allow agent knowledge and memories
-!.agents/knowledge/
-!.agents/memories/
-
-# Ignore internal agent tools
-.agents/hooks
-.agents/rules
-.agents/scripts
-.agents/skills
-.agents/tools
-.agents/workflows
-.agents/SKILL.md
-
-**/AGENTS.md
-**/GEMINI.md
-**/CLAUDE.md
-**/README.md
-
-# Ignore alpha-ai
-α/
+LICENSE
+*.md
+*.json
