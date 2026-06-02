@@ -121,21 +121,29 @@ if [[ "$GLOBAL_MODE" == "1" ]]; then
     ok "α/ → $ALPHA_HOME"
   fi
 
-  # Install alpha binary to /usr/local/bin so `alpha` is available as CLI command
-  if [[ "$OS" == "Darwin" ]]; then
-    _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/darwin/alpha"
-  else
-    _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/linux/alpha"
-  fi
-  if [[ -f "$_ALPHA_BIN" ]]; then
-    mkdir -p "$HOME/.local/bin"
-    ln -sf "$_ALPHA_BIN" "$HOME/.local/bin/alpha" \
-      && ok "alpha → ~/.local/bin/alpha" \
-      || warn "Failed to link alpha binary — run manually: ln -sf \"$_ALPHA_BIN\" ~/.local/bin/alpha"
-  else
-    warn "alpha binary not found at $_ALPHA_BIN — run install.sh again after building"
-  fi
 fi
+
+# Add alpha binary dir to PATH — universal (global and dev, no symlinks needed)
+if [[ "$OS" == "Darwin" ]]; then
+  _ALPHA_BIN_DIR="$ALPHA_DIR/agents-resource/tools/bin/darwin"
+else
+  _ALPHA_BIN_DIR="$ALPHA_DIR/agents-resource/tools/bin/linux"
+fi
+_SHELL_NAME="$(basename "$SHELL")"
+case "$_SHELL_NAME" in
+  zsh)  _RC="$HOME/.zshrc" ;;
+  bash) _RC="$HOME/.bashrc" ;;
+  *)    _RC="$HOME/.profile" ;;
+esac
+if ! grep -qF "$_ALPHA_BIN_DIR" "$_RC" 2>/dev/null; then
+  printf '\n# alpha-ai\nexport PATH="%s:$PATH"\n' "$_ALPHA_BIN_DIR" >> "$_RC"
+  ok "Added alpha to PATH in $_RC"
+  info "Run: source $_RC"
+else
+  ok "alpha already in PATH ($_RC)"
+fi
+# Remove old ~/.local/bin/alpha symlink if present
+[[ -L "$HOME/.local/bin/alpha" ]] && rm -f "$HOME/.local/bin/alpha" && ok "Removed old ~/.local/bin/alpha symlink"
 
 # Compute stable project ID (used in global mode for per-project data dir)
 _ALPHA_PROJECT_ID=$(python3 -c "
@@ -385,12 +393,17 @@ if command -v go &>/dev/null; then
   info "Building binaries for linux/$LINUX_ARCH..."
   BIN_OUT="$SCRIPT_DIR/agents-resource/tools/bin/linux"
   mkdir -p "$BIN_OUT"
-  for tool in alpha graphify understand; do
+  for tool in alpha understand; do
     (
       cd "$SCRIPT_DIR/agents-resource/tools/$tool"
       GOOS=linux GOARCH="$LINUX_ARCH" go build -o "$BIN_OUT/$tool" .
     ) && ok "  $tool (linux/$LINUX_ARCH)" || warn "  $tool build failed"
   done
+  # graphify binary is installed as graphify-core (avoids conflict with Python graphify)
+  (
+    cd "$SCRIPT_DIR/agents-resource/tools/graphify"
+    GOOS=linux GOARCH="$LINUX_ARCH" go build -o "$BIN_OUT/graphify-core" .
+  ) && ok "  graphify-core (linux/$LINUX_ARCH)" || warn "  graphify-core build failed"
 else
   [[ -f "$SCRIPT_DIR/agents-resource/tools/bin/linux/alpha" ]] \
     && ok "Using existing linux binaries" \

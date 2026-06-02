@@ -145,7 +145,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/exit_codes.go",
       "source_location": "L11",
-      "community": 2
+      "community": 7
     },
     {
       "id": "examples_exit_codes_exiterror",
@@ -181,7 +181,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/flags.go",
       "source_location": "L1",
-      "community": 7
+      "community": 8
     },
     {
       "id": "examples_flags_flagexamples",
@@ -190,7 +190,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/flags.go",
       "source_location": "L8",
-      "community": 7
+      "community": 8
     },
     {
       "id": "examples_main_go",
@@ -199,7 +199,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/main.go",
       "source_location": "L1",
-      "community": 2
+      "community": 7
     },
     {
       "id": "examples_main_main",
@@ -208,7 +208,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/main.go",
       "source_location": "L8",
-      "community": 2
+      "community": 7
     },
     {
       "id": "examples_output_go",
@@ -217,7 +217,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
       "source_location": "L1",
-      "community": 8
+      "community": 9
     },
     {
       "id": "examples_output_outputexample",
@@ -226,7 +226,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
       "source_location": "L17",
-      "community": 8
+      "community": 9
     },
     {
       "id": "examples_output_isterminal",
@@ -235,7 +235,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
       "source_location": "L27",
-      "community": 8
+      "community": 9
     },
     {
       "id": "examples_output_user",
@@ -244,7 +244,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
       "source_location": "L38",
-      "community": 8
+      "community": 9
     },
     {
       "id": "examples_output_printusers",
@@ -253,7 +253,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
       "source_location": "L43",
-      "community": 8
+      "community": 9
     },
     {
       "id": "examples_output_colorexamples",
@@ -262,7 +262,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
       "source_location": "L68",
-      "community": 8
+      "community": 9
     },
     {
       "id": "examples_root_go",
@@ -271,7 +271,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/root.go",
       "source_location": "L1",
-      "community": 9
+      "community": 7
     },
     {
       "id": "examples_root_execute",
@@ -280,7 +280,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/root.go",
       "source_location": "L27",
-      "community": 2
+      "community": 7
     },
     {
       "id": "examples_root_init",
@@ -289,7 +289,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/root.go",
       "source_location": "L31",
-      "community": 9
+      "community": 7
     },
     {
       "id": "examples_root_initconfig",
@@ -298,7 +298,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/skills/framework/golang/golang-cli/assets/examples/root.go",
       "source_location": "L37",
-      "community": 9
+      "community": 7
     },
     {
       "id": "examples_serve_go",
@@ -513,7 +513,7 @@
       "norm_label": "runprojectinit",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L184",
+      "source_location": "L177",
       "community": 15
     },
     {
@@ -522,7 +522,7 @@
       "norm_label": "stripnotefields",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L203",
+      "source_location": "L196",
       "community": 15
     },
     {
@@ -531,7 +531,7 @@
       "norm_label": "readenvfile",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L218",
+      "source_location": "L211",
       "community": 15
     },
     {
@@ -621,7 +621,7 @@
       "norm_label": "alphaprojectdatadir",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L99",
+      "source_location": "L108",
       "community": 15
     },
     {
@@ -630,7 +630,7 @@
       "norm_label": "binpath",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L110",
+      "source_location": "L122",
       "community": 17
     },
     {
@@ -639,7 +639,7 @@
       "norm_label": "runtool",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L127",
+      "source_location": "L139",
       "community": 17
     },
     {
@@ -648,7 +648,7 @@
       "norm_label": "strparam",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L146",
+      "source_location": "L158",
       "community": 17
     },
     {
@@ -657,7 +657,7 @@
       "norm_label": "main",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L155",
+      "source_location": "L167",
       "community": 17
     },
     {
@@ -775,7 +775,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_focus.go",
       "source_location": "L1",
-      "community": 19
+      "community": 21
     },
     {
       "id": "graphify_cmd_focus_clifocus",
@@ -784,7 +784,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_focus.go",
       "source_location": "L16",
-      "community": 19
+      "community": 21
     },
     {
       "id": "graphify_cmd_focus_registermcpdebuginfo",
@@ -793,7 +793,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_focus.go",
       "source_location": "L64",
-      "community": 19
+      "community": 21
     },
     {
       "id": "graphify_cmd_focus_registermcpfocus",
@@ -802,7 +802,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_focus.go",
       "source_location": "L76",
-      "community": 19
+      "community": 21
     },
     {
       "id": "graphify_cmd_forget_go",
@@ -811,7 +811,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_forget.go",
       "source_location": "L1",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_forget_cliforget",
@@ -820,7 +820,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_forget.go",
       "source_location": "L15",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_query_go",
@@ -838,7 +838,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_query.go",
       "source_location": "L16",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_query_clisketch",
@@ -865,7 +865,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_query.go",
       "source_location": "L68",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_query_registermcpsketch",
@@ -892,7 +892,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L1",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_graphnode",
@@ -901,7 +901,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L23",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_graphlink",
@@ -910,7 +910,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L33",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_graphjson",
@@ -919,7 +919,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L44",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_analysisjson",
@@ -928,7 +928,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L53",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_buildresult",
@@ -937,7 +937,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L64",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_buildgraph",
@@ -946,7 +946,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L72",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_runfullbuild",
@@ -955,7 +955,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L88",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_runincrementalupdate",
@@ -964,7 +964,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L96",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_assemblegraph",
@@ -982,7 +982,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L105",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_writejson",
@@ -1036,7 +1036,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L367",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_reltoalpha",
@@ -1054,7 +1054,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L386",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_cliupdate",
@@ -1063,7 +1063,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L397",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_cliextract",
@@ -1072,7 +1072,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L453",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_registermcpupdate",
@@ -1081,7 +1081,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L555",
-      "community": 21
+      "community": 18
     },
     {
       "id": "graphify_cmd_scan_registermcpsetlabels",
@@ -1090,7 +1090,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_scan.go",
       "source_location": "L584",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_cmd_sync_go",
@@ -1099,7 +1099,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_sync.go",
       "source_location": "L1",
-      "community": 23
+      "community": 18
     },
     {
       "id": "graphify_cmd_sync_clisync",
@@ -1108,7 +1108,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_sync.go",
       "source_location": "L20",
-      "community": 23
+      "community": 18
     },
     {
       "id": "graphify_cmd_sync_registermcpsync",
@@ -1117,7 +1117,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_sync.go",
       "source_location": "L55",
-      "community": 23
+      "community": 18
     },
     {
       "id": "graphify_cmd_sync_writesessionfile",
@@ -1126,7 +1126,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_sync.go",
       "source_location": "L98",
-      "community": 23
+      "community": 18
     },
     {
       "id": "graphify_cmd_sync_appendsessiontosummary",
@@ -1135,7 +1135,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_sync.go",
       "source_location": "L109",
-      "community": 23
+      "community": 18
     },
     {
       "id": "graphify_cmd_sync_registermcpupdatesessionsummary",
@@ -1144,7 +1144,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_sync.go",
       "source_location": "L131",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_community_go",
@@ -1198,7 +1198,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
       "source_location": "L1",
-      "community": 24
+      "community": 23
     },
     {
       "id": "graphify_display_findprojectroot",
@@ -1207,7 +1207,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
       "source_location": "L15",
-      "community": 24
+      "community": 23
     },
     {
       "id": "graphify_display_alphaconfig",
@@ -1216,7 +1216,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
       "source_location": "L36",
-      "community": 24
+      "community": 23
     },
     {
       "id": "graphify_display_loadalphaconfig",
@@ -1234,7 +1234,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
       "source_location": "L56",
-      "community": 24
+      "community": 23
     },
     {
       "id": "graphify_display_alphareadychecks",
@@ -1261,7 +1261,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
       "source_location": "L208",
-      "community": 24
+      "community": 23
     },
     {
       "id": "graphify_display_printhelp",
@@ -1270,7 +1270,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
       "source_location": "L216",
-      "community": 24
+      "community": 23
     },
     {
       "id": "graphify_extract_generic_go",
@@ -1279,7 +1279,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L1",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_langrules",
@@ -1288,7 +1288,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L14",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_init",
@@ -1297,7 +1297,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L23",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_extractgeneric",
@@ -1306,7 +1306,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L79",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_lastpathsegment",
@@ -1315,7 +1315,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L152",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_lastimportsegment",
@@ -1324,7 +1324,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L157",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_iskeyword",
@@ -1333,7 +1333,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L171",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_generic_extractmarkdown",
@@ -1342,7 +1342,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_generic.go",
       "source_location": "L177",
-      "community": 25
+      "community": 22
     },
     {
       "id": "graphify_extract_go_go",
@@ -1351,7 +1351,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_go.go",
       "source_location": "L1",
-      "community": 26
+      "community": 24
     },
     {
       "id": "graphify_extract_go_extractgo",
@@ -1360,7 +1360,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_go.go",
       "source_location": "L14",
-      "community": 26
+      "community": 24
     },
     {
       "id": "graphify_extract_go_receivertype",
@@ -1369,7 +1369,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_go.go",
       "source_location": "L111",
-      "community": 26
+      "community": 24
     },
     {
       "id": "graphify_extract_go_calleelabel",
@@ -1378,7 +1378,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_go.go",
       "source_location": "L123",
-      "community": 26
+      "community": 24
     },
     {
       "id": "graphify_extract_go_filenodelabel",
@@ -1387,7 +1387,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_go.go",
       "source_location": "L136",
-      "community": 26
+      "community": 24
     },
     {
       "id": "graphify_extract_go_lastsegment",
@@ -1396,7 +1396,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/extract_go.go",
       "source_location": "L141",
-      "community": 26
+      "community": 24
     },
     {
       "id": "graphify_global_go",
@@ -1405,7 +1405,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
       "source_location": "L1",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_global_projectid",
@@ -1414,7 +1414,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
       "source_location": "L17",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_global_isglobalmode",
@@ -1423,7 +1423,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
       "source_location": "L29",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_global_graphifydatadir",
@@ -1432,7 +1432,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
       "source_location": "L36",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_global_memoriesdir",
@@ -1440,8 +1440,8 @@
       "norm_label": "memoriesdir",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
-      "source_location": "L50",
-      "community": 19
+      "source_location": "L52",
+      "community": 18
     },
     {
       "id": "graphify_graph_go",
@@ -1450,7 +1450,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L1",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_gnode",
@@ -1459,7 +1459,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L15",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_glink",
@@ -1468,7 +1468,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L24",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_fullgraph",
@@ -1477,7 +1477,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L30",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_loadfullgraph",
@@ -1513,7 +1513,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L76",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_qitem",
@@ -1522,7 +1522,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L91",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_outnode",
@@ -1531,7 +1531,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L105",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_detailnodes",
@@ -1549,7 +1549,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L214",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_overviewresult",
@@ -1558,7 +1558,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L220",
-      "community": 27
+      "community": 25
     },
     {
       "id": "graphify_graph_graphoverview",
@@ -1567,7 +1567,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/graph.go",
       "source_location": "L228",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_main_go",
@@ -1576,7 +1576,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/main.go",
       "source_location": "L1",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_main_main",
@@ -1585,7 +1585,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/main.go",
       "source_location": "L30",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_overview_go",
@@ -1621,7 +1621,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L1",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_extractedfile",
@@ -1630,7 +1630,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L14",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_rawnode",
@@ -1639,7 +1639,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L22",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_rawedge",
@@ -1648,7 +1648,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L29",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_graphconfig",
@@ -1657,7 +1657,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L58",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_loadgraphconfig",
@@ -1666,7 +1666,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L64",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_isincluded",
@@ -1675,7 +1675,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L80",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_resolveincludes",
@@ -1684,7 +1684,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L93",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_scanproject",
@@ -1693,7 +1693,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L106",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_loadignorepatterns",
@@ -1702,7 +1702,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L161",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_shouldignore",
@@ -1711,7 +1711,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L187",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_globmatch",
@@ -1720,7 +1720,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L213",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_scan_extractfile",
@@ -1729,7 +1729,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/scan.go",
       "source_location": "L265",
-      "community": 28
+      "community": 22
     },
     {
       "id": "graphify_semantic_go",
@@ -1738,7 +1738,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L1",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_apikey",
@@ -1747,7 +1747,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L19",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_loadapikey",
@@ -1756,7 +1756,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L25",
-      "community": 19
+      "community": 18
     },
     {
       "id": "graphify_semantic_generatecommunitylabels",
@@ -1765,7 +1765,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L62",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_agentfallbackprompt",
@@ -1783,7 +1783,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L122",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_callgemini",
@@ -1792,7 +1792,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L145",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_callopenai",
@@ -1801,7 +1801,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L170",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_postjson",
@@ -1810,7 +1810,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L194",
-      "community": 29
+      "community": 26
     },
     {
       "id": "graphify_semantic_parsejsonlabels",
@@ -1819,7 +1819,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/semantic.go",
       "source_location": "L216",
-      "community": 29
+      "community": 26
     },
     {
       "id": "understand_global_go",
@@ -1828,7 +1828,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/global.go",
       "source_location": "L1",
-      "community": 30
+      "community": 27
     },
     {
       "id": "understand_global_understandprojectid",
@@ -1837,7 +1837,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/global.go",
       "source_location": "L15",
-      "community": 30
+      "community": 27
     },
     {
       "id": "understand_main_go",
@@ -1846,7 +1846,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L1",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_loginfo",
@@ -1855,7 +1855,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L27",
-      "community": 32
+      "community": 29
     },
     {
       "id": "understand_main_loginfof",
@@ -1864,7 +1864,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L31",
-      "community": 32
+      "community": 29
     },
     {
       "id": "understand_main_meta",
@@ -1873,7 +1873,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L36",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_graphnode",
@@ -1882,7 +1882,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L44",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_graphedge",
@@ -1891,7 +1891,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L54",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_layer",
@@ -1900,7 +1900,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L62",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_tourstep",
@@ -1909,7 +1909,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L69",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_projectinfo",
@@ -1918,7 +1918,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L76",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_knowledgegraph",
@@ -1927,7 +1927,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L85",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_apienv",
@@ -1936,7 +1936,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L96",
-      "community": 31
+      "community": 28
     },
     {
       "id": "understand_main_runcmd",
@@ -1945,7 +1945,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L117",
-      "community": 32
+      "community": 29
     },
     {
       "id": "understand_main_startpipeline",
@@ -1954,7 +1954,7 @@
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
       "source_location": "L127",
-      "community": 32
+      "community": 29
     },
     {
       "id": "understand_main_updatepipeline",
@@ -1962,8 +1962,8 @@
       "norm_label": "updatepipeline",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L182",
-      "community": 32
+      "source_location": "L187",
+      "community": 29
     },
     {
       "id": "understand_main_pruneandpreserveexisting",
@@ -1971,8 +1971,8 @@
       "norm_label": "pruneandpreserveexisting",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L278",
-      "community": 31
+      "source_location": "L288",
+      "community": 28
     },
     {
       "id": "understand_main_finalizegraph",
@@ -1980,8 +1980,8 @@
       "norm_label": "finalizegraph",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L327",
-      "community": 31
+      "source_location": "L337",
+      "community": 28
     },
     {
       "id": "understand_main_detectlanguages",
@@ -1989,8 +1989,8 @@
       "norm_label": "detectlanguages",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L439",
-      "community": 31
+      "source_location": "L449",
+      "community": 28
     },
     {
       "id": "understand_main_detectframeworks",
@@ -1998,8 +1998,8 @@
       "norm_label": "detectframeworks",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L489",
-      "community": 31
+      "source_location": "L499",
+      "community": 28
     },
     {
       "id": "understand_main_formatlist",
@@ -2007,8 +2007,8 @@
       "norm_label": "formatlist",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L582",
-      "community": 31
+      "source_location": "L592",
+      "community": 28
     },
     {
       "id": "understand_main_getfilenodeids",
@@ -2016,8 +2016,8 @@
       "norm_label": "getfilenodeids",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L595",
-      "community": 31
+      "source_location": "L605",
+      "community": 28
     },
     {
       "id": "understand_main_getfilepathfromnodeid",
@@ -2025,8 +2025,8 @@
       "norm_label": "getfilepathfromnodeid",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L609",
-      "community": 31
+      "source_location": "L619",
+      "community": 28
     },
     {
       "id": "understand_main_countfiles",
@@ -2034,8 +2034,8 @@
       "norm_label": "countfiles",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L620",
-      "community": 31
+      "source_location": "L630",
+      "community": 28
     },
     {
       "id": "understand_main_enrichnodes",
@@ -2043,8 +2043,8 @@
       "norm_label": "enrichnodes",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L630",
-      "community": 31
+      "source_location": "L640",
+      "community": 28
     },
     {
       "id": "understand_main_cleancomment",
@@ -2052,8 +2052,8 @@
       "norm_label": "cleancomment",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L696",
-      "community": 31
+      "source_location": "L706",
+      "community": 28
     },
     {
       "id": "understand_main_startdashboard",
@@ -2061,8 +2061,8 @@
       "norm_label": "startdashboard",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L714",
-      "community": 32
+      "source_location": "L724",
+      "community": 29
     },
     {
       "id": "understand_main_generateonboarding",
@@ -2070,8 +2070,8 @@
       "norm_label": "generateonboarding",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L724",
-      "community": 32
+      "source_location": "L734",
+      "community": 29
     },
     {
       "id": "understand_main_showdiff",
@@ -2079,8 +2079,8 @@
       "norm_label": "showdiff",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L799",
-      "community": 31
+      "source_location": "L809",
+      "community": 28
     },
     {
       "id": "understand_main_showexplain",
@@ -2088,8 +2088,8 @@
       "norm_label": "showexplain",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L856",
-      "community": 31
+      "source_location": "L866",
+      "community": 28
     },
     {
       "id": "understand_main_printhelp",
@@ -2097,8 +2097,8 @@
       "norm_label": "printhelp",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L881",
-      "community": 32
+      "source_location": "L891",
+      "community": 29
     },
     {
       "id": "understand_main_findprojectroot",
@@ -2106,8 +2106,8 @@
       "norm_label": "findprojectroot",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L899",
-      "community": 31
+      "source_location": "L909",
+      "community": 28
     },
     {
       "id": "understand_main_main",
@@ -2115,8 +2115,8 @@
       "norm_label": "main",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L920",
-      "community": 32
+      "source_location": "L930",
+      "community": 29
     },
     {
       "id": "understand_main_isinputtty",
@@ -2124,8 +2124,8 @@
       "norm_label": "isinputtty",
       "file_type": "code",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1066",
-      "community": 31
+      "source_location": "L1070",
+      "community": 28
     }
   ],
   "links": [
@@ -2795,7 +2795,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L184",
+      "source_location": "L177",
       "weight": 1,
       "confidence_score": 1
     },
@@ -2805,7 +2805,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L203",
+      "source_location": "L196",
       "weight": 1,
       "confidence_score": 1
     },
@@ -2815,7 +2815,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L218",
+      "source_location": "L211",
       "weight": 1,
       "confidence_score": 1
     },
@@ -2905,7 +2905,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L168",
+      "source_location": "L161",
       "weight": 1,
       "confidence_score": 1
     },
@@ -2915,7 +2915,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L198",
+      "source_location": "L191",
       "weight": 1,
       "confidence_score": 1
     },
@@ -2925,7 +2925,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_configure.go",
-      "source_location": "L199",
+      "source_location": "L192",
       "weight": 1,
       "confidence_score": 1
     },
@@ -2991,11 +2991,11 @@
     },
     {
       "source": "alpha_cmd_knowledge_graph_handleknowledgegraph",
-      "target": "alpha_cmd_knowledge_graph_rungraphifyupdatetarget",
+      "target": "alpha_global_alphaprojectid",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_knowledge_graph.go",
-      "source_location": "L145",
+      "source_location": "L83",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3005,7 +3005,27 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_knowledge_graph.go",
-      "source_location": "L169",
+      "source_location": "L159",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "alpha_cmd_knowledge_graph_handleknowledgegraph",
+      "target": "alpha_main_alphaprojectdatadir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_knowledge_graph.go",
+      "source_location": "L172",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "alpha_cmd_knowledge_graph_handleknowledgegraph",
+      "target": "alpha_cmd_knowledge_graph_rungraphifyupdatetarget",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/alpha/cmd_knowledge_graph.go",
+      "source_location": "L183",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3045,7 +3065,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L99",
+      "source_location": "L108",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3055,7 +3075,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L110",
+      "source_location": "L122",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3065,7 +3085,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L127",
+      "source_location": "L139",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3075,7 +3095,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L146",
+      "source_location": "L158",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3085,7 +3105,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L155",
+      "source_location": "L167",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3095,7 +3115,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L101",
+      "source_location": "L112",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3105,7 +3125,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L111",
+      "source_location": "L123",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3115,7 +3135,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L156",
+      "source_location": "L168",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3125,7 +3145,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L158",
+      "source_location": "L170",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3135,7 +3155,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L159",
+      "source_location": "L171",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3145,7 +3165,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L162",
+      "source_location": "L174",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3155,7 +3175,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L165",
+      "source_location": "L177",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3165,7 +3185,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L200",
+      "source_location": "L212",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3175,7 +3195,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L201",
+      "source_location": "L213",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3185,7 +3205,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L218",
+      "source_location": "L230",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3195,7 +3215,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L232",
+      "source_location": "L244",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3205,7 +3225,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L250",
+      "source_location": "L262",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3215,7 +3235,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L250",
+      "source_location": "L262",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3225,7 +3245,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L264",
+      "source_location": "L276",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3235,7 +3255,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L283",
+      "source_location": "L295",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3245,7 +3265,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L291",
+      "source_location": "L303",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3255,7 +3275,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L309",
+      "source_location": "L321",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3265,33 +3285,13 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L329",
+      "source_location": "L341",
       "weight": 1,
       "confidence_score": 1
     },
     {
       "source": "alpha_main_main",
       "target": "alpha_cmd_configure_runprojectinit",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L337",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "alpha_main_main",
-      "target": "alpha_cmd_knowledge_graph_handleknowledgegraph",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L345",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "alpha_main_main",
-      "target": "alpha_cmd_knowledge_graph_rungraphifyupdate",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
@@ -3301,11 +3301,31 @@
     },
     {
       "source": "alpha_main_main",
+      "target": "alpha_cmd_knowledge_graph_handleknowledgegraph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
+      "source_location": "L357",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "alpha_main_main",
+      "target": "alpha_cmd_knowledge_graph_rungraphifyupdate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
+      "source_location": "L361",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "alpha_main_main",
       "target": "alpha_cmd_configure_configurepaths",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L353",
+      "source_location": "L365",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3315,7 +3335,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/alpha/main.go",
-      "source_location": "L357",
+      "source_location": "L369",
       "weight": 1,
       "confidence_score": 1
     },
@@ -3676,6 +3696,26 @@
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_forget.go",
       "source_location": "L15",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "graphify_cmd_forget_cliforget",
+      "target": "graphify_global_memoriesdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_forget.go",
+      "source_location": "L28",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "graphify_cmd_forget_cliforget",
+      "target": "graphify_global_graphifydatadir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/graphify/cmd_forget.go",
+      "source_location": "L59",
       "weight": 1,
       "confidence_score": 1
     },
@@ -4820,6 +4860,16 @@
       "confidence_score": 1
     },
     {
+      "source": "graphify_display_alphareadychecks",
+      "target": "graphify_global_memoriesdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/graphify/display.go",
+      "source_location": "L79",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
       "source": "graphify_display_alphadisplay",
       "target": "graphify_display_loadalphaconfig",
       "relation": "calls",
@@ -5135,7 +5185,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
-      "source_location": "L50",
+      "source_location": "L52",
       "weight": 1,
       "confidence_score": 1
     },
@@ -5165,7 +5215,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/graphify/global.go",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6175,7 +6225,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L182",
+      "source_location": "L187",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6185,7 +6235,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L278",
+      "source_location": "L288",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6195,7 +6245,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L327",
+      "source_location": "L337",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6205,7 +6255,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L439",
+      "source_location": "L449",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6215,7 +6265,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L489",
+      "source_location": "L499",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6225,7 +6275,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L582",
+      "source_location": "L592",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6235,7 +6285,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L595",
+      "source_location": "L605",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6245,7 +6295,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L609",
+      "source_location": "L619",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6255,7 +6305,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L620",
+      "source_location": "L630",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6265,7 +6315,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L630",
+      "source_location": "L640",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6275,7 +6325,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L696",
+      "source_location": "L706",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6285,7 +6335,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L714",
+      "source_location": "L724",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6295,7 +6345,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L724",
+      "source_location": "L734",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6305,7 +6355,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L799",
+      "source_location": "L809",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6315,7 +6365,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L856",
+      "source_location": "L866",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6325,7 +6375,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L881",
+      "source_location": "L891",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6335,7 +6385,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L899",
+      "source_location": "L909",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6345,7 +6395,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L920",
+      "source_location": "L930",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6355,7 +6405,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1066",
+      "source_location": "L1070",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6431,17 +6481,27 @@
     },
     {
       "source": "understand_main_startpipeline",
-      "target": "understand_main_runcmd",
+      "target": "understand_main_loginfo",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L166",
+      "source_location": "L167",
       "weight": 1,
       "confidence_score": 1
     },
     {
       "source": "understand_main_startpipeline",
       "target": "understand_main_loginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L168",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_startpipeline",
+      "target": "understand_main_runcmd",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
@@ -6451,17 +6511,17 @@
     },
     {
       "source": "understand_main_startpipeline",
-      "target": "understand_main_runcmd",
+      "target": "understand_main_loginfo",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L173",
+      "source_location": "L176",
       "weight": 1,
       "confidence_score": 1
     },
     {
       "source": "understand_main_startpipeline",
-      "target": "understand_main_loginfo",
+      "target": "understand_main_runcmd",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
@@ -6471,16 +6531,6 @@
     },
     {
       "source": "understand_main_startpipeline",
-      "target": "understand_main_finalizegraph",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L179",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "understand_main_updatepipeline",
       "target": "understand_main_loginfo",
       "relation": "calls",
       "confidence": "EXTRACTED",
@@ -6490,12 +6540,32 @@
       "confidence_score": 1
     },
     {
+      "source": "understand_main_startpipeline",
+      "target": "understand_main_finalizegraph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L184",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
       "source": "understand_main_updatepipeline",
       "target": "understand_main_loginfo",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L189",
+      "source_location": "L188",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_updatepipeline",
+      "target": "understand_main_loginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L194",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6505,7 +6575,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L190",
+      "source_location": "L195",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6515,23 +6585,13 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L202",
+      "source_location": "L207",
       "weight": 1,
       "confidence_score": 1
     },
     {
       "source": "understand_main_updatepipeline",
       "target": "understand_main_startpipeline",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L203",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "understand_main_updatepipeline",
-      "target": "understand_main_loginfo",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
@@ -6555,7 +6615,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L222",
+      "source_location": "L218",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6565,7 +6625,17 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L234",
+      "source_location": "L227",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_updatepipeline",
+      "target": "understand_main_loginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L239",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6575,7 +6645,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L236",
+      "source_location": "L241",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6585,33 +6655,13 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L255",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "understand_main_updatepipeline",
-      "target": "understand_main_runcmd",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L257",
+      "source_location": "L260",
       "weight": 1,
       "confidence_score": 1
     },
     {
       "source": "understand_main_updatepipeline",
       "target": "understand_main_loginfo",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L262",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "understand_main_updatepipeline",
-      "target": "understand_main_pruneandpreserveexisting",
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
@@ -6625,7 +6675,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L268",
+      "source_location": "L264",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6635,7 +6685,47 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L270",
+      "source_location": "L267",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_updatepipeline",
+      "target": "understand_main_loginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L272",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_updatepipeline",
+      "target": "understand_main_pruneandpreserveexisting",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L273",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_updatepipeline",
+      "target": "understand_main_loginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L278",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_updatepipeline",
+      "target": "understand_main_runcmd",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L280",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6645,7 +6735,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L275",
+      "source_location": "L285",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6655,7 +6745,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L361",
+      "source_location": "L371",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6665,7 +6755,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L362",
+      "source_location": "L372",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6675,7 +6765,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L381",
+      "source_location": "L391",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6685,7 +6775,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L382",
+      "source_location": "L392",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6695,7 +6785,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L385",
+      "source_location": "L395",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6705,7 +6795,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L404",
+      "source_location": "L414",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6715,7 +6805,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L411",
+      "source_location": "L421",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6725,7 +6815,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L425",
+      "source_location": "L435",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6735,7 +6825,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L435",
+      "source_location": "L445",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6745,7 +6835,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L649",
+      "source_location": "L659",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6755,22 +6845,12 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L658",
+      "source_location": "L668",
       "weight": 1,
       "confidence_score": 1
     },
     {
       "source": "understand_main_startdashboard",
-      "target": "understand_main_loginfo",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L715",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "understand_main_generateonboarding",
       "target": "understand_main_loginfo",
       "relation": "calls",
       "confidence": "EXTRACTED",
@@ -6785,7 +6865,17 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L795",
+      "source_location": "L735",
+      "weight": 1,
+      "confidence_score": 1
+    },
+    {
+      "source": "understand_main_generateonboarding",
+      "target": "understand_main_loginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
+      "source_location": "L805",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6795,17 +6885,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L929",
-      "weight": 1,
-      "confidence_score": 1
-    },
-    {
-      "source": "understand_main_main",
-      "target": "understand_global_understandprojectid",
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L952",
+      "source_location": "L939",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6815,7 +6895,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L971",
+      "source_location": "L975",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6825,7 +6905,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L972",
+      "source_location": "L976",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6835,7 +6915,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L977",
+      "source_location": "L981",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6845,7 +6925,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L978",
+      "source_location": "L982",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6855,7 +6935,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L983",
+      "source_location": "L987",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6865,7 +6945,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L984",
+      "source_location": "L988",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6875,7 +6955,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L989",
+      "source_location": "L993",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6885,7 +6965,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L990",
+      "source_location": "L994",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6895,7 +6975,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L995",
+      "source_location": "L999",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6905,7 +6985,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L996",
+      "source_location": "L1000",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6915,7 +6995,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1002",
+      "source_location": "L1006",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6925,7 +7005,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1005",
+      "source_location": "L1009",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6935,7 +7015,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1008",
+      "source_location": "L1012",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6945,7 +7025,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1011",
+      "source_location": "L1015",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6955,7 +7035,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1013",
+      "source_location": "L1017",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6965,7 +7045,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1041",
+      "source_location": "L1045",
       "weight": 1,
       "confidence_score": 1
     },
@@ -6975,7 +7055,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "alpha-test/α/agents-resource/tools/understand/main.go",
-      "source_location": "L1053",
+      "source_location": "L1057",
       "weight": 1,
       "confidence_score": 1
     }

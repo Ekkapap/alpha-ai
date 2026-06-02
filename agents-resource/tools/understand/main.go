@@ -130,24 +130,24 @@ func startPipeline() error {
 	// 1. Scan Project
 	logInfo("\n[Phase 1/5] Scanning project files...")
 	scanScript := filepath.Join(pluginRoot, "skills/understand/scan-project.mjs")
-	scanResult := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/scan-result.json")
+	scanResult := filepath.Join(dataRoot, ".understand-anything", "intermediate", "scan-result.json")
 
 	// Clean stale batches from previous runs
-	os.RemoveAll(filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate"))
-	os.MkdirAll(filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate"), 0755)
-	if err := runCmd("node", []string{scanScript, projectRoot, scanResult}, projectRoot); err != nil {
+	os.RemoveAll(filepath.Join(dataRoot, ".understand-anything", "intermediate"))
+	os.MkdirAll(filepath.Join(dataRoot, ".understand-anything", "intermediate"), 0755)
+	if err := runCmd("node", []string{scanScript, gitRoot, scanResult}, gitRoot); err != nil {
 		return fmt.Errorf("scan failed: %w", err)
 	}
 
 	// 2. Louvain Batching
 	logInfo("\n[Phase 2/5] Computing Louvain batches...")
 	batchScript := filepath.Join(pluginRoot, "skills/understand/compute-batches.mjs")
-	if err := runCmd("node", []string{batchScript, projectRoot}, projectRoot); err != nil {
+	if err := runCmd("node", []string{batchScript, gitRoot}, gitRoot); err != nil {
 		return fmt.Errorf("batching failed: %w", err)
 	}
 
 	// 3. Get total batches
-	batchesPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/batches.json")
+	batchesPath := filepath.Join(dataRoot, ".understand-anything", "intermediate", "batches.json")
 	data, err := os.ReadFile(batchesPath)
 	if err != nil {
 		return err
@@ -160,17 +160,22 @@ func startPipeline() error {
 	}
 	totalBatches := len(bData.Batches)
 
-	// 4. Batch Analysis
+	// 4. Batch Analysis (LLM) — requires Claude Code agent; skip gracefully if unavailable
 	logInfof("\n[Phase 3/5] Running analysis for %d batches...", totalBatches)
-	analysisScript := filepath.Join(projectRoot, "scripts/generate-batches.mjs")
-	if err := runCmd("node", []string{analysisScript, "1", fmt.Sprintf("%d", totalBatches)}, projectRoot); err != nil {
+	analysisScript := filepath.Join(pluginRoot, "skills/understand/generate-batches.mjs")
+	if _, statErr := os.Stat(analysisScript); os.IsNotExist(statErr) {
+		logInfo("⏭️  LLM batch analysis not available as standalone script.")
+		logInfo("    Run via Claude Code skill `/alpha-understand start` to complete analysis.")
+		return nil
+	}
+	if err := runCmd("node", []string{analysisScript, "1", fmt.Sprintf("%d", totalBatches)}, gitRoot); err != nil {
 		return fmt.Errorf("batch analysis failed: %w", err)
 	}
 
 	// 5. Merge
 	logInfo("\n[Phase 4/5] Merging batch files...")
 	mergeScript := filepath.Join(pluginRoot, "skills/understand/merge-batch-graphs.py")
-	if err := runCmd("python3", []string{mergeScript, projectRoot}, projectRoot); err != nil {
+	if err := runCmd("python3", []string{mergeScript, gitRoot}, gitRoot); err != nil {
 		return fmt.Errorf("merge failed: %w", err)
 	}
 
@@ -183,7 +188,7 @@ func updatePipeline() error {
 	logInfo("🔄 Starting incremental update pipeline...")
 
 	// Read last meta to get commit hash
-	metaPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/meta.json")
+	metaPath := filepath.Join(dataRoot, ".understand-anything", "meta.json")
 	metaData, err := os.ReadFile(metaPath)
 	if err != nil {
 		logInfo("⚠️  Could not read meta.json, falling back to full --start.")
@@ -223,7 +228,7 @@ func updatePipeline() error {
 		return nil
 	}
 
-	tmpDir := filepath.Join(dataRoot, "knowledge-graph/understand-anything/tmp")
+	tmpDir := filepath.Join(dataRoot, ".understand-anything", "tmp")
 	os.MkdirAll(tmpDir, 0755)
 	changedFilesTxt := filepath.Join(tmpDir, "changed-files.txt")
 	if err := os.WriteFile(changedFilesTxt, []byte(changedFilesStr), 0644); err != nil {
@@ -233,12 +238,12 @@ func updatePipeline() error {
 	// Louvain Batching with --changed-files
 	logInfo("Computing batches for changed files...")
 	batchScript := filepath.Join(pluginRoot, "skills/understand/compute-batches.mjs")
-	if err := runCmd("node", []string{batchScript, projectRoot, "--changed-files=" + changedFilesTxt}, projectRoot); err != nil {
+	if err := runCmd("node", []string{batchScript, gitRoot, "--changed-files=" + changedFilesTxt}, gitRoot); err != nil {
 		return fmt.Errorf("batching failed: %w", err)
 	}
 
 	// Read batches.json
-	batchesPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/batches.json")
+	batchesPath := filepath.Join(dataRoot, ".understand-anything", "intermediate", "batches.json")
 	data, err := os.ReadFile(batchesPath)
 	if err != nil {
 		return err
@@ -251,10 +256,15 @@ func updatePipeline() error {
 	}
 	totalBatches := len(bData.Batches)
 
-	// Batch Analysis
+	// Batch Analysis (LLM) — requires Claude Code agent; skip gracefully if unavailable
 	logInfof("Running analysis for %d incremental batches...", totalBatches)
-	analysisScript := filepath.Join(projectRoot, "scripts/generate-batches.mjs")
-	if err := runCmd("node", []string{analysisScript, "1", fmt.Sprintf("%d", totalBatches)}, projectRoot); err != nil {
+	analysisScript := filepath.Join(pluginRoot, "skills/understand/generate-batches.mjs")
+	if _, statErr := os.Stat(analysisScript); os.IsNotExist(statErr) {
+		logInfo("⏭️  LLM batch analysis not available as standalone script.")
+		logInfo("    Run via Claude Code skill `/alpha-understand start` to complete analysis.")
+		return nil
+	}
+	if err := runCmd("node", []string{analysisScript, "1", fmt.Sprintf("%d", totalBatches)}, gitRoot); err != nil {
 		return fmt.Errorf("batch analysis failed: %w", err)
 	}
 
@@ -267,7 +277,7 @@ func updatePipeline() error {
 	// Merge
 	logInfo("Merging all batch files...")
 	mergeScript := filepath.Join(pluginRoot, "skills/understand/merge-batch-graphs.py")
-	if err := runCmd("python3", []string{mergeScript, projectRoot}, projectRoot); err != nil {
+	if err := runCmd("python3", []string{mergeScript, gitRoot}, gitRoot); err != nil {
 		return fmt.Errorf("merge failed: %w", err)
 	}
 
@@ -276,7 +286,7 @@ func updatePipeline() error {
 }
 
 func pruneAndPreserveExisting(changedFilesStr string) error {
-	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, ".understand-anything", "knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		return err
@@ -321,13 +331,13 @@ func pruneAndPreserveExisting(changedFilesStr string) error {
 		return err
 	}
 
-	return os.WriteFile(filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/batch-existing.json"), prunedBytes, 0644)
+	return os.WriteFile(filepath.Join(dataRoot, ".understand-anything", "intermediate", "batch-existing.json"), prunedBytes, 0644)
 }
 
 func finalizeGraph() error {
-	assembledPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/assembled-graph.json")
-	outGraphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
-	outMetaPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/meta.json")
+	assembledPath := filepath.Join(dataRoot, ".understand-anything", "intermediate", "assembled-graph.json")
+	outGraphPath := filepath.Join(dataRoot, ".understand-anything", "knowledge-graph.json")
+	outMetaPath := filepath.Join(dataRoot, ".understand-anything", "meta.json")
 
 	assembledData, err := os.ReadFile(assembledPath)
 	if err != nil {
@@ -723,7 +733,7 @@ func startDashboard() error {
 
 func generateOnboarding() error {
 	logInfo("📑 Generating Onboarding Guide...")
-	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, ".understand-anything", "knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		return fmt.Errorf("knowledge graph not found: %w", err)
@@ -822,7 +832,7 @@ func showDiff() error {
 		fmt.Println("  -", f)
 	}
 
-	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, ".understand-anything", "knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		return nil // Non-fatal if graph doesn't exist
@@ -854,7 +864,7 @@ func showDiff() error {
 }
 
 func showExplain(filePath string) {
-	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, ".understand-anything", "knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		fmt.Println("❌ Knowledge graph not found. Run --start first.")
@@ -945,16 +955,10 @@ func main() {
 
 	scriptFolder = filepath.Join(projectRoot, "scripts")
 
-	// dataRoot: per-project data directory.
-	// Global mode (ALPHA_GLOBAL=1): ~/.alpha-ai/knowledge-graph/projects/<id>/
-	// Local mode: projectRoot/knowledge-graph/understand-anything/../  (i.e. projectRoot)
-	if os.Getenv("ALPHA_GLOBAL") == "1" && gitRoot != "" {
-		id := understandProjectID(gitRoot)
-		dataRoot = filepath.Join(projectRoot, "knowledge-graph", "projects", id)
-	} else {
-		dataRoot = projectRoot
-	}
-	os.MkdirAll(filepath.Join(dataRoot, "knowledge-graph", "understand-anything"), 0755)
+	// dataRoot: base dir for understand-anything data (.understand-anything/ lives here).
+	// Use gitRoot (actual project) so node scripts find .understand-anything symlink at the expected location.
+	dataRoot = gitRoot
+	os.MkdirAll(filepath.Join(dataRoot, ".understand-anything"), 0755)
 
 	home, err := os.UserHomeDir()
 	if err == nil {

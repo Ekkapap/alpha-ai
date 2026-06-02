@@ -10,62 +10,74 @@ import (
 	"strings"
 )
 
-// runGraphifyUpdate runs Python graphify update + understand --update and returns combined output.
-// Used by CLI (alpha --update) and MCP update tool.
+// runGraphifyUpdate runs graphify update + understand --update and returns combined output.
+// Used by MCP update tool.
 func runGraphifyUpdate(alphaDir, projectRoot, uaBin string) string {
 	return runGraphifyUpdateTarget(alphaDir, projectRoot, uaBin, "--update")
 }
 
-// runGraphifyUpdateTarget runs Python graphify update against a specific target path.
-// understandFlag is "--update" for incremental or "--start" for initial full scan.
-// rtk err filters output to errors/warnings only — silent on success (Unix convention).
+// runGraphifyUpdateTarget runs graphify update + understand for MCP callers that need combined output.
 func runGraphifyUpdateTarget(alphaDir, target, uaBin, understandFlag string, extraGfyArgs ...string) string {
 	var sb strings.Builder
-
-	gfyArgs := append([]string{"update", target}, extraGfyArgs...)
-	var gfyCmd *exec.Cmd
-	// Use graphify-core (Go binary) — available both in Docker (/usr/local/bin/graphify-core)
-	// and natively (via binPath). On host, wrap with rtk err for token-efficient output.
-	gfyCoreBin := "graphify-core"
-	if !inDocker() {
-		// On host: look for Go binary alongside alpha
-		if exe, err := os.Executable(); err == nil {
-			candidate := filepath.Join(filepath.Dir(exe), "graphify-core")
-			if _, err := os.Stat(candidate); err == nil {
-				gfyCoreBin = candidate
-			}
-		}
-		gfyCmd = exec.Command("rtk", append([]string{"err", gfyCoreBin}, gfyArgs...)...)
-	} else {
-		gfyCmd = exec.Command(gfyCoreBin, gfyArgs...)
+	if out := runGraphifyStep(alphaDir, target, extraGfyArgs...); out != "" {
+		sb.WriteString(out)
 	}
-	gfyCmd.Dir = target
-	gfyCmd.Env = append(os.Environ(), "PROJECT_ROOT="+alphaDir, "ALPHA_ROOT="+target)
-	out1, _ := gfyCmd.CombinedOutput()
-	if len(strings.TrimSpace(string(out1))) > 0 {
-		sb.Write(out1)
-	}
-
-	var uaCmd *exec.Cmd
-	if inDocker() {
-		uaCmd = exec.Command(uaBin, understandFlag)
-	} else {
-		uaCmd = exec.Command("rtk", "err", uaBin, understandFlag)
-	}
-	uaCmd.Dir = alphaDir
-	uaCmd.Env = append(os.Environ(), "PROJECT_ROOT="+alphaDir, "ALPHA_ROOT="+target)
-	out2, _ := uaCmd.CombinedOutput()
-	if len(strings.TrimSpace(string(out2))) > 0 {
+	if out := runUnderstandStep(alphaDir, target, uaBin, understandFlag); out != "" {
 		if sb.Len() > 0 {
 			sb.WriteString("\n")
 		}
-		sb.Write(out2)
+		sb.WriteString(out)
 	}
-
 	if sb.Len() == 0 {
 		return "OK"
 	}
 	return sb.String()
+}
+
+// runGraphifyStep runs the graphify graph build and returns error output only.
+func runGraphifyStep(alphaDir, target string, extraArgs ...string) string {
+	gfyArgs := append([]string{"update", target}, extraArgs...)
+	gfyBin := "graphify"
+	if !inDocker() {
+		if exe, err := os.Executable(); err == nil {
+			candidate := filepath.Join(filepath.Dir(exe), "graphify")
+			if _, err := os.Stat(candidate); err == nil {
+				gfyBin = candidate
+			}
+		}
+	}
+	var cmd *exec.Cmd
+	if inDocker() {
+		cmd = exec.Command(gfyBin, gfyArgs...)
+	} else {
+		cmd = exec.Command("rtk", append([]string{"err", gfyBin}, gfyArgs...)...)
+	}
+	cmd.Dir = target
+	cmd.Env = append(os.Environ(), "PROJECT_ROOT="+alphaDir, "ALPHA_ROOT="+target)
+	return captureErrors(cmd)
+}
+
+// runUnderstandStep runs the understand scan and returns error output only.
+func runUnderstandStep(alphaDir, target, uaBin, flag string) string {
+	var cmd *exec.Cmd
+	if inDocker() {
+		cmd = exec.Command(uaBin, flag)
+	} else {
+		cmd = exec.Command("rtk", "err", uaBin, flag)
+	}
+	cmd.Dir = alphaDir
+	cmd.Env = append(os.Environ(), "PROJECT_ROOT="+alphaDir, "ALPHA_ROOT="+target)
+	return captureErrors(cmd)
+}
+
+// captureErrors runs a command and returns real error output, filtering rtk's "[ok]..." success lines.
+func captureErrors(cmd *exec.Cmd) string {
+	out, _ := cmd.CombinedOutput()
+	s := strings.TrimSpace(string(out))
+	if s == "" || strings.HasPrefix(s, "[ok]") {
+		return ""
+	}
+	return s
 }
 
 func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
@@ -132,7 +144,6 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 			logsArgs = append(logsArgs, "-f")
 		}
 		if grepPattern != "" {
-			// raw docker for pipe to grep
 			logCmd := exec.Command("docker", append([]string{"compose", "-f", composeFile}, logsArgs...)...)
 			logCmd.Env = composeEnv
 			logCmd.Stderr = os.Stderr
@@ -143,7 +154,6 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 			logCmd.Run()
 			grepCmd.Wait()
 		} else {
-			// rtk log: dedup + filter repetitive lines
 			args := append([]string{"log", "docker", "compose", "-f", composeFile}, logsArgs...)
 			cmd := exec.Command("rtk", args...)
 			cmd.Env = composeEnv
@@ -156,8 +166,18 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 		if len(os.Args) > 3 {
 			target = os.Args[3]
 		}
-		out := runGraphifyUpdateTarget(alphaDir, target, uaBin, "--update")
-		fmt.Print(out)
+		fmt.Println("Updating knowledge graph...")
+		if out := runGraphifyStep(alphaDir, target); out != "" {
+			fmt.Println(out)
+		} else {
+			fmt.Println("  graphify graph updated")
+		}
+		fmt.Println("Updating understand scan...")
+		if out := runUnderstandStep(alphaDir, target, uaBin, "--update"); out != "" {
+			fmt.Println(out)
+		} else {
+			fmt.Println("  understand scan updated")
+		}
 
 	case "init":
 		force := false
@@ -180,8 +200,18 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 		if force {
 			extraArgs = append(extraArgs, "--force")
 		}
-		out := runGraphifyUpdateTarget(alphaDir, target, uaBin, "--start", extraArgs...)
-		fmt.Print(out)
+		fmt.Println("Building knowledge graph...")
+		if out := runGraphifyStep(alphaDir, target, extraArgs...); out != "" {
+			fmt.Println(out)
+		} else {
+			fmt.Println("  graphify graph built")
+		}
+		fmt.Println("Running understand scan...")
+		if out := runUnderstandStep(alphaDir, target, uaBin, "--start"); out != "" {
+			fmt.Println(out)
+		} else {
+			fmt.Println("  scan complete (run /alpha-understand start for LLM analysis)")
+		}
 
 	default:
 		fmt.Fprintf(os.Stderr, "Unknown subcommand: %s\n", subCmd)

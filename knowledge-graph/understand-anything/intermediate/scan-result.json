@@ -1,0 +1,4371 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-awake.md",
+      "language": "markdown",
+      "sizeLines": 4,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-detail.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-focus.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-knowledge-graph.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-overview.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-project.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-sketch.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-sync.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-understand.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/alpha-update.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/commands/awake.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/config.json",
+      "language": "json",
+      "sizeLines": 165,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/hooks/awake",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/awake.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/detail",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/detail.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/focus",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/focus.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/forget",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/forget.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/graphify",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/graphify-cluster-only",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/graphify-cluster-only.cmd",
+      "language": "batch",
+      "sizeLines": 6,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/graphify-update",
+      "language": "unknown",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/graphify-update.cmd",
+      "language": "batch",
+      "sizeLines": 6,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/graphify.cmd",
+      "language": "batch",
+      "sizeLines": 6,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/map",
+      "language": "unknown",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/map.cmd",
+      "language": "batch",
+      "sizeLines": 6,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/omega",
+      "language": "unknown",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/overview",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/overview.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/sketch",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/sketch.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/sync",
+      "language": "unknown",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/sync.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/hooks/understand",
+      "language": "unknown",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/hooks/understand.cmd",
+      "language": "batch",
+      "sizeLines": 11,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/agents-resource/PRODUCTION_CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/PRODUCTION_GEMINI.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/rules/execution.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/rules/skill.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/best-practices/references/details.md",
+      "language": "markdown",
+      "sizeLines": 170,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/better-auth-security/SKILL.MD",
+      "language": "markdown",
+      "sizeLines": 432,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/create-auth-skill/references/details.md",
+      "language": "markdown",
+      "sizeLines": 316,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/create-auth-skill/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/email-password/references/details.md",
+      "language": "markdown",
+      "sizeLines": 207,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/email-password/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/organization/references/details.md",
+      "language": "markdown",
+      "sizeLines": 474,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/organization/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/two-factor/references/details.md",
+      "language": "markdown",
+      "sizeLines": 326,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/better-auth/two-factor/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/auth/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/electric-db/references/details.md",
+      "language": "markdown",
+      "sizeLines": 202,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/electric-db/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/db-execute.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/db-pull.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/db-push.md",
+      "language": "markdown",
+      "sizeLines": 148,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/db-seed.md",
+      "language": "markdown",
+      "sizeLines": 191,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/debug.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/dev.md",
+      "language": "markdown",
+      "sizeLines": 157,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/format.md",
+      "language": "markdown",
+      "sizeLines": 48,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/generate.md",
+      "language": "markdown",
+      "sizeLines": 147,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/init.md",
+      "language": "markdown",
+      "sizeLines": 118,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/migrate-deploy.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/migrate-dev.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/migrate-diff.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/migrate-reset.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/migrate-resolve.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/migrate-status.md",
+      "language": "markdown",
+      "sizeLines": 65,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/studio.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/references/validate.md",
+      "language": "markdown",
+      "sizeLines": 53,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/client-methods.md",
+      "language": "markdown",
+      "sizeLines": 221,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/constructor.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/filters.md",
+      "language": "markdown",
+      "sizeLines": 256,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/model-queries.md",
+      "language": "markdown",
+      "sizeLines": 281,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/query-options.md",
+      "language": "markdown",
+      "sizeLines": 276,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/raw-queries.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/relations.md",
+      "language": "markdown",
+      "sizeLines": 308,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/references/transactions.md",
+      "language": "markdown",
+      "sizeLines": 184,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/client-api/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/cockroachdb.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/mongodb.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/mysql.md",
+      "language": "markdown",
+      "sizeLines": 109,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/postgresql.md",
+      "language": "markdown",
+      "sizeLines": 92,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/prisma-client-setup.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/prisma-postgres.md",
+      "language": "markdown",
+      "sizeLines": 90,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/sqlite.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/references/sqlserver.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/database-setup/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/driver-adapter/references/details.md",
+      "language": "markdown",
+      "sizeLines": 620,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/driver-adapter/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/expert/references/details.md",
+      "language": "markdown",
+      "sizeLines": 302,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/expert/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/orm-v7/references/details.md",
+      "language": "markdown",
+      "sizeLines": 113,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/orm-v7/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/postgres/references/console-and-connections.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/postgres/references/create-db-cli.md",
+      "language": "markdown",
+      "sizeLines": 123,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/postgres/references/management-api-sdk.md",
+      "language": "markdown",
+      "sizeLines": 56,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/postgres/references/management-api.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/postgres/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/accelerate-users.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/driver-adapters.md",
+      "language": "markdown",
+      "sizeLines": 251,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/env-variables.md",
+      "language": "markdown",
+      "sizeLines": 161,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/esm-support.md",
+      "language": "markdown",
+      "sizeLines": 160,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/prisma-config.md",
+      "language": "markdown",
+      "sizeLines": 203,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/removed-features.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/references/schema-changes.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/prisma/upgrade-to-v7/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/data/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/evals/evals.json",
+      "language": "json",
+      "sizeLines": 1078,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/benchstat.md",
+      "language": "markdown",
+      "sizeLines": 389,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/ci-regression.md",
+      "language": "markdown",
+      "sizeLines": 285,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/compiler-analysis.md",
+      "language": "markdown",
+      "sizeLines": 231,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/investigation-session.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/pprof.md",
+      "language": "markdown",
+      "sizeLines": 844,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/prometheus-go-metrics.md",
+      "language": "markdown",
+      "sizeLines": 301,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/tools.md",
+      "language": "markdown",
+      "sizeLines": 53,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/references/trace.md",
+      "language": "markdown",
+      "sizeLines": 446,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-benchmark/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/args.go",
+      "language": "go",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/cli_test.go",
+      "language": "go",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/completion.go",
+      "language": "go",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/config.go",
+      "language": "go",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/exit_codes.go",
+      "language": "go",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/flags.go",
+      "language": "go",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/main.go",
+      "language": "go",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/output.go",
+      "language": "go",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/root.go",
+      "language": "go",
+      "sizeLines": 74,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/serve.go",
+      "language": "go",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/signal.go",
+      "language": "go",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/assets/examples/version.go",
+      "language": "go",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/evals/evals.json",
+      "language": "json",
+      "sizeLines": 342,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/references/details.md",
+      "language": "markdown",
+      "sizeLines": 123,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-cli/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-code-style/evals/evals.json",
+      "language": "json",
+      "sizeLines": 550,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-code-style/references/details.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-code-style/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-concurrency/evals/evals.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-concurrency/references/channels-and-select.md",
+      "language": "markdown",
+      "sizeLines": 160,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-concurrency/references/pipelines.md",
+      "language": "markdown",
+      "sizeLines": 255,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-concurrency/references/sync-primitives.md",
+      "language": "markdown",
+      "sizeLines": 324,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-concurrency/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-context/evals/evals.json",
+      "language": "json",
+      "sizeLines": 142,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-context/references/cancellation.md",
+      "language": "markdown",
+      "sizeLines": 172,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-context/references/http-services.md",
+      "language": "markdown",
+      "sizeLines": 107,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-context/references/values-tracing.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-context/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/codecov.yml",
+      "language": "yaml",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/codeql-config.yml",
+      "language": "yaml",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/dependabot-auto-merge.yml",
+      "language": "yaml",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/dependabot.yml",
+      "language": "yaml",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/docker.yml",
+      "language": "yaml",
+      "sizeLines": 94,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/goreleaser-cli.yml",
+      "language": "yaml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/goreleaser-lib.yml",
+      "language": "yaml",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/goreleaser-monorepo.yml",
+      "language": "yaml",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/integration.yml",
+      "language": "yaml",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/lint.yml",
+      "language": "yaml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/release.yml",
+      "language": "yaml",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/renovate.json",
+      "language": "json",
+      "sizeLines": 21,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/security.yml",
+      "language": "yaml",
+      "sizeLines": 68,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/assets/test.yml",
+      "language": "yaml",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/evals/evals.json",
+      "language": "json",
+      "sizeLines": 185,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/references/repo-security.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-continuous-integration/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 44,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/evals/evals.json",
+      "language": "json",
+      "sizeLines": 199,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/references/containers.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/references/generics.md",
+      "language": "markdown",
+      "sizeLines": 90,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/references/map-internals.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/references/pointers.md",
+      "language": "markdown",
+      "sizeLines": 118,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/references/slice-internals.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-data-structures/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-database/evals/evals.json",
+      "language": "json",
+      "sizeLines": 211,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-database/references/performance.md",
+      "language": "markdown",
+      "sizeLines": 212,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-database/references/scanning.md",
+      "language": "markdown",
+      "sizeLines": 79,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-database/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 209,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-database/references/transactions.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-database/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-injection/evals/evals.json",
+      "language": "json",
+      "sizeLines": 156,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-injection/references/google-wire.md",
+      "language": "markdown",
+      "sizeLines": 92,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-injection/references/manual-di.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-injection/references/samber-do.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-injection/references/uber-dig-fx.md",
+      "language": "markdown",
+      "sizeLines": 142,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-injection/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/evals/evals.json",
+      "language": "json",
+      "sizeLines": 153,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/references/auditing.md",
+      "language": "markdown",
+      "sizeLines": 92,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/references/automated-updates.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/references/conflicts.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/references/versioning.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/references/visualization.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/references/workspaces.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-dependency-management/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/evals/evals.json",
+      "language": "json",
+      "sizeLines": 251,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/references/architecture.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/references/clean-architecture.md",
+      "language": "markdown",
+      "sizeLines": 177,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/references/data-handling.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/references/ddd.md",
+      "language": "markdown",
+      "sizeLines": 208,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/references/hexagonal-architecture.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/references/resource-management.md",
+      "language": "markdown",
+      "sizeLines": 154,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-design-patterns/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/assets/templates/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/assets/templates/CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/assets/templates/llms.txt",
+      "language": "txt",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/assets/templates/README.md",
+      "language": "markdown",
+      "sizeLines": 118,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/evals/evals.json",
+      "language": "json",
+      "sizeLines": 276,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/references/application.md",
+      "language": "markdown",
+      "sizeLines": 210,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/references/code-comments.md",
+      "language": "markdown",
+      "sizeLines": 318,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/references/library.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/references/project-docs.md",
+      "language": "markdown",
+      "sizeLines": 115,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-documentation/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-error-handling/evals/evals.json",
+      "language": "json",
+      "sizeLines": 161,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-error-handling/references/error-creation.md",
+      "language": "markdown",
+      "sizeLines": 145,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-error-handling/references/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 129,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-error-handling/references/error-wrapping.md",
+      "language": "markdown",
+      "sizeLines": 107,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-error-handling/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-grpc/evals/evals.json",
+      "language": "json",
+      "sizeLines": 156,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-grpc/references/protoc-reference.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-grpc/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 270,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-grpc/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-lint/evals/evals.json",
+      "language": "json",
+      "sizeLines": 305,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-lint/references/linter-reference.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-lint/references/nolint-directives.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-lint/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-modernize/evals/evals.json",
+      "language": "json",
+      "sizeLines": 185,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-modernize/references/tooling.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-modernize/references/versions.md",
+      "language": "markdown",
+      "sizeLines": 659,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-modernize/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/evals/evals.json",
+      "language": "json",
+      "sizeLines": 404,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/references/functions-methods.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/references/identifiers.md",
+      "language": "markdown",
+      "sizeLines": 165,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/references/packages-files.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/references/types-errors.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-naming/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/evals/evals.json",
+      "language": "json",
+      "sizeLines": 547,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/alerting.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/dashboards.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/logging.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/metrics.md",
+      "language": "markdown",
+      "sizeLines": 536,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/profiling.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/rum.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/references/tracing.md",
+      "language": "markdown",
+      "sizeLines": 198,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-observability/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/assets/prometheus-alerts.yml",
+      "language": "yaml",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/evals/evals.json",
+      "language": "json",
+      "sizeLines": 886,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/references/caching.md",
+      "language": "markdown",
+      "sizeLines": 183,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/references/cpu.md",
+      "language": "markdown",
+      "sizeLines": 375,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/references/io-networking.md",
+      "language": "markdown",
+      "sizeLines": 299,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/references/memory.md",
+      "language": "markdown",
+      "sizeLines": 233,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/references/observability.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/references/runtime.md",
+      "language": "markdown",
+      "sizeLines": 222,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-performance/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-popular-libraries/evals/evals.json",
+      "language": "json",
+      "sizeLines": 155,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-popular-libraries/references/libraries.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-popular-libraries/references/stdlib.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-popular-libraries/references/tools.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-popular-libraries/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/assets/Makefile",
+      "language": "makefile",
+      "sizeLines": 110,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/evals/evals.json",
+      "language": "json",
+      "sizeLines": 156,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/references/config.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/references/directory-layouts.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/references/testing-layout.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/references/workspaces.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-project-layout/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-safety/evals/evals.json",
+      "language": "json",
+      "sizeLines": 930,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-safety/references/nil-safety.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-safety/references/slice-map-safety.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-safety/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-do/evals/evals.json",
+      "language": "json",
+      "sizeLines": 154,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-do/references/advanced.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-do/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-do/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-hot/evals/evals.json",
+      "language": "json",
+      "sizeLines": 202,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-hot/references/algorithm-guide.md",
+      "language": "markdown",
+      "sizeLines": 200,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-hot/references/api-reference.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-hot/references/production-patterns.md",
+      "language": "markdown",
+      "sizeLines": 228,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-hot/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-lo/evals/evals.json",
+      "language": "json",
+      "sizeLines": 226,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-lo/references/advanced-patterns.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-lo/references/api-reference.md",
+      "language": "markdown",
+      "sizeLines": 326,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-lo/references/package-guide.md",
+      "language": "markdown",
+      "sizeLines": 175,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-lo/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/evals/evals.json",
+      "language": "json",
+      "sizeLines": 311,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/references/advanced-types.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/references/either.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/references/monads-guide.md",
+      "language": "markdown",
+      "sizeLines": 163,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/references/option.md",
+      "language": "markdown",
+      "sizeLines": 151,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/references/pipelines.md",
+      "language": "markdown",
+      "sizeLines": 147,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/references/result.md",
+      "language": "markdown",
+      "sizeLines": 145,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-mo/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-oops/evals/evals.json",
+      "language": "json",
+      "sizeLines": 153,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-oops/references/advanced.md",
+      "language": "markdown",
+      "sizeLines": 51,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-oops/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-ro/evals/evals.json",
+      "language": "json",
+      "sizeLines": 294,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-ro/references/operators-guide.md",
+      "language": "markdown",
+      "sizeLines": 324,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-ro/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 262,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-ro/references/plugin-ecosystem.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-ro/references/subjects-guide.md",
+      "language": "markdown",
+      "sizeLines": 183,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-ro/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-slog/evals/evals.json",
+      "language": "json",
+      "sizeLines": 172,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-slog/references/backend-handlers.md",
+      "language": "markdown",
+      "sizeLines": 269,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-slog/references/http-middlewares.md",
+      "language": "markdown",
+      "sizeLines": 179,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-slog/references/pipeline-patterns.md",
+      "language": "markdown",
+      "sizeLines": 240,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-slog/references/sampling-strategies.md",
+      "language": "markdown",
+      "sizeLines": 176,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-samber-slog/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/evals/evals.json",
+      "language": "json",
+      "sizeLines": 586,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/architecture.md",
+      "language": "markdown",
+      "sizeLines": 268,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/checklist.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/cookies.md",
+      "language": "markdown",
+      "sizeLines": 200,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/cryptography.md",
+      "language": "markdown",
+      "sizeLines": 403,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/filesystem.md",
+      "language": "markdown",
+      "sizeLines": 255,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/injection.md",
+      "language": "markdown",
+      "sizeLines": 315,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/logging.md",
+      "language": "markdown",
+      "sizeLines": 163,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/memory-safety.md",
+      "language": "markdown",
+      "sizeLines": 241,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/network.md",
+      "language": "markdown",
+      "sizeLines": 252,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/secrets.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/third-party.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/references/threat-modeling.md",
+      "language": "markdown",
+      "sizeLines": 189,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-security/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-stay-updated/evals/evals.json",
+      "language": "json",
+      "sizeLines": 142,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-stay-updated/references/details.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-stay-updated/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-stretchr-testify/evals/evals.json",
+      "language": "json",
+      "sizeLines": 148,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-stretchr-testify/references/mock.md",
+      "language": "markdown",
+      "sizeLines": 99,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-stretchr-testify/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-structs-interfaces/evals/evals.json",
+      "language": "json",
+      "sizeLines": 153,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-structs-interfaces/references/details.md",
+      "language": "markdown",
+      "sizeLines": 188,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-structs-interfaces/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-testing/evals/evals.json",
+      "language": "json",
+      "sizeLines": 388,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-testing/references/helpers.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-testing/references/http-testing.md",
+      "language": "markdown",
+      "sizeLines": 84,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-testing/references/integration-testing.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-testing/references/mocking.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-testing/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/evals/evals.json",
+      "language": "json",
+      "sizeLines": 521,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/code-review-flags.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/common-go-bugs.md",
+      "language": "markdown",
+      "sizeLines": 834,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/compilation.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/concurrency-debug.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/diagnostic-tools.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/methodology.md",
+      "language": "markdown",
+      "sizeLines": 236,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/performance-debug.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/pprof.md",
+      "language": "markdown",
+      "sizeLines": 117,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/production-debug.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/references/testing-debug.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/golang-troubleshooting/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/golang/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/async-patterns.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/bundling.md",
+      "language": "markdown",
+      "sizeLines": 180,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/data-patterns.md",
+      "language": "markdown",
+      "sizeLines": 297,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/debug-tricks.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/directives.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/error-handling.md",
+      "language": "markdown",
+      "sizeLines": 227,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/file-conventions.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/font.md",
+      "language": "markdown",
+      "sizeLines": 245,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/functions.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/hydration-error.md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/image.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/metadata.md",
+      "language": "markdown",
+      "sizeLines": 301,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/parallel-routes.md",
+      "language": "markdown",
+      "sizeLines": 287,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/route-handlers.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/rsc-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/runtime-selection.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/scripts.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/self-hosting.md",
+      "language": "markdown",
+      "sizeLines": 371,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/references/suspense-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/next/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/framework/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/get_community/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/get_neighbors/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/get_node/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/god_nodes/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/graph_stats/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/graphify_build/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/query_graph/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/shortest_path/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/graphify/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/runtime/bun/references/details.md",
+      "language": "markdown",
+      "sizeLines": 688,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/runtime/bun/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/runtime/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/integration/rules/cache-single-source.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/integration/rules/flow-loader-query-pattern.md",
+      "language": "markdown",
+      "sizeLines": 178,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/integration/rules/setup-query-client-context.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/integration/rules/ssr-dehydrate-hydrate.md",
+      "language": "markdown",
+      "sizeLines": 206,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/integration/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/cache-gc-time.md",
+      "language": "markdown",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/cache-invalidation.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/cache-placeholder-vs-initial.md",
+      "language": "markdown",
+      "sizeLines": 156,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/cache-stale-time.md",
+      "language": "markdown",
+      "sizeLines": 80,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/err-error-boundaries.md",
+      "language": "markdown",
+      "sizeLines": 150,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/inf-page-params.md",
+      "language": "markdown",
+      "sizeLines": 132,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/mut-invalidate-queries.md",
+      "language": "markdown",
+      "sizeLines": 118,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/mut-mutation-state.md",
+      "language": "markdown",
+      "sizeLines": 169,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/mut-optimistic-updates.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/network-mode.md",
+      "language": "markdown",
+      "sizeLines": 179,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/parallel-use-queries.md",
+      "language": "markdown",
+      "sizeLines": 152,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/perf-select-transform.md",
+      "language": "markdown",
+      "sizeLines": 144,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/persist-queries.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/pf-intent-prefetch.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/qk-array-structure.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/qk-factory-pattern.md",
+      "language": "markdown",
+      "sizeLines": 102,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/qk-hierarchical-organization.md",
+      "language": "markdown",
+      "sizeLines": 76,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/qk-include-dependencies.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/qk-serializable.md",
+      "language": "markdown",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/query-cancellation.md",
+      "language": "markdown",
+      "sizeLines": 171,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/rules/ssr-dehydration.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/query/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/store/references/details.md",
+      "language": "markdown",
+      "sizeLines": 299,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/state/tanstack/store/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/designer/assets/app-overview-generator.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/designer/assets/design-system.md",
+      "language": "markdown",
+      "sizeLines": 155,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/designer/assets/vibe-design-template.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/designer/references/workflow.md",
+      "language": "markdown",
+      "sizeLines": 90,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/designer/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/guidelines/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/components.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/eslint.md",
+      "language": "markdown",
+      "sizeLines": 269,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/forms.md",
+      "language": "markdown",
+      "sizeLines": 496,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/getting-started.md",
+      "language": "markdown",
+      "sizeLines": 215,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/hooks.md",
+      "language": "markdown",
+      "sizeLines": 344,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/styling.md",
+      "language": "markdown",
+      "sizeLines": 472,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/references/testing.md",
+      "language": "markdown",
+      "sizeLines": 395,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/best-practices/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/combobox/references/api.md",
+      "language": "markdown",
+      "sizeLines": 199,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/combobox/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 279,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/combobox/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/custom-components/references/api.md",
+      "language": "markdown",
+      "sizeLines": 407,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/custom-components/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 431,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/custom-components/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 112,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/components/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/use-form/references/api.md",
+      "language": "markdown",
+      "sizeLines": 313,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/use-form/references/patterns.md",
+      "language": "markdown",
+      "sizeLines": 310,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/mantine/use-form/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/screenshot-to-code/references/details.md",
+      "language": "markdown",
+      "sizeLines": 109,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/screenshot-to-code/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/design-system/references/details.md",
+      "language": "markdown",
+      "sizeLines": 408,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/design-system/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/layout/references/details.md",
+      "language": "markdown",
+      "sizeLines": 277,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/layout/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/patterns/references/details.md",
+      "language": "markdown",
+      "sizeLines": 243,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/patterns/references/reference.md",
+      "language": "markdown",
+      "sizeLines": 507,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/patterns/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ui/tailwind/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/_sync_all.py",
+      "language": "python",
+      "sizeLines": 414,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/app-interface.csv",
+      "language": "csv",
+      "sizeLines": 30,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/charts.csv",
+      "language": "csv",
+      "sizeLines": 26,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/colors.csv",
+      "language": "csv",
+      "sizeLines": 161,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/design.csv",
+      "language": "csv",
+      "sizeLines": 1775,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/draft.csv",
+      "language": "csv",
+      "sizeLines": 1778,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/google-fonts.csv",
+      "language": "csv",
+      "sizeLines": 1924,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/icons.csv",
+      "language": "csv",
+      "sizeLines": 105,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/landing.csv",
+      "language": "csv",
+      "sizeLines": 35,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/products.csv",
+      "language": "csv",
+      "sizeLines": 162,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/react-performance.csv",
+      "language": "csv",
+      "sizeLines": 45,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/stacks/react-native.csv",
+      "language": "csv",
+      "sizeLines": 52,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/styles.csv",
+      "language": "csv",
+      "sizeLines": 85,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/typography.csv",
+      "language": "csv",
+      "sizeLines": 74,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/ui-reasoning.csv",
+      "language": "csv",
+      "sizeLines": 162,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/data/ux-guidelines.csv",
+      "language": "csv",
+      "sizeLines": 99,
+      "fileCategory": "data"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/references/details.md",
+      "language": "markdown",
+      "sizeLines": 237,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/scripts/core.py",
+      "language": "python",
+      "sizeLines": 247,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/scripts/design_system.py",
+      "language": "python",
+      "sizeLines": 1067,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/scripts/search.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/skills/ux/ux-pro-max/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/alpha",
+      "language": "unknown",
+      "sizeLines": 38047,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/cmd_configure.go",
+      "language": "go",
+      "sizeLines": 231,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/cmd_knowledge_graph.go",
+      "language": "go",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/global.go",
+      "language": "go",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/go.mod",
+      "language": "mod",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/go.sum",
+      "language": "sum",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/tools/alpha/main.go",
+      "language": "go",
+      "sizeLines": 413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/darwin/alpha",
+      "language": "unknown",
+      "sizeLines": 38404,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/darwin/graphify-core",
+      "language": "unknown",
+      "sizeLines": 50296,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/darwin/understand",
+      "language": "unknown",
+      "sizeLines": 39683,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/linux/alpha",
+      "language": "unknown",
+      "sizeLines": 39130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/linux/graphify",
+      "language": "unknown",
+      "sizeLines": 48972,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/linux/understand",
+      "language": "unknown",
+      "sizeLines": 39551,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/windows/graphify.exe",
+      "language": "exe",
+      "sizeLines": 42873,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/bin/windows/understand.exe",
+      "language": "exe",
+      "sizeLines": 42692,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_alpha.go",
+      "language": "go",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_awake.go",
+      "language": "go",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_build.go",
+      "language": "go",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_focus.go",
+      "language": "go",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_forget.go",
+      "language": "go",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_query.go",
+      "language": "go",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_scan.go",
+      "language": "go",
+      "sizeLines": 613,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/cmd_sync.go",
+      "language": "go",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/community.go",
+      "language": "go",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/display.go",
+      "language": "go",
+      "sizeLines": 232,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/extract_generic.go",
+      "language": "go",
+      "sizeLines": 204,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/extract_go.go",
+      "language": "go",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/global.go",
+      "language": "go",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/go.mod",
+      "language": "mod",
+      "sizeLines": 13,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/go.sum",
+      "language": "sum",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/graph.go",
+      "language": "go",
+      "sizeLines": 304,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/graphify",
+      "language": "unknown",
+      "sizeLines": 50480,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/main.go",
+      "language": "go",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/overview.go",
+      "language": "go",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/scan.go",
+      "language": "go",
+      "sizeLines": 272,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/graphify/semantic.go",
+      "language": "go",
+      "sizeLines": 230,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/understand/global.go",
+      "language": "go",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/understand/go.mod",
+      "language": "mod",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/tools/understand/go.sum",
+      "language": "sum",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/agents-resource/tools/understand/main.go",
+      "language": "go",
+      "sizeLines": 1076,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/tools/understand/my-understand",
+      "language": "unknown",
+      "sizeLines": 40005,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/agents-resource/workflows/graphify-cluster-only.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/workflows/graphify-detail.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/workflows/graphify-overview.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/workflows/graphify-sketch.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/workflows/graphify-update.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/agents-resource/workflows/graphify.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/alpha.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/config.json",
+      "language": "json",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 104,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docker-compose.global.yml",
+      "language": "yaml",
+      "sizeLines": 93,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "α/docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 131,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "α/docker/dashboard.html",
+      "language": "html",
+      "sizeLines": 202,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "α/docker/dashboard.nginx.conf",
+      "language": "conf",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "α/docker/Dockerfile.alpha",
+      "language": "dockerfile",
+      "sizeLines": 44,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "α/docker/Dockerfile.graphify",
+      "language": "dockerfile",
+      "sizeLines": 13,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "α/docker/Dockerfile.understand",
+      "language": "dockerfile",
+      "sizeLines": 18,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "α/docker/understand-start.sh",
+      "language": "shell",
+      "sizeLines": 29,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/docs/archived/MCP_SYSTEM.md",
+      "language": "markdown",
+      "sizeLines": 202,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/archived/MEMORY_SYSTEM.md",
+      "language": "markdown",
+      "sizeLines": 991,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/archived/MULTI_AGENT.md",
+      "language": "markdown",
+      "sizeLines": 573,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/archived/PLANNING.md",
+      "language": "markdown",
+      "sizeLines": 503,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/archived/SKILL_SYSTEM.md",
+      "language": "markdown",
+      "sizeLines": 109,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/archived/STRUCTURE.md",
+      "language": "markdown",
+      "sizeLines": 107,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/ctx_arch.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/ctx_docker.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/ctx_tasks.md",
+      "language": "markdown",
+      "sizeLines": 78,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/GLOBAL_TEST.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/SESSION_CONTEXT.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/TASK.md",
+      "language": "markdown",
+      "sizeLines": 261,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/docs/USER_REQUIREMENT.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260602-0210.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260602-0416.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260602-0447.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260602-1309.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260602-1406.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260602-2157.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-20260603-0144.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/memories/session-summary.md",
+      "language": "markdown",
+      "sizeLines": 257,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/raw-knowledge/alpha-ai.md",
+      "language": "markdown",
+      "sizeLines": 137,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/raw-knowledge/alpha-knowledge-graph.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/raw-knowledge/php-run.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/knowledge-graph.json",
+      "language": "json",
+      "sizeLines": 10408,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/meta.json",
+      "language": "json",
+      "sizeLines": 5,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/changed-files.txt",
+      "language": "txt",
+      "sizeLines": 228,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-1.json",
+      "language": "json",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-10.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-11.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-12.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-13.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-14.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-15.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-16.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-17.json",
+      "language": "json",
+      "sizeLines": 125,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-18.json",
+      "language": "json",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-19.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-2.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-20.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-21.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-22.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-23.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-24.json",
+      "language": "json",
+      "sizeLines": 174,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-25.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-26.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-27.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-28.json",
+      "language": "json",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-29.json",
+      "language": "json",
+      "sizeLines": 55,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-3.json",
+      "language": "json",
+      "sizeLines": 174,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-30.json",
+      "language": "json",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-31.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-32.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-33.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-34.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-35.json",
+      "language": "json",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-36.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-37.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-38.json",
+      "language": "json",
+      "sizeLines": 90,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-39.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-4.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-40.json",
+      "language": "json",
+      "sizeLines": 76,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-41.json",
+      "language": "json",
+      "sizeLines": 139,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-42.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-43.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-44.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-45.json",
+      "language": "json",
+      "sizeLines": 55,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-46.json",
+      "language": "json",
+      "sizeLines": 104,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-47.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-48.json",
+      "language": "json",
+      "sizeLines": 69,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-49.json",
+      "language": "json",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-5.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-50.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-51.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-52.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-53.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-54.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-55.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-56.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-57.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-58.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-59.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-6.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-60.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-61.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-62.json",
+      "language": "json",
+      "sizeLines": 146,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-63.json",
+      "language": "json",
+      "sizeLines": 125,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-64.json",
+      "language": "json",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-65.json",
+      "language": "json",
+      "sizeLines": 83,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-66.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-67.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-68.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-69.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-7.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-70.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-71.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-72.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-73.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-74.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-75.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-76.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-77.json",
+      "language": "json",
+      "sizeLines": 41,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-8.json",
+      "language": "json",
+      "sizeLines": 181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-analyzer-input-9.json",
+      "language": "json",
+      "sizeLines": 174,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-1.json",
+      "language": "json",
+      "sizeLines": 172,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-10.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-11.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-12.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-13.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-14.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-15.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-16.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-17.json",
+      "language": "json",
+      "sizeLines": 543,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-18.json",
+      "language": "json",
+      "sizeLines": 1349,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-19.json",
+      "language": "json",
+      "sizeLines": 259,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-2.json",
+      "language": "json",
+      "sizeLines": 6844,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-20.json",
+      "language": "json",
+      "sizeLines": 6668,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-21.json",
+      "language": "json",
+      "sizeLines": 2728,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-22.json",
+      "language": "json",
+      "sizeLines": 934,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-23.json",
+      "language": "json",
+      "sizeLines": 6976,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-24.json",
+      "language": "json",
+      "sizeLines": 536,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-25.json",
+      "language": "json",
+      "sizeLines": 202,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-26.json",
+      "language": "json",
+      "sizeLines": 315,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-27.json",
+      "language": "json",
+      "sizeLines": 189,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-28.json",
+      "language": "json",
+      "sizeLines": 266,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-29.json",
+      "language": "json",
+      "sizeLines": 453,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-3.json",
+      "language": "json",
+      "sizeLines": 600,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-30.json",
+      "language": "json",
+      "sizeLines": 577,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-31.json",
+      "language": "json",
+      "sizeLines": 239,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-32.json",
+      "language": "json",
+      "sizeLines": 210,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-33.json",
+      "language": "json",
+      "sizeLines": 244,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-34.json",
+      "language": "json",
+      "sizeLines": 249,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-35.json",
+      "language": "json",
+      "sizeLines": 572,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-36.json",
+      "language": "json",
+      "sizeLines": 340,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-37.json",
+      "language": "json",
+      "sizeLines": 335,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-38.json",
+      "language": "json",
+      "sizeLines": 828,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-39.json",
+      "language": "json",
+      "sizeLines": 150,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-4.json",
+      "language": "json",
+      "sizeLines": 259,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-40.json",
+      "language": "json",
+      "sizeLines": 631,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-41.json",
+      "language": "json",
+      "sizeLines": 1345,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-42.json",
+      "language": "json",
+      "sizeLines": 260,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-43.json",
+      "language": "json",
+      "sizeLines": 1176,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-44.json",
+      "language": "json",
+      "sizeLines": 227,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-45.json",
+      "language": "json",
+      "sizeLines": 943,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-46.json",
+      "language": "json",
+      "sizeLines": 118,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-47.json",
+      "language": "json",
+      "sizeLines": 69,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-48.json",
+      "language": "json",
+      "sizeLines": 348,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-49.json",
+      "language": "json",
+      "sizeLines": 1376,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-5.json",
+      "language": "json",
+      "sizeLines": 6668,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-50.json",
+      "language": "json",
+      "sizeLines": 626,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-51.json",
+      "language": "json",
+      "sizeLines": 631,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-52.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-53.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-54.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-55.json",
+      "language": "json",
+      "sizeLines": 631,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-56.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-57.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-58.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-59.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-6.json",
+      "language": "json",
+      "sizeLines": 2728,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-60.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-61.json",
+      "language": "json",
+      "sizeLines": 646,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-62.json",
+      "language": "json",
+      "sizeLines": 636,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-63.json",
+      "language": "json",
+      "sizeLines": 543,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-64.json",
+      "language": "json",
+      "sizeLines": 1349,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-65.json",
+      "language": "json",
+      "sizeLines": 259,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-66.json",
+      "language": "json",
+      "sizeLines": 1422,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-67.json",
+      "language": "json",
+      "sizeLines": 1933,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-68.json",
+      "language": "json",
+      "sizeLines": 1363,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-69.json",
+      "language": "json",
+      "sizeLines": 1502,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-7.json",
+      "language": "json",
+      "sizeLines": 934,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-70.json",
+      "language": "json",
+      "sizeLines": 1377,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-71.json",
+      "language": "json",
+      "sizeLines": 1148,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-72.json",
+      "language": "json",
+      "sizeLines": 1743,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-73.json",
+      "language": "json",
+      "sizeLines": 4185,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-74.json",
+      "language": "json",
+      "sizeLines": 339,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-75.json",
+      "language": "json",
+      "sizeLines": 363,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-76.json",
+      "language": "json",
+      "sizeLines": 6852,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-77.json",
+      "language": "json",
+      "sizeLines": 46,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-8.json",
+      "language": "json",
+      "sizeLines": 6976,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-file-extract-results-9.json",
+      "language": "json",
+      "sizeLines": 611,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-import-map-input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-import-map-output.json",
+      "language": "json",
+      "sizeLines": 1077,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/knowledge-graph/understand-anything/tmp/ua-scan-files.json",
+      "language": "json",
+      "sizeLines": 5450,
+      "fileCategory": "config"
+    },
+    {
+      "path": "α/README.md",
+      "language": "markdown",
+      "sizeLines": 197,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "α/scripts/dashboard.sh",
+      "language": "shell",
+      "sizeLines": 35,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/scripts/graphify.sh",
+      "language": "shell",
+      "sizeLines": 92,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/scripts/install.sh",
+      "language": "shell",
+      "sizeLines": 677,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/scripts/setup-hooks.cmd",
+      "language": "batch",
+      "sizeLines": 202,
+      "fileCategory": "script"
+    },
+    {
+      "path": "α/scripts/setup-hooks.sh",
+      "language": "shell",
+      "sizeLines": 165,
+      "fileCategory": "script"
+    }
+  ],
+  "totalFiles": 722,
+  "filteredByIgnore": 63,
+  "estimatedComplexity": "very-large",
+  "stats": {
+    "filesScanned": 722,
+    "byCategory": {
+      "docs": 399,
+      "config": 218,
+      "code": 65,
+      "script": 18,
+      "infra": 6,
+      "data": 15,
+      "markup": 1
+    },
+    "byLanguage": {
+      "markdown": 397,
+      "json": 198,
+      "unknown": 22,
+      "batch": 13,
+      "go": 36,
+      "yaml": 16,
+      "txt": 2,
+      "makefile": 1,
+      "python": 4,
+      "csv": 15,
+      "mod": 3,
+      "sum": 3,
+      "exe": 2,
+      "html": 1,
+      "conf": 1,
+      "dockerfile": 3,
+      "shell": 5
+    }
+  }
+}

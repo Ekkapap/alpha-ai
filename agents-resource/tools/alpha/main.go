@@ -209,7 +209,7 @@ func main() {
 			Required: []string{"query"},
 		},
 	}, func(ctx context.Context, req mcp.CallToolRequest) (*mcp.CallToolResult, error) {
-		args := []string{"sketch", strParam(req, "query")}
+		args := []string{"sketch", "--query", strParam(req, "query")}
 		if d := strParam(req, "depth"); d != "" {
 			args = append(args, "--depth", d)
 		}
@@ -227,7 +227,7 @@ func main() {
 			Required: []string{"ids"},
 		},
 	}, func(ctx context.Context, req mcp.CallToolRequest) (*mcp.CallToolResult, error) {
-		return gfy("detail", strParam(req, "ids"))
+		return gfy("detail", "--ids", strParam(req, "ids"))
 	})
 
 	s.AddTool(mcp.Tool{
