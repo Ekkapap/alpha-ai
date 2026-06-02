@@ -137,7 +137,7 @@ run_menu() {
   while true; do
     draw_menu
     local key esc
-    IFS= read -r -s -n1 key 2>/dev/null || key=""
+    IFS= read -r -s -n1 key 2>/dev/null || { MENU_EXIT=1; break; }
     if [[ "$key" == $'\x1b' ]]; then
       IFS= read -r -s -n2 esc 2>/dev/null || esc=""
       case "$esc" in
