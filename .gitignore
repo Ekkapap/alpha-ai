@@ -25,3 +25,4 @@ bin/windows/
 .claude/
 .agents/
 logs/
+.understand-url

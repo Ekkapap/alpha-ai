@@ -235,16 +235,45 @@ step "3/5  Alpha Docker image"
 
 COMPOSE_FILE="$SCRIPT_DIR/docker-compose.yml"
 
-# Cross-compile all binaries for linux/arm64 (Docker on Apple Silicon / Linux ARM)
+# Derive target arch from .env PLATFORM, fall back to host arch detection
+_ENV_FILE="$SCRIPT_DIR/.env"
+_PLATFORM=""
+[[ -f "$_ENV_FILE" ]] && _PLATFORM="$(grep -E '^PLATFORM=' "$_ENV_FILE" | head -1 | cut -d= -f2 | tr -d ' \r')"
+if [[ -z "$_PLATFORM" ]]; then
+  if [[ "$OS" == "Darwin" && "$(uname -m)" == "arm64" ]]; then
+    _PLATFORM="linux/arm64"
+  else
+    _PLATFORM="linux/amd64"
+  fi
+  info "PLATFORM not set in .env — detected: $_PLATFORM"
+fi
+LINUX_ARCH="${_PLATFORM#linux/}"  # e.g. "linux/arm64" → "arm64"
+
+# Create or update .env with HOST_PROJECT_ROOT and PLATFORM
+[[ ! -f "$_ENV_FILE" && -f "$SCRIPT_DIR/.env.example" ]] && cp "$SCRIPT_DIR/.env.example" "$_ENV_FILE"
+python3 - "$_ENV_FILE" "$PROJECT_ROOT" "$_PLATFORM" << 'PYEOF'
+import re, sys, os
+path, project_root, platform = sys.argv[1], sys.argv[2], sys.argv[3]
+content = open(path).read() if os.path.exists(path) else ""
+def set_var(c, key, val):
+    pat = rf'^{key}=.*$'
+    return re.sub(pat, f'{key}={val}', c, flags=re.MULTILINE) if re.search(pat, c, re.MULTILINE) \
+        else c.rstrip('\n') + f'\n{key}={val}\n'
+content = set_var(content, 'HOST_PROJECT_ROOT', project_root)
+content = set_var(content, 'PLATFORM', platform)
+with open(path, 'w') as f: f.write(content)
+PYEOF
+ok ".env → HOST_PROJECT_ROOT=$PROJECT_ROOT  PLATFORM=$_PLATFORM"
+
 if command -v go &>/dev/null; then
-  info "Building binaries for linux/arm64..."
+  info "Building binaries for linux/$LINUX_ARCH..."
   BIN_OUT="$SCRIPT_DIR/agents-resource/tools/bin/linux"
   mkdir -p "$BIN_OUT"
   for tool in alpha graphify understand; do
     (
       cd "$SCRIPT_DIR/agents-resource/tools/$tool"
-      GOOS=linux GOARCH=arm64 go build -o "$BIN_OUT/$tool" .
-    ) && ok "  $tool (linux/arm64)" || warn "  $tool build failed"
+      GOOS=linux GOARCH="$LINUX_ARCH" go build -o "$BIN_OUT/$tool" .
+    ) && ok "  $tool (linux/$LINUX_ARCH)" || warn "  $tool build failed"
   done
 else
   [[ -f "$SCRIPT_DIR/agents-resource/tools/bin/linux/alpha" ]] \
@@ -290,20 +319,20 @@ _dir_symlink() {
 _file_symlink() {
   local src_rel="$1" dst_rel="$2" merge="${3:-false}"
   local src="$PROJECT_ROOT/$src_rel" dst="$PROJECT_ROOT/$dst_rel"
-  if [[ -L "$dst" && "$(readlink "$dst")" == "$src" ]]; then
+  if [[ -L "$dst" && "$(readlink "$dst")" == "$src_rel" ]]; then
     ok "$dst_rel → already correct"
   elif [[ -L "$dst" ]]; then
-    rm "$dst"; ln -s "$src" "$dst"
+    rm "$dst"; ln -s "$src_rel" "$dst"
     ok "$dst_rel → updated symlink"
   elif [[ -f "$dst" && -f "$src" && "$merge" == "true" ]]; then
     printf '\n\n<!-- merged from project root -->\n' >> "$src"
-    cat "$dst" >> "$src"; rm "$dst"; ln -s "$src" "$dst"
+    cat "$dst" >> "$src"; rm "$dst"; ln -s "$src_rel" "$dst"
     ok "$dst_rel → merged into α/ + symlinked"
   elif [[ -f "$dst" ]]; then
-    mv "$dst" "$src"; ln -s "$src" "$dst"
+    mv "$dst" "$src"; ln -s "$src_rel" "$dst"
     ok "$dst_rel → moved to α/ + symlinked"
   elif [[ -f "$src" ]]; then
-    ln -s "$src" "$dst"
+    ln -s "$src_rel" "$dst"
     ok "$dst_rel → symlinked"
   else
     warn "$dst_rel not found — skipped"
@@ -324,8 +353,12 @@ _internal_symlink() {
   local link_parent; link_parent="$(dirname "$link")"
   local abs_target="$link_parent/$rel_target"
   mkdir -p "$link_parent"
-  if [[ -L "$link" ]]; then
-    ok "$link_rel → already a symlink"
+  if [[ -L "$link" && "$(readlink "$link")" == "$rel_target" ]]; then
+    ok "$link_rel → already correct"
+  elif [[ -L "$link" ]]; then
+    local _old; _old="$(readlink "$link")"
+    rm "$link"; ln -s "$rel_target" "$link"
+    ok "$link_rel → updated symlink (was: $_old)"
   elif [[ -d "$link" ]]; then
     [[ -d "$abs_target" ]] && cp -rn "$link/." "$abs_target/" 2>/dev/null || true
     rm -rf "$link"; ln -s "$rel_target" "$link"
@@ -394,7 +427,6 @@ done
 # ════════════════════════════════════════════════════════════════════════════
 step "5/5  Dashboard"
 info "Starting alpha dashboard (nginx + understand-server)..."
-export HOST_PROJECT_ROOT="$PROJECT_ROOT"
 docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
   && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
   || warn "Dashboard failed to start — run 'scripts/dashboard.sh' manually"

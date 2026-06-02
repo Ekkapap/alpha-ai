@@ -12,15 +12,29 @@ RTK filters and compresses shell command output before it reaches the AI context
 Always prefix shell commands with `rtk` to minimize token consumption:
 
 ```bash
-rtk git status
-rtk git diff
 rtk ls src/
+rtk read "filepath"                # Read whole file
+rtk read -n "filepath"             # Read with line numbers
+rtk read -m <max-lines> "filepath" # Read up to N lines
 rtk grep "pattern" src/
 rtk find "*.ts" .
 rtk cargo test
 rtk docker ps
+rtk git status
+rtk git diff
 rtk gh pr list
 ```
+
+## Reading a Specific Section
+
+To read starting from a known term/keyword (e.g. deep in a large file), use `alpha focus` or `/alpha-focus`:
+
+```bash
+alpha focus <path> <term> [max_lines]   # CLI
+# or: /alpha-focus <path> <term>        # MCP slash command
+```
+
+`term` is searched in the file; returns content from that point up to `max_lines`.
 
 ## Meta Commands (run directly — no `rtk` prefix)
 

@@ -65,10 +65,36 @@ func cliAwake() {
 
 	fmt.Print(buildAwakeOverview(root))
 
-	latestStatePath := filepath.Join(root, "knowledge-graph/memories/session-summary.md")
-	if state, err := os.ReadFile(latestStatePath); err == nil {
+	memoriesDir := filepath.Join(root, "knowledge-graph/memories")
+	if state, err := os.ReadFile(filepath.Join(memoriesDir, "session-summary.md")); err == nil {
 		fmt.Printf("### PREVIOUS SESSION SUMMARY\n%s\n\n", string(state))
 	}
+	if latestSession := findLatestSessionFile(memoriesDir); latestSession != "" {
+		if data, err := os.ReadFile(latestSession); err == nil {
+			fmt.Printf("### LATEST SESSION (%s)\n%s\n\n", filepath.Base(latestSession), string(data))
+		}
+	}
+}
+
+// findLatestSessionFile returns the path of the most recent session-YYYYMMDD-HHMM.md file, or "".
+func findLatestSessionFile(memoriesDir string) string {
+	entries, err := os.ReadDir(memoriesDir)
+	if err != nil {
+		return ""
+	}
+	var latest string
+	for _, e := range entries {
+		name := e.Name()
+		if strings.HasPrefix(name, "session-") && name != "session-summary.md" && strings.HasSuffix(name, ".md") {
+			if name > latest {
+				latest = name
+			}
+		}
+	}
+	if latest == "" {
+		return ""
+	}
+	return filepath.Join(memoriesDir, latest)
 }
 
 func registerMCPAwake(s *server.MCPServer) {
@@ -119,10 +145,18 @@ If user chooses 3: stop here`
 			out.WriteString(buildAwakeOverview(root))
 		}
 
-		if content, err := os.ReadFile(filepath.Join(root, "knowledge-graph/memories/session-summary.md")); err == nil {
+		memoriesDir := filepath.Join(root, "knowledge-graph/memories")
+		if content, err := os.ReadFile(filepath.Join(memoriesDir, "session-summary.md")); err == nil {
 			out.WriteString("### PREVIOUS SESSION SUMMARY\n")
 			out.WriteString(string(content))
 			out.WriteString("\n")
+		}
+		if latestSession := findLatestSessionFile(memoriesDir); latestSession != "" {
+			if data, err := os.ReadFile(latestSession); err == nil {
+				out.WriteString(fmt.Sprintf("### LATEST SESSION (%s)\n", filepath.Base(latestSession)))
+				out.WriteString(string(data))
+				out.WriteString("\n")
+			}
 		}
 
 		out.WriteString("[AGENT_CONTEXT_END]\n\n")

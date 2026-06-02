@@ -106,24 +106,24 @@
 ## 🔲 TODO (ต่อจากนี้)
 
 ### N — Real graphify scan (first-run)
-- [ ] N1: ติดตั้ง graphify บน host ด้วย `pip install graphifyy` หรือรันผ่าน Docker alpha ครั้งแรก
+- [x] N1: ~~ติดตั้ง graphify บน host ด้วย `pip install graphifyy`~~ — ไม่จำเป็นแล้ว ใช้ Go binary (graphify-core) ทั้งหมด
 - [x] N2: สร้าง graphify-out symlink จริงที่ project root — สร้างแล้ว (relative symlinks)
   - `project-root/graphify-out` → `α/knowledge-graph/graphify-out` ✅
   - `project-root/.understand-anything` → `α/knowledge-graph/understand-anything` ✅
 - [ ] N3: รัน `mcp__ALPHA__update` หรือ `alpha --update` ผ่าน Docker เพื่อสร้าง graph.json จริง
-- [ ] N4: ตรวจว่า graphify-out/graph.html แสดง real graph ใน dashboard
+- [x] N4: ตรวจว่า graphify-out/graph.html แสดง real graph ใน dashboard
 
 ### O — install.sh end-to-end test
 - [ ] O1: รัน `scripts/install.sh` บน fresh checkout — ตรวจ symlinks, docker build, dashboard up
-- [ ] O2: ✅ install.sh line 243 มี `for tool in alpha graphify understand` ครบแล้ว — ยืนยันแล้ว ไม่ต้องแก้
+- [x] O2: ✅ install.sh line 243 มี `for tool in alpha graphify understand` ครบแล้ว — ยืนยันแล้ว ไม่ต้องแก้
 - [x] O3: STEP numbering ใน install.sh แก้เป็น 1/5–4/5 แล้ว (step 5/5 ถูกอยู่แล้ว)
 
 ### P — .mcp.json path fix
 - [x] P1: `.mcp.json` template มี placeholder `[ALPHA_DIR]` — install.sh `_copy_mcp_template` แก้แล้ว ใช้ `sed "s|\[ALPHA_DIR\]|$ALPHA_DIR|g"` แทน `[PROJECT_ROOT]`
 
 ### Q — understand dashboard data path
-- [ ] Q1: `GRAPH_DIR=/workspace` ใน docker-compose → understand dashboard อ่าน `.understand-anything/` จาก `/workspace/.understand-anything` (symlink → `/workspace/α/knowledge-graph/understand-anything`)
-- [ ] Q2: ตรวจว่า relative symlink ใน container resolve ถูก — ทดสอบด้วย real scan
+- [x] Q1: `GRAPH_DIR=/workspace` ใน docker-compose → understand dashboard อ่าน `.understand-anything/` จาก `/workspace/.understand-anything` (symlink → `/workspace/α/knowledge-graph/understand-anything`)
+- [x] Q2: ตรวจว่า relative symlink ใน container resolve ถูก — ทดสอบด้วย real scan
 
 ### S — Understand dashboard token URL (SESSION 3)
 - [x] S1: `docker/understand-start.sh` — wrapper script จับ "Dashboard URL:" จาก stdout → แปลง 127.0.0.1→localhost → เขียนลง `$PROJECT_ROOT/.understand-url`
@@ -149,8 +149,8 @@ Python graphify และ understand hardcode output ไปที่ project roo
 - [x] U5: `session-summary.md` merge — Go backend: sync response includes current summary + new summary + instruction; agent merges; calls `mcp__ALPHA__update_session_summary(content)` to write back ✅
 - [x] U6: File split — graphify split into 10 files (main.go/graph.go/display.go/cmd_*.go), alpha split into 2 files; both build pass ✅
 - [x] U7: Update sync logic. detail here α/docs/USER_REQUIREMENT.md
-- [ ] U8: Update awake logic. ให้ไปอ่าน session-summary.md และ session-[date-time].md ล่าสุด ด้วย
-- [ ] U9: Recheck sync logic. หาก user สั่ง CLI command หรือ slash command เช่น /alpha-sync "สรุป context ล่าสุด และ update session-summary" ต้องการให้ฟังก์ชั่นมันทำงานเต็ม flow คือ สร้าง session-[timestamp].md ใหม่และอัพเดท sesion-summary.md หรือให้ง่ายที่สุดคือ เรียกแค่ /alpha-sync หรือ alpha --sync มันจะทำงานเต็ม flow เอง 
+- [x] U8: Update awake logic. ให้ไปอ่าน session-summary.md และ session-[date-time].md ล่าสุด ด้วย
+- [x] U9: Recheck sync logic. หาก user สั่ง CLI command หรือ slash command เช่น /alpha-sync "สรุป context ล่าสุด และ update session-summary" ต้องการให้ฟังก์ชั่นมันทำงานเต็ม flow คือ สร้าง session-[timestamp].md ใหม่และอัพเดท sesion-summary.md หรือให้ง่ายที่สุดคือ เรียกแค่ /alpha-sync หรือ alpha --sync มันจะทำงานเต็ม flow เอง 
 
 ### V — Bug fixes (found session 5)
 - [x] V1: `alpha --awake/--sync/--overview/...` CLI — alpha CLI passthrough stripped `--` prefix so `alpha --awake path` now maps to `graphify awake path` correctly

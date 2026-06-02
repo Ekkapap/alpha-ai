@@ -10,6 +10,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/mark3labs/mcp-go/mcp"
@@ -42,9 +43,11 @@ func cliSync() {
 		}
 	}
 
+	ts := time.Now().Format("2006-01-02 15:04")
 	sessionPath := writeSessionFile(root, summary)
+	appendSessionToSummary(root, ts, summary)
 	fmt.Printf("Saved: %s\n", sessionPath)
-	fmt.Println("Update session-summary.md via: alpha --update-session-summary")
+	fmt.Println("session-summary.md updated.")
 
 	exec.Command("open", filepath.Join(root, "knowledge-graph/graphify-out/graph.html")).Run()
 }
@@ -80,10 +83,12 @@ func registerMCPSync(s *server.MCPServer) {
 			}
 		}
 
+		ts := time.Now().Format("2006-01-02 15:04")
 		sessionPath := writeSessionFile(root, summary)
+		appendSessionToSummary(root, ts, summary)
 
 		return mcp.NewToolResultText(fmt.Sprintf(
-			"%s\nSession saved: %s\nNext: call update_session_summary with merged session-summary.md content.",
+			"%s\nSession saved: %s\nsession-summary.md updated.",
 			graphMsg, filepath.Base(sessionPath),
 		)), nil
 	})
@@ -98,6 +103,29 @@ func writeSessionFile(alphaRoot, summary string) string {
 	path := filepath.Join(dir, fmt.Sprintf("session-%s.md", tsFile))
 	os.WriteFile(path, []byte(fmt.Sprintf("# Session %s\n\n%s\n", ts, summary)), 0644)
 	return path
+}
+
+// appendSessionToSummary appends a new session block to session-summary.md and updates the timestamp line.
+func appendSessionToSummary(alphaRoot, ts, summary string) {
+	summaryPath := filepath.Join(alphaRoot, "knowledge-graph/memories/session-summary.md")
+	existing, _ := os.ReadFile(summaryPath)
+
+	// Update อัปเดตล่าสุด timestamp.
+	content := string(existing)
+	date := ts[:10]
+	if idx := strings.Index(content, "> อัปเดตล่าสุด:"); idx >= 0 {
+		end := strings.Index(content[idx:], "\n")
+		if end < 0 {
+			end = len(content) - idx
+		}
+		content = content[:idx] + fmt.Sprintf("> อัปเดตล่าสุด: %s", date) + content[idx+end:]
+	}
+
+	// Append session block.
+	entry := fmt.Sprintf("\n---\n\n## Session %s\n\n%s\n", ts, summary)
+	content += entry
+
+	os.WriteFile(summaryPath, []byte(content), 0644)
 }
 
 func registerMCPUpdateSessionSummary(s *server.MCPServer) {

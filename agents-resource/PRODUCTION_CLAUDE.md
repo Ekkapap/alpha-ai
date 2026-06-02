@@ -18,7 +18,7 @@
 ---
 
 ## 🚀 3-PHASE TOKEN-EFFICIENT KNOWLEDGE GRAPH FLOW
-**NEVER** read `knowledge-graph/graphify-out/GRAPH_REPORT.md` or raw deep structures directly.
+**NEVER** read any file inside `graphify-out/*` or raw deep structures directly.
 
 1. **Phase 0: Overview**
    - Tool: `mcp__ALPHA__overview` | `/alpha-overview` | `alpha --overview`
