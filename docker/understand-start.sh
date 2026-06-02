@@ -2,6 +2,9 @@
 # Startup wrapper for alpha-understand container.
 # Builds the core package, starts the Vite dev dashboard, and captures the
 # token URL from stdout so the nginx dashboard can link to it.
+#
+# Strip Windows CRLF from this script itself if copied with Windows line endings.
+(sed -i 's/\r//' "$0" 2>/dev/null || true)
 set -e
 
 URL_FILE="${PROJECT_ROOT:-/workspace/α}/.understand-url"

@@ -11,10 +11,31 @@ name: alpha
 #    → http://localhost:8080/alpha-dashboard/      (landing + graphify)
 #    → http://localhost:5173                       (understand-anything)
 #
+#  ┌─────────────────────────────────────────────────────────────────────────┐
+#  │  Platform quick-reference — copy the right line into your .env file    │
+#  │                                                                         │
+#  │  macOS Apple Silicon (M1/M2/M3)  →  PLATFORM=linux/arm64              │
+#  │  macOS Intel                      →  PLATFORM=linux/amd64              │
+#  │  Linux x86-64                     →  PLATFORM=linux/amd64              │
+#  │  Linux ARM64                      →  PLATFORM=linux/arm64              │
+#  │  Windows x86-64 (Docker Desktop)  →  PLATFORM=linux/amd64              │
+#  │                                                                         │
+#  │  The binaries in agents-resource/tools/bin/linux/ must match           │
+#  │  the chosen PLATFORM arch.  See .env.example for details.              │
+#  └─────────────────────────────────────────────────────────────────────────┘
+#
 #  Env:
 #    HOST_PROJECT_ROOT — absolute path to your project root (parent of α/)
+#                        macOS/Linux : /absolute/path/to/project
+#                        Windows     : C:/path/to/project  (forward slashes)
+#    PLATFORM          — container platform (see table above)
 #    DASHBOARD_PORT    — nginx port (default: 8080)
 #    UNDERSTAND_PORT   — understand dashboard port (default: 5173)
+#
+#  Prerequisites per OS:
+#    macOS   — Docker Desktop ≥ 4.x  (Rosetta or native arm64)
+#    Linux   — Docker Engine ≥ 20.x + Compose plugin
+#    Windows — Docker Desktop ≥ 4.x + WSL2 backend
 # ─────────────────────────────────────────────────────────────────────────────
 
 services:
@@ -22,6 +43,7 @@ services:
   # ── Alpha MCP (stdio, on-demand) ──────────────────────────────────────────
   alpha:
     container_name: alpha
+    platform: ${PLATFORM:-linux/amd64}
     build:
       context: .
       dockerfile: docker/Dockerfile.alpha
@@ -59,8 +81,8 @@ services:
         source: ./docker
         target: /usr/share/nginx/html
         read_only: true
-      - type: bind
-        source: ./logs/nginx
+      - type: volume
+        source: nginx-logs
         target: /var/log/nginx
     command: ["/bin/sh", "-c", "cp /usr/share/nginx/html/dashboard.nginx.conf /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
     ports:
@@ -79,6 +101,7 @@ services:
   # from the outer repo root: /root/.understand-anything/repo/understand-anything-plugin/
   understand-server:
     container_name: alpha-understand
+    platform: ${PLATFORM:-linux/amd64}
     build:
       context: .
       dockerfile: docker/Dockerfile.alpha
@@ -103,3 +126,6 @@ services:
       - BROWSER=none
     profiles: [dashboard]
     restart: unless-stopped
+
+volumes:
+  nginx-logs:

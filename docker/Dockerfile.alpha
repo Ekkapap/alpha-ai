@@ -21,9 +21,10 @@ RUN git clone --depth 1 https://github.com/Lum1104/Understand-Anything \
     && cd /root/.understand-anything/repo/understand-anything-plugin \
     && pnpm install --ignore-scripts 2>&1
 
-# ── Go binaries (pre-built linux/arm64) ──────────────────────────────────────
-# alpha   → /usr/local/bin/alpha          (MCP server ENTRYPOINT)
-# graphify → /usr/local/bin/graphify-core (renamed to avoid conflict with Python graphify CLI)
+# ── Go binaries (pre-built, arch must match PLATFORM in docker-compose.yml) ──
+# Set PLATFORM=linux/arm64 (Apple Silicon / ARM64) or linux/amd64 (Intel / Windows).
+# alpha      → /usr/local/bin/alpha          (MCP server ENTRYPOINT)
+# graphify   → /usr/local/bin/graphify-core  (renamed to avoid conflict with Python graphify CLI)
 # understand → /usr/local/bin/understand
 COPY agents-resource/tools/bin/linux/alpha      /usr/local/bin/alpha
 COPY agents-resource/tools/bin/linux/graphify   /usr/local/bin/graphify-core
