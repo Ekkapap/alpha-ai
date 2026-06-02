@@ -105,7 +105,7 @@ TOOL_SELS=(); for (( i=0; i<N; i++ )); do TOOL_SELS+=(0); done
 CUR=0
 
 draw_menu() {
-  tput clear
+  tput clear >/dev/tty
   echo -e "\n${B}${C}  α ALPHA — Select AI tools to configure${X}\n"
   echo -e "${D}  ↑↓ move   Space/Enter = toggle   Enter on Install = confirm${X}\n"
   echo -e "${D}  [ ]  $(printf '%-24s' 'Tool')  RTK    Graph  UA      Mode${X}"
@@ -128,18 +128,20 @@ draw_menu() {
   echo -e "\n${D}  ────────────────────────────────────────────${X}"
   [[ $CUR -eq $N ]]       && echo -e "${B}${C}▶ ${G}[ INSTALL ]${X}" || echo -e "${D}  [ INSTALL ]${X}"
   [[ $CUR -eq $((N+1)) ]] && echo -e "${B}${R}▶ [ EXIT    ]${X}\n"   || echo -e "${D}  [ EXIT    ]${X}\n"
-}
+} >/dev/tty
 
 run_menu() {
-  tput smcup 2>/dev/null || true
-  tput civis 2>/dev/null || true
-  trap 'tput cnorm 2>/dev/null; tput rmcup 2>/dev/null; exit 1' INT TERM
+  # /dev/tty ensures the TUI works even when the script is piped (curl URL | bash)
+  [[ -t 0 ]] || exec </dev/tty
+  tput smcup  >/dev/tty 2>/dev/null || true
+  tput civis  >/dev/tty 2>/dev/null || true
+  trap 'tput cnorm >/dev/tty 2>/dev/null; tput rmcup >/dev/tty 2>/dev/null; exit 1' INT TERM
   while true; do
     draw_menu
     local key esc
-    IFS= read -r -s -n1 key 2>/dev/null || { MENU_EXIT=1; break; }
+    IFS= read -r -s -n1 key </dev/tty 2>/dev/null || { MENU_EXIT=1; break; }
     if [[ "$key" == $'\x1b' ]]; then
-      IFS= read -r -s -n2 esc 2>/dev/null || esc=""
+      IFS= read -r -s -n2 esc </dev/tty 2>/dev/null || esc=""
       case "$esc" in
         '[A') [[ $CUR -gt 0 ]]          && CUR=$(( CUR-1 )) ;;
         '[B') [[ $CUR -lt $((N+1)) ]]   && CUR=$(( CUR+1 )) ;;
@@ -153,8 +155,8 @@ run_menu() {
       fi
     fi
   done
-  tput cnorm 2>/dev/null || true
-  tput rmcup 2>/dev/null || true
+  tput cnorm >/dev/tty 2>/dev/null || true
+  tput rmcup >/dev/tty 2>/dev/null || true
   trap - INT TERM
 }
 
