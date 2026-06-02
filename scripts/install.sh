@@ -105,7 +105,7 @@ TOOL_SELS=(); for (( i=0; i<N; i++ )); do TOOL_SELS+=(0); done
 CUR=0
 
 draw_menu() {
-  tput clear >/dev/tty
+  printf '\033[2J\033[H'  # clear screen (ANSI fallback, no tput needed)
   echo -e "\n${B}${C}  α ALPHA — Select AI tools to configure${X}\n"
   echo -e "${D}  ↑↓ move   Space/Enter = toggle   Enter on Install = confirm${X}\n"
   echo -e "${D}  [ ]  $(printf '%-24s' 'Tool')  RTK    Graph  UA      Mode${X}"
@@ -128,23 +128,40 @@ draw_menu() {
   echo -e "\n${D}  ────────────────────────────────────────────${X}"
   [[ $CUR -eq $N ]]       && echo -e "${B}${C}▶ ${G}[ INSTALL ]${X}" || echo -e "${D}  [ INSTALL ]${X}"
   [[ $CUR -eq $((N+1)) ]] && echo -e "${B}${R}▶ [ EXIT    ]${X}\n"   || echo -e "${D}  [ EXIT    ]${X}\n"
-} >/dev/tty
+}
+
+# _tui_ok: returns 0 if an interactive TUI is usable, 1 if fallback is needed
+_tui_ok() {
+  [[ -c /dev/tty ]]           || return 1  # no controlling terminal (CI, background)
+  [[ "${TERM:-dumb}" != "dumb" && -n "${TERM:-}" ]] || return 1  # dumb/unset terminal
+  return 0
+}
 
 run_menu() {
-  # /dev/tty ensures the TUI works even when the script is piped (curl URL | bash)
-  [[ -t 0 ]] || exec </dev/tty
-  tput smcup  >/dev/tty 2>/dev/null || true
-  tput civis  >/dev/tty 2>/dev/null || true
-  trap 'tput cnorm >/dev/tty 2>/dev/null; tput rmcup >/dev/tty 2>/dev/null; exit 1' INT TERM
+  if ! _tui_ok; then
+    warn "Non-interactive terminal — configuring all agents automatically"
+    for i in "${!TOOL_KEYS[@]}"; do TOOL_SELS[$i]=1; done
+    return
+  fi
+
+  # Route all TUI I/O through /dev/tty — works for every invocation method:
+  #   bash script.sh | bash <(curl) | curl|bash | bash -c "$(curl)"
+  exec 8</dev/tty 9>/dev/tty
+
+  _tput() { tput "$@" >&9 2>/dev/null || true; }
+  _tput smcup
+  _tput civis
+  trap '_tput cnorm; _tput rmcup; exec 8<&- 9>&-; exit 1' INT TERM
+
   while true; do
-    draw_menu
+    draw_menu >&9
     local key esc
-    IFS= read -r -s -n1 key </dev/tty 2>/dev/null || { MENU_EXIT=1; break; }
+    IFS= read -r -s -n1 key <&8 2>/dev/null || { MENU_EXIT=1; break; }
     if [[ "$key" == $'\x1b' ]]; then
-      IFS= read -r -s -n2 esc </dev/tty 2>/dev/null || esc=""
+      IFS= read -r -s -n2 esc <&8 2>/dev/null || esc=""
       case "$esc" in
-        '[A') [[ $CUR -gt 0 ]]          && CUR=$(( CUR-1 )) ;;
-        '[B') [[ $CUR -lt $((N+1)) ]]   && CUR=$(( CUR+1 )) ;;
+        '[A') [[ $CUR -gt 0 ]]        && CUR=$(( CUR-1 )) ;;
+        '[B') [[ $CUR -lt $((N+1)) ]] && CUR=$(( CUR+1 )) ;;
       esac
     elif [[ "$key" == ' ' ]]; then
       [[ $CUR -lt $N ]] && { [[ "${TOOL_SELS[$CUR]}" == "1" ]] && TOOL_SELS[$CUR]=0 || TOOL_SELS[$CUR]=1; }
@@ -155,8 +172,10 @@ run_menu() {
       fi
     fi
   done
-  tput cnorm >/dev/tty 2>/dev/null || true
-  tput rmcup >/dev/tty 2>/dev/null || true
+
+  _tput cnorm
+  _tput rmcup
+  exec 8<&- 9>&-
   trap - INT TERM
 }
 
