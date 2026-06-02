@@ -71,22 +71,20 @@ CONFIG_JSON="$SCRIPT_DIR/agents-resource/config.json"
 # ════════════════════════════════════════════════════════════════════════════
 #  LOAD config.json → populate bash arrays via python3
 # ════════════════════════════════════════════════════════════════════════════
-eval "$(python3 - "$CONFIG_JSON" << 'PYEOF'
+_PY_CFG=$(mktemp /tmp/alpha_cfg_XXXX.py)
+cat > "$_PY_CFG" << 'PYEOF'
 import json, sys
-
 cfg = json.load(open(sys.argv[1]))
 agents = cfg["agents"]
 keys    = list(agents.keys())
-labels  = [a["label"]                           for a in agents.values()]
-rtkcmds = [a.get("rtk_cmd", "")                 for a in agents.values()]
-modes   = [a.get("mode", "hook")                 for a in agents.values()]
-feat_g  = ["1" if a["features"].get("graph")    else "0" for a in agents.values()]
+labels  = [a["label"]                            for a in agents.values()]
+rtkcmds = [a.get("rtk_cmd", "")                  for a in agents.values()]
+modes   = [a.get("mode", "hook")                  for a in agents.values()]
+feat_g  = ["1" if a["features"].get("graph")     else "0" for a in agents.values()]
 feat_u  = ["1" if a["features"].get("understand") else "0" for a in agents.values()]
-
 def bash_array(name, items):
     escaped = [v.replace("'", "'\\''") for v in items]
     return f"{name}=(" + " ".join(f"'{e}'" for e in escaped) + ")"
-
 print(bash_array("TOOL_KEYS",   keys))
 print(bash_array("TOOL_LABELS", labels))
 print(bash_array("TOOL_RTKS",   rtkcmds))
@@ -94,7 +92,8 @@ print(bash_array("TOOL_MODES",  modes))
 print(bash_array("TOOL_GFY_OK", feat_g))
 print(bash_array("TOOL_UA_OK",  feat_u))
 PYEOF
-)"
+eval "$(python3 "$_PY_CFG" "$CONFIG_JSON")"
+rm -f "$_PY_CFG"
 
 N=${#TOOL_KEYS[@]}
 TOOL_SELS=(); for (( i=0; i<N; i++ )); do TOOL_SELS+=(0); done
@@ -224,7 +223,8 @@ for i in "${!TOOL_KEYS[@]}"; do
   [[ "${TOOL_KEYS[$i]}" == "claude" ]] && is_sel "$i" || continue
   CLAUDE_SETTINGS="$HOME/.claude/settings.json"
   [[ -f "$CLAUDE_SETTINGS" ]] || { warn "~/.claude/settings.json not found — add RTK hook manually"; break; }
-  python3 - "$CLAUDE_SETTINGS" <<'PYEOF'
+  _PY_HOOK=$(mktemp /tmp/alpha_hook_XXXX.py)
+  cat > "$_PY_HOOK" << 'PYEOF'
 import json, sys
 path = sys.argv[1]
 with open(path) as f: cfg = json.load(f)
@@ -243,6 +243,8 @@ if not already:
 else:
     print("  \033[0;32m✔\033[0m  RTK hook already in settings.json — skipped")
 PYEOF
+  python3 "$_PY_HOOK" "$CLAUDE_SETTINGS"
+  rm -f "$_PY_HOOK"
 done
 
 rtk ls 2>/dev/null || true
@@ -272,7 +274,8 @@ LINUX_ARCH="${_PLATFORM#linux/}"  # e.g. "linux/arm64" → "arm64"
 
 # Create or update .env with HOST_PROJECT_ROOT and PLATFORM
 [[ ! -f "$_ENV_FILE" && -f "$SCRIPT_DIR/.env.example" ]] && cp "$SCRIPT_DIR/.env.example" "$_ENV_FILE"
-python3 - "$_ENV_FILE" "$PROJECT_ROOT" "$_PLATFORM" << 'PYEOF'
+_PY_ENV=$(mktemp /tmp/alpha_env_XXXX.py)
+cat > "$_PY_ENV" << 'PYEOF'
 import re, sys, os
 path, project_root, platform = sys.argv[1], sys.argv[2], sys.argv[3]
 content = open(path).read() if os.path.exists(path) else ""
@@ -284,6 +287,8 @@ content = set_var(content, 'HOST_PROJECT_ROOT', project_root)
 content = set_var(content, 'PLATFORM', platform)
 with open(path, 'w') as f: f.write(content)
 PYEOF
+python3 "$_PY_ENV" "$_ENV_FILE" "$PROJECT_ROOT" "$_PLATFORM"
+rm -f "$_PY_ENV"
 ok ".env → HOST_PROJECT_ROOT=$PROJECT_ROOT  PLATFORM=$_PLATFORM"
 
 if command -v go &>/dev/null; then
