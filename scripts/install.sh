@@ -128,13 +128,12 @@ if [[ "$GLOBAL_MODE" == "1" ]]; then
     _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/linux/alpha"
   fi
   if [[ -f "$_ALPHA_BIN" ]]; then
-    if ln -sf "$_ALPHA_BIN" /usr/local/bin/alpha 2>/dev/null; then
-      ok "alpha → /usr/local/bin/alpha"
-    else
-      warn "Cannot write to /usr/local/bin — try: sudo ln -sf \"$_ALPHA_BIN\" /usr/local/bin/alpha"
-    fi
+    mkdir -p "$HOME/.local/bin"
+    ln -sf "$_ALPHA_BIN" "$HOME/.local/bin/alpha" \
+      && ok "alpha → ~/.local/bin/alpha" \
+      || warn "Failed to link alpha binary — run manually: ln -sf \"$_ALPHA_BIN\" ~/.local/bin/alpha"
   else
-    warn "alpha binary not found at $_ALPHA_BIN — build with: cd $ALPHA_HOME && go build ./agents-resource/tools/alpha"
+    warn "alpha binary not found at $_ALPHA_BIN — run install.sh again after building"
   fi
 fi
 

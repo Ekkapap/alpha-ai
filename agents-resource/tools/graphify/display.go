@@ -76,7 +76,7 @@ func alphaReadyChecks(r string, cfg alphaConfig) []readyCheck {
 		checks = append(checks, readyCheck{"graph", false, "not built — run /graphify"})
 	}
 
-	memPath := filepath.Join(r, "knowledge-graph/memories/session-summary.md")
+	memPath := filepath.Join(memoriesDir(r), "session-summary.md")
 	if stat, err := os.Stat(memPath); err == nil {
 		checks = append(checks, readyCheck{"memory", true, "last sync " + stat.ModTime().Format("2006-01-02 15:04")})
 	} else {

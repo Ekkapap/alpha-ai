@@ -169,7 +169,7 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 				target = a
 			}
 		}
-		graphPath := filepath.Join(alphaDir, "knowledge-graph/graphify-out/graph.json")
+		graphPath := filepath.Join(alphaProjectDataDir(alphaDir, projectRoot), "graph.json")
 		if !force {
 			if _, err := os.Stat(graphPath); err == nil {
 				fmt.Println("Knowledge graph already initialized. Use 'alpha --knowledge-graph update' for incremental updates.")

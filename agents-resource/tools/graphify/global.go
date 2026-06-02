@@ -35,9 +35,12 @@ func isGlobalMode() bool {
 //   - Local mode:  alphaDir/knowledge-graph/graphify-out  (unchanged)
 func graphifyDataDir(alphaDir string) string {
 	if isGlobalMode() {
-		projectRoot := os.Getenv("ALPHA_ROOT")
-		if projectRoot != "" {
-			return filepath.Join(alphaDir, "knowledge-graph", "projects", projectID(projectRoot), "graphify-out")
+		id := os.Getenv("ALPHA_PROJECT_ID")
+		if id == "" {
+			id = projectID(os.Getenv("ALPHA_ROOT"))
+		}
+		if id != "" && id != "-" {
+			return filepath.Join(alphaDir, "knowledge-graph", "projects", id, "graphify-out")
 		}
 	}
 	return filepath.Join(alphaDir, "knowledge-graph", "graphify-out")
@@ -48,6 +51,7 @@ func graphifyDataDir(alphaDir string) string {
 //   - Local mode:  alphaDir/knowledge-graph/memories
 func memoriesDir(alphaDir string) string {
 	if isGlobalMode() {
+		// In Docker: ALPHA_ROOT=/workspace (project mount) — memories are local to project
 		projectRoot := os.Getenv("ALPHA_ROOT")
 		if projectRoot != "" {
 			return filepath.Join(projectRoot, "memories")

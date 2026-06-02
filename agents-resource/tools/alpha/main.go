@@ -106,8 +106,11 @@ func findRoots() (string, string) {
 // Global mode: alphaDir/knowledge-graph/projects/<id>/
 // Local mode:  alphaDir/knowledge-graph/
 func alphaProjectDataDir(alphaDir, projectRoot string) string {
-	if os.Getenv("ALPHA_GLOBAL") == "1" && projectRoot != "" {
-		id := alphaProjectID(projectRoot)
+	if os.Getenv("ALPHA_GLOBAL") == "1" {
+		id := os.Getenv("ALPHA_PROJECT_ID")
+		if id == "" {
+			id = alphaProjectID(projectRoot)
+		}
 		return filepath.Join(alphaDir, "knowledge-graph", "projects", id)
 	}
 	return filepath.Join(alphaDir, "knowledge-graph")

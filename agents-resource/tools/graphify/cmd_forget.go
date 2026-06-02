@@ -25,7 +25,7 @@ func cliForget() {
 		}
 	}
 
-	memDir := filepath.Join(root, "knowledge-graph/memories")
+	memDir := memoriesDir(root)
 	var targets []string
 
 	if pattern == "" {
@@ -56,7 +56,7 @@ func cliForget() {
 		parts := strings.Split(filepath.Base(f), "_")
 		if len(parts) >= 4 {
 			ts := strings.TrimSuffix(parts[2]+"_"+parts[3], ".md")
-			gMatches, _ := filepath.Glob(filepath.Join(root, "knowledge-graph/graphify-out/memory/*"+ts+"*"))
+			gMatches, _ := filepath.Glob(filepath.Join(graphifyDataDir(root), "memory/*"+ts+"*"))
 			for _, g := range gMatches {
 				fmt.Printf("  - %s (Graph Memory)\n", filepath.Base(g))
 				graphFiles = append(graphFiles, g)

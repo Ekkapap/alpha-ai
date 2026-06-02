@@ -3,12 +3,13 @@ name: alpha-global
 # ─────────────────────────────────────────────────────────────────────────────
 #  α ALPHA — Global Mode docker-compose
 #
-#  Used when ~/.alpha-ai/ is the shared installation.
-#  The MCP container mounts both the global alpha dir and per-project root.
+#  MCP (alpha):      mounts ALPHA_HOME + HOST_PROJECT_ROOT (per-project, on-demand)
+#  Dashboard:        mounts ALPHA_HOME only — all project data lives under
+#                    knowledge-graph/projects/[id]/ — no restart needed per project
 #
 #  Required env vars (set in each project's .mcp.json):
 #    ALPHA_HOME        — absolute path to ~/.alpha-ai/
-#    HOST_PROJECT_ROOT — absolute path to the project being analyzed
+#    HOST_PROJECT_ROOT — absolute path to the project (MCP only)
 #    ALPHA_PROJECT_ID  — project ID (e.g. "my-project-a1b2c3d4")
 #    PLATFORM          — linux/arm64 or linux/amd64
 # ─────────────────────────────────────────────────────────────────────────────
@@ -73,20 +74,16 @@ services:
       dockerfile: docker/Dockerfile.alpha
     entrypoint: ["/understand-start.sh"]
     volumes:
+      # Only ALPHA_HOME — all project graph data is under knowledge-graph/projects/[id]/
       - type: bind
         source: ${ALPHA_HOME}
         target: /alpha-ai
-      - type: bind
-        source: ${HOST_PROJECT_ROOT}
-        target: /workspace
     working_dir: /root/.understand-anything/repo/understand-anything-plugin
     ports:
       - "${UNDERSTAND_PORT:-5173}:5173"
     environment:
       - PROJECT_ROOT=/alpha-ai
-      - ALPHA_ROOT=/workspace
       - ALPHA_GLOBAL=1
-      - ALPHA_PROJECT_ID=${ALPHA_PROJECT_ID}
       - GRAPH_DIR=/alpha-ai
       - BROWSER=none
     profiles: [dashboard]
