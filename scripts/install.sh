@@ -122,9 +122,11 @@ if [[ "$GLOBAL_MODE" == "1" ]]; then
   fi
 
   # Install alpha binary to /usr/local/bin so `alpha` is available as CLI command
-  _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/${OS,,}/alpha"
-  [[ "$OS" == "Darwin" ]] && _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/darwin/alpha"
-  [[ "$OS" == "Linux"  ]] && _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/linux/alpha"
+  if [[ "$OS" == "Darwin" ]]; then
+    _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/darwin/alpha"
+  else
+    _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/linux/alpha"
+  fi
   if [[ -f "$_ALPHA_BIN" ]]; then
     if ln -sf "$_ALPHA_BIN" /usr/local/bin/alpha 2>/dev/null; then
       ok "alpha → /usr/local/bin/alpha"
