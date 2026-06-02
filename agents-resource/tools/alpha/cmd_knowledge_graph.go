@@ -74,11 +74,25 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 		os.Exit(1)
 	}
 	subCmd := os.Args[2]
-	composeFile := filepath.Join(alphaDir, "docker-compose.yml")
-	composeEnv := append(os.Environ(), "HOST_PROJECT_ROOT="+projectRoot)
+
+	globalMode := os.Getenv("ALPHA_GLOBAL") == "1"
+	var composeFile string
+	var composeEnv []string
+	if globalMode {
+		composeFile = filepath.Join(alphaDir, "docker-compose.global.yml")
+		projectID := alphaProjectID(projectRoot)
+		composeEnv = append(os.Environ(),
+			"ALPHA_HOME="+alphaDir,
+			"HOST_PROJECT_ROOT="+projectRoot,
+			"ALPHA_PROJECT_ID="+projectID,
+			"ALPHA_GLOBAL=1",
+		)
+	} else {
+		composeFile = filepath.Join(alphaDir, "docker-compose.yml")
+		composeEnv = append(os.Environ(), "HOST_PROJECT_ROOT="+projectRoot)
+	}
 
 	runCompose := func(extraArgs ...string) {
-		// rtk docker: compact output (strips container IDs, progress bars, redundant lines)
 		args := append([]string{"docker", "compose", "-f", composeFile}, extraArgs...)
 		cmd := exec.Command("rtk", args...)
 		cmd.Env = composeEnv

@@ -88,7 +88,16 @@ func findRoots() (string, string) {
 	// CWD fallback
 	cwd, _ := os.Getwd()
 	if _, err := os.Stat(filepath.Join(cwd, "α")); err == nil {
-		return filepath.Join(cwd, "α"), cwd
+		alphaPath := filepath.Join(cwd, "α")
+		// If α/ is a symlink to ~/.alpha-ai/, auto-detect global mode
+		if resolved, err := filepath.EvalSymlinks(alphaPath); err == nil {
+			home, _ := os.UserHomeDir()
+			if resolved == filepath.Join(home, ".alpha-ai") {
+				os.Setenv("ALPHA_GLOBAL", "1")
+				return resolved, cwd
+			}
+		}
+		return alphaPath, cwd
 	}
 	return cwd, filepath.Dir(cwd)
 }

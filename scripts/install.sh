@@ -105,7 +105,7 @@ SCRIPT_DIR="$ALPHA_DIR"
 CONFIG_JSON="$SCRIPT_DIR/agents-resource/config.json"
 [[ -f "$CONFIG_JSON" ]] || die "agents-resource/config.json not found in installation dir"
 
-# Global mode: create α/ → ~/.alpha-ai/ symlink in project
+# Global mode: create α/ → ~/.alpha-ai/ symlink + install alpha binary to PATH
 if [[ "$GLOBAL_MODE" == "1" ]]; then
   if [[ -L "$PROJECT_ROOT/α" && "$(readlink "$PROJECT_ROOT/α")" == "$ALPHA_HOME" ]]; then
     ok "α/ → already correct"
@@ -119,6 +119,20 @@ if [[ "$GLOBAL_MODE" == "1" ]]; then
   else
     ln -s "$ALPHA_HOME" "$PROJECT_ROOT/α"
     ok "α/ → $ALPHA_HOME"
+  fi
+
+  # Install alpha binary to /usr/local/bin so `alpha` is available as CLI command
+  _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/${OS,,}/alpha"
+  [[ "$OS" == "Darwin" ]] && _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/darwin/alpha"
+  [[ "$OS" == "Linux"  ]] && _ALPHA_BIN="$ALPHA_HOME/agents-resource/tools/bin/linux/alpha"
+  if [[ -f "$_ALPHA_BIN" ]]; then
+    if ln -sf "$_ALPHA_BIN" /usr/local/bin/alpha 2>/dev/null; then
+      ok "alpha → /usr/local/bin/alpha"
+    else
+      warn "Cannot write to /usr/local/bin — try: sudo ln -sf \"$_ALPHA_BIN\" /usr/local/bin/alpha"
+    fi
+  else
+    warn "alpha binary not found at $_ALPHA_BIN — build with: cd $ALPHA_HOME && go build ./agents-resource/tools/alpha"
   fi
 fi
 
