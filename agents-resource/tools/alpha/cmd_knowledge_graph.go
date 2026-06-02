@@ -107,6 +107,7 @@ func handleKnowledgeGraph(alphaDir, projectRoot, uaBin string) {
 	runCompose := func(extraArgs ...string) {
 		args := append([]string{"docker", "compose", "-f", composeFile}, extraArgs...)
 		cmd := exec.Command("rtk", args...)
+		cmd.Dir = alphaDir // load α/.env for port overrides (DASHBOARD_PORT, UNDERSTAND_PORT)
 		cmd.Env = composeEnv
 		cmd.Stdout, cmd.Stderr = os.Stdout, os.Stderr
 		cmd.Run()
