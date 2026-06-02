@@ -2,6 +2,11 @@
   "version": "1.0",
   "graphify_version": "1.0.0",
 
+  "graph": {
+    "include": ["knowledge-graph/raw-knowledge"],
+    "exclude": []
+  },
+
   "universal": {
     "dir_symlinks": [
       {

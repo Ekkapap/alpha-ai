@@ -58,6 +58,8 @@ func main() {
 			cliForget()
 		case "update":
 			cliUpdate()
+		case "extract":
+			cliExtract()
 		case "overview":
 			cliOverview()
 		case "sketch":

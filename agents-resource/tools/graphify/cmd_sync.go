@@ -49,7 +49,7 @@ func cliSync() {
 	fmt.Printf("Saved: %s\n", sessionPath)
 	fmt.Println("session-summary.md updated.")
 
-	exec.Command("open", filepath.Join(root, "knowledge-graph/graphify-out/graph.html")).Run()
+	exec.Command("open", filepath.Join(graphifyDataDir(root), "graph.html")).Run()
 }
 
 func registerMCPSync(s *server.MCPServer) {
@@ -96,7 +96,7 @@ func registerMCPSync(s *server.MCPServer) {
 
 // writeSessionFile writes memories/session-[ts].md and returns its path.
 func writeSessionFile(alphaRoot, summary string) string {
-	dir := filepath.Join(alphaRoot, "knowledge-graph/memories")
+	dir := memoriesDir(alphaRoot)
 	os.MkdirAll(dir, 0755)
 	ts := time.Now().Format("2006-01-02 15:04")
 	tsFile := time.Now().Format("20060102-1504")
@@ -107,7 +107,7 @@ func writeSessionFile(alphaRoot, summary string) string {
 
 // appendSessionToSummary appends a new session block to session-summary.md and updates the timestamp line.
 func appendSessionToSummary(alphaRoot, ts, summary string) {
-	summaryPath := filepath.Join(alphaRoot, "knowledge-graph/memories/session-summary.md")
+	summaryPath := filepath.Join(memoriesDir(alphaRoot), "session-summary.md")
 	existing, _ := os.ReadFile(summaryPath)
 
 	// Update อัปเดตล่าสุด timestamp.
@@ -147,7 +147,7 @@ func registerMCPUpdateSessionSummary(s *server.MCPServer) {
 	}, func(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
 		args, _ := request.Params.Arguments.(map[string]any)
 		content, _ := args["content"].(string)
-		summaryPath := filepath.Join(root, "knowledge-graph/memories/session-summary.md")
+		summaryPath := filepath.Join(memoriesDir(root), "session-summary.md")
 		if err := os.WriteFile(summaryPath, []byte(content), 0644); err != nil {
 			return mcp.NewToolResultError("write session-summary.md: " + err.Error()), nil
 		}

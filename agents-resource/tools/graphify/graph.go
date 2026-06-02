@@ -33,7 +33,7 @@ type fullGraph struct {
 }
 
 func loadFullGraph(r string) (*fullGraph, error) {
-	data, err := os.ReadFile(filepath.Join(r, "knowledge-graph/graphify-out/graph.json"))
+	data, err := os.ReadFile(filepath.Join(graphifyDataDir(r), "graph.json"))
 	if err != nil {
 		return nil, err
 	}
@@ -226,7 +226,7 @@ type overviewResult struct {
 }
 
 func graphOverview(r string) (*overviewResult, error) {
-	graphData, err := os.ReadFile(filepath.Join(r, "knowledge-graph/graphify-out/graph.json"))
+	graphData, err := os.ReadFile(filepath.Join(graphifyDataDir(r), "graph.json"))
 	if err != nil {
 		return nil, err
 	}
@@ -238,7 +238,7 @@ func graphOverview(r string) (*overviewResult, error) {
 		return nil, err
 	}
 
-	analysisData, err := os.ReadFile(filepath.Join(r, "knowledge-graph/graphify-out/.graphify_analysis.json"))
+	analysisData, err := os.ReadFile(filepath.Join(graphifyDataDir(r), ".graphify_analysis.json"))
 	if err != nil {
 		return nil, err
 	}
@@ -261,7 +261,7 @@ func graphOverview(r string) (*overviewResult, error) {
 		}
 	}
 
-	labelsData, _ := os.ReadFile(filepath.Join(r, "knowledge-graph/graphify-out/.graphify_labels.json"))
+	labelsData, _ := os.ReadFile(filepath.Join(graphifyDataDir(r), ".graphify_labels.json"))
 	var labels map[string]string
 	json.Unmarshal(labelsData, &labels)
 	communityName := func(id string) string {

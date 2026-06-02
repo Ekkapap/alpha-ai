@@ -1,0 +1,96 @@
+name: alpha-global
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  α ALPHA — Global Mode docker-compose
+#
+#  Used when ~/.alpha-ai/ is the shared installation.
+#  The MCP container mounts both the global alpha dir and per-project root.
+#
+#  Required env vars (set in each project's .mcp.json):
+#    ALPHA_HOME        — absolute path to ~/.alpha-ai/
+#    HOST_PROJECT_ROOT — absolute path to the project being analyzed
+#    ALPHA_PROJECT_ID  — project ID (e.g. "my-project-a1b2c3d4")
+#    PLATFORM          — linux/arm64 or linux/amd64
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── Alpha MCP (stdio, on-demand) ──────────────────────────────────────────
+  alpha:
+    container_name: alpha-global
+    platform: ${PLATFORM:-linux/amd64}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.alpha
+    volumes:
+      # Global alpha installation + knowledge-graph/projects/
+      - type: bind
+        source: ${ALPHA_HOME}
+        target: /alpha-ai
+      # Project being analyzed (for scanning)
+      - type: bind
+        source: ${HOST_PROJECT_ROOT}
+        target: /workspace
+    environment:
+      - PROJECT_ROOT=/alpha-ai
+      - ALPHA_ROOT=/workspace
+      - ALPHA_GLOBAL=1
+      - ALPHA_PROJECT_ID=${ALPHA_PROJECT_ID}
+      - ALPHA_IN_DOCKER=1
+    working_dir: /alpha-ai
+    stdin_open: true
+    tty: false
+    profiles: [mcp]
+
+  # ── Dashboard (nginx) ─────────────────────────────────────────────────────
+  dashboard:
+    container_name: alpha-global-dashboard
+    image: nginx:alpine
+    volumes:
+      - type: bind
+        source: ${ALPHA_HOME}
+        target: /alpha-ai
+        read_only: true
+      - type: bind
+        source: ${ALPHA_HOME}/docker
+        target: /usr/share/nginx/html
+        read_only: true
+      - type: volume
+        source: nginx-logs-global
+        target: /var/log/nginx
+    command: ["/bin/sh", "-c", "cp /usr/share/nginx/html/dashboard.nginx.conf /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
+    ports:
+      - "${DASHBOARD_PORT:-8080}:80"
+    profiles: [dashboard]
+    restart: unless-stopped
+
+  # ── Understand-Anything Dashboard ─────────────────────────────────────────
+  understand-server:
+    container_name: alpha-global-understand
+    platform: ${PLATFORM:-linux/amd64}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.alpha
+    entrypoint: ["/understand-start.sh"]
+    volumes:
+      - type: bind
+        source: ${ALPHA_HOME}
+        target: /alpha-ai
+      - type: bind
+        source: ${HOST_PROJECT_ROOT}
+        target: /workspace
+    working_dir: /root/.understand-anything/repo/understand-anything-plugin
+    ports:
+      - "${UNDERSTAND_PORT:-5173}:5173"
+    environment:
+      - PROJECT_ROOT=/alpha-ai
+      - ALPHA_ROOT=/workspace
+      - ALPHA_GLOBAL=1
+      - ALPHA_PROJECT_ID=${ALPHA_PROJECT_ID}
+      - GRAPH_DIR=/alpha-ai
+      - BROWSER=none
+    profiles: [dashboard]
+    restart: unless-stopped
+
+volumes:
+  nginx-logs-global:

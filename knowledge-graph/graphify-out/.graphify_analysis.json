@@ -35,13 +35,26 @@
       "data_sync_all_rebuild_ui_reasoning"
     ],
     "15": [
+      "alpha_cmd_configure_go",
+      "alpha_cmd_configure_configurepaths",
+      "alpha_cmd_configure_configurelocal",
+      "alpha_cmd_configure_configureglobal",
+      "alpha_cmd_configure_projectinit",
+      "alpha_cmd_configure_runprojectinit",
+      "alpha_cmd_configure_stripnotefields",
+      "alpha_cmd_configure_readenvfile",
+      "alpha_global_go",
+      "alpha_global_alphaprojectid",
+      "alpha_main_alphaprojectdatadir"
+    ],
+    "16": [
       "alpha_cmd_knowledge_graph_go",
       "alpha_cmd_knowledge_graph_rungraphifyupdate",
       "alpha_cmd_knowledge_graph_rungraphifyupdatetarget",
       "alpha_cmd_knowledge_graph_handleknowledgegraph",
       "alpha_main_indocker"
     ],
-    "16": [
+    "17": [
       "alpha_main_go",
       "alpha_main_findroots",
       "alpha_main_binpath",
@@ -49,27 +62,53 @@
       "alpha_main_strparam",
       "alpha_main_main"
     ],
-    "17": [
+    "18": [
       "graphify_cmd_alpha_go",
       "graphify_cmd_alpha_clialpha",
-      "graphify_cmd_alpha_registermcpalpha"
+      "graphify_cmd_alpha_registermcpalpha",
+      "graphify_display_loadalphaconfig",
+      "graphify_display_alphareadychecks",
+      "graphify_display_alphadisplay"
     ],
-    "18": [
+    "19": [
       "graphify_cmd_awake_go",
       "graphify_cmd_awake_cliawake",
       "graphify_cmd_awake_findlatestsessionfile",
       "graphify_cmd_awake_registermcpawake",
+      "graphify_cmd_awake_appendknowledgedocs",
+      "graphify_cmd_focus_go",
+      "graphify_cmd_focus_clifocus",
+      "graphify_cmd_focus_registermcpdebuginfo",
+      "graphify_cmd_focus_registermcpfocus",
+      "graphify_cmd_forget_go",
+      "graphify_cmd_forget_cliforget",
+      "graphify_cmd_query_go",
+      "graphify_cmd_query_clioverview",
+      "graphify_cmd_query_clisketch",
+      "graphify_cmd_query_clidetail",
+      "graphify_cmd_query_registermcpoverview",
+      "graphify_cmd_query_registermcpsketch",
+      "graphify_cmd_query_registermcpdetail",
+      "graphify_cmd_scan_cliupdate",
+      "graphify_cmd_scan_cliextract",
+      "graphify_cmd_scan_registermcpsetlabels",
+      "graphify_cmd_sync_registermcpupdatesessionsummary",
+      "graphify_global_go",
+      "graphify_global_projectid",
+      "graphify_global_isglobalmode",
+      "graphify_global_graphifydatadir",
+      "graphify_global_memoriesdir",
+      "graphify_graph_loadfullgraph",
       "graphify_graph_scorenode",
       "graphify_graph_sketchgraph",
+      "graphify_graph_detailnodes",
+      "graphify_graph_graphoverview",
+      "graphify_main_go",
+      "graphify_main_main",
       "graphify_overview_go",
       "graphify_overview_buildawakeoverview",
-      "graphify_overview_pair"
-    ],
-    "19": [
-      "graphify_cmd_build_go",
-      "graphify_cmd_build_graphifysrcdir",
-      "graphify_cmd_build_checkandautorebuild",
-      "graphify_cmd_build_clibuild"
+      "graphify_overview_pair",
+      "graphify_semantic_loadapikey"
     ],
     "2": [
       "examples_cli_test_go",
@@ -81,32 +120,12 @@
       "examples_root_execute"
     ],
     "20": [
-      "graphify_cmd_focus_go",
-      "graphify_cmd_focus_clifocus",
-      "graphify_cmd_focus_registermcpdebuginfo",
-      "graphify_cmd_focus_registermcpfocus"
+      "graphify_cmd_build_go",
+      "graphify_cmd_build_graphifysrcdir",
+      "graphify_cmd_build_checkandautorebuild",
+      "graphify_cmd_build_clibuild"
     ],
     "21": [
-      "graphify_cmd_forget_go",
-      "graphify_cmd_forget_cliforget"
-    ],
-    "22": [
-      "graphify_cmd_query_go",
-      "graphify_cmd_query_clioverview",
-      "graphify_cmd_query_clisketch",
-      "graphify_cmd_query_clidetail",
-      "graphify_cmd_query_registermcpoverview",
-      "graphify_cmd_query_registermcpsketch",
-      "graphify_cmd_query_registermcpdetail",
-      "graphify_cmd_scan_registermcpsetlabels",
-      "graphify_cmd_sync_registermcpupdatesessionsummary",
-      "graphify_graph_loadfullgraph",
-      "graphify_graph_detailnodes",
-      "graphify_graph_graphoverview",
-      "graphify_main_go",
-      "graphify_main_main"
-    ],
-    "23": [
       "graphify_cmd_scan_go",
       "graphify_cmd_scan_graphnode",
       "graphify_cmd_scan_graphlink",
@@ -119,10 +138,9 @@
       "graphify_cmd_scan_nodekey",
       "graphify_cmd_scan_filterempty",
       "graphify_cmd_scan_isascii",
-      "graphify_cmd_scan_cliupdate",
       "graphify_cmd_scan_registermcpupdate"
     ],
-    "24": [
+    "22": [
       "graphify_cmd_scan_assemblegraph",
       "graphify_cmd_scan_writejson",
       "graphify_cmd_scan_slugify",
@@ -135,39 +153,34 @@
       "graphify_community_godnode",
       "graphify_community_findgodnodes",
       "graphify_community_pair",
-      "graphify_extract_generic_lastpathsegment",
-      "graphify_semantic_loadapikey",
       "graphify_semantic_agentfallbackprompt"
     ],
-    "25": [
+    "23": [
       "graphify_cmd_sync_go",
       "graphify_cmd_sync_clisync",
       "graphify_cmd_sync_registermcpsync",
       "graphify_cmd_sync_writesessionfile",
       "graphify_cmd_sync_appendsessiontosummary"
     ],
-    "26": [
+    "24": [
       "graphify_display_go",
       "graphify_display_findprojectroot",
       "graphify_display_alphaconfig",
-      "graphify_display_loadalphaconfig",
       "graphify_display_readycheck",
-      "graphify_display_alphareadychecks",
-      "graphify_display_alphadisplay",
       "graphify_display_isinputtty",
       "graphify_display_printhelp"
     ],
-    "27": [
+    "25": [
       "graphify_extract_generic_go",
       "graphify_extract_generic_langrules",
       "graphify_extract_generic_init",
-      "graphify_extract_generic_lastimportsegment"
-    ],
-    "28": [
       "graphify_extract_generic_extractgeneric",
-      "graphify_extract_generic_iskeyword"
+      "graphify_extract_generic_lastpathsegment",
+      "graphify_extract_generic_lastimportsegment",
+      "graphify_extract_generic_iskeyword",
+      "graphify_extract_generic_extractmarkdown"
     ],
-    "29": [
+    "26": [
       "graphify_extract_go_go",
       "graphify_extract_go_extractgo",
       "graphify_extract_go_receivertype",
@@ -175,13 +188,7 @@
       "graphify_extract_go_filenodelabel",
       "graphify_extract_go_lastsegment"
     ],
-    "3": [
-      "examples_completion_go",
-      "examples_completion_init",
-      "examples_completion_customcompletionexamples",
-      "examples_completion_getavailableservices"
-    ],
-    "30": [
+    "27": [
       "graphify_graph_go",
       "graphify_graph_gnode",
       "graphify_graph_glink",
@@ -192,18 +199,22 @@
       "graphify_graph_godnodeinfo",
       "graphify_graph_overviewresult"
     ],
-    "31": [
+    "28": [
       "graphify_scan_go",
       "graphify_scan_extractedfile",
       "graphify_scan_rawnode",
       "graphify_scan_rawedge",
+      "graphify_scan_graphconfig",
+      "graphify_scan_loadgraphconfig",
+      "graphify_scan_isincluded",
+      "graphify_scan_resolveincludes",
       "graphify_scan_scanproject",
       "graphify_scan_loadignorepatterns",
       "graphify_scan_shouldignore",
       "graphify_scan_globmatch",
       "graphify_scan_extractfile"
     ],
-    "32": [
+    "29": [
       "graphify_semantic_go",
       "graphify_semantic_apikey",
       "graphify_semantic_generatecommunitylabels",
@@ -213,7 +224,17 @@
       "graphify_semantic_postjson",
       "graphify_semantic_parsejsonlabels"
     ],
-    "33": [
+    "3": [
+      "examples_completion_go",
+      "examples_completion_init",
+      "examples_completion_customcompletionexamples",
+      "examples_completion_getavailableservices"
+    ],
+    "30": [
+      "understand_global_go",
+      "understand_global_understandprojectid"
+    ],
+    "31": [
       "understand_main_go",
       "understand_main_meta",
       "understand_main_graphnode",
@@ -222,6 +243,7 @@
       "understand_main_tourstep",
       "understand_main_projectinfo",
       "understand_main_knowledgegraph",
+      "understand_main_apienv",
       "understand_main_pruneandpreserveexisting",
       "understand_main_finalizegraph",
       "understand_main_detectlanguages",
@@ -237,7 +259,7 @@
       "understand_main_findprojectroot",
       "understand_main_isinputtty"
     ],
-    "34": [
+    "32": [
       "understand_main_loginfo",
       "understand_main_loginfof",
       "understand_main_runcmd",
@@ -309,8 +331,6 @@
     "30": 1,
     "31": 1,
     "32": 1,
-    "33": 1,
-    "34": 1,
     "4": 1,
     "5": 1,
     "6": 1,
@@ -322,52 +342,52 @@
     {
       "id": "understand_main_go",
       "label": "main.go",
-      "degree": 30
-    },
-    {
-      "id": "understand_main_loginfo",
-      "label": "logInfo()",
-      "degree": 24
+      "degree": 31
     },
     {
       "id": "graphify_cmd_scan_assemblegraph",
       "label": "assembleGraph()",
-      "degree": 24
+      "degree": 27
+    },
+    {
+      "id": "understand_main_loginfo",
+      "label": "logInfo()",
+      "degree": 25
     },
     {
       "id": "graphify_main_main",
       "label": "main()",
-      "degree": 23
+      "degree": 24
     },
     {
       "id": "graphify_cmd_scan_go",
       "label": "cmd_scan.go",
-      "degree": 21
-    },
-    {
-      "id": "understand_main_main",
-      "label": "main()",
-      "degree": 19
+      "degree": 22
     },
     {
       "id": "alpha_main_main",
       "label": "main()",
-      "degree": 18
+      "degree": 22
+    },
+    {
+      "id": "understand_main_main",
+      "label": "main()",
+      "degree": 20
     },
     {
       "id": "understand_main_updatepipeline",
       "label": "updatePipeline()",
-      "degree": 17
+      "degree": 19
+    },
+    {
+      "id": "graphify_global_graphifydatadir",
+      "label": "graphifyDataDir()",
+      "degree": 16
     },
     {
       "id": "understand_main_startpipeline",
       "label": "startPipeline()",
-      "degree": 15
-    },
-    {
-      "id": "graphify_graph_go",
-      "label": "graph.go",
-      "degree": 14
+      "degree": 16
     }
   ],
   "surprises": [],

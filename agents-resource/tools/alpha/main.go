@@ -33,9 +33,31 @@ import (
 func inDocker() bool { return os.Getenv("ALPHA_IN_DOCKER") == "1" }
 
 // findRoots returns (alphaDir, projectRoot).
-// alphaDir = the α/ directory; projectRoot = parent containing α/.
+//
+//   alphaDir    = the α/ (or ~/.alpha-ai/) directory — where knowledge-graph/ lives
+//   projectRoot = the project being analyzed (parent of α/ in local mode;
+//                 HOST_PROJECT_ROOT in global mode)
+//
+// Global mode is active when ALPHA_GLOBAL=1.
 func findRoots() (string, string) {
-	// Explicit env vars (Docker or manual override)
+	// Global mode: alpha dir is ~/.alpha-ai/, project root from HOST_PROJECT_ROOT
+	if os.Getenv("ALPHA_GLOBAL") == "1" {
+		alphaDir := os.Getenv("PROJECT_ROOT")
+		if alphaDir == "" {
+			home, _ := os.UserHomeDir()
+			alphaDir = filepath.Join(home, ".alpha-ai")
+		}
+		projectRoot := os.Getenv("ALPHA_ROOT")
+		if projectRoot == "" {
+			projectRoot = os.Getenv("HOST_PROJECT_ROOT")
+		}
+		if projectRoot == "" {
+			projectRoot = filepath.Dir(alphaDir)
+		}
+		return alphaDir, projectRoot
+	}
+
+	// Local mode: explicit env vars (Docker or manual override)
 	alphaDir := os.Getenv("PROJECT_ROOT")
 	projectRoot := os.Getenv("ALPHA_ROOT")
 
@@ -71,21 +93,33 @@ func findRoots() (string, string) {
 	return cwd, filepath.Dir(cwd)
 }
 
+// alphaProjectDataDir returns the per-project data directory for graphify/understand.
+// Global mode: alphaDir/knowledge-graph/projects/<id>/
+// Local mode:  alphaDir/knowledge-graph/
+func alphaProjectDataDir(alphaDir, projectRoot string) string {
+	if os.Getenv("ALPHA_GLOBAL") == "1" && projectRoot != "" {
+		id := alphaProjectID(projectRoot)
+		return filepath.Join(alphaDir, "knowledge-graph", "projects", id)
+	}
+	return filepath.Join(alphaDir, "knowledge-graph")
+}
+
 // binPath returns the correct binary path.
 // In Docker the binaries are on PATH (/usr/local/bin/); natively look in tools/bin/.
-func binPath(projectRoot, name string) string {
+// alphaDir = the α/ (or ~/.alpha-ai/) directory.
+func binPath(alphaDir, name string) string {
 	if inDocker() {
 		return name // on PATH inside container
 	}
 	var dir string
 	switch runtime.GOOS {
 	case "windows":
-		dir = filepath.Join(projectRoot, "α", "agents-resource", "tools", "bin", "windows")
+		dir = filepath.Join(alphaDir, "agents-resource", "tools", "bin", "windows")
 		return filepath.Join(dir, name+".exe")
 	case "darwin":
-		dir = filepath.Join(projectRoot, "α", "agents-resource", "tools", "bin", "darwin")
+		dir = filepath.Join(alphaDir, "agents-resource", "tools", "bin", "darwin")
 	default:
-		dir = filepath.Join(projectRoot, "α", "agents-resource", "tools", "bin", "linux")
+		dir = filepath.Join(alphaDir, "agents-resource", "tools", "bin", "linux")
 	}
 	return filepath.Join(dir, name)
 }
@@ -93,10 +127,15 @@ func binPath(projectRoot, name string) string {
 func runTool(alphaDir, projectRoot, bin string, args ...string) (*mcp.CallToolResult, error) {
 	cmd := exec.Command(bin, args...)
 	cmd.Dir = alphaDir
-	cmd.Env = append(os.Environ(),
+	env := append(os.Environ(),
 		"PROJECT_ROOT="+alphaDir,
 		"ALPHA_ROOT="+projectRoot,
 	)
+	// Propagate global mode env vars to subprocesses
+	if os.Getenv("ALPHA_GLOBAL") == "1" {
+		env = append(env, "ALPHA_GLOBAL=1")
+	}
+	cmd.Env = env
 	out, err := cmd.CombinedOutput()
 	if err != nil {
 		return mcp.NewToolResultError(fmt.Sprintf("%s error: %s\n%s", filepath.Base(bin), err, out)), nil
@@ -116,8 +155,8 @@ func strParam(req mcp.CallToolRequest, key string) string {
 func main() {
 	alphaDir, projectRoot := findRoots()
 
-	gfyBin := binPath(projectRoot, "graphify-core") // graphify-core inside Docker, Go binary natively
-	uaBin := binPath(projectRoot, "understand")
+	gfyBin := binPath(alphaDir, "graphify-core") // graphify-core inside Docker, Go binary natively
+	uaBin := binPath(alphaDir, "understand")
 
 	gfy := func(args ...string) (*mcp.CallToolResult, error) {
 		return runTool(alphaDir, projectRoot, gfyBin, args...)
@@ -282,6 +321,22 @@ func main() {
 		return ua("--diff")
 	})
 
+	s.AddTool(mcp.Tool{
+		Name:        "configure",
+		Description: "Write .mcp.json and create project-root symlinks (graphify-out, .understand-anything) without re-running install.sh. Safe to re-run.",
+		InputSchema: mcp.ToolInputSchema{Type: "object", Properties: map[string]any{}},
+	}, func(ctx context.Context, req mcp.CallToolRequest) (*mcp.CallToolResult, error) {
+		return mcp.NewToolResultText(configurePaths(alphaDir, projectRoot)), nil
+	})
+
+	s.AddTool(mcp.Tool{
+		Name:        "project_init",
+		Description: "Initialise the current directory as a project using the global ~/.alpha-ai installation. Creates α/config.json, .mcp.json, and per-project data dirs. Run from the project directory. Safe to re-run.",
+		InputSchema: mcp.ToolInputSchema{Type: "object", Properties: map[string]any{}},
+	}, func(ctx context.Context, req mcp.CallToolRequest) (*mcp.CallToolResult, error) {
+		return mcp.NewToolResultText(runProjectInit("")), nil
+	})
+
 	// ── CLI passthrough ─────────────────────────────────────────────────────
 	if len(os.Args) > 1 {
 		arg := os.Args[1]
@@ -292,6 +347,14 @@ func main() {
 		}
 		if arg == "--update" {
 			fmt.Print(runGraphifyUpdate(alphaDir, projectRoot, uaBin))
+			return
+		}
+		if arg == "--configure" {
+			fmt.Println(configurePaths(alphaDir, projectRoot))
+			return
+		}
+		if arg == "--project-init" {
+			fmt.Println(runProjectInit(""))
 			return
 		}
 

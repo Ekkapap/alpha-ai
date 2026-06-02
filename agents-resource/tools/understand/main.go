@@ -17,7 +17,8 @@ import (
 )
 
 var (
-	projectRoot  = "" // α/ dir — storage paths for knowledge-graph/
+	projectRoot  = "" // α/ dir — scripts + knowledge-graph/ base
+	dataRoot     = "" // per-project data dir (global: ~/.alpha-ai/knowledge-graph/projects/<id>/, local: projectRoot)
 	gitRoot      = "" // project root — git operations (.git lives here)
 	pluginRoot   = ""
 	scriptFolder = ""
@@ -90,11 +91,36 @@ type KnowledgeGraph struct {
 	Tour    []TourStep  `json:"tour"`
 }
 
+// apiEnv reads .env from gitRoot and returns API key env vars to inject into subprocesses.
+// The Node.js analysis scripts (generate-batches.mjs etc.) read these from process.env.
+func apiEnv() []string {
+	envFile := filepath.Join(gitRoot, ".env")
+	data, err := os.ReadFile(envFile)
+	if err != nil {
+		return nil
+	}
+	var extras []string
+	for _, line := range strings.Split(string(data), "\n") {
+		line = strings.TrimSpace(line)
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		for _, key := range []string{"ANTHROPIC_API_KEY", "GEMINI_API_KEY", "GOOGLE_API_KEY", "OPENAI_API_KEY"} {
+			if strings.HasPrefix(line, key+"=") {
+				extras = append(extras, line)
+			}
+		}
+	}
+	return extras
+}
+
 func runCmd(command string, args []string, dir string) error {
 	cmd := exec.Command(command, args...)
 	cmd.Dir = dir
 	cmd.Stdout = os.Stderr
 	cmd.Stderr = os.Stderr
+	// Inject API keys from .env so Node.js analysis scripts can call LLM APIs
+	cmd.Env = append(os.Environ(), apiEnv()...)
 	return cmd.Run()
 }
 
@@ -104,11 +130,11 @@ func startPipeline() error {
 	// 1. Scan Project
 	logInfo("\n[Phase 1/5] Scanning project files...")
 	scanScript := filepath.Join(pluginRoot, "skills/understand/scan-project.mjs")
-	scanResult := filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate/scan-result.json")
+	scanResult := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/scan-result.json")
 
 	// Clean stale batches from previous runs
-	os.RemoveAll(filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate"))
-	os.MkdirAll(filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate"), 0755)
+	os.RemoveAll(filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate"))
+	os.MkdirAll(filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate"), 0755)
 	if err := runCmd("node", []string{scanScript, projectRoot, scanResult}, projectRoot); err != nil {
 		return fmt.Errorf("scan failed: %w", err)
 	}
@@ -121,7 +147,7 @@ func startPipeline() error {
 	}
 
 	// 3. Get total batches
-	batchesPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate/batches.json")
+	batchesPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/batches.json")
 	data, err := os.ReadFile(batchesPath)
 	if err != nil {
 		return err
@@ -157,7 +183,7 @@ func updatePipeline() error {
 	logInfo("🔄 Starting incremental update pipeline...")
 
 	// Read last meta to get commit hash
-	metaPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/meta.json")
+	metaPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/meta.json")
 	metaData, err := os.ReadFile(metaPath)
 	if err != nil {
 		logInfo("⚠️  Could not read meta.json, falling back to full --start.")
@@ -173,7 +199,8 @@ func updatePipeline() error {
 	gitHashCmd.Dir = gitRoot
 	currentHashBytes, err := gitHashCmd.Output()
 	if err != nil {
-		return fmt.Errorf("failed to get git hash: %w", err)
+		logInfo("⚠️  No git repo found, skipping hash check — running full update.")
+		return startPipeline()
 	}
 	currentHash := strings.TrimSpace(string(currentHashBytes))
 
@@ -196,7 +223,7 @@ func updatePipeline() error {
 		return nil
 	}
 
-	tmpDir := filepath.Join(projectRoot, "knowledge-graph/understand-anything/tmp")
+	tmpDir := filepath.Join(dataRoot, "knowledge-graph/understand-anything/tmp")
 	os.MkdirAll(tmpDir, 0755)
 	changedFilesTxt := filepath.Join(tmpDir, "changed-files.txt")
 	if err := os.WriteFile(changedFilesTxt, []byte(changedFilesStr), 0644); err != nil {
@@ -211,7 +238,7 @@ func updatePipeline() error {
 	}
 
 	// Read batches.json
-	batchesPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate/batches.json")
+	batchesPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/batches.json")
 	data, err := os.ReadFile(batchesPath)
 	if err != nil {
 		return err
@@ -249,7 +276,7 @@ func updatePipeline() error {
 }
 
 func pruneAndPreserveExisting(changedFilesStr string) error {
-	graphPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		return err
@@ -294,13 +321,13 @@ func pruneAndPreserveExisting(changedFilesStr string) error {
 		return err
 	}
 
-	return os.WriteFile(filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate/batch-existing.json"), prunedBytes, 0644)
+	return os.WriteFile(filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/batch-existing.json"), prunedBytes, 0644)
 }
 
 func finalizeGraph() error {
-	assembledPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/intermediate/assembled-graph.json")
-	outGraphPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
-	outMetaPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/meta.json")
+	assembledPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/intermediate/assembled-graph.json")
+	outGraphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	outMetaPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/meta.json")
 
 	assembledData, err := os.ReadFile(assembledPath)
 	if err != nil {
@@ -696,7 +723,7 @@ func startDashboard() error {
 
 func generateOnboarding() error {
 	logInfo("📑 Generating Onboarding Guide...")
-	graphPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		return fmt.Errorf("knowledge graph not found: %w", err)
@@ -795,7 +822,7 @@ func showDiff() error {
 		fmt.Println("  -", f)
 	}
 
-	graphPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		return nil // Non-fatal if graph doesn't exist
@@ -827,7 +854,7 @@ func showDiff() error {
 }
 
 func showExplain(filePath string) {
-	graphPath := filepath.Join(projectRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
+	graphPath := filepath.Join(dataRoot, "knowledge-graph/understand-anything/knowledge-graph.json")
 	graphData, err := os.ReadFile(graphPath)
 	if err != nil {
 		fmt.Println("❌ Knowledge graph not found. Run --start first.")
@@ -917,6 +944,17 @@ func main() {
 	}
 
 	scriptFolder = filepath.Join(projectRoot, "scripts")
+
+	// dataRoot: per-project data directory.
+	// Global mode (ALPHA_GLOBAL=1): ~/.alpha-ai/knowledge-graph/projects/<id>/
+	// Local mode: projectRoot/knowledge-graph/understand-anything/../  (i.e. projectRoot)
+	if os.Getenv("ALPHA_GLOBAL") == "1" && gitRoot != "" {
+		id := understandProjectID(gitRoot)
+		dataRoot = filepath.Join(projectRoot, "knowledge-graph", "projects", id)
+	} else {
+		dataRoot = projectRoot
+	}
+	os.MkdirAll(filepath.Join(dataRoot, "knowledge-graph", "understand-anything"), 0755)
 
 	home, err := os.UserHomeDir()
 	if err == nil {

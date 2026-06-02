@@ -70,7 +70,7 @@ type BuildResult struct {
 }
 
 func buildGraph(scanRoot, alphaDir, projectRoot string, force bool) (*BuildResult, error) {
-	outDir := filepath.Join(alphaDir, "knowledge-graph/graphify-out")
+	outDir := graphifyDataDir(alphaDir)
 	if err := os.MkdirAll(outDir, 0755); err != nil {
 		return nil, err
 	}
@@ -90,7 +90,7 @@ func runFullBuild(scanRoot, alphaDir, projectRoot, outDir string) (*BuildResult,
 	if err != nil {
 		return nil, fmt.Errorf("scan: %w", err)
 	}
-	return assembleGraph(files, scanRoot, projectRoot, outDir)
+	return assembleGraph(files, scanRoot, alphaDir, projectRoot, outDir)
 }
 
 func runIncrementalUpdate(scanRoot, alphaDir, projectRoot, outDir string) (*BuildResult, error) {
@@ -98,7 +98,9 @@ func runIncrementalUpdate(scanRoot, alphaDir, projectRoot, outDir string) (*Buil
 	return runFullBuild(scanRoot, alphaDir, projectRoot, outDir)
 }
 
-func assembleGraph(files []ExtractedFile, scanRoot, projectRoot, outDir string) (*BuildResult, error) {
+func assembleGraph(files []ExtractedFile, scanRoot, alphaDir, projectRoot, outDir string) (*BuildResult, error) {
+	gcfg := loadGraphConfig(alphaDir)
+	resolvedIncludes := resolveIncludes(gcfg.Include, scanRoot, alphaDir)
 	// ── Step 1: collect all nodes + edges, assign IDs ─────────────────────────
 	type nodeKey struct{ id string }
 
@@ -128,6 +130,7 @@ func assembleGraph(files []ExtractedFile, scanRoot, projectRoot, outDir string) 
 
 		srcFile := relToAlpha(ef.RelPath, scanRoot, projectRoot)
 		dirID := dirPrefix(ef.RelPath)
+		isKnowledge := isIncluded(ef.RelPath, resolvedIncludes)
 
 		for _, n := range ef.Nodes {
 			id := makeID(ef.RelPath, n.Label)
@@ -135,7 +138,9 @@ func assembleGraph(files []ExtractedFile, scanRoot, projectRoot, outDir string) 
 				id = dirID + "_" + slugify(n.Label)
 			}
 			fileType := "code"
-			if n.Kind == "file" && (ef.Language == "md" || ef.Language == "text") {
+			if isKnowledge {
+				fileType = "knowledge"
+			} else if n.Kind == "file" && (ef.Language == "md" || ef.Language == "text") {
 				fileType = "doc"
 			}
 			ensureNode(id, n.Label, normalize(n.Label), fileType, srcFile, n.Location)
@@ -417,7 +422,15 @@ func cliUpdate() {
 		}
 	}
 	if target == "" {
-		target = filepath.Dir(alphaDir) // default scan = project root
+		// Global mode: scan the project specified by ALPHA_ROOT
+		if isGlobalMode() {
+			if r := os.Getenv("ALPHA_ROOT"); r != "" {
+				target = r
+			}
+		}
+		if target == "" {
+			target = filepath.Dir(alphaDir) // default scan = project root
+		}
 	}
 
 	result, err := buildGraph(target, alphaDir, filepath.Dir(alphaDir), force)
@@ -433,6 +446,108 @@ func cliUpdate() {
 	if result.NeedLabels {
 		fmt.Print("\n" + result.LabelPrompt)
 	}
+}
+
+// cliExtract runs scan+build+semantic labeling with an optional explicit backend override.
+// Usage: graphify extract [path] [--backend gemini|anthropic|openai] [--force]
+func cliExtract() {
+	target := ""
+	force := false
+	backendOverride := ""
+	args := os.Args[2:]
+	for i := 0; i < len(args); i++ {
+		a := args[i]
+		switch {
+		case a == "--force":
+			force = true
+		case a == "--backend" && i+1 < len(args):
+			backendOverride = args[i+1]
+			i++
+		case strings.HasPrefix(a, "--backend="):
+			backendOverride = strings.TrimPrefix(a, "--backend=")
+		case !strings.HasPrefix(a, "-"):
+			target, _ = filepath.Abs(a)
+		}
+	}
+
+	alphaDir := root
+	if target != "" {
+		candidate := filepath.Join(target, "α")
+		if _, err := os.Stat(filepath.Join(candidate, "knowledge-graph")); err == nil {
+			alphaDir = candidate
+		} else if _, err := os.Stat(filepath.Join(target, "knowledge-graph")); err == nil {
+			alphaDir = target
+		}
+	}
+	if target == "" {
+		if isGlobalMode() {
+			if r := os.Getenv("ALPHA_ROOT"); r != "" {
+				target = r
+			}
+		}
+		if target == "" {
+			target = filepath.Dir(alphaDir)
+		}
+	}
+
+	// Build graph (scan + AST extract + community detection)
+	result, err := buildGraph(target, alphaDir, filepath.Dir(alphaDir), force)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "extract error:", err)
+		os.Exit(1)
+	}
+	fmt.Printf("Extracted: %d nodes, %d edges, %d communities\n", result.Nodes, result.Edges, result.Communities)
+
+	// Semantic labeling — use explicit backend or auto-detect from .env
+	projectRoot := filepath.Dir(alphaDir)
+	apiKey := LoadAPIKey(projectRoot)
+	if apiKey == nil {
+		fmt.Fprintln(os.Stderr, "⚠️  No API key found in .env — skipping semantic labels")
+		if result.NeedLabels {
+			fmt.Print("\n" + result.LabelPrompt)
+		}
+		return
+	}
+	// Override provider if --backend specified
+	if backendOverride != "" {
+		apiKey.Provider = backendOverride
+		fmt.Printf("Backend: %s (forced)\n", backendOverride)
+	} else {
+		fmt.Printf("Backend: %s (from .env)\n", apiKey.Provider)
+	}
+
+	// Load existing graph to get community map for labeling
+	outDir := graphifyDataDir(alphaDir)
+	g, err := loadFullGraph(alphaDir)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "⚠️  Could not load graph for labeling:", err)
+		return
+	}
+	commMap := map[string][]string{}
+	nodeLabelMap := map[string]string{}
+	for _, n := range g.Nodes {
+		cid := fmt.Sprintf("%d", n.Community)
+		commMap[cid] = append(commMap[cid], n.ID)
+		nodeLabelMap[n.ID] = n.Label
+	}
+	labels, err := GenerateCommunityLabels(apiKey, commMap, nodeLabelMap)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "⚠️  Label generation failed:", err)
+		return
+	}
+	// Write labels to analysis JSON
+	analysisPath := filepath.Join(outDir, ".graphify_analysis.json")
+	existing := analysisJSON{}
+	if data, err := os.ReadFile(analysisPath); err == nil {
+		json.Unmarshal(data, &existing)
+	}
+	for cid, name := range labels {
+		existing.Communities[cid] = append(existing.Communities[cid], name)
+	}
+	if data, err := json.MarshalIndent(existing, "", "  "); err == nil {
+		os.WriteFile(analysisPath, data, 0644)
+	}
+	fmt.Printf("✅ %d community labels written\n", len(labels))
 }
 
 // ── MCP tool ──────────────────────────────────────────────────────────────────
@@ -489,7 +604,7 @@ func registerMCPSetLabels(s *server.MCPServer) {
 			return mcp.NewToolResultError("invalid labels JSON: " + err.Error()), nil
 		}
 
-		outPath := filepath.Join(root, "knowledge-graph/graphify-out/.graphify_labels.json")
+		outPath := filepath.Join(graphifyDataDir(root), ".graphify_labels.json")
 		if err := writeJSON(outPath, labels); err != nil {
 			return mcp.NewToolResultError("write labels: " + err.Error()), nil
 		}

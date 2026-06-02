@@ -169,3 +169,36 @@ var keywords = map[string]bool{
 }
 
 func isKeyword(s string) bool { return keywords[s] || len(s) <= 1 }
+
+var mdHeadingRe = regexp.MustCompile(`^##\s+(.+)`)
+
+// extractMarkdown parses H2 headings from a markdown file and emits them as "section" nodes.
+// Used for raw-knowledge/*.md files so agents can discover knowledge by topic.
+func extractMarkdown(path, rel string) (ExtractedFile, error) {
+	ef := ExtractedFile{RelPath: rel, Language: "md"}
+	fileLabel := lastPathSegment(rel)
+	ef.Nodes = append(ef.Nodes, RawNode{Label: fileLabel, Location: "L1", Kind: "file"})
+
+	f, err := os.Open(path)
+	if err != nil {
+		return ef, err
+	}
+	defer f.Close()
+
+	sc := bufio.NewScanner(f)
+	lineNo := 0
+	for sc.Scan() {
+		lineNo++
+		line := sc.Text()
+		if m := mdHeadingRe.FindStringSubmatch(line); m != nil {
+			heading := strings.TrimSpace(m[1])
+			if heading == "" {
+				continue
+			}
+			loc := fmt.Sprintf("L%d", lineNo)
+			ef.Nodes = append(ef.Nodes, RawNode{Label: heading, Location: loc, Kind: "section"})
+			ef.Edges = append(ef.Edges, RawEdge{FromLabel: fileLabel, ToLabel: heading, Relation: "contains", Location: loc})
+		}
+	}
+	return ef, sc.Err()
+}

@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "ALPHA": {
+      "command": "docker",
+      "args": [
+        "compose",
+        "-f", "[ALPHA_HOME]/docker-compose.global.yml",
+        "run", "--rm", "-i", "--no-deps",
+        "alpha"
+      ],
+      "env": {
+        "ALPHA_HOME": "[ALPHA_HOME]",
+        "HOST_PROJECT_ROOT": "[HOST_PROJECT_ROOT]",
+        "ALPHA_PROJECT_ID": "[ALPHA_PROJECT_ID]",
+        "ALPHA_GLOBAL": "1",
+        "COMPOSE_PROFILES": "mcp"
+      }
+    }
+  }
+}

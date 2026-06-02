@@ -4,6 +4,7 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"os"
 	"path/filepath"
 	"strings"
@@ -21,7 +22,7 @@ type ExtractedFile struct {
 type RawNode struct {
 	Label    string
 	Location string // "L<line>"
-	Kind     string // "file", "func", "type", "class", "method", "var", "const"
+	Kind     string // "file", "func", "type", "class", "method", "var", "const", "section"
 }
 
 // RawEdge is a pre-ID edge.
@@ -53,9 +54,60 @@ var langByExt = map[string]string{
 	".bash": "sh",
 }
 
-// scanProject walks root, applies .graphifyignore, and returns ExtractedFile list.
+// graphConfig holds graph.include / graph.exclude from agents-resource/config.json.
+type graphConfig struct {
+	Include []string `json:"include"`
+	Exclude []string `json:"exclude"`
+}
+
+// loadGraphConfig reads graph.include and graph.exclude from agents-resource/config.json.
+func loadGraphConfig(alphaDir string) graphConfig {
+	data, err := os.ReadFile(filepath.Join(alphaDir, "agents-resource", "config.json"))
+	if err != nil {
+		return graphConfig{}
+	}
+	var cfg struct {
+		Graph graphConfig `json:"graph"`
+	}
+	if err := json.Unmarshal(data, &cfg); err != nil {
+		return graphConfig{}
+	}
+	return cfg.Graph
+}
+
+// isIncluded returns true if rel matches any path in the include list.
+// includes must already be relative to the same root as rel.
+func isIncluded(rel string, includes []string) bool {
+	relSlash := filepath.ToSlash(rel)
+	for _, inc := range includes {
+		inc = filepath.ToSlash(strings.TrimSuffix(inc, "/"))
+		if relSlash == inc || strings.HasPrefix(relSlash, inc+"/") {
+			return true
+		}
+	}
+	return false
+}
+
+// resolveIncludes converts alphaDir-relative include paths to scanRoot-relative paths.
+// e.g. alphaDir="α", inc="knowledge-graph/raw-knowledge" → "α/knowledge-graph/raw-knowledge"
+func resolveIncludes(includes []string, scanRoot, alphaDir string) []string {
+	alphaRel, err := filepath.Rel(scanRoot, alphaDir)
+	if err != nil {
+		return includes
+	}
+	out := make([]string, len(includes))
+	for i, inc := range includes {
+		out[i] = filepath.ToSlash(filepath.Join(alphaRel, inc))
+	}
+	return out
+}
+
+// scanProject walks root, applies .graphifyignore + graph config, and returns ExtractedFile list.
 func scanProject(scanRoot, alphaDir string) ([]ExtractedFile, error) {
 	patterns, _ := loadIgnorePatterns(alphaDir)
+	gcfg := loadGraphConfig(alphaDir)
+	// Resolve include paths relative to scanRoot (config paths are relative to alphaDir)
+	resolvedIncludes := resolveIncludes(gcfg.Include, scanRoot, alphaDir)
 
 	var files []ExtractedFile
 	err := filepath.WalkDir(scanRoot, func(path string, d os.DirEntry, err error) error {
@@ -66,7 +118,9 @@ func scanProject(scanRoot, alphaDir string) ([]ExtractedFile, error) {
 		if rel == "." {
 			return nil
 		}
-		if shouldIgnore(rel, d.IsDir(), patterns) {
+		// graph.include paths bypass .graphifyignore so knowledge/custom docs are always indexed
+		included := isIncluded(rel, resolvedIncludes)
+		if !included && shouldIgnore(rel, d.IsDir(), patterns) {
 			if d.IsDir() {
 				return filepath.SkipDir
 			}
@@ -80,7 +134,16 @@ func scanProject(scanRoot, alphaDir string) ([]ExtractedFile, error) {
 		if !ok {
 			return nil
 		}
-		// skip non-code for graph nodes (md/yaml/etc have no AST edges worth extracting)
+		// included md files: extract H2 headings as section nodes (knowledge docs)
+		if lang == "md" && included {
+			ef, err := extractMarkdown(path, rel)
+			if err != nil {
+				ef = ExtractedFile{RelPath: rel, Language: "md"}
+			}
+			files = append(files, ef)
+			return nil
+		}
+		// other non-code files: emit as single file node (no AST edges)
 		if lang == "md" || lang == "text" || lang == "yaml" || lang == "toml" || lang == "json" {
 			files = append(files, ExtractedFile{RelPath: rel, Language: lang})
 			return nil

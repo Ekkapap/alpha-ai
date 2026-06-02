@@ -70,8 +70,8 @@ func alphaReadyChecks(r string, cfg alphaConfig) []readyCheck {
 		checks = append(checks, readyCheck{"binary", false, "not found — run setup-hooks.sh"})
 	}
 
-	if _, err := os.Stat(filepath.Join(r, "knowledge-graph/graphify-out/graph.json")); err == nil {
-		checks = append(checks, readyCheck{"graph", true, ".graphify-out/graph.json"})
+	if _, err := os.Stat(filepath.Join(graphifyDataDir(r), "graph.json")); err == nil {
+		checks = append(checks, readyCheck{"graph", true, "graphify-out/graph.json"})
 	} else {
 		checks = append(checks, readyCheck{"graph", false, "not built — run /graphify"})
 	}
@@ -113,7 +113,7 @@ func alphaDisplay(r string) string {
 	cfg := loadAlphaConfig(r)
 
 	nodes, edges, comms := 0, 0, 0
-	if data, err := os.ReadFile(filepath.Join(r, "knowledge-graph/graphify-out/graph.json")); err == nil {
+	if data, err := os.ReadFile(filepath.Join(graphifyDataDir(r), "graph.json")); err == nil {
 		var g struct {
 			Nodes []json.RawMessage `json:"nodes"`
 			Links []json.RawMessage `json:"links"`
@@ -122,7 +122,7 @@ func alphaDisplay(r string) string {
 			nodes, edges = len(g.Nodes), len(g.Links)
 		}
 	}
-	if data, err := os.ReadFile(filepath.Join(r, "knowledge-graph/graphify-out/.graphify_analysis.json")); err == nil {
+	if data, err := os.ReadFile(filepath.Join(graphifyDataDir(r), ".graphify_analysis.json")); err == nil {
 		var a struct {
 			Communities map[string]json.RawMessage `json:"communities"`
 		}

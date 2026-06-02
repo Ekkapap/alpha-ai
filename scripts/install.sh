@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # α ALPHA — install.sh
-# First run:  bash <(curl -fsSL https://raw.githubusercontent.com/Ekkapap/alpha-ai/main/install.sh) [target-dir]
-# Re-run:     bash α/scripts/install.sh
+# First run (from project dir):  cd ~/my-project && bash <(curl -fsSL https://raw.githubusercontent.com/Ekkapap/alpha-ai/main/install.sh) [--global]
+# Re-run:                        bash α/scripts/install.sh [--global]
 # Requires:   bash 3.2+, git, curl, python3, docker
 set -euo pipefail
 
@@ -22,12 +22,31 @@ command -v curl    &>/dev/null || die "curl is required"
 command -v python3 &>/dev/null || die "python3 is required"
 command -v docker  &>/dev/null || die "docker is required"
 
-PROJECT_ROOT="${1:-$(pwd)}"
-ALPHA_REPO="https://github.com/Ekkapap/alpha-ai.git"
-ALPHA_DIR="$PROJECT_ROOT/α"
+GLOBAL_MODE=0
+_ARGS=()
+for _a in "$@"; do
+  case "$_a" in
+    --global) GLOBAL_MODE=1 ;;
+    *) _ARGS+=("$_a") ;;
+  esac
+done
+set -- "${_ARGS[@]+"${_ARGS[@]}"}"
 
-echo -e "\n${B}${C}α ALPHA — Install${X}"
-echo -e "  Project root: ${B}$PROJECT_ROOT${X}\n"
+PROJECT_ROOT="$(pwd)"
+ALPHA_REPO="https://github.com/Ekkapap/alpha-ai.git"
+
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  ALPHA_HOME="$HOME/.alpha-ai"
+  ALPHA_DIR="$ALPHA_HOME"
+  echo -e "\n${B}${C}α ALPHA — Global Install${X}"
+  echo -e "  Global dir:   ${B}$ALPHA_HOME${X}"
+  echo -e "  Project root: ${B}$PROJECT_ROOT${X}\n"
+else
+  ALPHA_HOME=""
+  ALPHA_DIR="$PROJECT_ROOT/α"
+  echo -e "\n${B}${C}α ALPHA — Install${X}"
+  echo -e "  Project root: ${B}$PROJECT_ROOT${X}\n"
+fi
 
 # ════════════════════════════════════════════════════════════════════════════
 #  STEP 1: Clone or update α/
@@ -45,28 +64,55 @@ _alpha_restore_data() {
   fi
 }
 
-if [[ ! -d "$ALPHA_DIR" ]]; then
-  info "Cloning alpha-ai → α/..."
-  git clone --depth 1 --quiet "$ALPHA_REPO" "$ALPHA_DIR"
-  ok "Cloned α/"
-elif [[ -d "$ALPHA_DIR/.git" ]] \
-  && git -C "$ALPHA_DIR" remote get-url origin 2>/dev/null | grep -qF "$ALPHA_REPO"; then
-  info "α/ found — pulling latest..."
-  git -C "$ALPHA_DIR" pull --quiet \
-    && ok "α/ updated" \
-    || die "git pull failed — fix manually or delete α/ and rerun"
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  # ── Global mode: install/update ~/.alpha-ai/ ───────────────────────────────
+  if [[ ! -d "$ALPHA_HOME" ]]; then
+    info "Cloning alpha-ai → ~/.alpha-ai/..."
+    git clone --depth 1 --quiet "$ALPHA_REPO" "$ALPHA_HOME"
+    ok "Cloned ~/.alpha-ai/"
+  elif [[ -d "$ALPHA_HOME/.git" ]] \
+    && git -C "$ALPHA_HOME" remote get-url origin 2>/dev/null | grep -qF "$ALPHA_REPO"; then
+    info "~/.alpha-ai/ found — pulling latest..."
+    git -C "$ALPHA_HOME" pull --quiet \
+      && ok "~/.alpha-ai/ updated" \
+      || warn "git pull failed — continuing with existing installation"
+  else
+    ok "~/.alpha-ai/ exists (custom) — skipping clone"
+  fi
 else
-  ALPHA_BACKUP="${ALPHA_DIR}.backup.$(date +%Y%m%d_%H%M%S)"
-  info "α/ exists (different repo) — backing up → $(basename "$ALPHA_BACKUP")..."
-  mv "$ALPHA_DIR" "$ALPHA_BACKUP"
-  git clone --depth 1 --quiet "$ALPHA_REPO" "$ALPHA_DIR"
-  _alpha_restore_data "$ALPHA_BACKUP"
-  ok "Cloned α/ + restored user data from backup"
+  # ── Local mode: install/update α/ inside project ──────────────────────────
+  if [[ ! -d "$ALPHA_DIR" ]]; then
+    info "Cloning alpha-ai → α/..."
+    git clone --depth 1 --quiet "$ALPHA_REPO" "$ALPHA_DIR"
+    ok "Cloned α/"
+  elif [[ -d "$ALPHA_DIR/.git" ]] \
+    && git -C "$ALPHA_DIR" remote get-url origin 2>/dev/null | grep -qF "$ALPHA_REPO"; then
+    info "α/ found — pulling latest..."
+    git -C "$ALPHA_DIR" pull --quiet \
+      && ok "α/ updated" \
+      || die "git pull failed — fix manually or delete α/ and rerun"
+  else
+    ALPHA_BACKUP="${ALPHA_DIR}.backup.$(date +%Y%m%d_%H%M%S)"
+    info "α/ exists (different repo) — backing up → $(basename "$ALPHA_BACKUP")..."
+    mv "$ALPHA_DIR" "$ALPHA_BACKUP"
+    git clone --depth 1 --quiet "$ALPHA_REPO" "$ALPHA_DIR"
+    _alpha_restore_data "$ALPHA_BACKUP"
+    ok "Cloned α/ + restored user data from backup"
+  fi
 fi
 
 SCRIPT_DIR="$ALPHA_DIR"
 CONFIG_JSON="$SCRIPT_DIR/agents-resource/config.json"
-[[ -f "$CONFIG_JSON" ]] || die "agents-resource/config.json not found in α/"
+[[ -f "$CONFIG_JSON" ]] || die "agents-resource/config.json not found in installation dir"
+
+# Compute stable project ID (used in global mode for per-project data dir)
+_ALPHA_PROJECT_ID=$(python3 -c "
+import hashlib, re, sys, os
+path = sys.argv[1]
+name = re.sub(r'[^a-z0-9]+', '-', os.path.basename(path).lower()).strip('-')[:30]
+h = hashlib.sha256(path.encode()).hexdigest()[:8]
+print(f'{name}-{h}')
+" "$PROJECT_ROOT")
 
 # ════════════════════════════════════════════════════════════════════════════
 #  LOAD config.json → populate bash arrays via python3
@@ -256,7 +302,11 @@ ok "RTK ready"
 # ════════════════════════════════════════════════════════════════════════════
 step "3/5  Alpha Docker image"
 
-COMPOSE_FILE="$SCRIPT_DIR/docker-compose.yml"
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  COMPOSE_FILE="$SCRIPT_DIR/docker-compose.global.yml"
+else
+  COMPOSE_FILE="$SCRIPT_DIR/docker-compose.yml"
+fi
 
 # Derive target arch from .env PLATFORM, fall back to host arch detection
 _ENV_FILE="$SCRIPT_DIR/.env"
@@ -272,24 +322,32 @@ if [[ -z "$_PLATFORM" ]]; then
 fi
 LINUX_ARCH="${_PLATFORM#linux/}"  # e.g. "linux/arm64" → "arm64"
 
-# Create or update .env with HOST_PROJECT_ROOT and PLATFORM
+# Create or update .env with paths and PLATFORM
 [[ ! -f "$_ENV_FILE" && -f "$SCRIPT_DIR/.env.example" ]] && cp "$SCRIPT_DIR/.env.example" "$_ENV_FILE"
 _PY_ENV=$(mktemp /tmp/alpha_env_XXXX.py)
 cat > "$_PY_ENV" << 'PYEOF'
 import re, sys, os
-path, project_root, platform = sys.argv[1], sys.argv[2], sys.argv[3]
+path, project_root, platform, global_mode, alpha_home = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
 content = open(path).read() if os.path.exists(path) else ""
 def set_var(c, key, val):
     pat = rf'^{key}=.*$'
     return re.sub(pat, f'{key}={val}', c, flags=re.MULTILINE) if re.search(pat, c, re.MULTILINE) \
         else c.rstrip('\n') + f'\n{key}={val}\n'
-content = set_var(content, 'HOST_PROJECT_ROOT', project_root)
+if global_mode == "1":
+    content = set_var(content, 'ALPHA_HOME', alpha_home)
+    content = set_var(content, 'ALPHA_GLOBAL', '1')
+else:
+    content = set_var(content, 'HOST_PROJECT_ROOT', project_root)
 content = set_var(content, 'PLATFORM', platform)
 with open(path, 'w') as f: f.write(content)
 PYEOF
-python3 "$_PY_ENV" "$_ENV_FILE" "$PROJECT_ROOT" "$_PLATFORM"
+python3 "$_PY_ENV" "$_ENV_FILE" "$PROJECT_ROOT" "$_PLATFORM" "$GLOBAL_MODE" "${ALPHA_HOME:-}"
 rm -f "$_PY_ENV"
-ok ".env → HOST_PROJECT_ROOT=$PROJECT_ROOT  PLATFORM=$_PLATFORM"
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  ok ".env → ALPHA_HOME=$ALPHA_HOME  PLATFORM=$_PLATFORM"
+else
+  ok ".env → HOST_PROJECT_ROOT=$PROJECT_ROOT  PLATFORM=$_PLATFORM"
+fi
 
 if command -v go &>/dev/null; then
   info "Building binaries for linux/$LINUX_ARCH..."
@@ -416,16 +474,29 @@ cat > "$PY_AGENT" << 'PYEOF'
 import json, sys
 cfg = json.load(open(sys.argv[1]))
 agent = cfg["agents"].get(sys.argv[2], {})
+global_mode = sys.argv[3] == "1"
+alpha_home = sys.argv[4]
 for s in agent.get("project_dir_symlinks", []):
-    print(f"_dir_symlink '{s['src']}' '{s['dst']}' 'true'")
+    if global_mode:
+        # In global mode: symlink project/.claude → ~/.alpha-ai/.claude (absolute)
+        src_rel = s['src']  # e.g. "α/.claude"
+        inner = src_rel.replace("α/", "", 1) if src_rel.startswith("α/") else src_rel
+        abs_src = f"{alpha_home}/{inner}"
+        print(f"_global_dir_symlink '{abs_src}' '{s['dst']}'")
+    else:
+        print(f"_dir_symlink '{s['src']}' '{s['dst']}' 'true'")
 for s in agent.get("internal_symlinks", []):
-    print(f"_internal_symlink '{s['rel']}' '{s['link']}'")
+    if not global_mode:
+        print(f"_internal_symlink '{s['rel']}' '{s['link']}'")
 mcp = agent.get("mcp_config")
 if mcp and mcp.get("action") == "copy_template":
-    print(f"_copy_mcp_template '{mcp['src']}' '{mcp['dst']}'")
+    if global_mode:
+        print(f"_copy_mcp_global_template '{mcp['dst']}'")
+    else:
+        print(f"_copy_mcp_template '{mcp['src']}' '{mcp['dst']}'")
 PYEOF
 
-# ── .mcp.json template copy (with path substitution) ─────────────────────────
+# ── .mcp.json template copy — local mode (with ALPHA_DIR substitution) ────────
 _copy_mcp_template() {
   local src_rel="$1" dst_rel="$2"
   local src="$PROJECT_ROOT/$src_rel" dst="$PROJECT_ROOT/$dst_rel"
@@ -435,16 +506,67 @@ _copy_mcp_template() {
   ok ".mcp.json → $dst_rel"
 }
 
-# ── Universal setup ───────────────────────────────────────────────────────────
-echo -e "\n  ${D}Universal${X}"
-while IFS= read -r cmd; do eval "$cmd"; done < <(python3 "$PY_UNIVERSAL" "$CONFIG_JSON")
+# ── .mcp.json template copy — global mode ─────────────────────────────────────
+_copy_mcp_global_template() {
+  local dst_rel="$1"
+  local src="$ALPHA_HOME/agents-resource/.mcp.global.json"
+  local dst="$PROJECT_ROOT/$dst_rel"
+  [[ -f "$dst" ]] && { ok ".mcp.json already exists — skipped"; return; }
+  [[ -f "$src" ]] || { warn ".mcp.global.json template not found — skipped"; return; }
+  sed -e "s|\[ALPHA_HOME\]|$ALPHA_HOME|g" \
+      -e "s|\[HOST_PROJECT_ROOT\]|$PROJECT_ROOT|g" \
+      -e "s|\[ALPHA_PROJECT_ID\]|$_ALPHA_PROJECT_ID|g" \
+      "$src" > "$dst"
+  ok ".mcp.json (global) → $dst_rel"
+}
+
+# ── Global mode absolute symlink helper ───────────────────────────────────────
+_global_dir_symlink() {
+  local abs_src="$1" dst_rel="$2"
+  local dst="$PROJECT_ROOT/$dst_rel"
+  mkdir -p "$abs_src"
+  if [[ -L "$dst" && "$(readlink "$dst")" == "$abs_src" ]]; then
+    ok "$dst_rel → already correct"
+  elif [[ -L "$dst" ]]; then
+    rm "$dst"; ln -s "$abs_src" "$dst"
+    ok "$dst_rel → updated symlink"
+  elif [[ -d "$dst" ]]; then
+    cp -rn "$dst/." "$abs_src/" 2>/dev/null || true
+    rm -rf "$dst"; ln -s "$abs_src" "$dst"
+    ok "$dst_rel → migrated + symlinked"
+  else
+    ln -s "$abs_src" "$dst"
+    ok "$dst_rel → $abs_src"
+  fi
+}
+
+# ── Universal setup (local mode only — global has no project-level universal symlinks) ──
+if [[ "$GLOBAL_MODE" != "1" ]]; then
+  echo -e "\n  ${D}Universal${X}"
+  while IFS= read -r cmd; do eval "$cmd"; done < <(python3 "$PY_UNIVERSAL" "$CONFIG_JSON")
+fi
+
+# ── Global mode: create α/config.json ────────────────────────────────────────
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  mkdir -p "$PROJECT_ROOT/α"
+  cat > "$PROJECT_ROOT/α/config.json" << ALPHAEOF
+{
+  "project_id": "$_ALPHA_PROJECT_ID",
+  "alpha_home": "$ALPHA_HOME"
+}
+ALPHAEOF
+  ok "α/config.json → project_id=$_ALPHA_PROJECT_ID"
+  mkdir -p "$ALPHA_HOME/knowledge-graph/projects/$_ALPHA_PROJECT_ID/graphify-out"
+  mkdir -p "$ALPHA_HOME/knowledge-graph/projects/$_ALPHA_PROJECT_ID/understand-anything"
+  ok "Global data dirs created for project"
+fi
 
 # ── Per-agent setup ───────────────────────────────────────────────────────────
 for i in "${!TOOL_KEYS[@]}"; do
   is_sel "$i" || continue
   key="${TOOL_KEYS[$i]}"
   echo -e "\n  ${D}${TOOL_LABELS[$i]}${X}"
-  while IFS= read -r cmd; do eval "$cmd"; done < <(python3 "$PY_AGENT" "$CONFIG_JSON" "$key")
+  while IFS= read -r cmd; do eval "$cmd"; done < <(python3 "$PY_AGENT" "$CONFIG_JSON" "$key" "$GLOBAL_MODE" "${ALPHA_HOME:-}")
 done
 
 
@@ -452,15 +574,27 @@ done
 #  STEP 5: Start dashboard services
 # ════════════════════════════════════════════════════════════════════════════
 step "5/5  Dashboard"
-_dash_running=$(docker ps --filter "name=alpha-dashboard"  --filter "status=running" -q 2>/dev/null)
-_und_running=$(docker ps  --filter "name=alpha-understand" --filter "status=running" -q 2>/dev/null)
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  _DASH_NAME="alpha-global-dashboard"; _UND_NAME="alpha-global-understand"
+else
+  _DASH_NAME="alpha-dashboard"; _UND_NAME="alpha-understand"
+fi
+_dash_running=$(docker ps --filter "name=$_DASH_NAME" --filter "status=running" -q 2>/dev/null)
+_und_running=$(docker ps  --filter "name=$_UND_NAME"  --filter "status=running" -q 2>/dev/null)
 if [[ -n "$_dash_running" && -n "$_und_running" ]]; then
   ok "Dashboard already running → http://localhost:8080/alpha-dashboard/"
 else
   info "Starting alpha dashboard (nginx + understand-server)..."
-  docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
-    && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
-    || warn "Dashboard failed to start — run 'scripts/dashboard.sh' manually"
+  if [[ "$GLOBAL_MODE" == "1" ]]; then
+    ALPHA_HOME="$ALPHA_HOME" HOST_PROJECT_ROOT="$PROJECT_ROOT" ALPHA_PROJECT_ID="$_ALPHA_PROJECT_ID" \
+      docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
+      && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
+      || warn "Dashboard failed to start — check compose logs"
+  else
+    docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
+      && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
+      || warn "Dashboard failed to start — run 'scripts/dashboard.sh' manually"
+  fi
 fi
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -470,6 +604,6 @@ echo -e "\n${B}${G}  Done.${X}\n"
 echo -e "${B}  Next:${X}"
 echo -e "  1. Restart your AI agent to load new config"
 echo -e "  2. Run ${B}/alpha-awake${X} (or ${B}mcp__ALPHA__awake${X}) — first-run will auto-build the graph"
-echo -e "  3. Open ${B}http://localhost:8080/alpha-dashboard/${X} — knowledge graph & understand dashboard"
+echo -e "  3. Open \e]8;;http://localhost:8080/alpha-dashboard/\a${B}http://localhost:8080/alpha-dashboard/${X}\e]8;;\a — knowledge graph & understand dashboard"
 echo -e "  4. ${B}rtk gain${X} — verify token savings"
 echo ""

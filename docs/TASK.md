@@ -110,11 +110,11 @@
 - [x] N2: สร้าง graphify-out symlink จริงที่ project root — สร้างแล้ว (relative symlinks)
   - `project-root/graphify-out` → `α/knowledge-graph/graphify-out` ✅
   - `project-root/.understand-anything` → `α/knowledge-graph/understand-anything` ✅
-- [ ] N3: รัน `mcp__ALPHA__update` หรือ `alpha --update` ผ่าน Docker เพื่อสร้าง graph.json จริง
+- [x] N3: รัน `mcp__ALPHA__update` ผ่าน Docker — graph.json 187.9K (210 nodes, 402 edges) ✅; fix understand graceful no-git ✅
 - [x] N4: ตรวจว่า graphify-out/graph.html แสดง real graph ใน dashboard
 
 ### O — install.sh end-to-end test
-- [ ] O1: รัน `scripts/install.sh` บน fresh checkout — ตรวจ symlinks, docker build, dashboard up
+- [x] O1: รัน `scripts/install.sh` บน fresh checkout — ตรวจ symlinks, docker build, dashboard up ✅
 - [x] O2: ✅ install.sh line 243 มี `for tool in alpha graphify understand` ครบแล้ว — ยืนยันแล้ว ไม่ต้องแก้
 - [x] O3: STEP numbering ใน install.sh แก้เป็น 1/5–4/5 แล้ว (step 5/5 ถูกอยู่แล้ว)
 

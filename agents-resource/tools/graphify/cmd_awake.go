@@ -15,7 +15,7 @@ import (
 )
 
 func cliAwake() {
-	graphPath := filepath.Join(root, "knowledge-graph/graphify-out/graph.json")
+	graphPath := filepath.Join(graphifyDataDir(root), "graph.json")
 	if _, err := os.Stat(graphPath); os.IsNotExist(err) {
 		projectRoot := filepath.Dir(root)
 		fmt.Printf("No knowledge graph found.\n\nWould you like to initialize it now?\n  1. Yes — scan from %s\n  2. Yes, specify path\n  3. No — skip\n\nChoice [1/2/3]: ", projectRoot)
@@ -65,11 +65,23 @@ func cliAwake() {
 
 	fmt.Print(buildAwakeOverview(root))
 
-	memoriesDir := filepath.Join(root, "knowledge-graph/memories")
-	if state, err := os.ReadFile(filepath.Join(memoriesDir, "session-summary.md")); err == nil {
+	var knowledgeBuf strings.Builder
+	appendKnowledgeDocs(&knowledgeBuf, root)
+	if s := knowledgeBuf.String(); s != "" {
+		fmt.Print(s)
+	}
+
+	if g, err := loadFullGraph(root); err == nil {
+		if sketch := sketchGraph(g, "alpha-ai", 2); sketch != "" {
+			fmt.Printf("### ALPHA-AI KNOWLEDGE NODES\n%s\n\n", sketch)
+		}
+	}
+
+	memDir := memoriesDir(root)
+	if state, err := os.ReadFile(filepath.Join(memDir, "session-summary.md")); err == nil {
 		fmt.Printf("### PREVIOUS SESSION SUMMARY\n%s\n\n", string(state))
 	}
-	if latestSession := findLatestSessionFile(memoriesDir); latestSession != "" {
+	if latestSession := findLatestSessionFile(memDir); latestSession != "" {
 		if data, err := os.ReadFile(latestSession); err == nil {
 			fmt.Printf("### LATEST SESSION (%s)\n%s\n\n", filepath.Base(latestSession), string(data))
 		}
@@ -111,7 +123,7 @@ func registerMCPAwake(s *server.MCPServer) {
 			},
 		},
 	}, func(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
-		graphPath := filepath.Join(root, "knowledge-graph/graphify-out/graph.json")
+		graphPath := filepath.Join(graphifyDataDir(root), "graph.json")
 		if _, err := os.Stat(graphPath); os.IsNotExist(err) {
 			msg := `No knowledge graph found yet.
 
@@ -145,13 +157,25 @@ If user chooses 3: stop here`
 			out.WriteString(buildAwakeOverview(root))
 		}
 
-		memoriesDir := filepath.Join(root, "knowledge-graph/memories")
-		if content, err := os.ReadFile(filepath.Join(memoriesDir, "session-summary.md")); err == nil {
+		// ── Knowledge docs (raw-knowledge/*.md) ──────────────────────────────
+		appendKnowledgeDocs(&out, root)
+
+		// ── Alpha-AI graph sketch ─────────────────────────────────────────────
+		if g, err := loadFullGraph(root); err == nil {
+			if sketch := sketchGraph(g, "alpha-ai", 2); sketch != "" {
+				out.WriteString("### ALPHA-AI KNOWLEDGE NODES\n")
+				out.WriteString(sketch)
+				out.WriteString("\n\n")
+			}
+		}
+
+		memDir := memoriesDir(root)
+		if content, err := os.ReadFile(filepath.Join(memDir, "session-summary.md")); err == nil {
 			out.WriteString("### PREVIOUS SESSION SUMMARY\n")
 			out.WriteString(string(content))
 			out.WriteString("\n")
 		}
-		if latestSession := findLatestSessionFile(memoriesDir); latestSession != "" {
+		if latestSession := findLatestSessionFile(memDir); latestSession != "" {
 			if data, err := os.ReadFile(latestSession); err == nil {
 				out.WriteString(fmt.Sprintf("### LATEST SESSION (%s)\n", filepath.Base(latestSession)))
 				out.WriteString(string(data))
@@ -162,4 +186,31 @@ If user chooses 3: stop here`
 		out.WriteString("[AGENT_CONTEXT_END]\n\n")
 		return mcp.NewToolResultText(out.String()), nil
 	})
+}
+
+// appendKnowledgeDocs includes all *.md files from graph.include paths in awake output.
+// Paths in graph_include (config.json) are relative to the project root (parent of alphaDir).
+func appendKnowledgeDocs(out *strings.Builder, alphaDir string) {
+	gcfg := loadGraphConfig(alphaDir)
+	projectRoot := filepath.Dir(alphaDir)
+	for _, inc := range gcfg.Include {
+		dir := filepath.Join(projectRoot, inc)
+		entries, err := os.ReadDir(dir)
+		if err != nil {
+			continue
+		}
+		for _, e := range entries {
+			if e.IsDir() || !strings.HasSuffix(e.Name(), ".md") {
+				continue
+			}
+			data, err := os.ReadFile(filepath.Join(dir, e.Name()))
+			if err != nil {
+				continue
+			}
+			name := strings.TrimSuffix(e.Name(), ".md")
+			out.WriteString(fmt.Sprintf("### KNOWLEDGE: %s\n", name))
+			out.WriteString(string(data))
+			out.WriteString("\n\n")
+		}
+	}
 }
