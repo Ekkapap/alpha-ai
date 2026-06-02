@@ -452,10 +452,16 @@ done
 #  STEP 5: Start dashboard services
 # ════════════════════════════════════════════════════════════════════════════
 step "5/5  Dashboard"
-info "Starting alpha dashboard (nginx + understand-server)..."
-docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
-  && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
-  || warn "Dashboard failed to start — run 'scripts/dashboard.sh' manually"
+_dash_running=$(docker ps --filter "name=alpha-dashboard"  --filter "status=running" -q 2>/dev/null)
+_und_running=$(docker ps  --filter "name=alpha-understand" --filter "status=running" -q 2>/dev/null)
+if [[ -n "$_dash_running" && -n "$_und_running" ]]; then
+  ok "Dashboard already running → http://localhost:8080/alpha-dashboard/"
+else
+  info "Starting alpha dashboard (nginx + understand-server)..."
+  docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
+    && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
+    || warn "Dashboard failed to start — run 'scripts/dashboard.sh' manually"
+fi
 
 # ════════════════════════════════════════════════════════════════════════════
 #  DONE
