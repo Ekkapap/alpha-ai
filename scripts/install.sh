@@ -105,6 +105,23 @@ SCRIPT_DIR="$ALPHA_DIR"
 CONFIG_JSON="$SCRIPT_DIR/agents-resource/config.json"
 [[ -f "$CONFIG_JSON" ]] || die "agents-resource/config.json not found in installation dir"
 
+# Global mode: create α/ → ~/.alpha-ai/ symlink in project
+if [[ "$GLOBAL_MODE" == "1" ]]; then
+  if [[ -L "$PROJECT_ROOT/α" && "$(readlink "$PROJECT_ROOT/α")" == "$ALPHA_HOME" ]]; then
+    ok "α/ → already correct"
+  elif [[ -L "$PROJECT_ROOT/α" ]]; then
+    rm "$PROJECT_ROOT/α"; ln -s "$ALPHA_HOME" "$PROJECT_ROOT/α"
+    ok "α/ → updated symlink"
+  elif [[ -d "$PROJECT_ROOT/α" ]]; then
+    warn "Replacing α/ directory with symlink (global mode)"
+    rm -rf "$PROJECT_ROOT/α"; ln -s "$ALPHA_HOME" "$PROJECT_ROOT/α"
+    ok "α/ → $ALPHA_HOME"
+  else
+    ln -s "$ALPHA_HOME" "$PROJECT_ROOT/α"
+    ok "α/ → $ALPHA_HOME"
+  fi
+fi
+
 # Compute stable project ID (used in global mode for per-project data dir)
 _ALPHA_PROJECT_ID=$(python3 -c "
 import hashlib, re, sys, os
@@ -477,13 +494,7 @@ agent = cfg["agents"].get(sys.argv[2], {})
 global_mode = sys.argv[3] == "1"
 alpha_home = sys.argv[4]
 for s in agent.get("project_dir_symlinks", []):
-    if global_mode:
-        # In global mode: symlink project/.claude → ~/.alpha-ai/.claude (absolute)
-        src_rel = s['src']  # e.g. "α/.claude"
-        inner = src_rel.replace("α/", "", 1) if src_rel.startswith("α/") else src_rel
-        abs_src = f"{alpha_home}/{inner}"
-        print(f"_global_dir_symlink '{abs_src}' '{s['dst']}'")
-    else:
+    if not global_mode:
         print(f"_dir_symlink '{s['src']}' '{s['dst']}' 'true'")
 for s in agent.get("internal_symlinks", []):
     if not global_mode:
@@ -506,12 +517,11 @@ _copy_mcp_template() {
   ok ".mcp.json → $dst_rel"
 }
 
-# ── .mcp.json template copy — global mode ─────────────────────────────────────
+# ── .mcp.json template copy — global mode (always writes) ────────────────────
 _copy_mcp_global_template() {
   local dst_rel="$1"
   local src="$ALPHA_HOME/agents-resource/.mcp.global.json"
   local dst="$PROJECT_ROOT/$dst_rel"
-  [[ -f "$dst" ]] && { ok ".mcp.json already exists — skipped"; return; }
   [[ -f "$src" ]] || { warn ".mcp.global.json template not found — skipped"; return; }
   sed -e "s|\[ALPHA_HOME\]|$ALPHA_HOME|g" \
       -e "s|\[HOST_PROJECT_ROOT\]|$PROJECT_ROOT|g" \
@@ -540,25 +550,78 @@ _global_dir_symlink() {
   fi
 }
 
+# ── Global mode: absolute file symlink helper ─────────────────────────────────
+_global_file_symlink() {
+  local abs_src="$1" dst_rel="$2" merge="${3:-false}"
+  local dst="$PROJECT_ROOT/$dst_rel"
+  if [[ -L "$dst" && "$(readlink "$dst")" == "$abs_src" ]]; then
+    ok "$dst_rel → already correct"
+  elif [[ -L "$dst" ]]; then
+    rm "$dst"; ln -s "$abs_src" "$dst"
+    ok "$dst_rel → updated symlink"
+  elif [[ -f "$dst" && -f "$abs_src" && "$merge" == "true" ]]; then
+    printf '\n\n<!-- merged from project root -->\n' >> "$abs_src"
+    cat "$dst" >> "$abs_src"; rm "$dst"; ln -s "$abs_src" "$dst"
+    ok "$dst_rel → merged + symlinked"
+  elif [[ -f "$dst" ]]; then
+    ln -s "$abs_src" "$dst"
+    ok "$dst_rel → symlinked (existing file kept at target)"
+  elif [[ -f "$abs_src" ]]; then
+    ln -s "$abs_src" "$dst"
+    ok "$dst_rel → symlinked"
+  else
+    warn "$dst_rel not found — skipped"
+  fi
+}
+
 # ── Universal setup (local mode only — global has no project-level universal symlinks) ──
 if [[ "$GLOBAL_MODE" != "1" ]]; then
   echo -e "\n  ${D}Universal${X}"
   while IFS= read -r cmd; do eval "$cmd"; done < <(python3 "$PY_UNIVERSAL" "$CONFIG_JSON")
 fi
 
-# ── Global mode: create α/config.json ────────────────────────────────────────
+# ── Global mode: data dirs + project symlinks ────────────────────────────────
 if [[ "$GLOBAL_MODE" == "1" ]]; then
-  mkdir -p "$PROJECT_ROOT/α"
-  cat > "$PROJECT_ROOT/α/config.json" << ALPHAEOF
-{
-  "project_id": "$_ALPHA_PROJECT_ID",
-  "alpha_home": "$ALPHA_HOME"
-}
-ALPHAEOF
-  ok "α/config.json → project_id=$_ALPHA_PROJECT_ID"
-  mkdir -p "$ALPHA_HOME/knowledge-graph/projects/$_ALPHA_PROJECT_ID/graphify-out"
-  mkdir -p "$ALPHA_HOME/knowledge-graph/projects/$_ALPHA_PROJECT_ID/understand-anything"
-  ok "Global data dirs created for project"
+  echo -e "\n  ${D}Global data${X}"
+  _PROJ_DATA="$ALPHA_HOME/knowledge-graph/projects/$_ALPHA_PROJECT_ID"
+  mkdir -p "$_PROJ_DATA/graphify-out" "$_PROJ_DATA/understand-anything"
+  ok "Global data dirs → $_PROJ_DATA"
+
+  mkdir -p "$PROJECT_ROOT/memories"
+  ok "memories/ → local per-project"
+
+  echo -e "\n  ${D}Project symlinks${X}"
+  _global_dir_symlink "$_PROJ_DATA/graphify-out" "graphify-out"
+  _global_dir_symlink "$_PROJ_DATA/understand-anything" ".understand-anything"
+  _global_file_symlink "$ALPHA_HOME/agents-resource/PRODUCTION_CLAUDE.md" "CLAUDE.md" "true"
+  _global_file_symlink "$ALPHA_HOME/agents-resource/PRODUCTION_GEMINI.md" "GEMINI.md"
+
+  echo -e "\n  ${D}.claude/* → agents-resource${X}"
+  mkdir -p "$PROJECT_ROOT/.claude"
+  for _d in skills commands rules hooks; do
+    [[ -d "$ALPHA_HOME/agents-resource/$_d" ]] && \
+      _global_dir_symlink "$ALPHA_HOME/agents-resource/$_d" ".claude/$_d"
+  done
+
+  echo -e "\n  ${D}.agents/* → agents-resource${X}"
+  mkdir -p "$PROJECT_ROOT/.agents"
+  for _d in skills tools workflows rules; do
+    [[ -d "$ALPHA_HOME/agents-resource/$_d" ]] && \
+      _global_dir_symlink "$ALPHA_HOME/agents-resource/$_d" ".agents/$_d"
+  done
+
+  echo -e "\n  ${D}Config files${X}"
+  _gfy_ignore="$ALPHA_HOME/knowledge-graph/graphify-out/.graphifyignore"
+  _und_ignore="$ALPHA_HOME/knowledge-graph/understand-anything/.understandignore"
+  [[ ! -f "$PROJECT_ROOT/.graphifyignore" && -f "$_gfy_ignore" ]] \
+    && cp "$_gfy_ignore" "$PROJECT_ROOT/.graphifyignore" && ok ".graphifyignore → copied" \
+    || ok ".graphifyignore → already exists"
+  [[ ! -f "$PROJECT_ROOT/.understandignore" && -f "$_und_ignore" ]] \
+    && cp "$_und_ignore" "$PROJECT_ROOT/.understandignore" && ok ".understandignore → copied" \
+    || ok ".understandignore → already exists"
+  [[ ! -f "$PROJECT_ROOT/.gitignore" && -f "$ALPHA_HOME/.gitignore" ]] \
+    && cp "$ALPHA_HOME/.gitignore" "$PROJECT_ROOT/.gitignore" && ok ".gitignore → copied" \
+    || ok ".gitignore → already exists"
 fi
 
 # ── Per-agent setup ───────────────────────────────────────────────────────────
@@ -571,31 +634,16 @@ done
 
 
 # ════════════════════════════════════════════════════════════════════════════
-#  STEP 5: Start dashboard services
+#  STEP 5: Done — services must be started manually
 # ════════════════════════════════════════════════════════════════════════════
-step "5/5  Dashboard"
+step "5/5  Services"
+info "Start the knowledge graph dashboard when ready:"
 if [[ "$GLOBAL_MODE" == "1" ]]; then
-  _DASH_NAME="alpha-global-dashboard"; _UND_NAME="alpha-global-understand"
+  echo -e "  ${C}alpha --knowledge-graph start${X}  (or: /alpha-knowledge-graph start)"
 else
-  _DASH_NAME="alpha-dashboard"; _UND_NAME="alpha-understand"
+  echo -e "  ${C}bash α/scripts/dashboard.sh${X}"
 fi
-_dash_running=$(docker ps --filter "name=$_DASH_NAME" --filter "status=running" -q 2>/dev/null)
-_und_running=$(docker ps  --filter "name=$_UND_NAME"  --filter "status=running" -q 2>/dev/null)
-if [[ -n "$_dash_running" && -n "$_und_running" ]]; then
-  ok "Dashboard already running → http://localhost:8080/alpha-dashboard/"
-else
-  info "Starting alpha dashboard (nginx + understand-server)..."
-  if [[ "$GLOBAL_MODE" == "1" ]]; then
-    ALPHA_HOME="$ALPHA_HOME" HOST_PROJECT_ROOT="$PROJECT_ROOT" ALPHA_PROJECT_ID="$_ALPHA_PROJECT_ID" \
-      docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
-      && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
-      || warn "Dashboard failed to start — check compose logs"
-  else
-    docker compose -f "$COMPOSE_FILE" --profile dashboard up -d \
-      && ok "Dashboard running → http://localhost:8080/alpha-dashboard/" \
-      || warn "Dashboard failed to start — run 'scripts/dashboard.sh' manually"
-  fi
-fi
+ok "Skipped auto-start — run manually when ready"
 
 # ════════════════════════════════════════════════════════════════════════════
 #  DONE

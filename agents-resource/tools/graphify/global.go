@@ -44,19 +44,13 @@ func graphifyDataDir(alphaDir string) string {
 }
 
 // memoriesDir returns the memories directory path.
-//   - Global mode: ALPHA_ROOT/α/knowledge-graph/memories (local to project)
-//                  fallback: ALPHA_ROOT/.alpha/memories
-//   - Local mode:  alphaDir/knowledge-graph/memories (unchanged)
+//   - Global mode: ALPHA_ROOT/memories  (local per-project directory)
+//   - Local mode:  alphaDir/knowledge-graph/memories
 func memoriesDir(alphaDir string) string {
 	if isGlobalMode() {
 		projectRoot := os.Getenv("ALPHA_ROOT")
 		if projectRoot != "" {
-			// Prefer α/ subdir if it exists
-			alphaSub := filepath.Join(projectRoot, "α", "knowledge-graph", "memories")
-			if _, err := os.Stat(filepath.Join(projectRoot, "α")); err == nil {
-				return alphaSub
-			}
-			return filepath.Join(projectRoot, ".alpha", "memories")
+			return filepath.Join(projectRoot, "memories")
 		}
 	}
 	return filepath.Join(alphaDir, "knowledge-graph", "memories")

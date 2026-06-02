@@ -131,23 +131,16 @@ func configureGlobal(alphaDir, projectRoot string) string {
 func projectInit(alphaHome, projectRoot, projectID string) string {
 	var out strings.Builder
 
-	// ── α/config.json ─────────────────────────────────────────────────────
-	alphaConfigDir := filepath.Join(projectRoot, "α")
-	if err := os.MkdirAll(alphaConfigDir, 0755); err == nil {
-		cfg := map[string]string{"project_id": projectID, "alpha_home": alphaHome}
-		data, _ := json.MarshalIndent(cfg, "", "  ")
-		if err := os.WriteFile(filepath.Join(alphaConfigDir, "config.json"), append(data, '\n'), 0644); err != nil {
-			out.WriteString("⚠️  write α/config.json: " + err.Error() + "\n")
-		} else {
-			out.WriteString("✅ α/config.json → project_id=" + projectID + "\n")
-		}
-	}
-
-	// ── Per-project data dirs ──────────────────────────────────────────────
+	// ── Per-project data dirs in global store ─────────────────────────────
 	projectDataDir := filepath.Join(alphaHome, "knowledge-graph", "projects", projectID)
 	os.MkdirAll(filepath.Join(projectDataDir, "graphify-out"), 0755)
 	os.MkdirAll(filepath.Join(projectDataDir, "understand-anything"), 0755)
 	out.WriteString("✅ Global data dirs → " + projectDataDir + "\n")
+
+	// ── Per-project memories dir (local to project) ───────────────────────
+	if err := os.MkdirAll(filepath.Join(projectRoot, "memories"), 0755); err == nil {
+		out.WriteString("✅ memories/ → " + filepath.Join(projectRoot, "memories") + "\n")
+	}
 
 	// ── .mcp.json (global template) ───────────────────────────────────────
 	templatePath := filepath.Join(alphaHome, "agents-resource/.mcp.global.json")
