@@ -164,6 +164,32 @@ Python graphify และ understand hardcode output ไปที่ project roo
 - [ ] R2: install.sh windows path (ตอนนี้ไม่รองรับ)
 - [ ] R3: `setup-hooks.cmd` verify ยังใช้ได้
 
+### G — Global Mode (Session 9)
+- [x] G1: `projectID()` utility — sha256[:8] + sanitized basename; ใช้ร่วมกันใน graphify/alpha/understand packages
+- [x] G2: graphify — `graphifyDataDir()` routes to `projects/<id>/graphify-out/` in global mode (`ALPHA_GLOBAL=1`)
+- [x] G3: understand — `dataRoot` variable routes to `projects/<id>/understand-anything/` in global mode
+- [x] G4: alpha binary — `findRoots()` detects `ALPHA_GLOBAL=1`, `alphaProjectDataDir()`, `binPath()` fixed to use `alphaDir` not `projectRoot`, propagates `ALPHA_GLOBAL` to subprocesses
+- [x] G5: `docker-compose.global.yml` — mounts `ALPHA_HOME→/alpha-ai` + `HOST_PROJECT_ROOT→/workspace`
+- [x] G6: `agents-resource/.mcp.global.json` template — placeholders `[ALPHA_HOME]`, `[HOST_PROJECT_ROOT]`, `[ALPHA_PROJECT_ID]`
+- [x] G7: `install.sh --global` flag — GLOBAL_MODE detection, clones to `~/.alpha-ai/`, `_global_dir_symlink` helper (absolute symlinks), `_copy_mcp_global_template`, `α/config.json` per project, global data dirs, Step 5 uses global container names
+- [x] G8: `cmd_configure.go` — `configureGlobal()` branch: `α/config.json`, data dirs, `.mcp.global.json` substitution
+- [x] G9: `memoriesDir()` in `global.go` — global mode memories at `ALPHA_ROOT/α/knowledge-graph/memories/` (local to project); `cmd_awake.go` + `cmd_sync.go` updated
+- [x] G10: darwin+linux binaries rebuilt, Docker image rebuilt
+
+### W — Knowledge System + Session 10 fixes
+- [x] W1: `install.sh` — เอา `[target-dir]` arg ออก, `PROJECT_ROOT=$(pwd)` เสมอ
+- [x] W2: `install.sh` + `cmd_configure.go` — เปลี่ยน `.alpha/config.json` → `α/config.json`
+- [x] W3: `cmd_configure.go` — refactor `configureGlobal()` → `projectInit()` shared function
+- [x] W4: `alpha/main.go` — เพิ่ม `--project-init` CLI + `project_init` MCP tool
+- [x] W5: `commands/alpha-project.md` — slash command `/alpha-project --init`
+- [x] W6: `raw-knowledge/alpha-ai.md` + `raw-knowledge/alpha-knowledge-graph.md` — knowledge files สำหรับ graph include
+- [x] W7: `config.json` — เพิ่ม `graph.include` / `graph.exclude` section
+- [x] W8: `scan.go` — `loadGraphConfig()` + `isIncluded()` + `resolveIncludes()` — config-driven include bypass
+- [x] W9: `extract_generic.go` — `extractMarkdown()` — parse H2 headings จาก knowledge docs เป็น nodes; `FileType=knowledge` ใน `cmd_scan.go`
+- [x] W10: `cmd_awake.go` — `appendKnowledgeDocs()` อ่าน include paths จาก config + sketchGraph alpha-ai
+- [x] W11: `graphify extract <path> [--backend gemini|anthropic|openai]` — new CLI command
+- [x] W12: `understand/main.go` — `apiEnv()` inject `.env` API keys เข้า Node.js subprocesses
+
 ---
 
 ## KEY DESIGN DECISIONS
