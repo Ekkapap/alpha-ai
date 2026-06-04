@@ -675,16 +675,32 @@ done
 
 
 # ════════════════════════════════════════════════════════════════════════════
-#  STEP 5: Done — services must be started manually
+#  STEP 5: Services — update running container or skip
 # ════════════════════════════════════════════════════════════════════════════
 step "5/5  Services"
-info "Start the knowledge graph dashboard when ready:"
 if [[ "$GLOBAL_MODE" == "1" ]]; then
-  echo -e "  ${C}alpha --knowledge-graph start${X}  (or: /alpha-knowledge-graph start)"
+  _COMPOSE_FILE="$ALPHA_HOME/docker-compose.global.yml"
+  _COMPOSE_ENV=(
+    "ALPHA_HOME=$ALPHA_HOME"
+    "HOST_PROJECT_ROOT=$PROJECT_ROOT"
+    "ALPHA_PROJECT_ID=$_ALPHA_PROJECT_ID"
+    "ALPHA_GLOBAL=1"
+  )
 else
-  echo -e "  ${C}bash α/scripts/dashboard.sh${X}"
+  _COMPOSE_FILE="$ALPHA_DIR/docker-compose.yml"
+  _COMPOSE_ENV=("HOST_PROJECT_ROOT=$PROJECT_ROOT")
 fi
-ok "Skipped auto-start — run manually when ready"
+
+# Check if any service from this compose stack is running
+_RUNNING=$(env "${_COMPOSE_ENV[@]}" docker compose -f "$_COMPOSE_FILE" ps --services --filter status=running 2>/dev/null)
+if [[ -n "$_RUNNING" ]]; then
+  ok "Container running — applying update"
+  env "${_COMPOSE_ENV[@]}" docker compose -f "$_COMPOSE_FILE" --profile dashboard up -d --quiet-pull 2>&1 \
+    | grep -v "^$" | sed 's/^/  /' || true
+else
+  info "Container not running."
+  info "Start when ready:  alpha --knowledge-graph start"
+fi
 
 # ════════════════════════════════════════════════════════════════════════════
 #  DONE
